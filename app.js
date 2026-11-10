@@ -212,7 +212,11 @@ function viewJoin({pin, nick}) {
     cancelAnimationFrame(P.raf);
     const st = P.st;
     if (!st) {
-      $app.innerHTML = `<section class="card center"><h2>Hallo ${esc(nick)}!</h2><p class="muted">Warte auf die Spielleitung … (PIN ${esc(pin)})</p></section>`;
+      $app.innerHTML = `<section class="card center"><h2>Hallo ${esc(nick)}!</h2><p class="muted">Warte auf die Spielleitung … (PIN ${esc(pin)})</p>
+        <p class="err hidden" id="p-nohost">Unter dieser PIN ist gerade keine Spielleitung online. Prüfe die PIN. Diese Seite verbindet sich automatisch, sobald das Spiel geöffnet wird.</p>
+        <div class="row"><button class="link" id="p-back">Andere PIN eingeben</button></div></section>`;
+      document.getElementById("p-back").onclick = () => go("start");
+      setTimeout(() => { const e = document.getElementById("p-nohost"); if (e && !P.st) e.classList.remove("hidden"); }, 8000);
       return;
     }
     const me = (st.board || []).find(b => b.pid === pid);
