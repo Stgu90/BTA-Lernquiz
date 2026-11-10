@@ -79,3 +79,22 @@ label.pick input{margin-top:4px;width:18px;height:18px;accent-color:var(--red)}
 .center{text-align:center;align-items:center}
 .foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
 .hidden{display:none!important}
+/* Glossar */
+h2.sub{font-size:15px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:8px 0 0}
+.gfilter{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.gfilter .field{min-width:0}
+.gfilter .field input,.gfilter .field select{width:100%;box-sizing:border-box;min-width:0}
+.gfilter .field select{font-size:15px}
+@media (max-width:720px){.gfilter{grid-template-columns:1fr}}
+.glist{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.gletter{font-weight:800;font-size:20px;color:var(--red);margin:10px 0 0 4px}
+.gentry{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.gentry p{margin:6px 0}
+.ghead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.gterm{font-weight:800;font-size:18px}
+.gkind{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.gtip{color:var(--ink-2)}
+.gtags{display:flex;gap:6px;flex-wrap:wrap}
+.gtag{font-size:12px;font-weight:700;padding:2px 8px;border-radius:99px;border:1px solid var(--c);color:var(--ink-2);background:#fff}
+.gcard{margin-top:14px;min-height:220px}
+.gfront{font-size:28px;font-weight:800}

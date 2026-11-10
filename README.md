@@ -21,3 +21,9 @@ Aktuelle Kurse: `hr-ops` (HR Operations) und `ld` (Strategisches Learning & Deve
 
 ## Lokal testen ohne Internet
 `?local=1` an die Adresse hängen: Dann läuft die Live-Verbindung über den Browser selbst (mehrere Tabs im selben Browser).
+
+## Glossar
+Jeder Kurs kann in `data/courses.json` ein Feld `glossary` haben (z. B. `data/glossar-hr-ops.json`).
+Einträge: `{k, t, d, p, r}` – `k` Bereich (`beg` Begriff, `abk` Abkürzung, `fri` Frist, `wer` Wert),
+`t` Begriff, `d` Bedeutung, `p` Praxistipp/Grundlage/Hinweis, `r` Liste der Runden-IDs (Kurstage).
+In „Allein üben“ erscheinen dann „Nachschlagen“ (Suche + Filter) und „Karteikarten“.

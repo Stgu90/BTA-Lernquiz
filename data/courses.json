@@ -3,12 +3,14 @@
   "id": "hr-ops",
   "title": "HR Operations",
   "subtitle": "BTA Weiterbildung",
-  "file": "data/hr-ops.json"
+  "file": "data/hr-ops.json",
+  "glossary": "data/glossar-hr-ops.json"
  },
  {
   "id": "ld",
   "title": "Strategisches Learning & Development",
   "subtitle": "BTA Weiterbildung",
-  "file": "data/ld.json"
+  "file": "data/ld.json",
+  "glossary": "data/glossar-ld.json"
  }
 ]

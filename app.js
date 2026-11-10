@@ -540,6 +540,7 @@ async function viewSoloCourse(courseId) {
     return;
   }
   const c = await loadCourse(courseId);
+  const meta = courses.find(x => x.id === courseId);
   const wrongKey = "btaq-wrong-" + c.id;
   const wrong = store.get(wrongKey, []).filter(id => c.byId[id]);
   $app.innerHTML = `
@@ -551,15 +552,110 @@ async function viewSoloCourse(courseId) {
         <button class="pick" style="--c:var(--ink)" data-r="mix"><span class="k">Alle Kurstage</span><span class="t">Gemischte Runde</span><span class="m">15 Zufallsfragen</span></button>
         <button class="pick" style="--c:var(--red)" data-r="wrong" ${wrong.length ? "" : "disabled"}><span class="k">Gezielt wiederholen</span><span class="t">Meine Fehler</span><span class="m">${wrong.length ? wrong.length + " Fragen" : "Noch leer"}</span></button>
       </div>
+      ${meta && meta.glossary ? `<h2 class="sub">Glossar</h2>
+      <div class="list">
+        <button class="pick" style="--c:#3FA7A0" id="g-look"><span class="k">Nachschlagen</span><span class="t">Begriffe, Abkürzungen${c.id === "hr-ops" ? ", Fristen" : ""}</span><span class="m">Suchen und nach Kurstag filtern</span></button>
+        <button class="pick" style="--c:#8A95E8" id="g-cards"><span class="k">Lernen</span><span class="t">Karteikarten</span><span class="m">Begriff sehen, Erklärung aufdecken</span></button>
+      </div>` : ""}
       <div class="row"><button class="link" id="s-back">Zurück</button></div>
     </section>
     ${c.legal ? `<p class="foot">${esc(c.legal)}</p>` : ""}`;
   document.getElementById("s-back").onclick = () => go("start");
+  const gl = document.getElementById("g-look"); if (gl) gl.onclick = () => viewGlossary(c, meta, "look");
+  const gc = document.getElementById("g-cards"); if (gc) gc.onclick = () => viewGlossary(c, meta, "cards");
   $app.querySelectorAll("[data-r]").forEach(b => b.onclick = () => {
     const r = b.dataset.r;
     let list = r === "mix" ? shuffle(c.questions).slice(0, 15) : r === "wrong" ? shuffle(wrong.map(id => c.byId[id])) : shuffle(c.questions.filter(q => q.round === r));
     if (list.length) soloPlay(c, list, r);
   });
+}
+
+/* ---------- Glossar ---------- */
+const glossaryCache = {};
+async function loadGlossary(meta) {
+  if (!glossaryCache[meta.id]) glossaryCache[meta.id] = await (await fetch(meta.glossary, {cache: "no-cache"})).json();
+  return glossaryCache[meta.id];
+}
+const norm = s => String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ß/g, "ss");
+async function viewGlossary(c, meta, mode) {
+  const g = await loadGlossary(meta);
+  const rounds = Object.fromEntries(c.rounds.map(r => [r.id, r]));
+  const kinds = [...new Set(g.entries.map(e => e.k))];
+  const F = {q: "", k: "all", r: "all"};
+  const filterBar = () => `
+    <div class="gfilter">
+      ${mode === "look" ? `<label class="field gsearch">Suchen<input id="g-q" type="search" placeholder="z. B. Befristung, SBV, Probezeit" autocomplete="off"></label>` : ""}
+      <label class="field">Bereich<select id="g-k"><option value="all">Alle</option>${kinds.map(k => `<option value="${k}">${esc(g.kinds[k] || k)}</option>`).join("")}</select></label>
+      <label class="field">Kurstag<select id="g-r"><option value="all">Alle Kurstage</option>${c.rounds.map(r => `<option value="${esc(r.id)}">${esc(r.label)}: ${esc(r.title)}</option>`).join("")}</select></label>
+    </div>`;
+  const tags = e => e.r.map(id => rounds[id] ? `<span class="gtag" style="--c:${esc(rounds[id].color)}">${esc(rounds[id].label)}</span>` : "").join("");
+  const tipLabel = k => k === "fri" ? "Grundlage" : k === "wer" ? "Hinweis" : k === "abk" ? "Worum es geht" : "Praxistipp";
+  const matches = e => (F.k === "all" || e.k === F.k) && (F.r === "all" || e.r.includes(F.r)) &&
+    (!F.q || norm(e.t + " " + e.d + " " + e.p).includes(norm(F.q)));
+  const sorted = list => list.slice().sort((a, b) => {
+    const qa = F.q && norm(a.t).includes(norm(F.q)) ? 0 : 1, qb = F.q && norm(b.t).includes(norm(F.q)) ? 0 : 1;
+    return qa - qb || a.t.localeCompare(b.t, "de");
+  });
+  const head = (title) => `<section class="card"><h1>${esc(title)}</h1>
+      <p class="muted">${esc(g.title)} · ${g.entries.length} Einträge. ${c.legal ? esc(c.legal) : ""}</p>${filterBar()}</section>`;
+  const back = () => viewSoloCourse(c.id);
+
+  if (mode === "look") {
+    $app.innerHTML = head("Nachschlagen") + `<div id="g-list" class="glist"></div><div class="row"><button class="link" id="g-back">Zurück</button></div>`;
+    const render = () => {
+      const list = sorted(g.entries.filter(matches));
+      let lastL = "";
+      document.getElementById("g-list").innerHTML = list.length ? list.map(e => {
+        const L = (F.q ? "" : e.t[0].toUpperCase().replace(/[ÄÖÜ]/, m => ({Ä:"A",Ö:"O",Ü:"U"}[m])));
+        const hdr = L && L !== lastL && /[A-Z0-9]/.test(L) ? `<div class="gletter">${esc(L)}</div>` : "";
+        if (hdr) lastL = L;
+        return hdr + `<article class="gentry"><div class="ghead"><span class="gterm">${esc(e.t)}</span><span class="gkind">${esc(g.kinds[e.k] || "")}</span></div>
+          <p>${esc(e.d)}</p><p class="gtip"><b>${tipLabel(e.k)}:</b> ${esc(e.p)}</p><div class="gtags">${tags(e)}</div></article>`;
+      }).join("") : `<p class="muted center">Nichts gefunden. Probiere einen anderen Suchbegriff oder setze die Filter zurück.</p>`;
+    };
+    const q = document.getElementById("g-q");
+    q.oninput = () => { F.q = q.value.trim(); render(); };
+    document.getElementById("g-k").onchange = e => { F.k = e.target.value; render(); };
+    document.getElementById("g-r").onchange = e => { F.r = e.target.value; render(); };
+    document.getElementById("g-back").onclick = back;
+    render(); q.focus();
+    return;
+  }
+
+  // Karteikarten
+  $app.innerHTML = head("Karteikarten") + `<div id="g-card"></div><div class="row"><button class="link" id="g-back">Zurück</button></div>`;
+  document.getElementById("g-back").onclick = back;
+  let deck = [], known = 0, total = 0, open = false;
+  const start = () => { deck = shuffle(g.entries.filter(matches)); known = 0; total = deck.length; show(); };
+  const show = () => {
+    const box = document.getElementById("g-card");
+    if (!deck.length) {
+      box.innerHTML = total ? `<section class="card center"><h2>Geschafft</h2><p>Alle ${total} Karten sitzen.</p><div class="row"><button class="btn primary" id="g-again">Nochmal mischen</button></div></section>`
+        : `<p class="muted center">Für diese Auswahl gibt es keine Karten.</p>`;
+      const a = document.getElementById("g-again"); if (a) a.onclick = start;
+      return;
+    }
+    const e = deck[0]; open = false;
+    box.innerHTML = `<div class="bar"><span class="chip">Karte ${known + 1} von ${total}</span><span class="chip">Noch ${deck.length} im Stapel</span></div>
+      <section class="card gcard">
+        <div class="gkind">${esc(g.kinds[e.k] || "")}</div>
+        <div class="gfront">${esc(e.t)}</div>
+        <div id="g-back-side" hidden><p>${esc(e.d)}</p><p class="gtip"><b>${tipLabel(e.k)}:</b> ${esc(e.p)}</p><div class="gtags">${tags(e)}</div></div>
+        <div class="row" id="g-btns"><button class="btn primary" id="g-flip">Aufdecken</button></div>
+      </section>`;
+    document.getElementById("g-flip").onclick = flip;
+  };
+  const flip = () => {
+    if (open) return; open = true;
+    document.getElementById("g-back-side").hidden = false;
+    document.getElementById("g-btns").innerHTML = `<button class="btn primary" id="g-yes">Wusste ich</button><button class="btn" id="g-no">Nochmal üben</button>`;
+    document.getElementById("g-yes").onclick = () => { deck.shift(); known++; show(); };
+    document.getElementById("g-no").onclick = () => { const e = deck.shift(); deck.splice(Math.min(deck.length, 3 + Math.floor(Math.random() * 3)), 0, e); show(); };
+    document.getElementById("g-yes").focus();
+  };
+  document.getElementById("g-k").onchange = ev => { F.k = ev.target.value; start(); };
+  document.getElementById("g-r").onchange = ev => { F.r = ev.target.value; start(); };
+  start();
 }
 
 function soloPlay(c, list, roundId) {

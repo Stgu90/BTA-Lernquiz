@@ -1,0 +1,1373 @@
+{
+ "title": "Glossar HR Operations",
+ "kinds": {
+  "beg": "Begriff",
+  "abk": "Abkürzung",
+  "fri": "Frist",
+  "wer": "Wert 2026"
+ },
+ "entries": [
+  {
+   "k": "abk",
+   "t": "AGG",
+   "d": "Allgemeines Gleichbehandlungsgesetz",
+   "p": "Schutz vor Benachteiligung, etwa wegen Geschlecht, Alter oder Behinderung, auch im Bewerbungsverfahren",
+   "r": [
+    "bm"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "ArbGG",
+   "d": "Arbeitsgerichtsgesetz",
+   "p": "Verfahren vor den Arbeitsgerichten, etwa Klagefristen bei Entschädigung",
+   "r": [
+    "bm"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "ArbSchG",
+   "d": "Arbeitsschutzgesetz",
+   "p": "Pflichten des Arbeitgebers zu Sicherheit und Gesundheit, etwa Gefährdungsbeurteilung",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "ArbZG",
+   "d": "Arbeitszeitgesetz",
+   "p": "Höchstarbeitszeit, Pausen, Ruhezeiten, Sonn- und Feiertagsarbeit",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "AU / eAU",
+   "d": "Arbeitsunfähigkeit / elektronische Arbeitsunfähigkeitsbescheinigung",
+   "p": "Krankmeldung; der Arbeitgeber ruft Beginn und Dauer bei der Krankenkasse ab, ohne Diagnose",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "AufenthG",
+   "d": "Aufenthaltsgesetz",
+   "p": "Aufenthaltstitel und Erlaubnis zur Beschäftigung für Menschen aus Nicht-EU-Staaten",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "BAG",
+   "d": "Bundesarbeitsgericht",
+   "p": "Höchstes deutsches Arbeitsgericht in Erfurt",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "BBiG",
+   "d": "Berufsbildungsgesetz",
+   "p": "Regeln für Ausbildungsverhältnisse, etwa Probezeit und Kündigung",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "BDSG",
+   "d": "Bundesdatenschutzgesetz",
+   "p": "Ergänzt die DSGVO in Deutschland",
+   "r": [
+    "hs"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "BEA",
+   "d": "Bescheinigungen elektronisch annehmen",
+   "p": "Elektronischer Versand von Arbeitsbescheinigungen an die Agentur für Arbeit",
+   "r": [
+    "bw"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "BEEG",
+   "d": "Bundeselterngeld- und Elternzeitgesetz",
+   "p": "Elternzeit und Elterngeld",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "bEM",
+   "d": "Betriebliches Eingliederungsmanagement",
+   "p": "Pflichtangebot nach mehr als sechs Wochen Arbeitsunfähigkeit innerhalb von zwölf Monaten",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "BetrVG",
+   "d": "Betriebsverfassungsgesetz",
+   "p": "Rechte des Betriebsrats, etwa Anhörung und Mitbestimmung",
+   "r": [
+    "bm"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "BGB",
+   "d": "Bürgerliches Gesetzbuch",
+   "p": "Grundlage des Arbeitsvertrags, Kündigungsfristen, Schriftform",
+   "r": [
+    "t1"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "BR",
+   "d": "Betriebsrat",
+   "p": "Gewählte Interessenvertretung der Beschäftigten",
+   "r": [
+    "bm"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "BUrlG",
+   "d": "Bundesurlaubsgesetz",
+   "p": "Gesetzlicher Mindesturlaub",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "BV",
+   "d": "Betriebsvereinbarung",
+   "p": "Vertrag zwischen Arbeitgeber und Betriebsrat, gilt für alle im Betrieb",
+   "r": [
+    "t2"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "DEÜV",
+   "d": "Datenerfassungs- und -übermittlungsverordnung",
+   "p": "Regelt die Meldungen zur Sozialversicherung",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "DRV",
+   "d": "Deutsche Rentenversicherung",
+   "p": "Träger der Rentenversicherung, prüft Betriebe und klärt den Status freier Mitarbeit",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "DSGVO",
+   "d": "Datenschutz-Grundverordnung",
+   "p": "EU-Recht zum Umgang mit personenbezogenen Daten",
+   "r": [
+    "hs"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "EEL",
+   "d": "Entgeltersatzleistungen",
+   "p": "Elektronischer Datenaustausch mit Krankenkassen, etwa für die Berechnung von Krankengeld",
+   "r": [
+    "bw"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "EFZG",
+   "d": "Entgeltfortzahlungsgesetz",
+   "p": "Lohnfortzahlung bei Krankheit und an Feiertagen",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "EntgTranspG",
+   "d": "Entgelttransparenzgesetz",
+   "p": "Gleiches Entgelt für Frauen und Männer, Auskunftsanspruch",
+   "r": [
+    "bm"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "EuGH",
+   "d": "Europäischer Gerichtshof",
+   "p": "Höchstes Gericht der EU, prägt etwa das Urlaubsrecht",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "GewO",
+   "d": "Gewerbeordnung",
+   "p": "Unter anderem Weisungsrecht und Anspruch auf ein Arbeitszeugnis",
+   "r": [
+    "bw"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "HinSchG",
+   "d": "Hinweisgeberschutzgesetz",
+   "p": "Schutz von Personen, die Rechtsverstöße melden",
+   "r": [
+    "hs"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "HR",
+   "d": "Human Resources",
+   "p": "Personalabteilung, Personalwesen",
+   "r": [
+    "hs"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "KI-VO",
+   "d": "KI-Verordnung, Verordnung (EU) 2024/1689",
+   "p": "EU-Regeln für künstliche Intelligenz, auch im Personalbereich",
+   "r": [
+    "ki"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "KSchG",
+   "d": "Kündigungsschutzgesetz",
+   "p": "Allgemeiner Kündigungsschutz und Klagefrist von drei Wochen",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "MiLoG",
+   "d": "Mindestlohngesetz",
+   "p": "Gesetzlicher Mindestlohn",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "MuSchG",
+   "d": "Mutterschutzgesetz",
+   "p": "Schutz schwangerer und stillender Beschäftigter, Kündigungsverbot",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "NachwG",
+   "d": "Nachweisgesetz",
+   "p": "Schriftlicher Nachweis der wesentlichen Arbeitsbedingungen",
+   "r": [
+    "t1"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "PfÜB",
+   "d": "Pfändungs- und Überweisungsbeschluss",
+   "p": "Gerichtlicher Beschluss, mit dem Lohn gepfändet wird",
+   "r": [
+    "bw"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "PflegeZG",
+   "d": "Pflegezeitgesetz",
+   "p": "Freistellung zur Pflege von Angehörigen",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "SBV",
+   "d": "Schwerbehindertenvertretung",
+   "p": "Interessenvertretung schwerbehinderter Beschäftigter",
+   "r": [
+    "bm"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "SGB",
+   "d": "Sozialgesetzbuch",
+   "p": "Sozialrecht in Büchern: III Arbeitsförderung, IV gemeinsame Vorschriften, V Krankenversicherung, VI Rente, VII Unfall, IX Teilhabe",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "SLA",
+   "d": "Service Level Agreement",
+   "p": "Vereinbarte Reaktions- oder Bearbeitungszeit im HR-Service",
+   "r": [
+    "hs"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "SV",
+   "d": "Sozialversicherung",
+   "p": "Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "TVG",
+   "d": "Tarifvertragsgesetz",
+   "p": "Wirkung von Tarifverträgen",
+   "r": [
+    "bm"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "TzBfG",
+   "d": "Teilzeit- und Befristungsgesetz",
+   "p": "Teilzeitanspruch und Regeln für befristete Verträge",
+   "r": [
+    "t1"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "ZPO",
+   "d": "Zivilprozessordnung",
+   "p": "Unter anderem Lohnpfändung und Pfändungsgrenzen",
+   "r": [
+    "bw"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Abmahnung",
+   "d": "Rüge eines konkreten Pflichtverstoßes mit der Warnung, dass im Wiederholungsfall die Kündigung droht.",
+   "p": "Datum, beobachteten Sachverhalt und Warnung festhalten; die beschäftigte Person darf eine Gegendarstellung zur Akte geben.",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Abrufarbeit",
+   "d": "Arbeit nach Bedarf, die der Arbeitgeber jeweils abruft (§ 12 TzBfG).",
+   "p": "Ist eine Mindestarbeitszeit vereinbart, dürfen höchstens 25 % zusätzlich abgerufen werden; ohne Vereinbarung gelten 20 Stunden pro Woche.",
+   "r": [
+    "bm"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Änderungskündigung",
+   "d": "Kündigung, verbunden mit dem Angebot, zu geänderten Bedingungen weiterzuarbeiten (§ 2 KSchG).",
+   "p": "Die Person kann annehmen, ablehnen oder unter Vorbehalt annehmen und klagen; Vorbehalt spätestens drei Wochen nach Zugang.",
+   "r": [
+    "t2"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Arbeitsbescheinigung",
+   "d": "Bescheinigung für die Agentur für Arbeit über Beschäftigung, Entgelt und Beendigungsgrund (§ 312 SGB III).",
+   "p": "Wird elektronisch über das Verfahren BEA übermittelt; der Beendigungsgrund muss stimmen, etwa beim Aufhebungsvertrag.",
+   "r": [
+    "bw"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Arbeitsunfähigkeit",
+   "d": "Die Person kann ihre konkrete Arbeit wegen Krankheit nicht leisten.",
+   "p": "Arbeitsunfähig heißt nicht bettlägerig; die Bescheinigung hat einen hohen Beweiswert.",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Arbeitszeiterfassung",
+   "d": "Pflicht, Beginn, Ende und Dauer der Arbeitszeit zu erfassen; das Bundesarbeitsgericht leitet sie seit 2022 aus dem Arbeitsschutzgesetz ab.",
+   "p": "Eine gesetzliche Neuregelung ist noch nicht in Kraft (Stand November 2026); Aufzeichnungen über acht Stunden täglich mindestens zwei Jahre aufbewahren.",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Arbeitszeugnis",
+   "d": "Schriftliche Beurteilung zum Ende oder während des Arbeitsverhältnisses (§ 109 GewO); einfach (Art und Dauer) oder qualifiziert (mit Leistung und Verhalten).",
+   "p": "Wahr und wohlwollend formulieren; verdeckte Botschaften sind verboten.",
+   "r": [
+    "bw"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Aufhebungsvertrag",
+   "d": "Einvernehmliche Beendigung des Arbeitsverhältnisses.",
+   "p": "Nur schriftlich mit eigenhändiger Unterschrift wirksam (§ 623 BGB); kein gesetzliches Widerrufsrecht; Hinweis auf mögliche Sperrzeit beim Arbeitslosengeld.",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Auftragsverarbeitung",
+   "d": "Ein externer Dienstleister verarbeitet Daten im Auftrag des Arbeitgebers, etwa ein Lohnbüro oder Softwareanbieter.",
+   "p": "Vorher einen Vertrag nach Art. 28 DSGVO schließen.",
+   "r": [
+    "ki"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Ausschlussfrist",
+   "d": "Vertragsklausel, nach der Ansprüche verfallen, wenn sie nicht rechtzeitig geltend gemacht werden.",
+   "p": "In vorformulierten Verträgen mindestens drei Monate; den Mindestlohn darf sie nicht erfassen.",
+   "r": [
+    "t2"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Außerordentliche Kündigung",
+   "d": "Fristlose Kündigung aus wichtigem Grund (§ 626 BGB).",
+   "p": "Muss innerhalb von zwei Wochen ab Kenntnis der maßgeblichen Tatsachen zugehen.",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Befristung",
+   "d": "Arbeitsvertrag, der zu einem festen Datum oder mit Erreichen eines Zwecks endet (§ 14 TzBfG).",
+   "p": "Schriftlich vor Arbeitsbeginn vereinbaren; ohne Sachgrund höchstens zwei Jahre mit bis zu drei Verlängerungen.",
+   "r": [
+    "t1"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Beitragsbemessungsgrenze",
+   "d": "Einkommensgrenze, bis zu der Sozialversicherungsbeiträge berechnet werden.",
+   "p": "2026: Kranken- und Pflegeversicherung 5.812,50 € im Monat, Renten- und Arbeitslosenversicherung 8.450 €.",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Bereitschaftsdienst",
+   "d": "Die Person hält sich an einem vom Arbeitgeber bestimmten Ort bereit, um bei Bedarf sofort zu arbeiten.",
+   "p": "Zählt vollständig als Arbeitszeit; Rufbereitschaft (Aufenthalt frei wählbar) dagegen nur im Einsatz.",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Betriebliches Eingliederungsmanagement",
+   "d": "Verfahren, um nach längerer Krankheit Arbeitsunfähigkeit zu überwinden und neuer vorzubeugen (§ 167 Abs. 2 SGB IX).",
+   "p": "Anbieten, wenn jemand innerhalb von zwölf Monaten mehr als sechs Wochen arbeitsunfähig war; Teilnahme ist freiwillig.",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Betriebsrat",
+   "d": "Gewählte Interessenvertretung der Beschäftigten nach dem Betriebsverfassungsgesetz.",
+   "p": "Vor jeder Kündigung anhören (§ 102 BetrVG); ab mehr als 20 wahlberechtigten Beschäftigten im Unternehmen Zustimmung bei Einstellung und Versetzung (§ 99 BetrVG).",
+   "r": [
+    "bm",
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Betriebsvereinbarung",
+   "d": "Schriftlicher Vertrag zwischen Arbeitgeber und Betriebsrat, der für alle im Betrieb gilt.",
+   "p": "Prüfen, bevor Regeln zu Arbeitszeit, Systemen oder Ausschreibungen umgesetzt werden.",
+   "r": [
+    "t2"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Beweislast",
+   "d": "Wer im Streit eine Tatsache beweisen muss.",
+   "p": "Beim Zeugnis: für besser als „befriedigend“ die beschäftigte Person, für schlechter der Arbeitgeber.",
+   "r": [
+    "bw"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Brückenteilzeit",
+   "d": "Teilzeit für einen festen Zeitraum von einem bis fünf Jahren mit automatischer Rückkehr (§ 9a TzBfG).",
+   "p": "Gilt in Unternehmen mit in der Regel mehr als 45 Beschäftigten und nach mehr als sechs Monaten Beschäftigung.",
+   "r": [
+    "t2"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Datenminimierung",
+   "d": "Grundsatz der DSGVO: nur die Daten verarbeiten, die für den Zweck nötig sind.",
+   "p": "Vor jeder Weitergabe fragen: Wer braucht genau diese Information für seine Aufgabe?",
+   "r": [
+    "hs",
+    "bm"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Drei-Säulen-Modell",
+   "d": "Organisationsmodell für HR mit Business Partnern, Expertenteams und Service-Center, geprägt von Dave Ulrich.",
+   "p": "Ein verbreitetes Praxismodell, kein Muss; viele Unternehmen arbeiten mit Mischformen.",
+   "r": [
+    "hs"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Eingruppierung",
+   "d": "Zuordnung einer Stelle zu einer Entgeltgruppe nach Tarifvertrag oder Entgeltsystem.",
+   "p": "Richtet sich nach der Tätigkeit, nicht nach dem Gehaltswunsch; mit Betriebsrat Teil der Beteiligung nach § 99 BetrVG.",
+   "r": [
+    "bm"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Elternzeit",
+   "d": "Unbezahlte Freistellung zur Betreuung eines Kindes, bis zu drei Jahre je Kind (BEEG).",
+   "p": "Schriftlich anmelden, für die Zeit bis zum dritten Geburtstag spätestens sieben Wochen vorher; ab Anmeldung, frühestens acht Wochen vor Beginn, besteht Kündigungsschutz (§ 18 BEEG).",
+   "r": [
+    "t3",
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Entgeltfortzahlung",
+   "d": "Der Arbeitgeber zahlt bei Krankheit bis zu sechs Wochen das Gehalt weiter (EFZG).",
+   "p": "Anspruch erst nach vier Wochen ununterbrochenem Arbeitsverhältnis; danach zahlt in der Regel die Krankenkasse Krankengeld.",
+   "r": [
+    "t4",
+    "sv"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Erwartung",
+   "d": "Wie, wie schnell und in welcher Form jemand sich ein Ergebnis vorstellt.",
+   "p": "Früh und ehrlich klären, was möglich ist; gehört in jede erste Antwort auf eine Anfrage.",
+   "r": [
+    "hs"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Fiktionsbescheinigung",
+   "d": "Bescheinigung der Ausländerbehörde, dass ein rechtzeitig beantragter Aufenthaltstitel bis zur Entscheidung fortgilt (§ 81 Abs. 4 AufenthG).",
+   "p": "Inhalt genau lesen; eine reine Terminbestätigung ersetzt sie nicht.",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Freistellung",
+   "d": "Die Person muss nicht arbeiten; ob sie bezahlt wird, ist eine eigene Frage.",
+   "p": "Bei Freistellung vor dem Austritt ausdrücklich regeln, ob Resturlaub angerechnet wird.",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Freiwilligkeitsvorbehalt",
+   "d": "Klausel, nach der eine Zahlung freiwillig ist und keinen Anspruch begründet.",
+   "p": "Bei laufendem monatlichem Entgelt unwirksam; allenfalls bei Sonderzahlungen möglich.",
+   "r": [
+    "t2"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Fürsorgepflicht",
+   "d": "Pflicht des Arbeitgebers, Rücksicht auf Gesundheit, Persönlichkeit und berechtigte Interessen der Beschäftigten zu nehmen.",
+   "p": "Konkretisiert sich etwa im Arbeitsschutz, im Datenschutz und beim betrieblichen Eingliederungsmanagement.",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Gefährdungsbeurteilung",
+   "d": "Pflicht des Arbeitgebers, Gefahren am Arbeitsplatz zu ermitteln und Maßnahmen festzulegen (§ 5 ArbSchG).",
+   "p": "Umfasst auch psychische Belastung; Ergebnis dokumentieren.",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Gleichbehandlung",
+   "d": "Verbot, Menschen wegen Geschlecht, Alter, Herkunft, Religion, Behinderung oder sexueller Identität zu benachteiligen (AGG).",
+   "p": "Bewerbende müssen Ansprüche innerhalb von zwei Monaten nach Zugang der Absage schriftlich geltend machen.",
+   "r": [
+    "bm"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Hinweisgeberschutz",
+   "d": "Schutz für Personen, die Rechtsverstöße im Unternehmen melden (HinSchG).",
+   "p": "Ab 50 Beschäftigten ist eine interne Meldestelle Pflicht; nicht jede Beschwerde ist ein Hinweisgeberfall.",
+   "r": [
+    "hs"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Hochrisiko-KI",
+   "d": "KI-Systeme, die die KI-Verordnung als besonders riskant einstuft, darunter Systeme zur Auswahl von Bewerbenden.",
+   "p": "Pflichten gelten ab 2. Dezember 2027; schon heute Daten, menschliche Kontrolle und Betriebsrat klären.",
+   "r": [
+    "ki"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Jahresarbeitsentgeltgrenze",
+   "d": "Einkommensgrenze, ab der Beschäftigte nicht mehr gesetzlich krankenversicherungspflichtig sind.",
+   "p": "2026: 77.400 € im Jahr; maßgeblich ist das regelmäßige Jahresentgelt, nicht ein einzelner hoher Monat.",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "KI-Kompetenz",
+   "d": "Wissen und Fähigkeiten, um KI-Systeme sachkundig und kritisch zu nutzen (Art. 4 KI-VO).",
+   "p": "Seit 27.07.2026 müssen Anbieter und Betreiber Maßnahmen zur Förderung ergreifen; ein bestimmtes Niveau müssen sie nicht garantieren.",
+   "r": [
+    "ki"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Kinderkrankengeld",
+   "d": "Leistung der Krankenkasse, wenn ein Elternteil wegen eines kranken Kindes unter zwölf Jahren zu Hause bleibt (§ 45 SGB V).",
+   "p": "2026: bis zu 15 Arbeitstage je Kind und Elternteil, 30 für Alleinerziehende; der Arbeitgeber stellt frei.",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Kleinbetrieb",
+   "d": "Betrieb mit in der Regel zehn oder weniger Beschäftigten; dort gilt der allgemeine Kündigungsschutz nicht.",
+   "p": "Teilzeitkräfte zählen anteilig (bis 20 Stunden 0,5, bis 30 Stunden 0,75); Sonderkündigungsschutz gilt trotzdem.",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Kündigungsfrist",
+   "d": "Zeit zwischen Zugang der Kündigung und Ende des Arbeitsverhältnisses (§ 622 BGB).",
+   "p": "Grundfrist vier Wochen zum 15. oder Monatsende; für den Arbeitgeber länger je nach Beschäftigungsdauer; in der Probezeit zwei Wochen.",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Kündigungsschutz",
+   "d": "Schutz vor sozial ungerechtfertigter Kündigung nach dem KSchG.",
+   "p": "Gilt nach sechs Monaten Beschäftigung in Betrieben mit mehr als zehn Beschäftigten; Klage innerhalb von drei Wochen nach Zugang.",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Kündigungsschutz, besonderer",
+   "d": "Zusätzlicher Schutz für bestimmte Gruppen, etwa Schwangere, schwerbehinderte Menschen, Betriebsratsmitglieder, Auszubildende und Personen in Elternzeit.",
+   "p": "Oft ist vorher die Zustimmung einer Behörde oder des Betriebsrats nötig; ohne sie ist die Kündigung unwirksam.",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Kurzfristige Beschäftigung",
+   "d": "Beschäftigung, die von vornherein auf höchstens drei Monate oder 70 Arbeitstage im Kalenderjahr begrenzt ist.",
+   "p": "Sozialversicherungsfrei; liegt das Entgelt über 603 € im Monat, ist zu prüfen, ob sie berufsmäßig ausgeübt wird.",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Lohnpfändung",
+   "d": "Ein Gläubiger lässt über einen gerichtlichen Beschluss einen Teil des Gehalts einbehalten (Pfändungs- und Überweisungsbeschluss).",
+   "p": "Eingang sofort mit Datum erfassen und an die Abrechnung geben; mehrere Pfändungen werden in der Reihenfolge des Zugangs bedient.",
+   "r": [
+    "bw"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Meldungen zur Sozialversicherung",
+   "d": "Pflichtmeldungen des Arbeitgebers, etwa bei Beginn und Ende einer Beschäftigung (DEÜV).",
+   "p": "Anmeldung mit der ersten Abrechnung, spätestens sechs Wochen nach Beginn; Rückmeldungen und Fehlerprotokolle prüfen.",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Midijob (Übergangsbereich)",
+   "d": "Beschäftigung mit einem Monatsentgelt zwischen Minijob-Grenze und 2.000 €.",
+   "p": "2026: 603,01 bis 2.000 €; die Beschäftigten zahlen ermäßigte Beiträge.",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Mindestlohn",
+   "d": "Gesetzliche Lohnuntergrenze pro Arbeitsstunde (MiLoG).",
+   "p": "2026: 13,90 € brutto; ab 1. Januar 2027 beschlossen 14,60 €.",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Mindesturlaub",
+   "d": "Gesetzlicher Mindestanspruch: 24 Werktage im Jahr (BUrlG), das sind 20 Arbeitstage bei einer Fünf-Tage-Woche.",
+   "p": "Volle Urlaubsansprüche erst nach sechs Monaten Wartezeit; Urlaub verfällt nur, wenn der Arbeitgeber vorher rechtzeitig darauf hingewiesen hat.",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Minijob",
+   "d": "Geringfügige Beschäftigung mit einem regelmäßigen Monatsentgelt bis zur Minijob-Grenze.",
+   "p": "2026: bis 603 €; Minijobber haben dieselben Rechte auf Urlaub und Entgeltfortzahlung wie andere.",
+   "r": [
+    "sv",
+    "t1"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Mitbestimmung",
+   "d": "Recht des Betriebsrats, bei bestimmten Fragen gleichberechtigt mitzuentscheiden (§ 87 BetrVG).",
+   "p": "Bei technischen Systemen reicht es, dass sie objektiv geeignet sind, Verhalten oder Leistung zu überwachen.",
+   "r": [
+    "ki"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Mutterschutz",
+   "d": "Schutz schwangerer und stillender Beschäftigter (MuSchG), unter anderem Schutzfristen und Beschäftigungsverbote.",
+   "p": "Kündigungsverbot während der Schwangerschaft und bis vier Monate nach der Entbindung; Ausnahme nur mit vorheriger Zulässigkeitserklärung der Landesbehörde.",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Nachweis der Arbeitsbedingungen",
+   "d": "Schriftliche Mitteilung der wesentlichen Vertragsbedingungen (NachwG).",
+   "p": "Seit 2025 auch elektronisch möglich, wenn die Person sie speichern und ausdrucken kann und der Arbeitgeber einen Empfangsnachweis anfordert; Änderungen spätestens am Tag ihres Wirksamwerdens mitteilen; Verstoß: Bußgeld bis 2.000 €.",
+   "r": [
+    "t1"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Need-to-know",
+   "d": "Prinzip: Jede Person erhält nur die Informationen, die sie für ihre konkrete Aufgabe braucht.",
+   "p": "Die Führungskraft erfährt Beginn und Dauer einer Krankheit, nicht die Diagnose.",
+   "r": [
+    "hs",
+    "bm"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Offboarding",
+   "d": "Geordneter Prozess beim Austritt: Fristen, Bescheinigungen, Rückgabe, Zugriffe, Zeugnis.",
+   "p": "Checkliste mit Verantwortlichen und Terminen; Zugänge am letzten Arbeitstag sperren.",
+   "r": [
+    "t3",
+    "bw"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Onboarding",
+   "d": "Strukturierter Einstieg neuer Beschäftigter vor und nach dem ersten Arbeitstag.",
+   "p": "Vertrag, Meldungen, IT-Zugang und Arbeitsplatz rechtzeitig vor dem Start prüfen.",
+   "r": [
+    "t1"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Ordentliche Kündigung",
+   "d": "Kündigung unter Einhaltung der Kündigungsfrist.",
+   "p": "Immer schriftlich mit eigenhändiger Unterschrift (§ 623 BGB); E-Mail, Fax und elektronische Signatur reichen nicht.",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Personalakte",
+   "d": "Sammlung der Unterlagen zum Arbeitsverhältnis, auf Papier oder digital.",
+   "p": "Beschäftigte dürfen sie einsehen und ein Betriebsratsmitglied mitnehmen (§ 83 BetrVG); keine Einheitsfrist für die Aufbewahrung.",
+   "r": [
+    "hs",
+    "bw"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Personalstammdaten",
+   "d": "Grunddaten einer Person im HR-System, etwa Name, Adresse, Bankverbindung, Arbeitszeit, Entgelt.",
+   "p": "Fehler wirken in Abrechnung und Meldungen weiter; Änderungen mit Datum und Quelle erfassen.",
+   "r": [
+    "ki"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Probezeit",
+   "d": "Anfangsphase mit verkürzter Kündigungsfrist von zwei Wochen (§ 622 Abs. 3 BGB).",
+   "p": "Höchstens sechs Monate; bei befristeten Verträgen muss sie im Verhältnis zur Dauer stehen.",
+   "r": [
+    "t1"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Reaktionszeit",
+   "d": "Zeit vom Eingang einer Anfrage bis zur ersten qualifizierten Antwort.",
+   "p": "Nicht mit der Bearbeitungszeit verwechseln; die erste Antwort nennt Eingang, nächsten Schritt und Zeitpunkt.",
+   "r": [
+    "hs"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Ruhepause",
+   "d": "Unterbrechung der Arbeit, in der die Person frei ist (§ 4 ArbZG).",
+   "p": "Mindestens 30 Minuten bei mehr als sechs Stunden, 45 Minuten bei mehr als neun Stunden; Raucherpausen ersetzen sie nicht automatisch.",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Ruhezeit",
+   "d": "Ununterbrochene Freizeit zwischen zwei Arbeitstagen (§ 5 ArbZG).",
+   "p": "Mindestens elf Stunden.",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Sachgrund",
+   "d": "Rechtfertigender Grund für eine Befristung, etwa Vertretung oder vorübergehender Bedarf (§ 14 Abs. 1 TzBfG).",
+   "p": "Muss zur Wirklichkeit passen; das Etikett „Projekt“ allein trägt keine Befristung.",
+   "r": [
+    "t1"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Schriftform",
+   "d": "Gesetzliche Form mit eigenhändiger Unterschrift auf Papier (§ 126 BGB).",
+   "p": "Pflicht etwa für Kündigung, Aufhebungsvertrag und Befristungsabrede; ein Scan oder eine E-Mail genügt nicht.",
+   "r": [
+    "t1",
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Schwerbehinderung",
+   "d": "Grad der Behinderung von mindestens 50; Gleichstellung ab 30 möglich (SGB IX).",
+   "p": "Kündigung nach mehr als sechs Monaten nur mit vorheriger Zustimmung des Integrationsamts; Schwerbehindertenvertretung beteiligen.",
+   "r": [
+    "bm",
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Self-Service",
+   "d": "Beschäftigte erledigen Standardvorgänge selbst im Portal, etwa Adressänderung oder Abrechnung abrufen.",
+   "p": "Gut für standardisierte Vorgänge; bei sensiblen Themen braucht es einen sichtbaren Weg zu einer Person.",
+   "r": [
+    "hs",
+    "ki"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Sofortmeldung",
+   "d": "Meldung zur Sozialversicherung spätestens bei Arbeitsaufnahme in bestimmten Branchen.",
+   "p": "Gilt etwa für Bau, Gastronomie, Gebäudereinigung, seit 2026 auch Friseur- und Kosmetikgewerbe; ersetzt die normale Anmeldung nicht.",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Sozialauswahl",
+   "d": "Auswahl bei betriebsbedingter Kündigung nach Betriebszugehörigkeit, Alter, Unterhaltspflichten und Schwerbehinderung (§ 1 Abs. 3 KSchG).",
+   "p": "Nur vergleichbare Beschäftigte werden verglichen; Auswahl dokumentieren.",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Sonn- und Feiertagsarbeit",
+   "d": "Grundsätzlich verboten; Ausnahmen nur nach Gesetz oder mit behördlicher Bewilligung (§§ 9 bis 13 ArbZG).",
+   "p": "Hoher Arbeitsanfall allein ist keine Ausnahme.",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Sperrzeit",
+   "d": "Zeitraum, in dem die Agentur für Arbeit kein Arbeitslosengeld zahlt, etwa nach Eigenkündigung oder Aufhebungsvertrag ohne wichtigen Grund.",
+   "p": "HR berät dazu nicht verbindlich, sondern verweist auf die Agentur für Arbeit.",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Statusfeststellung",
+   "d": "Verfahren bei der Deutschen Rentenversicherung Bund, das klärt, ob jemand selbstständig oder abhängig beschäftigt ist (§ 7a SGB IV).",
+   "p": "Entscheidend ist die gelebte Zusammenarbeit, nicht die Überschrift „freie Mitarbeit“.",
+   "r": [
+    "sv",
+    "t1"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Teilzeitanspruch",
+   "d": "Recht, die Arbeitszeit zu verringern (§ 8 TzBfG).",
+   "p": "Gilt bei mehr als 15 Beschäftigten und nach sechs Monaten; Antrag drei Monate vorher. Lehnt der Arbeitgeber nicht spätestens einen Monat vor Beginn schriftlich ab, gilt der Wunsch als genehmigt.",
+   "r": [
+    "t2"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Transparenzpflicht (KI)",
+   "d": "Menschen müssen erkennen können, dass sie mit einem KI-System interagieren (Art. 50 KI-VO).",
+   "p": "Gilt seit 2. August 2026, auch für einen HR-Chatbot, der kein Hochrisiko-System ist.",
+   "r": [
+    "ki"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Triage",
+   "d": "Einordnung eingehender Anfragen nach Typ, Dringlichkeit und Bearbeitungsebene.",
+   "p": "Priorität ergibt sich aus Frist, drohendem Schaden und Schutzbedürftigkeit, nicht aus Hierarchie oder Lautstärke.",
+   "r": [
+    "hs"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Urlaubsabgeltung",
+   "d": "Auszahlung von Urlaub, der wegen Beendigung des Arbeitsverhältnisses nicht mehr genommen werden kann (§ 7 Abs. 4 BUrlG).",
+   "p": "Nur bei Beendigung; während des Arbeitsverhältnisses ist Urlaub zu gewähren, nicht auszuzahlen.",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Verletztengeld",
+   "d": "Leistung der Unfallversicherung nach einem Arbeitsunfall oder bei Berufskrankheit, grundsätzlich 80 % des Regelentgelts.",
+   "p": "Wird oft über die Krankenkasse ausgezahlt, ist aber keine Krankenkassenleistung.",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Versicherungsnummer",
+   "d": "Nummer der Rentenversicherung, unter der eine Person in der Sozialversicherung geführt wird.",
+   "p": "Fehlt sie, wird sie im Meldeverfahren vergeben; eine fehlende Nummer ist keine fehlende Arbeitserlaubnis.",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Weisungsrecht",
+   "d": "Recht des Arbeitgebers, Inhalt, Ort und Zeit der Arbeit näher zu bestimmen (§ 106 GewO).",
+   "p": "Nur nach billigem Ermessen und im Rahmen von Vertrag, Tarifvertrag und Gesetz; das Gehalt kann es nicht ändern.",
+   "r": [
+    "t2"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Werkstudent",
+   "d": "Studierende, die neben dem Studium arbeiten und in der Kranken-, Pflege- und Arbeitslosenversicherung versicherungsfrei sind.",
+   "p": "In der Vorlesungszeit in der Regel höchstens 20 Wochenstunden; Rentenversicherung bleibt Pflicht.",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Widerrufsvorbehalt",
+   "d": "Klausel, mit der sich der Arbeitgeber vorbehält, eine Leistung später zu widerrufen, etwa die private Dienstwagennutzung.",
+   "p": "Nur wirksam, wenn der Grund erkennbar ist und der widerrufliche Teil begrenzt bleibt.",
+   "r": [
+    "t2"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Wiedervorlage",
+   "d": "Fester Termin, an dem ein offener Vorgang wieder auf den Tisch kommt.",
+   "p": "Vor das Fristende legen, damit noch Zeit zum Handeln bleibt.",
+   "r": [
+    "hs"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Zeugnissprache",
+   "d": "Übliche Formeln zur Bewertung im Arbeitszeugnis, etwa „stets zu unserer vollen Zufriedenheit“ für „gut“.",
+   "p": "Eine verbindliche Liste von Geheimcodes gibt es nicht; verdeckte Aussagen sind verboten (§ 109 Abs. 2 GewO).",
+   "r": [
+    "bw"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Zugang",
+   "d": "Zeitpunkt, an dem eine Erklärung so in den Machtbereich der Person gelangt, dass sie davon Kenntnis nehmen kann.",
+   "p": "Entscheidet über Fristen; Zustellung durch Boten mit Zeugen ist der sichere Weg, nicht das Einwurf-Einschreiben allein.",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Zweckbefristung",
+   "d": "Vertrag, der endet, wenn ein bestimmter Zweck erreicht ist, etwa die Rückkehr einer Kollegin.",
+   "p": "Endet frühestens zwei Wochen nach schriftlicher Mitteilung, dass der Zweck erreicht ist (§ 15 Abs. 2 TzBfG).",
+   "r": [
+    "t1"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Klage gegen eine Kündigung",
+   "d": "3 Wochen nach Zugang",
+   "p": "§ 4 KSchG",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Fristlose Kündigung aussprechen",
+   "d": "2 Wochen ab Kenntnis der maßgeblichen Tatsachen",
+   "p": "§ 626 Abs. 2 BGB",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Stellungnahme des Betriebsrats zur Kündigung",
+   "d": "1 Woche bei ordentlicher, 3 Tage bei fristloser Kündigung",
+   "p": "§ 102 Abs. 2 BetrVG",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Grundkündigungsfrist",
+   "d": "4 Wochen zum 15. oder zum Monatsende; in der Probezeit 2 Wochen",
+   "p": "§ 622 BGB",
+   "r": [
+    "t3"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Ende einer Zweckbefristung",
+   "d": "frühestens 2 Wochen nach schriftlicher Mitteilung",
+   "p": "§ 15 Abs. 2 TzBfG",
+   "r": [
+    "t1"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Teilzeitantrag",
+   "d": "3 Monate vor Beginn; Ablehnung spätestens 1 Monat vor Beginn",
+   "p": "§ 8 TzBfG",
+   "r": [
+    "t2"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Nachweis einer Vertragsänderung",
+   "d": "spätestens am Tag, an dem sie gilt",
+   "p": "§ 3 NachwG",
+   "r": [
+    "t2"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Ansprüche wegen Benachteiligung geltend machen",
+   "d": "2 Monate nach Zugang der Absage; danach 3 Monate für die Klage",
+   "p": "§ 15 Abs. 4 AGG, § 61b ArbGG",
+   "r": [
+    "bm"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "An- und Abmeldung zur Sozialversicherung",
+   "d": "mit der nächsten Abrechnung, spätestens 6 Wochen",
+   "p": "§ 6, § 8 DEÜV",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Ärztliche Bescheinigung bei Krankheit",
+   "d": "ab dem 4. Kalendertag, wenn der Arbeitgeber sie nicht früher verlangt",
+   "p": "§ 5 EFZG",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Entgeltfortzahlung",
+   "d": "bis zu 6 Wochen, nach 4 Wochen Beschäftigung",
+   "p": "§ 3 EFZG",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Betriebliches Eingliederungsmanagement anbieten",
+   "d": "ab mehr als 6 Wochen Arbeitsunfähigkeit in 12 Monaten",
+   "p": "§ 167 Abs. 2 SGB IX",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Elternzeit anmelden",
+   "d": "7 Wochen vor Beginn (bis zum 3. Geburtstag)",
+   "p": "§ 16 BEEG",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Urlaub übertragen",
+   "d": "bis 31. März des Folgejahres, wenn dringende Gründe vorliegen",
+   "p": "§ 7 Abs. 3 BUrlG",
+   "r": [
+    "t4"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Auskunft über gespeicherte Daten",
+   "d": "1 Monat, verlängerbar um 2 Monate",
+   "p": "Art. 12, 15 DSGVO",
+   "r": [
+    "hs"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Arbeitszeitaufzeichnungen aufbewahren",
+   "d": "mindestens 2 Jahre",
+   "p": "§ 16 Abs. 2 ArbZG",
+   "r": [
+    "bw"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Lohnkonten aufbewahren",
+   "d": "bis Ende des 6. Kalenderjahres nach der letzten Eintragung",
+   "p": "§ 41 EStG",
+   "r": [
+    "bw"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Bewerbungsunterlagen abgelehnter Personen",
+   "d": "keine gesetzliche Pflicht; meist rund 6 Monate, danach löschen",
+   "p": "Art. 17 DSGVO",
+   "r": [
+    "bm"
+   ]
+  },
+  {
+   "k": "fri",
+   "t": "Pflichten für Hochrisiko-KI im Personalbereich",
+   "d": "ab 2. Dezember 2027",
+   "p": "KI-VO, geändert durch VO (EU) 2026/1744",
+   "r": [
+    "ki"
+   ]
+  },
+  {
+   "k": "wer",
+   "t": "Gesetzlicher Mindestlohn 2026",
+   "d": "13,90 € pro Stunde",
+   "p": "ab 1. Januar 2027: 14,60 €",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "wer",
+   "t": "Minijob-Grenze 2026",
+   "d": "603 € im Monat",
+   "p": "folgt dem Mindestlohn",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "wer",
+   "t": "Übergangsbereich (Midijob) 2026",
+   "d": "603,01 bis 2.000 € im Monat",
+   "p": "ermäßigte Arbeitnehmerbeiträge",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "wer",
+   "t": "Beitragsbemessungsgrenze Kranken- und Pflegeversicherung 2026",
+   "d": "5.812,50 € im Monat",
+   "p": "69.750 € im Jahr",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "wer",
+   "t": "Beitragsbemessungsgrenze Renten- und Arbeitslosenversicherung 2026",
+   "d": "8.450 € im Monat",
+   "p": "101.400 € im Jahr",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "wer",
+   "t": "Jahresarbeitsentgeltgrenze 2026",
+   "d": "77.400 € im Jahr",
+   "p": "Grenze der Krankenversicherungspflicht",
+   "r": [
+    "sv"
+   ]
+  },
+  {
+   "k": "wer",
+   "t": "Unpfändbarer Grundbetrag",
+   "d": "1.587,40 € im Monat",
+   "p": "gilt seit 1. Juli 2026, ohne Unterhaltspflichten",
+   "r": [
+    "bw"
+   ]
+  },
+  {
+   "k": "wer",
+   "t": "Kinderkrankengeld 2026",
+   "d": "15 Arbeitstage je Kind und Elternteil, 30 für Alleinerziehende",
+   "p": "ab 2027 laut Kursskript wieder 10 bzw. 20 Tage",
+   "r": [
+    "t4"
+   ]
+  }
+ ]
+}

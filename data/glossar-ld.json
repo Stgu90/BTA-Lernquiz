@@ -1,0 +1,700 @@
+{
+ "title": "Glossar Strategisches Learning & Development",
+ "kinds": {
+  "beg": "Begriff",
+  "abk": "Abkürzung",
+  "fri": "Frist",
+  "wer": "Wert 2026"
+ },
+ "entries": [
+  {
+   "k": "abk",
+   "t": "ADDIE",
+   "d": "Analysis, Design, Development, Implementation, Evaluation",
+   "p": "Lineares Prozessmodell zur Entwicklung von Lernangeboten (Florida State University, um 1975)",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "AI Literacy",
+   "d": "KI-Kompetenz",
+   "p": "Kompetenter, kritischer und verantwortungsvoller Umgang mit KI-Ergebnissen",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "BANI",
+   "d": "Brittle, Anxious, Nonlinear, Incomprehensible",
+   "p": "Deutungsrahmen für eine brüchige, verunsichernde Welt (Jamais Cascio, 2020)",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "BARS",
+   "d": "Behaviorally Anchored Rating Scales",
+   "p": "Verhaltensverankerte Bewertungsskalen (Smith und Kendall, 1963)",
+   "r": [
+    "km"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "BEI",
+   "d": "Behavioral Event Interview",
+   "p": "Verhaltensbezogenes Interview nach David McClelland",
+   "r": [
+    "km"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "ESCO",
+   "d": "European Skills, Competences, Qualifications and Occupations",
+   "p": "Mehrsprachige Skill-Taxonomie der Europäischen Kommission, rund 3.000 Berufe und knapp 14.000 Kompetenzen",
+   "r": [
+    "km"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "L&D",
+   "d": "Learning & Development",
+   "p": "Personalentwicklung, Lernen und Entwicklung im Unternehmen",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "LMS",
+   "d": "Lernmanagementsystem (Learning Management System)",
+   "p": "Organisiert und verwaltet Lernen: Einschreibung, Lernstände, Zertifikate",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "LXP",
+   "d": "Learning Experience Platform",
+   "p": "Plattform für selbstgesteuertes Entdecken und Empfehlungen statt fester Lernpfade",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "O*NET",
+   "d": "Occupational Information Network",
+   "p": "Berufs- und Skill-Datenbank des US-Arbeitsministeriums mit über 900 Berufen",
+   "r": [
+    "km"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "OTP",
+   "d": "Organisation, Task, Person",
+   "p": "Drei Ebenen der Bedarfsanalyse (McGehee und Thayer, 1961)",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "SAM",
+   "d": "Successive Approximation Model",
+   "p": "Iteratives Prozessmodell mit schnellen Schleifen aus Entwurf, Prototyp und Review (Michael Allen)",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "SMART",
+   "d": "Spezifisch, Messbar, Assignable/Achievable, Relevant, Terminiert",
+   "p": "Prüfliste für bereits formulierte Ziele (George Doran, 1981)",
+   "r": [
+    "km"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "VUCA",
+   "d": "Volatility, Uncertainty, Complexity, Ambiguity",
+   "p": "Deutungsrahmen für eine schwankende, ungewisse, komplexe und mehrdeutige Welt",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "abk",
+   "t": "WEF",
+   "d": "World Economic Forum (Weltwirtschaftsforum)",
+   "p": "Herausgeber des Future of Jobs Report",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "5-Why-Methode",
+   "d": "Bei einem Symptom mehrfach „Warum?“ fragen, um auf eine tiefere Ursache zu stoßen; stammt aus dem Toyota-Produktionssystem.",
+   "p": "Jedes „weil“ ist zunächst eine Behauptung; die Kette endet mit der Frage: Woran könnten wir das überprüfen?",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "70-20-10",
+   "d": "Faustregel: 70 % Lernen durch Erfahrung, 20 % durch andere Menschen, 10 % durch formale Trainings.",
+   "p": "Beruht auf Selbstauskünften von 191 Führungskräften (McCall, Lombardo und Morrison, 1988; Formel von Lombardo und Eichinger, 1996); Orientierung, kein Rezept.",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Adaptives Lernen",
+   "d": "Lernpfade passen Inhalte, Tempo und Schwierigkeit an Vorwissen oder Lernverhalten an, oft KI-gestützt.",
+   "p": "Personalisierung ist nicht automatisch pädagogische Qualität; Ziele und Empfehlungen prüfen.",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Auftragsklärung",
+   "d": "Der erste Schritt vor jeder Maßnahme: gemeinsam schärfen, was wirklich gebraucht wird.",
+   "p": "Ergebnis: gemeinsames Problemverständnis, überprüfbares Erfolgskriterium und klare Rollen.",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Auftragserfüllung",
+   "d": "Die Bestellung wird ausgeführt, das Problem hat die Auftraggeberin definiert.",
+   "p": "Legitim bei Pflichtunterweisungen, kleinem Anlass und geringem Risiko.",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Ausnahmefrage",
+   "d": "Systemische Frage nach Momenten, in denen das Problem nicht oder schwächer auftrat.",
+   "p": "Anschlussfrage ist entscheidend: „Was war an diesem Tag anders?“",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Bedarfsanalyse",
+   "d": "Systematischer Prozess, der prüft, ob und warum eine Lücke zwischen Ist und Soll besteht.",
+   "p": "Ein Trainingswunsch ist eine Bestellung, die Bedarfsanalyse ist die Diagnose.",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Bedarfshypothese",
+   "d": "Prüfbare Vermutung über den Bedarf, beginnt mit „Wir vermuten, dass …“.",
+   "p": "Quellen nennen und sagen, was zur Prüfung gebraucht wird.",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Bedarfskaskade",
+   "d": "Vier Bedarfsarten in fester Reihenfolge: Geschäftsbedarf, Performancebedarf, Kompetenzbedarf, Lernbedarf.",
+   "p": "Wer beim Lernbedarf einsteigt, plant Training auf Verdacht; Denkwerkzeug, kein geprüftes Stufenmodell.",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Beratungsrolle",
+   "d": "Haltung, in der L&D zuerst den Auftrag klärt und die Diagnose verantwortet.",
+   "p": "Nötig, sobald Ursache, Ziel oder Erfolgskriterium unklar sind.",
+   "r": [
+    "bk",
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Beobachtung",
+   "d": "Beschreibbarer Sachverhalt mit Zahlen, Zeiten oder Verhalten, etwa „40 % nutzen das Tool wöchentlich“.",
+   "p": "Wörter wie „mangelnd“ oder „unzureichend“ zeigen meist schon eine Interpretation an.",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Blended Learning",
+   "d": "Gestaltungskonzept, das digitale und persönliche Lernphasen bewusst kombiniert.",
+   "p": "Etabliertes Konzept, kein neuer Trend; Format folgt Bedarf.",
+   "r": [
+    "zt",
+    "pk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Bloom-Taxonomie",
+   "d": "Stufen kognitiver Lernziele: Erinnern, Verstehen, Anwenden, Analysieren, Bewerten, Erschaffen.",
+   "p": "Ursprung Bloom 1956, Überarbeitung Anderson und Krathwohl 2001; das Verb im Lernziel zeigt die Stufe.",
+   "r": [
+    "km"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Cognitive Load",
+   "d": "Belastung des Arbeitsgedächtnisses beim Lernen (Sweller, 1988): durch den Stoff, durch die Aufbereitung und durch die eigentliche Lernarbeit.",
+   "p": "Die Belastung durch schlechte Aufbereitung lässt sich durch Design senken; lieber weniger pro Einheit.",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Dreyfus-Modell",
+   "d": "Stufenmodell des Kompetenzerwerbs vom Neuling zur Expertise (Dreyfus und Dreyfus, 1980).",
+   "p": "Inspiration für Kompetenzniveaus, keine Vorschrift für deren Anzahl.",
+   "r": [
+    "km"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Eisbergmodell",
+   "d": "Modell von Spencer und Spencer (1993): sichtbar sind Skills und Wissen, verborgen Selbstbild, Werte, Motive und Eigenschaften.",
+   "p": "Zertifikate zeigen Wissen; Kompetenz zeigt sich im Handeln.",
+   "r": [
+    "zt",
+    "km"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Erwartungsmanagement",
+   "d": "Früh und ehrlich klären, was möglich ist, was entschieden ist und wer entscheidet.",
+   "p": "Wirkung und Bedingungen zusammen nennen: „Das Training wirkt, wenn …“",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Evaluation",
+   "d": "Prüfung, ob eine Maßnahme gewirkt hat.",
+   "p": "Erfolgskriterien am Anfang festlegen, nicht am Ende suchen.",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Expertenmodell",
+   "d": "Beratungsmodell nach Schein: Die Auftraggeberin hat diagnostiziert und kauft eine Leistung ein.",
+   "p": "Bei einer Bestellung wie „Wir brauchen ein Training“ beginnt hier die eigentliche Arbeit.",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Expertise-Reversal-Effekt",
+   "d": "Hilfen wie ausgearbeitete Lösungsbeispiele nützen Neulingen, können Erfahrene aber behindern (Kalyuga und Kollegen, 2003).",
+   "p": "Design immer am Vorwissen der Zielgruppe ausrichten.",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Future Skills",
+   "d": "Handlungskompetenzen, die in den nächsten fünf Jahren besonders wichtig werden; Stifterverband-Framework 2030 mit 30 Kompetenzen in 5 Kategorien.",
+   "p": "Ein Radar, keine Rangliste; ob eine Kompetenz fehlt, zeigt erst die Bedarfsanalyse.",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Geschäftsbedarf",
+   "d": "Strategisches Ziel oder Problem des Unternehmens, etwa höhere Kundenzufriedenheit.",
+   "p": "Erste Stufe der Bedarfskaskade; noch kein Lernziel.",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Hypothetische Frage",
+   "d": "Systemische Frage nach einer vorgestellten Situation, etwa die Wunderfrage.",
+   "p": "Hilft, wenn ein Gespräch im Problem feststeckt; nicht in akuten Krisen.",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Ishikawa-Diagramm",
+   "d": "Ursache-Wirkungs-Diagramm (Fischgräte), das mögliche Ursachen entlang von Kategorien sammelt.",
+   "p": "Zweck ist Breite; 5 Why dient der Tiefe.",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Kompetenz",
+   "d": "Fähigkeit, Wissen, Fertigkeiten und Erfahrung in realen, auch neuen Situationen angemessen einzusetzen.",
+   "p": "Pragmatische Kursdefinition; international werden die Begriffe nicht einheitlich verwendet.",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Kompetenzbedarf",
+   "d": "Es fehlen nachweislich Wissen, Fertigkeiten oder Kompetenzen für die gewünschte Leistung.",
+   "p": "Erst nach der Ursachenanalyse feststellbar.",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Kompetenzmodell",
+   "d": "Beschreibung des Verhaltens, das in einer Rolle erwartet wird.",
+   "p": "Wirkt nur, wenn es mit Auswahl, Entwicklung, Bewertung und Nachfolge verknüpft ist.",
+   "r": [
+    "km"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Kompetenzniveau",
+   "d": "Stufe, auf der eine Kompetenz gezeigt wird, etwa Grundlagen, Sicher, Fortgeschritten, Gestaltend.",
+   "p": "Niveaus zeigen Entwicklung, nicht Wertigkeit; Ziel ist das Soll der Rolle, nicht das Maximum.",
+   "r": [
+    "km"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Kompetenzprofil",
+   "d": "Liste der Kompetenzen einer Rolle mit dem jeweils nötigen Niveau.",
+   "p": "Erst der Soll-Ist-Vergleich zeigt eine Lücke.",
+   "r": [
+    "km"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Konzept-Canvas",
+   "d": "Eine Seite, auf der ein Lernkonzept vom bestätigten Bedarf bis zur Evaluation strukturiert wird.",
+   "p": "Eigene Synthese im Kurs, angelehnt an das Canvas-Prinzip von Osterwalder und Pigneur.",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Learning in the Flow of Work",
+   "d": "Lernunterstützung direkt im Arbeitsprozess, im Moment des Bedarfs (Bersin, 2018).",
+   "p": "Darf Lernzeit nicht unsichtbar in Zusatzarbeit verwandeln.",
+   "r": [
+    "zt",
+    "pk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Learning Journey",
+   "d": "Bewusst gestalteter Lernweg mit mehreren Bausteinen über Zeit, mit eingebautem Transfer.",
+   "p": "Gegenteil der Einzelmaßnahme; gestützt durch den Spacing-Effekt.",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Lernagilität",
+   "d": "Fähigkeit, aus Erfahrung zu lernen und das Gelernte in neuen Situationen angepasst einzusetzen (Lombardo und Eichinger).",
+   "p": "Nützlicher Reflexionsrahmen, kein eindeutig anerkannter Test.",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Lernbedarf",
+   "d": "Was Menschen konkret lernen müssen, um eine fehlende Kompetenz aufzubauen.",
+   "p": "Letzte Stufe der Bedarfskaskade; erst hier geht es um Formate.",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Lernökosystem",
+   "d": "Verbund aus Plattformen, Communities, Expertenwissen, Projekten und formalen Angeboten.",
+   "p": "Zentrale Frage ist die Steuerung: Wer kuratiert, misst und verantwortet?",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Lernziel",
+   "d": "Beschreibt, was Teilnehmende nach der Maßnahme konkret tun können.",
+   "p": "Aus der Kompetenzlücke ableiten; mit Bloom die Stufe und mit SMART die Qualität prüfen.",
+   "r": [
+    "km"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Mailänder Gruppe",
+   "d": "Gruppe um Mara Selvini Palazzoli, die 1980 drei Leitlinien formulierte: Hypothesenbildung, Zirkularität, Neutralität.",
+   "p": "Cecchin beschrieb Neutralität 1987 als Haltung der Neugier.",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Megatrend",
+   "d": "Lang anhaltende, breite Veränderung über Jahrzehnte in allen Lebensbereichen; das Zukunftsinstitut nennt elf.",
+   "p": "Sagt nicht voraus, wie ein einzelnes Unternehmen betroffen ist.",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Microlearning",
+   "d": "Kurze, in sich geschlossene Lerneinheiten von wenigen Minuten.",
+   "p": "Kurz heißt nicht wirksam; Lernziel, Übung, Feedback und Transfer entscheiden.",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Performance Consulting",
+   "d": "Beratungsansatz, der erst Geschäfts- und Leistungsbedarf klärt, bevor eine Lernmaßnahme entsteht (Robinson und Robinson, 1995).",
+   "p": "Grenzen: Machtfrage, Aufwand, eher praxisbasierte Evidenz.",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Performancebedarf",
+   "d": "Welche Leistung oder welches Verhalten sich ändern muss, um ein Geschäftsziel zu erreichen.",
+   "p": "Beobachtbar beschreiben; noch keine Aussage über die Ursache.",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Prozessberatung",
+   "d": "Beratungsmodell nach Schein: Die Beraterin hilft dem Gegenüber, das eigene Problem selbst zu verstehen und zu lösen.",
+   "p": "Meist die nachhaltigere Haltung für interne Personalentwicklung.",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Reframing",
+   "d": "Dieselben Fakten in einen anderen, ebenso plausiblen Deutungsrahmen stellen (Watzlawick und Kollegen, 1974).",
+   "p": "Kein Beschönigen; der neue Rahmen muss zu den Fakten passen.",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Resilienz",
+   "d": "Fähigkeit, unter Belastung und Unsicherheit gesund handlungsfähig zu bleiben.",
+   "p": "Ersetzt keine gute Organisation; strukturelle Probleme nicht individualisieren.",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Ressourcenfrage",
+   "d": "Systemische Frage nach vorhandenen Stärken, Erfahrungen und Unterstützung.",
+   "p": "Erst stellen, wenn das Problem ernst genommen wurde.",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Retrieval Practice",
+   "d": "Aktives Abrufen von Wissen statt Wiederlesen (Roediger und Karpicke, 2006: nach einer Woche 61 % gegenüber 40 %).",
+   "p": "Abrufaufgaben in jede Lerneinheit einbauen.",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Skalierungsfrage",
+   "d": "Einschätzung auf einer Skala, meist 0 bis 10 (lösungsfokussierte Kurztherapie nach de Shazer und Berg).",
+   "p": "Die Arbeit beginnt bei der Anschlussfrage: „Was bräuchte es für einen Punkt mehr?“",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Skill",
+   "d": "Eher spezifische, beobachtbare Fertigkeit, etwa eine Software bedienen.",
+   "p": "Kann Bestandteil einer Kompetenz sein.",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Skill Graph",
+   "d": "Laufend aktualisiertes Netzwerk aus Fähigkeiten und ihren Beziehungen, oft KI-gestützt.",
+   "p": "Ersetzt kein Kompetenzmodell; Datenschutz und Mitbestimmung beachten.",
+   "r": [
+    "km"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Skill Instability",
+   "d": "Anteil der heutigen Skills, der sich nach Erwartung der Arbeitgeber verändert oder veraltet; laut WEF 39 % bis 2030.",
+   "p": "Bezieht sich auf Skillsets, nicht auf 39 % der Beschäftigten.",
+   "r": [
+    "zt"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Solution Jump",
+   "d": "Vorschneller Sprung zur Lösung, ohne die Ursache verstanden zu haben.",
+   "p": "Typisch: „Kunden warten länger, also Kommunikationstraining.“",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Spacing-Effekt",
+   "d": "Über die Zeit verteiltes Lernen hält länger als geballtes (Cepeda und Kollegen, 2006).",
+   "p": "Die eigentliche Evidenz hinter der Learning Journey.",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Stakeholderanalyse",
+   "d": "Beteiligte nach Einfluss und Interesse ordnen: eng einbinden, zufriedenstellen, informiert halten, beobachten.",
+   "p": "Matrix meist Mendelow (1981) zugeschrieben, bekannte Form von Johnson und Scholes; praktische Vereinfachung.",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Systemische Haltung",
+   "d": "Blick auf Beziehungen, Rollen und Wechselwirkungen statt nur auf das Verhalten einer Person.",
+   "p": "Hypothesen statt Diagnosen; erst nach Umständen fragen, dann nach Personen.",
+   "r": [
+    "bk",
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Transfer",
+   "d": "Anwendung des Gelernten im Arbeitsalltag.",
+   "p": "Vorher, während und nachher planen; stärkster Hebel ist die nachfragende Führungskraft (Baldwin und Ford, 1988).",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Triangulation",
+   "d": "Verschiedene Quellen, Methoden oder Perspektiven kombinieren, um eine Hypothese zu prüfen.",
+   "p": "Quellen wählen, die sich widersprechen könnten; drei Führungskräfte sind dreimal dieselbe Perspektive.",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Ursachenrad",
+   "d": "Suchraster mit acht Ursachenfeldern für Leistungsprobleme; nur Wissen und Fertigkeiten sind klassische Lernfelder.",
+   "p": "Zusammengeführt aus Gilbert (1978) sowie Rummler und Brache (1995); kein geprüftes Diagnoseinstrument.",
+   "r": [
+    "ba"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Verhaltensanker",
+   "d": "Beobachtbare Beschreibung, woran eine Kompetenz auf einem Niveau erkennbar ist.",
+   "p": "Beobachtbar, spezifisch, niveau-unterscheidend und wertfrei; nicht nur Häufigkeitswörter wechseln.",
+   "r": [
+    "km"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Widerstand",
+   "d": "Signal, dass ein Anliegen nicht offen ausgesprochen wird, etwa Schweigen oder schnelle Zustimmung ohne Wirkung (Block).",
+   "p": "Nicht widersprechen, sondern anschließen: Widerspruch erzeugt Verteidigung, Anschluss erzeugt Bewegung.",
+   "r": [
+    "bk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Worked Examples",
+   "d": "Ausgearbeitete Lösungsbeispiele, die vor dem eigenen Lösen gezeigt werden (Sweller und Cooper, 1985).",
+   "p": "Entlasten Neulinge; bei Erfahrenen kann sich der Nutzen umkehren.",
+   "r": [
+    "pk"
+   ]
+  },
+  {
+   "k": "beg",
+   "t": "Zirkuläre Frage",
+   "d": "Frage danach, wie jemand die Sicht einer anderen Person einschätzt.",
+   "p": "Nicht „Was denken Sie?“, sondern „Was, glauben Sie, denkt die andere Person?“",
+   "r": [
+    "bk"
+   ]
+  }
+ ]
+}
