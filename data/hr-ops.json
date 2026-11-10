@@ -1,0 +1,1549 @@
+{
+ "id": "hr-ops",
+ "title": "HR Operations",
+ "subtitle": "BTA Weiterbildung · Stephanie Günther",
+ "legal": "Rechtsstand geprüft: 09.11.2026. Mit „Ausblick 2027“ markierte Werte sind beschlossen oder geplant. Das Quiz ersetzt keine Rechtsberatung im Einzelfall.",
+ "rounds": [
+  {
+   "id": "bm",
+   "label": "Bewerbermanagement",
+   "title": "Vom Personalbedarf zur Übergabe",
+   "color": "#D96FA8"
+  },
+  {
+   "id": "sv",
+   "label": "SV-Recht",
+   "title": "Sozialversicherung und Arbeitsrecht",
+   "color": "#6FBF73"
+  },
+  {
+   "id": "t1",
+   "label": "Rechtstag 1",
+   "title": "Beginn von Arbeitsverhältnissen",
+   "color": "#E8380D"
+  },
+  {
+   "id": "t2",
+   "label": "Rechtstag 2",
+   "title": "Vertragsinhalte und Änderungen",
+   "color": "#E9A23B"
+  },
+  {
+   "id": "t3",
+   "label": "Rechtstag 3",
+   "title": "Beendigung",
+   "color": "#3FA7A0"
+  },
+  {
+   "id": "t4",
+   "label": "Rechtstag 4",
+   "title": "Arbeitszeit, Urlaub, Abwesenheiten",
+   "color": "#8A95E8"
+  },
+  {
+   "id": "hs",
+   "label": "HR-Service",
+   "title": "Betreuung, Triage, Wiedervorlage",
+   "color": "#5AB4E5"
+  },
+  {
+   "id": "ki",
+   "label": "HR-Systeme & KI",
+   "title": "Daten, Korrekturen, KI-Verordnung",
+   "color": "#C9B458"
+  },
+  {
+   "id": "bw",
+   "label": "Bescheinigungswesen",
+   "title": "Externe Stellen, Pfändung, Zeugnis",
+   "color": "#B38AE0"
+  }
+ ],
+ "questions": [
+  {
+   "id": "t1-1",
+   "round": "t1",
+   "q": "Die vertretungsberechtigte Geschäftsführerin und eine Bewerberin einigen sich am Telefon auf Start, 30 Wochenstunden und 3.000 € brutto. Beide wollen sofort gebunden sein. Gibt es schon einen Arbeitsvertrag?",
+   "o": [
+    "Nein, ein Arbeitsvertrag braucht immer die Schriftform.",
+    "Ja, er kann telefonisch entstehen. Das spätere Papier dokumentiert die Einigung.",
+    "Erst, wenn der Nachweis nach dem Nachweisgesetz übergeben ist.",
+    "Erst, wenn der Betriebsrat zugestimmt hat."
+   ],
+   "a": 1,
+   "x": "Ein gewöhnlicher unbefristeter Arbeitsvertrag ist grundsätzlich formfrei und entsteht durch Angebot und Annahme, auch mündlich. Nachweis und Betriebsratsbeteiligung sind eigene Pflichten, keine Voraussetzung für das Entstehen.",
+   "s": "Skript Rechtstag 1 · Wie ein Arbeitsvertrag entsteht · §§ 145, 611a BGB",
+   "t": 30
+  },
+  {
+   "id": "t1-2",
+   "round": "t1",
+   "q": "Anna unterschreibt den Vertrag auf Papier, scannt das Blatt und verschickt nur die PDF-Datei. Welche Form erfüllt die PDF?",
+   "o": [
+    "Schriftform (§ 126 BGB)",
+    "Qualifizierte elektronische Signatur (QES)",
+    "Textform (§ 126b BGB)",
+    "Gar keine Form"
+   ],
+   "a": 2,
+   "x": "Das Bild einer Unterschrift macht die Datei weder zur Schriftform noch zur QES. Eine lesbare, speicherbare Erklärung mit Namen der erklärenden Person erfüllt aber die Textform.",
+   "s": "Skript Rechtstag 1 · Drei Formbegriffe · §§ 126, 126a, 126b BGB",
+   "t": 30
+  },
+  {
+   "id": "t1-3",
+   "round": "t1",
+   "q": "In welcher Form muss eine gewöhnliche Befristungsabrede geschlossen werden?",
+   "o": [
+    "Textform genügt, eine E-Mail reicht.",
+    "Schriftform nach § 14 Abs. 4 TzBfG. Eine QES beider Seiten kann sie ersetzen.",
+    "Sie ist formfrei.",
+    "Schriftform. Die elektronische Form ist ausdrücklich ausgeschlossen."
+   ],
+   "a": 1,
+   "x": "§ 14 Abs. 4 TzBfG verlangt Schriftform, die elektronische Form mit beiderseitiger QES kann sie ersetzen. Ausgeschlossen ist die elektronische Form bei Kündigung und Aufhebungsvertrag (§ 623 BGB), nicht bei der Befristung.",
+   "s": "Skript Rechtstag 1 · Welche Form in welchem Vorgang · § 14 Abs. 4 TzBfG",
+   "t": 30
+  },
+  {
+   "id": "t1-4",
+   "round": "t1",
+   "q": "Nele beginnt am 01.09. Sie unterschreibt den befristeten Vertrag am 02.09., die Gegenzeichnung folgt am 03.09. Vorher gab es eine verbindliche Einigung ohne Vorbehalt. Was gilt?",
+   "o": [
+    "Kein Problem, solange in der ersten Woche unterschrieben wird.",
+    "Formproblem: Nachunterschreiben heilt die Befristung nicht rückwirkend. Der Vertrag gilt grundsätzlich als unbefristet.",
+    "Das Arbeitsverhältnis ist insgesamt unwirksam.",
+    "HR datiert den Vertrag auf den 31.08. zurück."
+   ],
+   "a": 1,
+   "x": "Die Befristung muss vor Arbeitsbeginn formwirksam vereinbart sein. Fehlt das, gilt der Vertrag grundsätzlich als unbefristet (§ 16 TzBfG). Ein erkennbarer Abschlussvorbehalt kann die Lage ändern. Rückdatieren ist nie die Lösung.",
+   "s": "Skript Rechtstag 1 · Übung 1 · §§ 14 Abs. 4, 16 TzBfG · BAG 7 AZR 223/15",
+   "t": 35
+  },
+  {
+   "id": "t1-5",
+   "round": "t1",
+   "q": "Jannis hat einen sachgrundlos befristeten Erstvertrag und drei Verlängerungen, zusammen 24 Monate. Bei der dritten Verlängerung wird zusätzlich eine neue Gehaltserhöhung ausgehandelt. Wie bewertest du das?",
+   "o": [
+    "Zulässig: Anzahl und Dauer sind eingehalten.",
+    "Unzulässig, weil vier Verträge mehr als drei sind.",
+    "Problematisch: Die neue Gehaltsabrede macht daraus regelmäßig einen Neuvertrag. Der scheitert sachgrundlos an der Vorbeschäftigung.",
+    "Zulässig, wenn der Betriebsrat zustimmt."
+   ],
+   "a": 2,
+   "x": "Erstvertrag plus drei Verlängerungen in 24 Monaten ist erlaubt, der Erstvertrag zählt nicht als Verlängerung. Eine Verlängerung darf aber nur die Laufzeit ändern. Ein bereits bestehender Erhöhungsanspruch wäre gesondert zu prüfen.",
+   "s": "Skript Rechtstag 1 · Verlängerung und Abschlusszeitpunkt · § 14 Abs. 2 TzBfG · BAG 7 AZR 428/16",
+   "t": 35
+  },
+  {
+   "id": "t1-6",
+   "round": "t1",
+   "q": "Beginn am 1. Januar, drei Monate Probezeit vereinbart. Die Kündigung geht am 15. April zu. Was stimmt?",
+   "o": [
+    "Es gilt noch die Zweiwochenfrist der Probezeit.",
+    "Die Probezeit ist vorbei, also greift jetzt der allgemeine Kündigungsschutz.",
+    "Die Zweiwochenfrist gilt nicht mehr. Die gesetzliche Wartezeit von sechs Monaten ist aber noch nicht erfüllt.",
+    "Nach der Probezeit ist eine ordentliche Kündigung ausgeschlossen."
+   ],
+   "a": 2,
+   "x": "Die Probezeit (§ 622 Abs. 3 BGB) regelt die kurze Kündigungsfrist. Die Wartezeit (§ 1 Abs. 1 KSchG) regelt den allgemeinen Kündigungsschutz. Beide laufen parallel, beantworten aber verschiedene Fragen.",
+   "s": "Skript Rechtstag 1 · Probezeit und Wartezeit",
+   "t": 30
+  },
+  {
+   "id": "t1-7",
+   "round": "t1",
+   "q": "Ein Vertrag ist auf zwölf Monate befristet. Wie lang darf die Probezeit sein?",
+   "o": [
+    "Höchstens 25 Prozent der Laufzeit, also drei Monate.",
+    "Immer sechs Monate, das ist der gesetzliche Standard.",
+    "Keine feste Formel: Sie muss im Einzelfall zu Laufzeit, Tätigkeit und Einarbeitung passen (§ 15 Abs. 3 TzBfG).",
+    "Höchstens zwei Monate."
+   ],
+   "a": 2,
+   "x": "Das BAG hat 2025 klargestellt: kein fester 25-Prozent-Wert. Im entschiedenen Fall waren vier Monate bei einem Jahresvertrag wegen des Einarbeitungskonzepts zulässig. Eine neue allgemeine Viermonatsregel folgt daraus nicht.",
+   "s": "Skript Rechtstag 1 · Probezeit bei befristeten Verträgen · BAG 2 AZR 160/24",
+   "t": 30
+  },
+  {
+   "id": "t1-8",
+   "round": "t1",
+   "q": "Welche Angaben nach § 2 NachwG müssen spätestens am ersten Arbeitstag vorliegen?",
+   "o": [
+    "Urlaub und Kündigungsverfahren",
+    "Namen der Parteien, Entgelt und Arbeitszeit",
+    "Anwendbare Tarifverträge und Betriebsvereinbarungen",
+    "Alle Angaben dürfen bis einen Monat nach Beginn nachgereicht werden."
+   ],
+   "a": 1,
+   "x": "Die Fristen sind gestaffelt: Nr. 1, 7 und 8 am ersten Arbeitstag, Beginn, Befristung, Ort, Tätigkeit und Probezeit bis zum siebten Kalendertag, der Rest innerhalb eines Monats. Praktisch einfacher ist ein vollständiges Dokument vor Beginn.",
+   "s": "Skript Rechtstag 1 · Digitaler Nachweis und Fristen · § 2 Abs. 1 NachwG",
+   "t": 30
+  },
+  {
+   "id": "t1-9",
+   "round": "t1",
+   "q": "Seit 2025 darf der Nachweis der Arbeitsbedingungen elektronisch erfolgen. Unter welcher Voraussetzung?",
+   "o": [
+    "Ein Upload ins Mitarbeiterportal genügt immer.",
+    "Textform, zugänglich, speicher- und ausdruckbar, mit Aufforderung zum Empfangsnachweis. Nicht in den Branchen des § 2a SchwarzArbG.",
+    "Nur mit qualifizierter elektronischer Signatur.",
+    "Nur wenn die Person vorher schriftlich zugestimmt hat."
+   ],
+   "a": 1,
+   "x": "Auf Verlangen ist zusätzlich unverzüglich ein unterschriebener Papiernachweis zu liefern. Ein technischer Versandvermerk ersetzt die Aufforderung zum Empfangsnachweis nicht.",
+   "s": "Skript Rechtstag 1 · Digitaler Nachweis und Fristen · § 2 NachwG, § 2a SchwarzArbG",
+   "t": 30
+  },
+  {
+   "id": "t1-10",
+   "round": "t1",
+   "q": "Der Betriebsrat (Unternehmen mit über 20 Wahlberechtigten) verweigert die Zustimmung zu einer Einstellung, weil ihm die Bewerberin unsympathisch ist. Was gilt?",
+   "o": [
+    "Die Einstellung ist damit endgültig blockiert.",
+    "Persönliches Missfallen ist kein Verweigerungsgrund. Die Gründe stehen abschließend in § 99 Abs. 2 BetrVG.",
+    "Der Betriebsrat muss bei Einstellungen gar nicht beteiligt werden.",
+    "Die Zustimmung ist reine Formsache, HR stellt einfach ein."
+   ],
+   "a": 1,
+   "x": "Die Verweigerung muss binnen einer Woche nach vollständiger Unterrichtung mit einem gesetzlichen Grund erfolgen. Unter den gesetzlichen Voraussetzungen gilt die Zustimmung als erteilt oder wird gerichtlich ersetzt.",
+   "s": "Skript Rechtstag 1 · Wann § 99 BetrVG gilt",
+   "t": 30
+  },
+  {
+   "id": "t2-1",
+   "round": "t2",
+   "q": "Die Führungskraft will das Gehalt eines Mitarbeiters per Anweisung um fünf Prozent kürzen. Geht das?",
+   "o": [
+    "Ja, wenn es wirtschaftlich nötig ist.",
+    "Ja, wenn der Betriebsrat zustimmt.",
+    "Nein. Die Vergütung unterliegt nie dem Direktionsrecht. Möglich sind nur Einvernehmen oder Änderungskündigung.",
+    "Ja, mit vier Wochen Ankündigung."
+   ],
+   "a": 2,
+   "x": "§ 106 GewO erfasst Inhalt, Ort und Zeit der Arbeit. Die Vergütung ist die vereinbarte Gegenleistung nach § 611a Abs. 2 BGB und damit Hauptleistungspflicht.",
+   "s": "Skript Tag 2 · 2.2 Reichweite · § 106 GewO",
+   "t": 30
+  },
+  {
+   "id": "t2-2",
+   "round": "t2",
+   "q": "Im Vertrag steht als Arbeitsort fest „München“, eine Versetzungsklausel gibt es nicht. Der Mitarbeiter soll nach Braunschweig. Er pflegt seinen Vater in München. Was gilt?",
+   "o": [
+    "Geht per Weisung, der Arbeitgeber bestimmt den Ort.",
+    "Geht nicht per Weisung. Nötig ist ein Änderungsvertrag und dann die Beteiligung des Betriebsrats nach § 99 BetrVG.",
+    "Geht per Weisung, wenn der Betriebsrat zustimmt.",
+    "Geht, wenn die Umzugskosten erstattet werden."
+   ],
+   "a": 1,
+   "x": "Das Direktionsrecht füllt den Vertrag aus, es ändert ihn nicht. Selbst mit Versetzungsklausel gehört die Pflege des Vaters in die Abwägung nach billigem Ermessen. Vertrag und Betriebsrat: Beide müssen grünes Licht geben.",
+   "s": "Skript Tag 2 · 2.4 Versetzung · Übung 1, Fall 2",
+   "t": 35
+  },
+  {
+   "id": "t2-3",
+   "round": "t2",
+   "q": "Die Kernarbeitszeit eines Teams soll von 9 auf 10 Uhr verschoben werden. Darf der Arbeitgeber das?",
+   "o": [
+    "Nein, dafür braucht es mit allen Änderungsverträge.",
+    "Ja, ohne Beteiligung, die Lage ist frei bestimmbar.",
+    "Ja, die Lage der Arbeitszeit ist weisungsgebunden. Sie ist aber mitbestimmungspflichtig (§ 87 Abs. 1 Nr. 2 BetrVG).",
+    "Nur, wenn gleichzeitig die Wochenstunden sinken."
+   ],
+   "a": 2,
+   "x": "Die Dauer der Arbeitszeit steht im Vertrag und ist nicht einseitig änderbar. Die Lage (Beginn, Ende, Verteilung) ist weisungsgebunden, aber mit Betriebsrat. Abgestimmte Kinderbetreuung gehört in die Abwägung.",
+   "s": "Skript Tag 2 · 2.2 Reichweite · Übung 1, Fall 3",
+   "t": 30
+  },
+  {
+   "id": "t2-4",
+   "round": "t2",
+   "q": "Welche Aussage zum mobilen Arbeiten stimmt nach geltendem Recht?",
+   "o": [
+    "Es gibt einen allgemeinen gesetzlichen Anspruch auf Homeoffice.",
+    "Der Arbeitgeber kann Homeoffice per Direktionsrecht anordnen.",
+    "Es gibt weder einen allgemeinen Anspruch, noch kann der Arbeitgeber Arbeit in der Privatwohnung einseitig anordnen.",
+    "Nach zwei Jahren Homeoffice entsteht automatisch ein Anspruch."
+   ],
+   "a": 2,
+   "x": "Homeoffice braucht eine Grundlage: Vertrag, Zusatzvereinbarung, Betriebs- oder Tarifvereinbarung, unter Umständen betriebliche Übung. Die Wohnung ist grundrechtlich geschützt (Art. 13 GG).",
+   "s": "Skript Tag 2 · 2.3 Mobiles Arbeiten · LAG Berlin-Brandenburg 17 Sa 562/18",
+   "t": 30
+  },
+  {
+   "id": "t2-5",
+   "round": "t2",
+   "q": "Eine vorformulierte Klausel im Arbeitsvertrag ist nach AGB-Recht unwirksam. Was folgt daraus?",
+   "o": [
+    "Der ganze Arbeitsvertrag ist unwirksam.",
+    "Das Gericht kürzt die Klausel auf das gerade noch zulässige Maß.",
+    "Die Klausel fällt weg, der übrige Vertrag bleibt, an ihre Stelle tritt das Gesetz.",
+    "Die Klausel gilt weiter, weil die Person unterschrieben hat."
+   ],
+   "a": 2,
+   "x": "§ 306 BGB. Eine geltungserhaltende Reduktion gibt es grundsätzlich nicht. Deshalb ist eine zu scharfe Klausel für den Arbeitgeber oft schlechter als gar keine.",
+   "s": "Skript Tag 2 · 1.3 AGB-Kontrolle · § 306 BGB",
+   "t": 30
+  },
+  {
+   "id": "t2-6",
+   "round": "t2",
+   "q": "Im Vertrag steht: „Mit der Vergütung ist sämtliche Mehrarbeit abgegolten.“ Wie ist das einzuordnen?",
+   "o": [
+    "Wirksam, die Person hat ja unterschrieben.",
+    "Intransparent und damit unwirksam, weil niemand erkennt, wie viele Stunden gemeint sind.",
+    "Wirksam, solange das Gehalt über dem Mindestlohn liegt.",
+    "Wirksam, weil Überstunden Teil der Hauptleistung sind."
+   ],
+   "a": 1,
+   "x": "Transparenzgebot nach § 307 Abs. 1 S. 2 BGB. Zulässig sein kann eine klar begrenzte Zahl abgegoltener Stunden.",
+   "s": "Skript Tag 2 · 1.4 Erkennungsliste · BAG 5 AZR 517/09",
+   "t": 30
+  },
+  {
+   "id": "t2-7",
+   "round": "t2",
+   "q": "Eine Weisung entspricht nicht billigem Ermessen. Was gilt seit 2017?",
+   "o": [
+    "Sie muss trotzdem befolgt werden, bis ein Gericht entscheidet.",
+    "Sie ist für die beschäftigte Person unverbindlich.",
+    "Sie gilt, wenn der Betriebsrat informiert wurde.",
+    "Sie gilt automatisch als Abmahnung."
+   ],
+   "a": 1,
+   "x": "Für Beschäftigte bleibt es trotzdem riskant, eine Weisung eigenmächtig als unbillig zu behandeln. Für HR heißt das: schwierige Weisungen vorher prüfen, nicht hinterher streiten.",
+   "s": "Skript Tag 2 · 2.1 Direktionsrecht · BAG 18.10.2017 – 10 AZR 330/16",
+   "t": 30
+  },
+  {
+   "id": "t2-8",
+   "round": "t2",
+   "q": "Seit vier Jahren zahlt das Unternehmen jeden November kommentarlos 1.000 € Weihnachtsgeld. Dieses Jahr soll es ausfallen. Was prüft HR?",
+   "o": [
+    "Nichts. Es war freiwillig, also kann es einfach entfallen.",
+    "Ob eine betriebliche Übung entstanden ist. Dann besteht ein Anspruch, der sich nur per Änderungsvertrag oder Änderungskündigung beseitigen lässt.",
+    "Nichts. Es reicht, drei Jahre nicht zu zahlen, dann ist der Anspruch weg.",
+    "Ob der Betriebsrat die Zahlung genehmigt."
+   ],
+   "a": 1,
+   "x": "Bei jährlichen Sonderzahlungen gilt die dreimalige vorbehaltlose Gewährung als Regelfall für eine betriebliche Übung. Die „gegenläufige betriebliche Übung“ hat das BAG 2009 aufgegeben.",
+   "s": "Skript Tag 2 · 3.3 Betriebliche Übung · BAG 10 AZR 281/08",
+   "t": 35
+  },
+  {
+   "id": "t2-9",
+   "round": "t2",
+   "q": "Ein Teilzeitantrag nach § 8 TzBfG geht ordnungsgemäß ein. Der Arbeitgeber antwortet nicht bis einen Monat vor dem gewünschten Beginn. Folge?",
+   "o": [
+    "Der Antrag gilt als abgelehnt.",
+    "Die Arbeitszeit verringert sich so, wie die Person es gewünscht hat.",
+    "Die Person muss den Antrag wiederholen.",
+    "Die Frist verlängert sich automatisch um einen Monat."
+   ],
+   "a": 1,
+   "x": "Zustimmungsfiktion nach § 8 Abs. 5 TzBfG, auch für die Verteilung. Nichtstun heißt Ja. Deshalb gehört jeder Teilzeitantrag am Eingangstag in die Fristensteuerung.",
+   "s": "Skript Tag 2 · 4.1 Teilzeitanspruch · § 8 Abs. 5 TzBfG",
+   "t": 30
+  },
+  {
+   "id": "t2-10",
+   "round": "t2",
+   "q": "Andreas Kienzle wechselt einvernehmlich vom Teamlead in die Fachrolle Senior Platform Engineer, bei gleichem Grundgehalt. Was ist der richtige Weg?",
+   "o": [
+    "Eine Weisung genügt, das Gehalt bleibt ja gleich.",
+    "Jobtitel im HR-System ändern, fertig.",
+    "Änderungsvertrag. Der Betriebsrat ist nach § 99 BetrVG trotzdem zu beteiligen, das Einverständnis ersetzt das nicht.",
+    "Änderungskündigung, weil sich die Tätigkeit ändert."
+   ],
+   "a": 2,
+   "x": "Der Wegfall von Führungsverantwortung ist regelmäßig geringerwertig, gleiches Gehalt macht die Rolle nicht gleichwertig. Außerdem zu regeln: Führungszulage, Unberührtheitsklausel für die angerechneten 24 Jahre, Nachweis nach § 3 NachwG.",
+   "s": "Skript Tag 2 · 4.4 Übung 2, Fall Kienzle",
+   "t": 35
+  },
+  {
+   "id": "t3-1",
+   "round": "t3",
+   "q": "Die Führungskraft will die Kündigung per E-Mail mit qualifizierter elektronischer Signatur verschicken. Ist das wirksam?",
+   "o": [
+    "Ja, die QES ersetzt die Schriftform.",
+    "Ja, wenn die Person den Empfang bestätigt.",
+    "Nein. § 623 BGB verlangt Schriftform und schließt die elektronische Form aus.",
+    "Ja, im Kleinbetrieb schon."
+   ],
+   "a": 2,
+   "x": "Kündigung und Aufhebungsvertrag brauchen Papier mit eigenhändiger Originalunterschrift. E-Mail, Scan, Fax und QES genügen nicht, die Kündigung ist nichtig.",
+   "s": "Skript Tag 3 · 3.3 Schriftform · § 623 BGB",
+   "t": 30
+  },
+  {
+   "id": "t3-2",
+   "round": "t3",
+   "q": "Ruth ist seit 01.03.2019 beschäftigt. Die Arbeitgeberkündigung geht am Montag, 12.10.2026, zu. Keine abweichende Vertrags- oder Tarifregel. Wann endet das Arbeitsverhältnis?",
+   "o": [
+    "30.11.2026",
+    "12.12.2026",
+    "31.12.2026",
+    "31.01.2027"
+   ],
+   "a": 2,
+   "x": "Mehr als 5, weniger als 8 Jahre: 2 Monate zum Monatsende (§ 622 Abs. 2 S. 1 Nr. 2 BGB). Fristbeginn 13.10., Fristende 12.12., nächster Monatsendtermin 31.12.",
+   "s": "Skript Tag 3 · 2.3 Übung 1 · §§ 187, 188, 622 BGB",
+   "t": 45
+  },
+  {
+   "id": "t3-3",
+   "round": "t3",
+   "q": "Jonas ist seit 01.08.2024 beschäftigt und kündigt selbst. Zugang: Dienstag, 20.10.2026. Wann endet das Arbeitsverhältnis?",
+   "o": [
+    "15.11.2026",
+    "17.11.2026",
+    "30.11.2026",
+    "31.12.2026"
+   ],
+   "a": 2,
+   "x": "Falle: Die verlängerten Fristen des § 622 Abs. 2 gelten nur für Arbeitgeberkündigungen. Grundfrist 4 Wochen zum 15. oder Monatsende: Fristende 17.11., der 15.11. ist schon vorbei, also 30.11.",
+   "s": "Skript Tag 3 · 2.3 Übung 1 · § 622 Abs. 1 BGB",
+   "t": 45
+  },
+  {
+   "id": "t3-4",
+   "round": "t3",
+   "q": "Andreas Kienzle ist seit 2021 bei NOVARIS. Die Übernahmevereinbarung rechnet seine Zeit seit 2002 ausdrücklich für Kündigungsfristen an. Welche Frist gilt für eine Arbeitgeberkündigung im Oktober 2026?",
+   "o": [
+    "2 Monate zum Monatsende",
+    "4 Wochen zum 15. oder Monatsende",
+    "7 Monate zum Monatsende",
+    "Gar keine, er ist unkündbar."
+   ],
+   "a": 2,
+   "x": "Mit Anrechnung sind es über 20 Jahre: § 622 Abs. 2 S. 1 Nr. 7 BGB. Bei Zugang am 30.10.2026 endet das Arbeitsverhältnis zum 31.05.2027. Ohne Anrechnung wären es nur 2 Monate. Unkündbar macht ihn das nicht.",
+   "s": "Skript Tag 3 · 2.2 Frist für Andreas Kienzle",
+   "t": 30
+  },
+  {
+   "id": "t3-5",
+   "round": "t3",
+   "q": "Im Betrieb gibt es einen Betriebsrat. Was braucht eine ordentliche Arbeitgeberkündigung?",
+   "o": [
+    "Die Zustimmung des Betriebsrats.",
+    "Eine ordnungsgemäße Anhörung vor Ausspruch. Ohne sie ist die Kündigung unwirksam.",
+    "Nur eine Information nach Ausspruch.",
+    "Nichts, wenn die Person noch in der Probezeit ist."
+   ],
+   "a": 1,
+   "x": "§ 102 BetrVG gilt vor jeder Arbeitgeberkündigung, auch in der Probezeit und bei fristloser Kündigung. Stellungnahmefrist: eine Woche (ordentlich), drei Tage (außerordentlich). Zustimmung braucht es nur in Sonderfällen wie § 103 BetrVG.",
+   "s": "Skript Tag 3 · 3.1 Anhörung des Betriebsrats · § 102 BetrVG",
+   "t": 30
+  },
+  {
+   "id": "t3-6",
+   "round": "t3",
+   "q": "Bei der außerordentlichen Kündigung gibt es eine Zwei-Wochen-Frist. Was bedeutet sie?",
+   "o": [
+    "Die fristlose Kündigung wirkt erst zwei Wochen nach Zugang.",
+    "Die Kündigung muss innerhalb von zwei Wochen ab Kenntnis der maßgebenden Tatsachen erklärt werden.",
+    "Der Betriebsrat hat zwei Wochen Zeit zur Stellungnahme.",
+    "Die gekündigte Person hat zwei Wochen Zeit für die Klage."
+   ],
+   "a": 1,
+   "x": "§ 626 Abs. 2 BGB ist eine Erklärungsfrist, keine Kündigungsfrist. Zügige, notwendige Ermittlungen können den Beginn hinausschieben, verschleppen darf man sie nicht.",
+   "s": "Skript Tag 3 · 1.2 · § 626 Abs. 2 BGB · BAG 2 AZR 797/11",
+   "t": 30
+  },
+  {
+   "id": "t3-7",
+   "round": "t3",
+   "q": "Ein Betrieb hat 8 Vollzeitkräfte und 4 Teilzeitkräfte mit je 20 Wochenstunden. Gilt der allgemeine Kündigungsschutz nach § 23 KSchG?",
+   "o": [
+    "Ja, es sind 12 Beschäftigte.",
+    "Nein: 8 + 4 × 0,5 = 10. Das ist nicht „mehr als zehn“.",
+    "Ja: 8 + 4 × 0,75 = 11.",
+    "Das hängt nur von der Probezeit ab."
+   ],
+   "a": 1,
+   "x": "Teilzeit wird gewichtet: bis 20 Stunden 0,5, bis 30 Stunden 0,75, darüber 1. Auch ohne allgemeinen Schutz gelten Schriftform, Frist, Sonderschutz, Betriebsratsanhörung und die Klagefrist.",
+   "s": "Skript Tag 3 · 1.3 · § 23 Abs. 1 KSchG",
+   "t": 40
+  },
+  {
+   "id": "t3-8",
+   "round": "t3",
+   "q": "In der Akte liegen drei Gesprächsnotizen zum Zuspätkommen. In keiner steht, dass der Arbeitsplatz gefährdet ist. Wie viele Abmahnungen sind das?",
+   "o": [
+    "Drei, also kann jetzt gekündigt werden.",
+    "Keine, es fehlt die Warnfunktion. HR prüft, ob jetzt eine erste Abmahnung angezeigt ist.",
+    "Eine, weil die Notizen zusammengezählt werden.",
+    "Drei, sobald die Überschrift „Abmahnung“ lautet."
+   ],
+   "a": 1,
+   "x": "Eine Abmahnung braucht konkreten Vorfall, Rüge und Warnung vor Folgen für das Arbeitsverhältnis. Eine Drei-Abmahnungen-Regel gibt es nicht, und die Überschrift entscheidet nicht.",
+   "s": "Skript Tag 3 · 1.6 Ermahnung und Abmahnung · BAG 2 AZR 258/11",
+   "t": 30
+  },
+  {
+   "id": "t3-9",
+   "round": "t3",
+   "q": "Ein Mitarbeiter unterschreibt einen Aufhebungsvertrag und will ihn eine Woche später widerrufen. Was gilt?",
+   "o": [
+    "Er hat ein gesetzliches Widerrufsrecht von 14 Tagen.",
+    "Ein allgemeines Widerrufsrecht gibt es nicht. Möglich sind Anfechtung (§ 123 BGB) oder ein Verstoß gegen das Gebot fairen Verhandelns.",
+    "Er kann jederzeit bis zum Beendigungstermin widerrufen.",
+    "Nur mit Zustimmung des Betriebsrats."
+   ],
+   "a": 1,
+   "x": "Fehlende Bedenkzeit allein ist nach dem BAG noch nicht unfair. Gute Praxis bleibt trotzdem: Entwurf erklären, Beratung ermöglichen, angemessene Bedenkzeit geben.",
+   "s": "Skript Tag 3 · 4.1 · BAG 6 AZR 75/18 · BAG 6 AZR 333/21",
+   "t": 30
+  },
+  {
+   "id": "t3-10",
+   "round": "t3",
+   "q": "Eine schriftliche Kündigung ist inhaltlich angreifbar. Die Person erhebt aber erst nach fünf Wochen Klage. Folge?",
+   "o": [
+    "Egal, eine unwirksame Kündigung bleibt unwirksam.",
+    "Die Kündigung gilt als von Anfang an wirksam (§ 7 KSchG), außer die Klage wird nachträglich zugelassen.",
+    "Die Frist beträgt ohnehin sechs Wochen.",
+    "Die Klagefrist gilt nur in Betrieben mit mehr als zehn Beschäftigten."
+   ],
+   "a": 1,
+   "x": "Klagefrist: drei Wochen nach Zugang (§ 4 KSchG), auch im Kleinbetrieb. Eine formnichtige Kündigung, etwa per E-Mail, wird durch Zeitablauf aber nicht wirksam.",
+   "s": "Skript Tag 3 · 3.6 Klagefrist · §§ 4, 5, 7 KSchG",
+   "t": 30
+  },
+  {
+   "id": "t3-11",
+   "round": "t3",
+   "q": "Die Kündigung landet im Briefkasten, während die Mitarbeiterin drei Wochen im Urlaub ist. Der Arbeitgeber wusste vom Urlaub. Wann geht sie zu?",
+   "o": [
+    "Erst, wenn sie den Brief nach dem Urlaub öffnet.",
+    "Sobald gewöhnlich mit der Leerung des Briefkastens zu rechnen ist, auch während des Urlaubs.",
+    "Gar nicht, weil der Arbeitgeber vom Urlaub wusste.",
+    "Mit dem Datum auf dem Schreiben."
+   ],
+   "a": 1,
+   "x": "Kündigungs- und Klagefrist laufen ab diesem Zugang. Hilfe gibt es nur über die nachträgliche Zulassung der Klage (§ 5 KSchG), keine automatische Verlängerung.",
+   "s": "Skript Tag 3 · 3.4 Zugang · BAG 2 AZR 224/11",
+   "t": 30
+  },
+  {
+   "id": "t3-12",
+   "round": "t3",
+   "q": "Was folgt aus dem BAG-Urteil vom 07.05.2026 (2 AZR 184/25) zum Einwurf-Einschreiben?",
+   "o": [
+    "Einwurf-Einschreiben sind für Kündigungen jetzt verboten.",
+    "Beim geprüften Scan-Verfahren gab es keinen Anscheinsbeweis. Ein Tracking-Eintrag allein ist keine Beweisplanung.",
+    "Mit Sendungsstatus gilt der Zugang immer als bewiesen.",
+    "Nur noch die persönliche Übergabe ist zulässig."
+   ],
+   "a": 1,
+   "x": "Im Fall blieb der Zugang einer bEM-Einladung unbewiesen, und die krankheitsbedingte Kündigung scheiterte. Gut belegbar sind etwa die persönliche Übergabe gegen Quittung oder ein Bote, der den Inhalt kennt und zeitnah protokolliert.",
+   "s": "Skript Tag 3 · 3.4 und 3.5 Zustellwege",
+   "t": 30
+  },
+  {
+   "id": "t4-1",
+   "round": "t4",
+   "q": "Eine Mitarbeiterin arbeitet an einem Tag zehn Stunden. Verstößt das gegen das Arbeitszeitgesetz?",
+   "o": [
+    "Ja, die Grenze sind acht Stunden.",
+    "Nein, wenn im Ausgleichszeitraum (6 Monate oder 24 Wochen) im Schnitt acht Stunden werktäglich nicht überschritten werden.",
+    "Nein, wenn die Überstunden bezahlt werden.",
+    "Nur, wenn es mehr als drei Tage in Folge sind."
+   ],
+   "a": 1,
+   "x": "§ 3 ArbZG. Über zehn Stunden braucht es eine konkrete Ausnahmegrundlage, etwa nach § 7 ArbZG. Eine Auszahlung macht unzulässige Arbeitszeit nicht zulässig. Pausen und Ruhezeit kommen zusätzlich dazu.",
+   "s": "Skript Tag 4 · 1.3 · § 3 ArbZG",
+   "t": 30
+  },
+  {
+   "id": "t4-2",
+   "round": "t4",
+   "q": "Eine Mitarbeiterin ist von 8 bis 19 Uhr im Betrieb und macht 30 Minuten echte Pause. Was ist das Problem?",
+   "o": [
+    "Keins, Anwesenheit ist nicht Arbeitszeit.",
+    "Nur die Pause ist zu kurz.",
+    "10,5 Stunden Arbeit: Tagesgrenze überschritten (§ 3) und 15 Minuten Pause zu wenig (§ 4).",
+    "Nur die Tagesgrenze ist überschritten."
+   ],
+   "a": 2,
+   "x": "11 Stunden minus 30 Minuten ergibt 10,5 Stunden. Über neun Stunden sind 45 Minuten Pause Pflicht. Auch mit 45 Minuten blieben 10,25 Stunden. HR korrigiert die Arbeitsorganisation, nicht die Zeitdaten.",
+   "s": "Skript Tag 4 · 1.9 Übung 1, Fall 5 · §§ 3, 4 ArbZG",
+   "t": 40
+  },
+  {
+   "id": "t4-3",
+   "round": "t4",
+   "q": "Die letzte Arbeit endet um 22:30 Uhr. Wann darf die Person am nächsten Tag regulär frühestens wieder anfangen?",
+   "o": [
+    "7:00 Uhr",
+    "8:30 Uhr",
+    "9:30 Uhr",
+    "10:30 Uhr"
+   ],
+   "a": 2,
+   "x": "Elf Stunden ununterbrochene Ruhezeit (§ 5 ArbZG), gerechnet ab dem tatsächlichen Ende der letzten Arbeit, nicht ab dem geplanten Feierabend. Auch eine einzelne späte Mail zählt.",
+   "s": "Skript Tag 4 · 1.4 Ruhezeit · Übung 1, Fall 6",
+   "t": 30
+  },
+  {
+   "id": "t4-4",
+   "round": "t4",
+   "q": "Ein Mitarbeiter macht drei Raucherpausen zu je zehn Minuten. Hat er damit die gesetzliche Ruhepause von 30 Minuten?",
+   "o": [
+    "Ja, 3 × 10 = 30.",
+    "Nein. Jeder Pausenabschnitt muss mindestens 15 Minuten dauern.",
+    "Ja, wenn er dafür ausstempelt.",
+    "Ja, wenn die Führungskraft zustimmt."
+   ],
+   "a": 1,
+   "x": "§ 4 ArbZG. Außerdem darf niemand länger als sechs Stunden am Stück ohne Pause arbeiten. Ob Kurzpausen bezahlt werden, ist eine eigene, betriebliche Frage.",
+   "s": "Skript Tag 4 · 1.4 Ruhepausen · § 4 ArbZG",
+   "t": 30
+  },
+  {
+   "id": "t4-5",
+   "round": "t4",
+   "q": "„Resturlaub verfällt am 31. Dezember.“ Stimmt das?",
+   "o": [
+    "Ja, spätestens am 31. März.",
+    "Nur, wenn der Arbeitgeber konkret, rechtzeitig und nachweisbar auf die offenen Tage und den Verfall hingewiesen hat und die Person den Urlaub nehmen konnte.",
+    "Nein, Urlaub verfällt nie.",
+    "Ja, wenn kein Urlaubsantrag gestellt wurde."
+   ],
+   "a": 1,
+   "x": "Das gilt für den gesetzlichen Mindesturlaub. Ein Rundschreiben oder ein Satz im Arbeitsvertrag reicht regelmäßig nicht. Ohne Mitwirkung sammeln sich Ansprüche über Jahre an.",
+   "s": "Skript Tag 4 · 2.2 · EuGH C-684/16 · BAG 9 AZR 541/15",
+   "t": 30
+  },
+  {
+   "id": "t4-6",
+   "round": "t4",
+   "q": "Eine Vollzeitkraft hat 30 Urlaubstage bei fünf Arbeitstagen und wechselt auf drei Arbeitstage pro Woche. Wie viele Urlaubstage hat sie dann im Jahr?",
+   "o": [
+    "30",
+    "24",
+    "18",
+    "15"
+   ],
+   "a": 2,
+   "x": "30 ÷ 5 × 3 = 18. Sie hat weiterhin sechs Wochen frei. Wer nur weniger Stunden an gleich vielen Tagen arbeitet, behält die Zahl der Urlaubstage. Bereits erworbene Tage werden nicht rückwirkend gekürzt.",
+   "s": "Skript Tag 4 · 2.1 Umrechnungsformel",
+   "t": 40
+  },
+  {
+   "id": "t4-7",
+   "round": "t4",
+   "q": "Zehn Urlaubstage sind genehmigt. Während des Urlaubs ist die Person vier Tage ärztlich nachgewiesen arbeitsunfähig. Was gilt?",
+   "o": [
+    "Pech gehabt, alle zehn Tage sind verbraucht.",
+    "Sechs Tage sind verbraucht. Der Urlaub verlängert sich aber nicht automatisch, die vier Tage werden neu beantragt.",
+    "Der Urlaub verlängert sich automatisch um vier Tage.",
+    "Die vier Tage werden sofort ausgezahlt."
+   ],
+   "a": 1,
+   "x": "§ 9 BUrlG. Die Person muss die Arbeitsunfähigkeit wie sonst auch anzeigen und nachweisen.",
+   "s": "Skript Tag 4 · 2.3 Krank im Urlaub · § 9 BUrlG",
+   "t": 30
+  },
+  {
+   "id": "t4-8",
+   "round": "t4",
+   "q": "Darf der Arbeitgeber eine ärztliche AU-Feststellung schon ab dem ersten Krankheitstag verlangen?",
+   "o": [
+    "Nein, frühestens ab dem vierten Tag.",
+    "Ja. Bei einer Einzelperson ohne Begründung. Eine generelle Regel für alle ist mitbestimmungspflichtig.",
+    "Nur bei Verdacht auf Täuschung.",
+    "Nein, seit der eAU gar nicht mehr."
+   ],
+   "a": 1,
+   "x": "Die Anzeigepflicht (unverzüglich melden, voraussichtliche Dauer nennen) bleibt auch mit der eAU bestehen. Die eAU ändert den Übermittlungsweg, nicht die Pflichten.",
+   "s": "Skript Tag 4 · 3.1 · § 5 EFZG · BAG 5 AZR 886/11",
+   "t": 30
+  },
+  {
+   "id": "t4-9",
+   "round": "t4",
+   "q": "Andreas Kienzle ist ab Montag, 09.02.2026, schon vor Arbeitsbeginn arbeitsunfähig. Bis wann zahlt der Arbeitgeber das Entgelt fort?",
+   "o": [
+    "Bis Freitag, 20.03.2026 (30 Arbeitstage)",
+    "Bis Sonntag, 22.03.2026",
+    "Bis Montag, 23.03.2026",
+    "Bis Montag, 06.04.2026"
+   ],
+   "a": 1,
+   "x": "Sechs Wochen sind 42 Kalendertage, Wochenenden eingeschlossen (§ 3 EFZG). Tag 1 ist der 09.02., weil er schon vor Arbeitsbeginn krank war. Ab 23.03. kommt Krankengeld in Betracht.",
+   "s": "Skript Tag 4 · 3.3 und Übung 2 · § 3 EFZG",
+   "t": 45
+  },
+  {
+   "id": "t4-10",
+   "round": "t4",
+   "q": "Lara scheidet zum 31.10. aus und hat acht Urlaubstage offen. Sie wird bis dahin widerruflich freigestellt. Was passiert mit dem Urlaub?",
+   "o": [
+    "Er ist durch die Freistellung erledigt.",
+    "Er ist nicht erfüllt. Sind am Ende acht Tage offen, entsteht grundsätzlich ein Abgeltungsanspruch.",
+    "Er verfällt mit dem Austritt.",
+    "Er geht auf den neuen Arbeitgeber über."
+   ],
+   "a": 1,
+   "x": "Nur eine unwiderrufliche Freistellung mit klarer Anrechnung erfüllt den Urlaub. Bei widerruflicher Freistellung muss die Person mit Rückruf rechnen und kann keinen Urlaub machen.",
+   "s": "Skript Tag 4 · 2.4 · § 7 Abs. 4 BUrlG · BAG 9 AZR 455/13",
+   "t": 30
+  },
+  {
+   "id": "t4-11",
+   "round": "t4",
+   "q": "Ein Mitarbeiter war in den letzten zwölf Monaten acht Wochen am Stück krank. Welche Aussage zum bEM stimmt?",
+   "o": [
+    "Er muss am bEM teilnehmen.",
+    "Ohne bEM ist jede Kündigung automatisch unwirksam.",
+    "Das Angebot ist Pflicht, die Teilnahme freiwillig. Fehlt das Angebot, wird eine krankheitsbedingte Kündigung deutlich schwerer zu begründen.",
+    "Das bEM gilt nur für schwerbehinderte Menschen."
+   ],
+   "a": 2,
+   "x": "§ 167 Abs. 2 SGB IX gilt für alle Beschäftigten. Schwelle: mehr als sechs Wochen in zwölf Monaten, rollierend gerechnet. Der Zugang der Einladung muss beweisbar sein.",
+   "s": "Skript Tag 4 · 3.6 bEM · BAG 2 AZR 755/13 · BAG 2 AZR 184/25",
+   "t": 30
+  },
+  {
+   "id": "t4-12",
+   "round": "t4",
+   "q": "Wie steht es nach geltendem Recht um die Pflicht zur Arbeitszeiterfassung?",
+   "o": [
+    "Sie gilt erst, wenn die Arbeitszeitreform in Kraft tritt.",
+    "Sie besteht schon heute. Eine elektronische Form ist bisher nicht gesetzlich vorgeschrieben.",
+    "Es muss zwingend eine elektronische App sein.",
+    "Bei Vertrauensarbeitszeit muss nichts erfasst werden."
+   ],
+   "a": 1,
+   "x": "Zu erfassen sind Beginn, Ende und Dauer der täglichen Arbeitszeit, objektiv und verlässlich. Das Eintragen kann an Beschäftigte delegiert werden, die Verantwortung bleibt beim Arbeitgeber. Reformpläne sind kein geltendes Recht.",
+   "s": "Skript Tag 4 · 1.6 und 1.7 · BAG 1 ABR 22/21 · § 3 Abs. 2 ArbSchG",
+   "t": 30
+  },
+  {
+   "id": "t3-u1",
+   "round": "t3",
+   "q": "Neu 2026: Eine Mitarbeiterin meldet in einem Schreiben Elternzeit in zwei Abschnitten an und arbeitet dazwischen. Kurz vor dem zweiten Abschnitt soll ihr gekündigt werden. Greift der Sonderkündigungsschutz?",
+   "o": [
+    "Nein, er galt nur vor dem ersten Abschnitt.",
+    "Ja. Der vorwirkende Schutz nach § 18 BEEG greift vor jedem Abschnitt, auch wenn alle Abschnitte in einem Schreiben verlangt wurden.",
+    "Nur, wenn sie den zweiten Abschnitt neu beantragt.",
+    "Nein, zwischen den Abschnitten gilt nur das KSchG."
+   ],
+   "a": 1,
+   "x": "BAG, Urteil vom 18.06.2026 – 2 AZR 213/25. Eine Kündigung braucht dann die vorherige Zulässigkeitserklärung der zuständigen Behörde. Die Entscheidung ist jünger als das Skript.",
+   "s": "Update zum Skript Tag 3 · BAG 2 AZR 213/25 · § 18 BEEG",
+   "t": 30
+  },
+  {
+   "id": "t3-u2",
+   "round": "t3",
+   "q": "Neu 2026: Ein Arbeitgeber kündigt so vielen Beschäftigten, dass eine Massenentlassungsanzeige nötig wäre, erstattet sie aber nicht. Was folgt nach der aktuellen BAG-Linie?",
+   "o": [
+    "Nichts, die Anzeige ist reine Formsache.",
+    "Nur ein Bußgeld.",
+    "Die Kündigungen werden um einen Monat verschoben.",
+    "Die Kündigungen sind unwirksam."
+   ],
+   "a": 3,
+   "x": "BAG, Urteile vom 01.04.2026 – 6 AZR 152/22 und 6 AZR 157/22. Nicht jeder Fehler in einer erstatteten Anzeige ist schädlich (BAG 25.06.2026 – 6 AZR 7/26). Fehlt sie ganz, scheitert die Kündigung. Die Entscheidungen sind jünger als das Skript.",
+   "s": "Update zum Skript Tag 3 · BAG 6 AZR 152/22 · § 17 KSchG",
+   "t": 30
+  },
+  {
+   "id": "bm-1",
+   "round": "bm",
+   "q": "Ein Unternehmen hat in der Regel 20 wahlberechtigte Arbeitnehmer und einen Betriebsrat. Muss der Betriebsrat einer Einstellung nach § 99 BetrVG zustimmen?",
+   "o": [
+    "Ja, ab 20 Beschäftigten braucht jede Einstellung die Zustimmung.",
+    "Nein. § 99 setzt in der Regel mehr als 20 wahlberechtigte Arbeitnehmer voraus, also mindestens 21.",
+    "Ja, sobald ein Betriebsrat besteht, gilt § 99 unabhängig von der Größe.",
+    "Nein, § 99 gilt erst ab 500 Arbeitnehmern."
+   ],
+   "a": 1,
+   "x": "§ 99 knüpft an Unternehmen mit in der Regel mehr als 20 wahlberechtigten Arbeitnehmern an. Gezählt werden Köpfe, keine FTE. Ein bestehender Betriebsrat allein löst § 99 nicht aus; ohne Betriebsrat gibt es auch bei 500 Beschäftigten keine Zustimmung nach § 99.",
+   "s": "Skript Bewerbermanagement · Kap. 06 · § 99 BetrVG",
+   "t": 30
+  },
+  {
+   "id": "bm-2",
+   "round": "bm",
+   "q": "Die Führungskraft will eine geeignete Stelle nur als Vollzeitstelle ausschreiben: „Vollzeit war hier immer üblich.“ Was gilt?",
+   "o": [
+    "Das ist ihre freie Entscheidung, solange die Anzeige m/w/d enthält.",
+    "Teilzeit muss nur angeboten werden, wenn der Betriebsrat es verlangt.",
+    "Ist der Arbeitsplatz geeignet, muss er nach § 7 Abs. 1 TzBfG auch als Teilzeitarbeitsplatz ausgeschrieben werden. Die Gewohnheit beantwortet die Eignungsfrage nicht.",
+    "Teilzeit muss erst nach sechs Monaten Betriebszugehörigkeit angeboten werden."
+   ],
+   "a": 2,
+   "x": "§ 7 Abs. 1 TzBfG gilt für interne und öffentliche Ausschreibungen geeigneter Arbeitsplätze. HR klärt Aufgabenverteilung, Erreichbarkeit und mögliche Arbeitszeitmodelle, statt die Gewohnheit fortzuschreiben.",
+   "s": "Skript Bewerbermanagement · Kap. 04 · § 7 Abs. 1 TzBfG",
+   "t": 30
+  },
+  {
+   "id": "bm-3",
+   "round": "bm",
+   "q": "In der Betriebsvereinbarung steht: Interne Ausschreibung zehn Arbeitstage vor der externen. Wie ist diese Frist einzuordnen?",
+   "o": [
+    "Als betriebliche Regel. § 93 BetrVG gibt dem Betriebsrat das Recht, interne Ausschreibung zu verlangen, schreibt aber keine allgemeine Frist vor.",
+    "Als gesetzliche Mindestfrist aus § 93 BetrVG.",
+    "Als Frist aus dem AGG.",
+    "Als unverbindliche Empfehlung, die HR ignorieren darf."
+   ],
+   "a": 0,
+   "x": "Reihenfolge und Dauer ergeben sich aus dem konkreten Verlangen und den Vereinbarungen. Unterbleibt eine erforderliche interne Ausschreibung, kann der Betriebsrat seine Zustimmung nach § 99 Abs. 2 Nr. 5 verweigern. Die Regel ist also verbindlich, aber nicht gesetzlich.",
+   "s": "Skript Bewerbermanagement · Kap. 07 · §§ 93, 99 Abs. 2 Nr. 5 BetrVG",
+   "t": 30
+  },
+  {
+   "id": "bm-4",
+   "round": "bm",
+   "q": "Eine abgelehnte Bewerberin vermutet eine Benachteiligung wegen ihres Alters. Bis wann muss sie Ansprüche nach § 15 AGG nach geltendem Recht schriftlich geltend machen?",
+   "o": [
+    "Innerhalb von drei Wochen ab Absage.",
+    "Innerhalb von zwei Monaten ab Zugang der Ablehnung, sofern tariflich nichts anderes gilt.",
+    "Innerhalb von sechs Monaten, das ist die gesetzliche Aufbewahrungsfrist.",
+    "Innerhalb von drei Jahren, das ist die Regelverjährung."
+   ],
+   "a": 1,
+   "x": "§ 15 Abs. 4 AGG: zwei Monate, bei Bewerbungen ab Zugang der Ablehnung. Danach drei Monate für die Klage (§ 61b ArbGG). Ausblick: Ein Regierungsentwurf zur AGG-Reform sieht vier statt zwei Monate vor. Stand November 2026 ist er nicht in Kraft.",
+   "s": "Skript Bewerbermanagement · Kap. 16 · § 15 Abs. 4 AGG, § 61b ArbGG",
+   "t": 30
+  },
+  {
+   "id": "bm-5",
+   "round": "bm",
+   "q": "„Bewerbungsunterlagen müssen wir sechs Monate aufbewahren.“ Stimmt das?",
+   "o": [
+    "Ja, das schreibt die DSGVO vor.",
+    "Ja, das schreibt das AGG vor.",
+    "Nein, eine allgemeine gesetzliche Sechs-Monats-Pflicht gibt es nicht. Die sechs Monate sind eine Praxisorientierung aus AGG-Frist, Klagefrist und Puffer.",
+    "Nein, Unterlagen müssen sofort nach der Absage gelöscht werden."
+   ],
+   "a": 2,
+   "x": "Maßgeblich ist, wie lange Daten für einen zulässigen Zweck erforderlich sind, etwa für die Rechtsverteidigung. Ein Löschkonzept legt Kategorien, Fristbeginn und Verantwortung fest und erfasst auch Postfächer, Downloads und Exporte.",
+   "s": "Skript Bewerbermanagement · Kap. 16 · Art. 5, 6, 17 DSGVO",
+   "t": 30
+  },
+  {
+   "id": "bm-6",
+   "round": "bm",
+   "q": "Ein Kollege hat eine Bekannte empfohlen und fragt HR, wie weit ihre Bewerbung ist und was sie verdienen möchte. Was ist die richtige Reaktion?",
+   "o": [
+    "Kurz den Status nennen, das Gehalt aber weglassen.",
+    "Alles mitteilen, er hat sie ja empfohlen.",
+    "An die Führungskraft verweisen.",
+    "Keine Auskunft. HR kommuniziert direkt mit der Bewerberin und prüft selbst, ob eine Rückmeldung an sie überfällig ist."
+   ],
+   "a": 3,
+   "x": "Eine Empfehlung schafft kein Auskunftsrecht. Status, Gehaltswunsch und Bewertungen sind Bewerberdaten. Die Nachfrage ist aber ein Signal: Wenn die Bewerberin selbst nichts hört, muss HR die direkte Kommunikation nachholen.",
+   "s": "Skript Bewerbermanagement · Kap. 11 · DSGVO",
+   "t": 30
+  },
+  {
+   "id": "bm-7",
+   "round": "bm",
+   "q": "Eine Bewerbung mit Hinweis auf Schwerbehinderung geht ein. Im Betrieb gibt es eine Schwerbehindertenvertretung (SBV). Wann wird sie unterrichtet?",
+   "o": [
+    "Unmittelbar nach Eingang der Bewerbung.",
+    "Erst wenn die Person in die engere Wahl kommt.",
+    "Erst nach der Auswahlentscheidung, zur Kenntnisnahme.",
+    "Gar nicht, das ist Sache des Betriebsrats."
+   ],
+   "a": 0,
+   "x": "§ 164 Abs. 1 SGB IX verlangt die Unterrichtung unmittelbar nach Eingang. Die SBV hat zudem Einsichts- und Teilnahmerechte (§ 178 Abs. 2). Lehnt die bewerbende Person die SBV-Beteiligung ausdrücklich ab, ist das zu beachten.",
+   "s": "Skript Bewerbermanagement · Kap. 13 · §§ 164, 178 SGB IX",
+   "t": 30
+  },
+  {
+   "id": "bm-8",
+   "round": "bm",
+   "q": "Die SBV wurde vergessen, die Entscheidung ist schon gefallen. Was sieht § 178 Abs. 2 SGB IX vor?",
+   "o": [
+    "Die Entscheidung ist endgültig, die SBV wird nur informiert.",
+    "Die Durchführung wird ausgesetzt, die Beteiligung binnen sieben Tagen nachgeholt, danach wird endgültig entschieden.",
+    "Das Verfahren muss komplett neu ausgeschrieben werden.",
+    "Die schwerbehinderte Person muss eingestellt werden."
+   ],
+   "a": 1,
+   "x": "Aussetzen, nachholen, endgültig entscheiden. Das ist kein Freibrief zum bloßen Abnicken einer feststehenden Entscheidung. Ein Einstellungsanspruch folgt aus dem Fehler nicht.",
+   "s": "Skript Bewerbermanagement · Kap. 15 · § 178 Abs. 2 SGB IX",
+   "t": 30
+  },
+  {
+   "id": "bm-9",
+   "round": "bm",
+   "q": "Die Führungskraft leitet Bewerbungsunterlagen als PDF an eine unbeteiligte Kollegin weiter. Was gilt für die Meldung an die Datenschutzaufsicht?",
+   "o": [
+    "Jede Fehlweitergabe muss sofort gemeldet werden.",
+    "Eine Meldung ist nie nötig, es blieb ja im Unternehmen.",
+    "Es muss eine Meldung innerhalb von 24 Stunden erfolgen.",
+    "Intern sofort an Datenschutz oder Sicherheit geben. Eine Meldung binnen 72 Stunden ist nötig, wenn voraussichtlich ein Risiko für die Betroffenen besteht."
+   ],
+   "a": 3,
+   "x": "Art. 33 DSGVO: 72 Stunden ab Bekanntwerden, sofern ein Risiko besteht. Bei hohem Risiko zusätzlich Art. 34 prüfen. Bewertung und Vorfall werden in jedem Fall dokumentiert, auch wenn keine Meldung nötig ist.",
+   "s": "Skript Bewerbermanagement · Kap. 15 · Art. 33, 34 DSGVO",
+   "t": 30
+  },
+  {
+   "id": "bm-10",
+   "round": "bm",
+   "q": "Ein Abrufvertrag sieht mindestens 30 Wochenstunden vor. Wie viele Stunden darf der Arbeitgeber höchstens abrufen?",
+   "o": [
+    "48 Stunden, das erlaubt das Arbeitszeitgesetz.",
+    "40 Stunden.",
+    "37,5 Stunden: grundsätzlich bis zu 25 Prozent zusätzlich zur Mindestarbeitszeit.",
+    "30 Stunden, mehr nie."
+   ],
+   "a": 2,
+   "x": "§ 12 TzBfG: bei vereinbarter Mindestarbeitszeit bis zu 25 Prozent mehr (30 + 7,5). Das Arbeitszeitgesetz ist eine Schutzgrenze und erweitert den Vertrag nicht. Für gewöhnliche Teilzeitverträge gilt die 25-Prozent-Regel nicht.",
+   "s": "Skript Bewerbermanagement · Kap. 17 · § 12 TzBfG, § 3 ArbZG",
+   "t": 30
+  },
+  {
+   "id": "bm-11",
+   "round": "bm",
+   "q": "Ein 17-jähriger Auszubildender ist seit drei Monaten im Betrieb. Was gilt bei der Betriebsratswahl?",
+   "o": [
+    "Er darf wählen, aber nicht gewählt werden.",
+    "Er darf weder wählen noch gewählt werden.",
+    "Er darf wählen und gewählt werden.",
+    "Er darf gewählt werden, aber nicht wählen."
+   ],
+   "a": 0,
+   "x": "Wahlberechtigt sind Arbeitnehmer ab 16 (§ 7 BetrVG), auch Auszubildende. Wählbar ist nach § 8 grundsätzlich, wer volljährig ist und sechs Monate dem Betrieb angehört.",
+   "s": "Skript Bewerbermanagement · Kap. 06 · §§ 7, 8 BetrVG",
+   "t": 30
+  },
+  {
+   "id": "sv-1",
+   "round": "sv",
+   "q": "Rechenbeispiel 2026: 4.000 € brutto, kinderlos, über 23, außerhalb Sachsens, Zusatzbeitrag 2,9 %. Wie hoch sind die Arbeitgeberkosten mindestens?",
+   "o": [
+    "4.000 €, die Beiträge kommen ja aus dem Brutto.",
+    "3.130 €.",
+    "4.870 €.",
+    "4.846 € zuzüglich Unfallversicherung und Umlagen."
+   ],
+   "a": 3,
+   "x": "Der Arbeitgeberanteil (846 €) kommt zum Brutto hinzu. Der Arbeitnehmeranteil (870 €, inklusive Kinderlosenzuschlag) wird vom Brutto abgezogen: 3.130 € bleiben vor Lohnsteuer.",
+   "s": "Handout SV-Recht · Kap. 4 · Beiträge 2026",
+   "t": 30
+  },
+  {
+   "id": "sv-2",
+   "round": "sv",
+   "q": "Ein Mitarbeiter verdient 2026 regelmäßig 6.000 € im Monat, ohne Sonderzahlungen. Was folgt daraus für die Krankenversicherung?",
+   "o": [
+    "Er muss in die PKV wechseln.",
+    "KV-Beiträge werden nur bis 5.812,50 € berechnet. Mit 72.000 € im Jahr liegt er aber unter der JAEG von 77.400 € und bleibt versicherungspflichtig.",
+    "Er wird versicherungsfrei, weil er über der Beitragsbemessungsgrenze liegt.",
+    "Er zahlt Beiträge auf die vollen 6.000 €."
+   ],
+   "a": 1,
+   "x": "Beitragsbemessungsgrenze und Jahresarbeitsentgeltgrenze beantworten verschiedene Fragen. Die BBG deckelt die Beiträge, die JAEG entscheidet über die Versicherungspflicht. Ausblick 2027 (Kabinett, Bundesrat ausstehend): BBG KV 6.375 €, JAEG 84.150 €.",
+   "s": "Handout SV-Recht · Kap. 5 · Rechengrößen 2026",
+   "t": 30
+  },
+  {
+   "id": "sv-3",
+   "round": "sv",
+   "q": "2026: Minijob mit 600 € monatlich und vereinbarten 300 € Weihnachtsgeld, ganzjährig. Liegt ein Minijob mit Verdienstgrenze vor?",
+   "o": [
+    "Ja, die 600 € liegen unter 603 €.",
+    "Ja, Weihnachtsgeld zählt nie mit.",
+    "Nein. 7.500 € im Jahr ergeben 625 € im Monat und überschreiten 2026 die Grenze von 603 €.",
+    "Nur wenn die Person zustimmt."
+   ],
+   "a": 2,
+   "x": "Vorhersehbare Sonderzahlungen gehören in die Beurteilung des regelmäßigen Entgelts. Ausblick 2027: Mit dem Mindestlohn von 14,60 € steigt die Grenze auf 633 €. Dieselbe Konstellation wäre dann ein Minijob. Neu beurteilen!",
+   "s": "Handout SV-Recht · Kap. 6 · § 8 SGB IV",
+   "t": 30
+  },
+  {
+   "id": "sv-4",
+   "round": "sv",
+   "q": "Ausblick 2027: Der Mindestlohn steigt zum 1. Januar 2027 auf 14,60 €. Wo liegt dann die Minijobgrenze?",
+   "o": [
+    "633 € (14,60 × 130 ÷ 3, aufgerundet).",
+    "603 €, die Grenze ist fest.",
+    "556 €.",
+    "700 €."
+   ],
+   "a": 0,
+   "x": "Die Grenze ist an den Mindestlohn gekoppelt. 14,60 × 130 ÷ 3 = 632,67, aufgerundet 633 €. Der Übergangsbereich beginnt dann bei 633,01 €. Rechtsgrundlage: Fünfte Mindestlohnanpassungsverordnung.",
+   "s": "Handout SV-Recht · Kap. 6 · Ausblick 2027 (Stand Nov. 2026)",
+   "t": 30
+  },
+  {
+   "id": "sv-5",
+   "round": "sv",
+   "q": "Eine Person hat einen versicherungspflichtigen Hauptjob und einen Minijob mit 300 €. Später nimmt sie einen zweiten Minijob mit 200 € auf. Was passiert?",
+   "o": [
+    "Beide Minijobs bleiben getrennt und abgabenfrei für sie.",
+    "Beide Minijobs werden mit dem Hauptjob zusammengerechnet.",
+    "Nichts, zusammen liegen die Minijobs unter der Grenze.",
+    "Der zuerst aufgenommene Minijob bleibt außen vor. Der zweite wird mit dem Hauptjob zusammengerechnet: KV, PV und RV, nicht AV."
+   ],
+   "a": 3,
+   "x": "Neben einem Hauptjob bleibt nur ein Minijob privilegiert, in der Regel der zuerst aufgenommene. Dass beide Minijobs zusammen unter der Grenze liegen, spielt keine Rolle.",
+   "s": "Handout SV-Recht · Kap. 7 · Zusammenrechnung",
+   "t": 30
+  },
+  {
+   "id": "sv-6",
+   "round": "sv",
+   "q": "Für eine Werkstudentin greift das Werkstudentenprivileg. In welchem Zweig bleibt sie aus dem Job versicherungspflichtig?",
+   "o": [
+    "In keinem.",
+    "In der Rentenversicherung.",
+    "In Kranken- und Pflegeversicherung.",
+    "In der Arbeitslosenversicherung."
+   ],
+   "a": 1,
+   "x": "Das Privileg bewirkt Versicherungsfreiheit in KV, PV und AV. Die RV-Pflicht bleibt, die Unfallversicherung auch. Kostenfrei ist die Beschäftigung also nicht.",
+   "s": "Handout SV-Recht · Kap. 8 · Werkstudierende",
+   "t": 30
+  },
+  {
+   "id": "sv-7",
+   "round": "sv",
+   "q": "Erstvertrag sechs Monate, dann zwölf Monate Verlängerung, dann sechs Monate. Sachgrundlos befristet. Was stimmt?",
+   "o": [
+    "Unzulässig, das sind drei Verträge.",
+    "Unzulässig, mehr als 18 Monate gehen nie.",
+    "Die zeitlichen Grundgrenzen sind eingehalten: 24 Monate, zwei Verlängerungen. Zulässigkeit insgesamt (Vorbeschäftigung, Form, Inhalt) ist noch zu prüfen.",
+    "Zulässig, weil die Person eingeschrieben ist."
+   ],
+   "a": 2,
+   "x": "§ 14 Abs. 2 TzBfG: bis zwei Jahre, bis zu drei Verlängerungen. Befristung und Werkstudentenstatus sind getrennte Prüfungen. Geplante Änderungen der sachgrundlosen Befristung sind Stand November 2026 nur Koalitionsbeschluss, kein geltendes Recht.",
+   "s": "Handout SV-Recht · Kap. 9 · § 14 Abs. 2 TzBfG",
+   "t": 30
+  },
+  {
+   "id": "sv-8",
+   "round": "sv",
+   "q": "Bei einem Arbeitnehmer wurden Beiträge versehentlich nicht abgezogen. Wie lange darf der Arbeitgeber den Arbeitnehmeranteil nachholen?",
+   "o": [
+    "Unbegrenzt.",
+    "Vier Jahre.",
+    "Bis Jahresende.",
+    "Grundsätzlich nur bei den drei nächsten Entgeltzahlungen."
+   ],
+   "a": 3,
+   "x": "§ 28g SGB IV. Den Gesamtsozialversicherungsbeitrag schuldet der Arbeitgeber. Danach trägt er den Arbeitnehmeranteil grundsätzlich selbst, mit gesetzlichen Ausnahmen etwa bei fehlendem Verschulden.",
+   "s": "Handout SV-Recht · Kap. 10 · Beitragsnachforderungen",
+   "t": 30
+  },
+  {
+   "id": "sv-9",
+   "round": "sv",
+   "q": "„Nachforderungen gehen immer nur vier Jahre zurück.“ Stimmt das?",
+   "o": [
+    "Ja, das ist eine feste Grenze.",
+    "Nein. Regulär vier Jahre nach Ablauf des Fälligkeitsjahres, bei vorsätzlich vorenthaltenen Beiträgen 30 Jahre. Eine Betriebsprüfung kann die Verjährung hemmen.",
+    "Nein, es sind immer zehn Jahre.",
+    "Ja, außer bei Minijobs."
+   ],
+   "a": 1,
+   "x": "§ 25 SGB IV. Ausblick: Ab 2027 läuft die Betriebsprüfung der Rentenversicherung ausnahmslos elektronisch (euBP).",
+   "s": "Handout SV-Recht · Kap. 10 · Verjährung",
+   "t": 30
+  },
+  {
+   "id": "sv-10",
+   "round": "sv",
+   "q": "Eine Person erkrankt fünf Jahre nach ihrem Wechsel aus einem Chemieunternehmen an Krebs. Verdacht: frühere Gefahrstoffexposition. Kommt eine Berufskrankheit noch infrage?",
+   "o": [
+    "Ja. Der Arbeitgeberwechsel schließt die Anerkennung nicht aus. Entscheidend sind versicherte Tätigkeit, Einwirkung und Ursachenzusammenhang.",
+    "Nein, zuständig ist nur der aktuelle Arbeitgeber.",
+    "Nein, nach drei Jahren ist das verjährt.",
+    "Ja, automatisch, jede Krebserkrankung nach Chemiearbeit ist eine Berufskrankheit."
+   ],
+   "a": 0,
+   "x": "Viele Berufskrankheiten zeigen sich erst lange nach der Einwirkung. Nicht jede arbeitsbedingte Erkrankung ist aber eine anerkannte Berufskrankheit; maßgeblich ist die Berufskrankheiten-Verordnung.",
+   "s": "Handout SV-Recht · Kap. 11 · SGB VII, BKV",
+   "t": 30
+  },
+  {
+   "id": "sv-11",
+   "round": "sv",
+   "q": "Wer trägt 2026 den Kinderlosenzuschlag in der Pflegeversicherung?",
+   "o": [
+    "Arbeitgeber und Arbeitnehmer je zur Hälfte.",
+    "Der Arbeitgeber.",
+    "Das kinderlose Mitglied ab 23 Jahren allein: 0,6 Prozentpunkte.",
+    "Die Pflegekasse."
+   ],
+   "a": 2,
+   "x": "Ausblick: Das Pflegeneuordnungsgesetz will den Zuschlag auf 0,9 Prozentpunkte anheben. Stand November 2026 ist das ein Regierungsentwurf, kein geltendes Recht.",
+   "s": "Handout SV-Recht · Kap. 4 · Pflegeversicherung",
+   "t": 30
+  },
+  {
+   "id": "hs-1",
+   "round": "hs",
+   "q": "Im Fachgespräch heißt es: „Das Drei-Säulen-Modell steht so bei Dave Ulrich.“ Was ist präzise?",
+   "o": [
+    "Stimmt, Ulrich hat 1997 Business Partner, CoE und Shared Services beschrieben.",
+    "Das Modell stammt aus dem Betriebsverfassungsgesetz.",
+    "Das Modell wird auf Ulrich zurückgeführt. In „Human Resource Champions“ beschreibt er aber vier HR-Rollen, die drei Säulen sind eine spätere Praxisausprägung.",
+    "Das Modell ist eine EU-Vorgabe für HR-Organisation."
+   ],
+   "a": 2,
+   "x": "Ulrich (1997): strategischer Partner, administrativer Experte, Mitarbeiterchampion, Change Agent. Kennt das Modell, haltet es nicht für die Lösung: Entscheidend sind Zuständigkeiten, Übergaben und Entscheidungsrechte.",
+   "s": "Skript HR-Service · 1.2 · Drei-Säulen-Modell",
+   "t": 30
+  },
+  {
+   "id": "hs-2",
+   "round": "hs",
+   "q": "Ein Teilzeitantrag geht ein. Auf welcher Bearbeitungsebene liegt er?",
+   "o": [
+    "Ebene 0, Self-Service.",
+    "Ebene 2, Sachbearbeitung mit Einzelfallprüfung.",
+    "Ebene 1, Standardauskunft.",
+    "Ebene 3, immer an Legal."
+   ],
+   "a": 1,
+   "x": "Ebene 2 ist die Kernebene von HR Operations: Einzelfallprüfung. Die Leitfrage lautet nicht „Kann ich das beantworten?“, sondern „Bin ich die richtige Stelle?“",
+   "s": "Skript HR-Service · 1.4 · Vier Bearbeitungsebenen",
+   "t": 30
+  },
+  {
+   "id": "hs-3",
+   "round": "hs",
+   "q": "Im Postfach: ein Teilzeitantrag und die Bitte um eine Kita-Bescheinigung (fünf Minuten Arbeit). Womit fängst du an?",
+   "o": [
+    "Mit der Bescheinigung, schnell erledigt ist schnell erledigt.",
+    "Mit dem, was zuerst eingegangen ist.",
+    "Mit dem, wer lauter nachfragt.",
+    "Mit dem Teilzeitantrag: sofort Frist eintragen, Wiedervorlage und Verantwortung festlegen. Die Prüfung selbst kann später folgen."
+   ],
+   "a": 3,
+   "x": "Beim Teilzeitantrag läuft eine gesetzliche Uhr (§ 8 Abs. 5 TzBfG). Priorität begründen: Frist, Schaden bei Liegenbleiben, Belastung der Person. Nicht: Lautstärke, Absender, schnelle Erledigbarkeit.",
+   "s": "Skript HR-Service · 1.6 · Priorisierung",
+   "t": 30
+  },
+  {
+   "id": "hs-4",
+   "round": "hs",
+   "q": "Was gehört nach der Reaktionsregel des Kurses in die erste Antwort auf jede Anfrage?",
+   "o": [
+    "Wir haben es. Es liegt bei dieser Person. Wir melden uns bis zu diesem Termin.",
+    "Die vollständige Lösung.",
+    "Eine Ticketnummer genügt.",
+    "Ein Verweis auf das Intranet."
+   ],
+   "a": 0,
+   "x": "Reaktionszeit und Bearbeitungszeit sind zwei verschiedene Dinge. Die Reaktion muss nichts lösen, sie nimmt die Unsicherheit. Eine automatische Ticketnummer ist technisch eine Reaktion, inhaltlich oft keine.",
+   "s": "Skript HR-Service · 1.7 · Reaktionszeit und Bearbeitungszeit",
+   "t": 30
+  },
+  {
+   "id": "hs-5",
+   "round": "hs",
+   "q": "„Arbeitsvertrag versendet, Rücklauf abwarten.“ Warum ist das keine Wiedervorlage?",
+   "o": [
+    "Weil das Wort „Wiedervorlage“ fehlt.",
+    "Weil es nicht in Großbuchstaben steht.",
+    "Es fehlen Zeitpunkt, verantwortliche Person und Folgehandlung, wenn nichts passiert.",
+    "Weil Verträge immer per Einschreiben gehen müssen."
+   ],
+   "a": 2,
+   "x": "Eine Aufgabe ohne Termin und Verantwortlichkeit ist keine Aufgabe, sondern eine Notiz. Eine echte Wiedervorlage hat Anlass, Zeitpunkt, verantwortliche Person und Folgehandlung.",
+   "s": "Skript HR-Service · 2.2 · Wiedervorlage",
+   "t": 30
+  },
+  {
+   "id": "hs-6",
+   "round": "hs",
+   "q": "Betreff „Kurze Frage zur Arbeitszeit“. Im vierten Absatz: „Ich arbeite seit Wochen bis spät abends, schlafe kaum und weiß nicht, wie lange ich das noch schaffe.“ Wie ordnest du ein?",
+   "o": [
+    "Auskunft zur Arbeitszeit, Standardantwort schicken.",
+    "Möglicher kritischer Fall mit hoher Priorität. Schnell reagieren und den richtigen Weg einleiten, auch wenn die fachliche Lösung nicht bei dir liegt.",
+    "Beschwerde über die Führungskraft, an sie weiterleiten.",
+    "Nichts tun, die Person hat ja nur gefragt."
+   ],
+   "a": 1,
+   "x": "Erst zu Ende lesen, dann sortieren. Der Betreff ist kein Triage-System. Priorität und Zuständigkeit sind zwei Fragen: dringend erkannt, gezielt übergeben.",
+   "s": "Skript HR-Service · 1.5–1.6 · Triage",
+   "t": 30
+  },
+  {
+   "id": "hs-7",
+   "round": "hs",
+   "q": "„Rechtsgrundlage für Beschäftigtendaten ist § 26 Abs. 1 BDSG.“ Wie ordnest du den Satz heute ein?",
+   "o": [
+    "Richtig, die Norm steht ja im Gesetz.",
+    "Falsch, weil § 26 BDSG 2025 aufgehoben wurde.",
+    "Richtig, solange es eine Betriebsvereinbarung gibt.",
+    "Überholt. Nach EuGH C-34/21 und BAG 8 AZR 209/21 bleibt § 26 Abs. 1 insoweit unangewendet; die Verarbeitung richtet sich unmittelbar nach der DSGVO."
+   ],
+   "a": 3,
+   "x": "§ 26 BDSG steht unverändert im Gesetz, erfüllt aber nach dem BAG die Anforderungen des Art. 88 DSGVO nicht. Ein Beschäftigtendatengesetz ist angekündigt, Stand November 2026 nicht in Kraft.",
+   "s": "Skript HR-Service · 3.1 · § 26 BDSG",
+   "t": 30
+  },
+  {
+   "id": "hs-8",
+   "round": "hs",
+   "q": "Welcher Fall gehört am ehesten in den Meldeweg nach dem Hinweisgeberschutzgesetz?",
+   "o": [
+    "„Ich finde meine Leistungsbeurteilung unfair.“",
+    "„Unsere Führungskraft weist uns an, vorgeschriebene Sicherheitsmaßnahmen bewusst nicht einzuhalten.“",
+    "„Mein Kollege telefoniert ständig laut.“",
+    "„Ich bekomme immer die unbeliebten Schichten.“"
+   ],
+   "a": 1,
+   "x": "§ 2 HinSchG erfasst unter anderem bußgeldbewehrte Verstöße gegen Vorschriften zum Schutz von Leben und Gesundheit. Dann ermittelt HR nicht selbst, sondern beachtet den Meldeweg. Nicht jede Beschwerde ist Whistleblowing.",
+   "s": "Skript HR-Service · 3.5 · § 2 HinSchG",
+   "t": 30
+  },
+  {
+   "id": "hs-9",
+   "round": "hs",
+   "q": "Was gilt für eine interne Meldestelle nach dem HinSchG?",
+   "o": [
+    "Pflicht ab 10 Beschäftigten; Rückmeldung innerhalb von 7 Tagen.",
+    "Pflicht ab 250 Beschäftigten; anonyme Kanäle sind Pflicht.",
+    "Grundsätzlich Pflicht ab 50 Beschäftigten. Eingangsbestätigung spätestens nach 7 Tagen, Rückmeldung grundsätzlich innerhalb von 3 Monaten.",
+    "Freiwillig für alle Unternehmen."
+   ],
+   "a": 2,
+   "x": "§§ 12, 17 HinSchG. Für bestimmte Branchen gilt die Pflicht unabhängig von der Größe. Anonyme Meldungen sollen bearbeitet werden, eigene anonyme Kanäle sind nicht vorgeschrieben.",
+   "s": "Skript HR-Service · 3.5 · §§ 12, 16, 17 HinSchG",
+   "t": 30
+  },
+  {
+   "id": "hs-10",
+   "round": "hs",
+   "q": "Die Leitung gibt als Ziel „90 Prozent Erstlösungsquote“ aus. Welches Risiko entsteht?",
+   "o": [
+    "Der Anreiz, nicht zu eskalieren: Komplexe Fälle werden selbst gelöst, damit das Ticket nicht weiterwandert.",
+    "Keines, eine hohe Quote ist immer gut.",
+    "Die Reaktionszeit steigt automatisch.",
+    "Self-Service wird überflüssig."
+   ],
+   "a": 0,
+   "x": "Eine sauber erkannte und übergebene Eskalation ist ein Zeichen für einen guten Prozess. Die Quote kann sinken, obwohl der Service besser wird. Kennzahlen zeigen, dass etwas auffällt, nicht warum.",
+   "s": "Skript HR-Service · 4.3 · Kennzahlen",
+   "t": 30
+  },
+  {
+   "id": "ki-1",
+   "round": "ki",
+   "q": "„SAP ist unsere Source of Truth.“ Welche Rückfrage macht den Satz fachlich brauchbar?",
+   "o": [
+    "Welche SAP-Version?",
+    "Source of Truth wofür? Für jedes Datenobjekt kann ein anderes System führend sein.",
+    "Wer hat SAP eingeführt?",
+    "Wie viele Lizenzen gibt es?"
+   ],
+   "a": 1,
+   "x": "Bewerberdaten führt oft das ATS, Beschäftigungsdaten das HRIS, Zeiten die Zeitwirtschaft, Dokumente die Personalakte. Ein Ticket dokumentiert den Vorgang, ist aber nicht die führende Quelle für den Wert.",
+   "s": "Skript HR-Systeme/KI · 1.4 · Source of Truth",
+   "t": 30
+  },
+  {
+   "id": "ki-2",
+   "round": "ki",
+   "q": "Eine Mitarbeiterin hat im Self-Service eine neue Adresse eingetragen. Status: „gesendet“. Was braucht ein kontrollierter Writeback ins HRIS?",
+   "o": [
+    "Nichts weiter, gesendet ist gesendet.",
+    "Eine Bestätigung der Führungskraft per Mail.",
+    "Den Ausdruck des Formulars.",
+    "Berechtigung oder Freigabe, Wirksamkeitsdatum und Änderungsnachweis."
+   ],
+   "a": 3,
+   "x": "Der Eingabekanal ist nicht die Source of Truth. Erst wenn der Wert mit richtigem Wirksamkeitsdatum im führenden System angekommen ist, ist der Writeback erfolgreich. Scheitert er, braucht es Fehlerqueue oder Ticket mit Owner.",
+   "s": "Skript HR-Systeme/KI · 1.4 · Kontrollierter Writeback",
+   "t": 30
+  },
+  {
+   "id": "ki-3",
+   "round": "ki",
+   "q": "Du entdeckst im HRIS 30 Stunden, in der Zeitwirtschaft 32. Was ist der erste Schritt der Korrekturlogik?",
+   "o": [
+    "Sofort beide Systeme auf 32 setzen.",
+    "Payroll informieren, dass alles falsch ist.",
+    "Fehler erkennen und verifizieren: Welche Systeme zeigen welchen Wert?",
+    "Den alten Wert löschen."
+   ],
+   "a": 2,
+   "x": "Fünf Schritte: verifizieren, Quelle und Soll-Zustand mit Stichtag feststellen, Auswirkungen prüfen, kontrolliert korrigieren, Ergebnis verifizieren und Abschluss belegen. Nicht sofort korrigieren.",
+   "s": "Skript HR-Systeme/KI · 2.3 · Korrekturlogik",
+   "t": 30
+  },
+  {
+   "id": "ki-4",
+   "round": "ki",
+   "q": "Eine Arbeitszeit war seit drei Monaten falsch hinterlegt. Wie wird korrigiert?",
+   "o": [
+    "Rückwirkend mit dem richtigen Wirksamkeitsdatum historisieren. Der alte Eintrag bleibt als Spur erhalten.",
+    "Den alten Wert überschreiben, damit es sauber aussieht.",
+    "Erst ab heute ändern und die Vergangenheit lassen.",
+    "Den Datensatz löschen und neu anlegen."
+   ],
+   "a": 0,
+   "x": "Folgesysteme haben mit dem alten Wert schon gearbeitet. Ohne Historie lässt sich nicht mehr erklären, welche Abrechnung worauf beruhte. Folgen für Payroll, Urlaub und Meldungen werden einzeln belegt, nicht unterstellt.",
+   "s": "Skript HR-Systeme/KI · 2.4–2.5 · Historisieren",
+   "t": 30
+  },
+  {
+   "id": "ki-5",
+   "round": "ki",
+   "q": "Ein Tool schiebt Bewerbungen unter 40 Punkten in einen separaten Ordner, der faktisch nie geöffnet wird. Wie ist der Entscheidungseinfluss?",
+   "o": [
+    "Gering, das Tool entscheidet ja nicht.",
+    "Null, es ist nur ein Ordner.",
+    "Hoch: Die Sortierung wirkt praktisch wie eine Entscheidung.",
+    "Das ist nur relevant, wenn das Tool Absagen verschickt."
+   ],
+   "a": 2,
+   "x": "Nicht das Etikett zählt, sondern die Funktion. Wer Vorschläge wegen Zeitdruck oder dominanter Oberfläche regelmäßig übernimmt, zeigt Automation Bias. Ein menschlicher Klick allein ist noch keine Kontrolle.",
+   "s": "Skript HR-Systeme/KI · 8 · Entscheidungseinfluss",
+   "t": 30
+  },
+  {
+   "id": "ki-6",
+   "round": "ki",
+   "q": "Ein KI-System zur Vorauswahl von Bewerbungen fällt unter Anhang III Nr. 4 der KI-Verordnung. Was heißt das?",
+   "o": [
+    "Es ist verboten.",
+    "Es ist erlaubt, unterliegt aber zusätzlichen Anforderungen an Anbieter und Betreiber.",
+    "Es ist unproblematisch, weil erlaubt.",
+    "Es gilt automatisch Art. 22 DSGVO."
+   ],
+   "a": 1,
+   "x": "Hochrisiko heißt nicht verboten. Hochrisiko (AI Act) und Art. 22 DSGVO sind zwei verschiedene Prüfungen: das eine knüpft an den Einsatzbereich, das andere an eine ausschließlich automatisierte Einzelentscheidung.",
+   "s": "Skript HR-Systeme/KI · 10.1, 11.2",
+   "t": 30
+  },
+  {
+   "id": "ki-7",
+   "round": "ki",
+   "q": "Ab wann gelten die Hochrisiko-Anforderungen für HR-Systeme nach Anhang III, nach der Änderung durch Verordnung (EU) 2026/1744?",
+   "o": [
+    "Ab 02.08.2026.",
+    "Sie gelten bereits seit 2024.",
+    "Ab 02.08.2028.",
+    "Ab 02.12.2027."
+   ],
+   "a": 3,
+   "x": "Anhang III ab 02.12.2027, Anhang I ab 02.08.2028. Art. 4 (KI-Kompetenz) und die Verbote gelten schon. Ein späterer Stichtag verschiebt keine Projektentscheidung: Wer heute auswählt, legt heute Daten, Kontrolle und Beteiligung fest.",
+   "s": "Skript HR-Systeme/KI · 11.4 · Stichtage",
+   "t": 30
+  },
+  {
+   "id": "ki-8",
+   "round": "ki",
+   "q": "Behauptung: „Wir müssen für jede beschäftigte Person ein individuelles KI-Kompetenzniveau garantieren.“ Was verlangt Art. 4 AI Act in der geänderten Fassung?",
+   "o": [
+    "Ein Zertifikat für alle Beschäftigten.",
+    "Gar nichts mehr, Art. 4 wurde gestrichen.",
+    "Maßnahmen, die die Entwicklung ausreichender KI-Kompetenz unterstützen, bezogen auf Rolle und Einsatzkontext.",
+    "Nur Schulungen für die IT-Abteilung."
+   ],
+   "a": 2,
+   "x": "Kontextbezogene Maßnahmen statt Einheitszertifikat: Bedarf je Rolle bestimmen, passende Maßnahmen, dokumentieren, Wirksamkeit prüfen, bei Änderungen aktualisieren. Normaussagen immer am aktuellen Wortlaut prüfen.",
+   "s": "Skript HR-Systeme/KI · 11.3 · Art. 4 KI-VO",
+   "t": 30
+  },
+  {
+   "id": "ki-9",
+   "round": "ki",
+   "q": "Ein Tool soll bei Videocalls aus Mimik und Stimme die Stimmung der Beschäftigten erkennen. Wie ist das einzuordnen?",
+   "o": [
+    "Emotionserkennung am Arbeitsplatz aus biometrischen Daten: grundsätzlich verbotene Praxis nach Art. 5 Abs. 1 Buchst. f, außer aus medizinischen oder Sicherheitsgründen.",
+    "Hochrisiko, also mit Dokumentation zulässig.",
+    "Erlaubt, wenn die Beschäftigten einwilligen.",
+    "Nur ein Transparenzthema nach Art. 50."
+   ],
+   "a": 0,
+   "x": "Abgrenzung: Ein Tool, das aus Text eine Stimmung ableitet, ist nicht automatisch dasselbe, weil keine biometrischen Daten genutzt werden. Konkrete Funktion prüfen.",
+   "s": "Skript HR-Systeme/KI · 11.2 · Art. 5 KI-VO",
+   "t": 30
+  },
+  {
+   "id": "ki-10",
+   "round": "ki",
+   "q": "Ein Scoring-Tool „empfiehlt“ nur. Der Recruiter übernimmt den Score aber praktisch immer. Kann Art. 22 DSGVO trotzdem greifen?",
+   "o": [
+    "Nein, Empfehlungen fallen nie darunter.",
+    "Ja. Nach EuGH (SCHUFA, C-634/21) kann schon ein automatisiert erstellter Wert eine Entscheidung sein, wenn er maßgeblich zugrunde gelegt wird.",
+    "Nur, wenn das Tool in den USA gehostet wird.",
+    "Nur bei Beschäftigten, nicht bei Bewerbenden."
+   ],
+   "a": 1,
+   "x": "Es kommt auf den tatsächlichen Einfluss an. Betroffene können zudem eine verständliche Erläuterung des Verfahrens verlangen (EuGH C-203/22).",
+   "s": "Skript HR-Systeme/KI · 10.1 · Art. 22 DSGVO",
+   "t": 30
+  },
+  {
+   "id": "bw-1",
+   "round": "bw",
+   "q": "Ein ausgeschiedener Mitarbeiter braucht eine Arbeitsbescheinigung für die Agentur für Arbeit. Wie wird sie übermittelt?",
+   "o": [
+    "Als PDF per Mail an ihn.",
+    "Auf Papier per Post an die Agentur.",
+    "Elektronisch über BEA, aus dem Abrechnungsprogramm oder dem SV-Meldeportal (§ 313a SGB III).",
+    "Er lädt sie selbst im Portal hoch."
+   ],
+   "a": 2,
+   "x": "Seit 01.01.2023 Pflicht. Die Person muss nicht zustimmen, sie bekommt von der Agentur einen Nachweis. Fehler werden durch vollständig korrigierte Neuübermittlung behoben, nicht durch Storno wie bei DEÜV-Meldungen.",
+   "s": "Skript Bescheinigungswesen · 5.2 · § 313a SGB III",
+   "t": 30
+  },
+  {
+   "id": "bw-2",
+   "round": "bw",
+   "q": "„Alles, was eine Behörde will, geht über BEA.“ Stimmt das?",
+   "o": [
+    "Nein. Krankenkassen erhalten Entgeltdaten im EEL-Verfahren, die Elterngeldstelle ruft über die Rentenversicherung ab, das Jobcenter arbeitet mit eigenem Vordruck.",
+    "Ja, BEA ist das zentrale Behördenverfahren.",
+    "Ja, außer bei Finanzämtern.",
+    "Nein, BEA gibt es seit 2025 nicht mehr."
+   ],
+   "a": 0,
+   "x": "BEA gilt für Bescheinigungen aus dem SGB III: Arbeitsbescheinigung (§ 312, § 312a) und Nebeneinkommensbescheinigung (§ 313).",
+   "s": "Skript Bescheinigungswesen · 5.2 · Wofür BEA gilt",
+   "t": 30
+  },
+  {
+   "id": "bw-3",
+   "round": "bw",
+   "q": "Im System steht nur „Austritt zum Monatsende“. Tatsächlich wurde ein Aufhebungsvertrag geschlossen. Was trägst du in die Arbeitsbescheinigung ein?",
+   "o": [
+    "„Ordentliche Kündigung durch den Arbeitgeber“, das ist der Standard.",
+    "Gar nichts, der Grund ist vertraulich.",
+    "Was die Führungskraft mündlich sagt.",
+    "Den tatsächlichen Beendigungstatbestand, geprüft an der Quelle in der Personalakte: Aufhebungsvertrag."
+   ],
+   "a": 3,
+   "x": "Die Beendigungsangaben sind die häufigste Fehlerquelle. Für die Agentur hängt daran etwa die Prüfung einer Sperrzeit. Daten nicht blind aus dem System übernehmen.",
+   "s": "Skript Bescheinigungswesen · 5.3 · Fehlerquelle Beendigung",
+   "t": 30
+  },
+  {
+   "id": "bw-4",
+   "round": "bw",
+   "q": "Eine Teilzeitkraft bezieht ergänzend Leistungen („Aufstocken“). Wer fragt nach ihrem Einkommen, auf welcher Grundlage?",
+   "o": [
+    "Die Agentur für Arbeit, über BEA.",
+    "Das Jobcenter nach SGB II, mit Einkommensbescheinigung auf dem Vordruck der Bundesagentur.",
+    "Die Krankenkasse, über EEL.",
+    "Die Rentenversicherung."
+   ],
+   "a": 1,
+   "x": "Die Leistung heißt seit 01.07.2026 Grundsicherungsgeld (vorher Bürgergeld). Rechtsgrundlagen §§ 57, 58, 60 Abs. 3 SGB II. Agentur für Arbeit (SGB III) und Jobcenter (SGB II) sind zwei Leistungsträger mit zwei Verfahren.",
+   "s": "Skript Bescheinigungswesen · 5.4 · Agentur oder Jobcenter",
+   "t": 30
+  },
+  {
+   "id": "bw-5",
+   "round": "bw",
+   "q": "Ein Pfändungs- und Überweisungsbeschluss wird an einem Freitag in der Poststelle zugestellt. HR bekommt ihn am Dienstag. Wann endet die Frist für die Drittschuldnererklärung?",
+   "o": [
+    "Am Dienstag in zwei Wochen, ab Eingang bei HR.",
+    "Am Montag in zwei Wochen.",
+    "Am Freitag zwei Wochen nach der Zustellung.",
+    "Es gibt keine Frist."
+   ],
+   "a": 2,
+   "x": "§ 840 ZPO: zwei Wochen ab Zustellung, nicht ab Eingang bei HR. Ab Zustellung gilt auch das Zahlungsverbot für den pfändbaren Teil. Die Erklärung geht an die Gläubigerin, nicht an das Gericht. Interne Wiedervorlage deutlich vor Fristende setzen.",
+   "s": "Skript Bescheinigungswesen · 8.3 · § 840 ZPO",
+   "t": 30
+  },
+  {
+   "id": "bw-6",
+   "round": "bw",
+   "q": "Payroll hatte zwei Stunden Arbeit mit einer Lohnpfändung. Darf das Unternehmen dem Mitarbeiter 80 € dafür abziehen?",
+   "o": [
+    "Ja, wenn es im Arbeitsvertrag steht.",
+    "Ja, per Betriebsvereinbarung.",
+    "Ja, maximal 3 Prozent des Pfändungsbetrags.",
+    "Nein. Die Kosten trägt der Arbeitgeber; eine abwälzende Betriebsvereinbarung hat das BAG für unwirksam erklärt."
+   ],
+   "a": 3,
+   "x": "BAG 18.07.2006 – 1 AZR 578/05. Auch der Gläubigerin können die Kosten nicht in Rechnung gestellt werden.",
+   "s": "Skript Bescheinigungswesen · 8.2 · Kosten der Pfändung",
+   "t": 30
+  },
+  {
+   "id": "bw-7",
+   "round": "bw",
+   "q": "Wie oft werden die Pfändungsfreigrenzen angepasst, und was ist der Grundbetrag ab 01.07.2026?",
+   "o": [
+    "Alle zwei Jahre; 1.555,00 €.",
+    "Jährlich zum 1. Juli; 1.587,40 € ohne Unterhaltspflichten.",
+    "Jährlich zum 1. Januar; 1.402,28 €.",
+    "Gar nicht, die Werte sind fest."
+   ],
+   "a": 1,
+   "x": "Seit 2021 jährlich (§ 850c Abs. 4 ZPO). Gerechnet wird mit der amtlichen Tabelle, nicht freihändig. Eine jährliche Wiedervorlage im Juni prüft, ob die neue Tabelle im Abrechnungssystem hinterlegt ist.",
+   "s": "Skript Bescheinigungswesen · 8.4 · BGBl. 2026 I Nr. 80",
+   "t": 30
+  },
+  {
+   "id": "bw-8",
+   "round": "bw",
+   "q": "Zwei Pfändungen liegen vor. Gläubigerin B mahnt lauter, Pfändung A wurde früher zugestellt. Wer wird zuerst bedient?",
+   "o": [
+    "A, die früher zugestellte Pfändung (Prioritätsprinzip).",
+    "B, weil sie mahnt.",
+    "Beide anteilig.",
+    "Wer den höheren Betrag fordert."
+   ],
+   "a": 0,
+   "x": "§ 804 Abs. 3 ZPO. Für Unterhaltspfändungen gelten Sonderregeln (§ 850d ZPO); das gehört in erfahrene Payroll-Hände.",
+   "s": "Skript Bescheinigungswesen · 8.5 · Mehrere Pfändungen",
+   "t": 30
+  },
+  {
+   "id": "bw-9",
+   "round": "bw",
+   "q": "Eine Mitarbeiterin schreibt: „Schickt mir das Zeugnis einfach als PDF.“ Ist der Zeugnisanspruch damit erfüllt?",
+   "o": [
+    "Ja, wenn sie es selbst wünscht.",
+    "Ja, mit eingescannter Unterschrift.",
+    "Nein. Formwirksam ist Papier mit Unterschrift oder, mit Einwilligung, die elektronische Form mit qualifizierter elektronischer Signatur.",
+    "Nein, elektronische Zeugnisse sind verboten."
+   ],
+   "a": 2,
+   "x": "Seit 01.01.2025 erlaubt § 109 Abs. 3 GewO das elektronische Zeugnis, aber nur mit Einwilligung und QES (§ 126a BGB). Ein PDF kann sie zusätzlich als Service-Kopie bekommen.",
+   "s": "Skript Bescheinigungswesen · 9.3 · § 109 Abs. 3 GewO",
+   "t": 30
+  },
+  {
+   "id": "bw-10",
+   "round": "bw",
+   "q": "Gegen wen richtet sich der Zeugnisanspruch, und wer unterschreibt?",
+   "o": [
+    "Gegen die Führungskraft; sie unterschreibt.",
+    "Gegen HR; HR unterschreibt.",
+    "Gegen den Betriebsrat.",
+    "Gegen den Arbeitgeber. Unterschreiben muss eine vertretungsberechtigte Person, die erkennbar ranghöher ist als die beurteilte Person."
+   ],
+   "a": 3,
+   "x": "Die Führungskraft liefert den Bewertungsinput, HR sorgt für ein vollständiges, stimmiges, formwirksames Dokument (BAG 04.10.2005 – 9 AZR 507/04). Der Anspruch verjährt nach drei Jahren; Ausschlussfristen können früher greifen.",
+   "s": "Skript Bescheinigungswesen · 9.1 · § 109 GewO",
+   "t": 30
+  },
+  {
+   "id": "bw-11",
+   "round": "bw",
+   "q": "Eine Mitarbeiterin verlangt beim Austritt nur „ein Zeugnis“. Was schuldet der Arbeitgeber mindestens?",
+   "o": [
+    "Ein qualifiziertes Zeugnis mit Note.",
+    "Ein einfaches Zeugnis zu Art und Dauer der Tätigkeit. Leistung und Verhalten nur auf Verlangen.",
+    "Ein Zwischenzeugnis.",
+    "Nur eine Arbeitsbescheinigung."
+   ],
+   "a": 1,
+   "x": "§ 109 Abs. 1 GewO. In der Praxis ist das qualifizierte Zeugnis der Regelfall, weil es fast immer verlangt wird. Das Zwischenzeugnis ist nicht ausdrücklich im Gesetz, aber bei berechtigtem Interesse anerkannt.",
+   "s": "Skript Bescheinigungswesen · 9.2 · Zeugnisarten",
+   "t": 30
+  }
+ ]
+}
