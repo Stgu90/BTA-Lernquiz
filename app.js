@@ -21,6 +21,9 @@ const store = {
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
   del(k) { try { localStorage.removeItem(k); } catch {} }
 };
+/* Kurs-Zugang: ?kurs=hr-ops bzw. ?kurs=ld legt dieses Gerät auf einen Kurs fest, ?kurs=alle hebt das auf. */
+(() => { const k = params.get("kurs"); if (!k) return; if (k === "alle") store.del("btaq-kurs"); else store.set("btaq-kurs", k); })();
+const LOCK = store.get("btaq-kurs", null);
 const fmt = n => Math.round(n).toLocaleString("de-DE");
 function setConn(state, text) {
   $conn.hidden = !state;
@@ -60,7 +63,10 @@ const courseCache = {};
 async function loadCourses() {
   if (COURSES) return COURSES;
   const r = await fetch("data/courses.json", {cache: "no-cache"});
-  COURSES = await r.json();
+  const all = await r.json();
+  const mine = LOCK ? all.filter(c => c.id === LOCK) : [];
+  COURSES = mine.length ? mine : all;
+  if (mine.length) { const sub = document.querySelector(".brand-sub"); if (sub) sub.textContent = "Lernquiz · " + mine[0].title; }
   return COURSES;
 }
 async function loadCourse(id) {
@@ -728,5 +734,6 @@ window.addEventListener("keydown", e => {
   const b = $app.querySelectorAll("button.ans:not([disabled])")[Number(e.key) - 1]; if (b) b.click();
 });
 if (!LOCAL && !(window.supabase && CFG.supabaseUrl)) console.warn("Supabase nicht geladen – Live-Modus nicht verfügbar.");
+loadCourses().catch(() => {});
 go("start");
 })();

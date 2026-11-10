@@ -27,3 +27,8 @@ Jeder Kurs kann in `data/courses.json` ein Feld `glossary` haben (z. B. `data/gl
 Einträge: `{k, t, d, p, r}` – `k` Bereich (`beg` Begriff, `abk` Abkürzung, `fri` Frist, `wer` Wert),
 `t` Begriff, `d` Bedeutung, `p` Praxistipp/Grundlage/Hinweis, `r` Liste der Runden-IDs (Kurstage).
 In „Allein üben“ erscheinen dann „Nachschlagen“ (Suche + Filter) und „Karteikarten“.
+
+## Kurs-Links
+- HR Operations: `?kurs=hr-ops` · Learning & Development: `?kurs=ld`
+- Der Link legt das Gerät auf diesen Kurs fest (gespeichert im Browser). `?kurs=alle` hebt das wieder auf.
+- Hinweis: Das ist eine Trennung für den Alltag, kein Zugriffsschutz – die Fragen-Dateien sind öffentlich abrufbar.
