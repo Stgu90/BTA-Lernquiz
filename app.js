@@ -27,11 +27,18 @@ function setConn(state, text) {
   $conn.className = "conn " + (state || "");
   $conn.textContent = text || "";
 }
-function points(correct, ms, durMs, streakBefore) {
-  if (!correct) return 0;
+/* Punkte: 100 für richtig, bis zu 50 Tempo-Bonus (in 10er-Schritten nach Restzeit),
+   10 Serien-Bonus je vorheriger richtiger Antwort in Folge (höchstens 30). */
+const RULES = "Richtig: 100 Punkte · Tempo-Bonus bis 50 (je schneller, desto mehr) · Serien-Bonus +10 pro Treffer in Folge, höchstens 30.";
+const RULES_NOSPEED = "Richtig: 100 Punkte · Serien-Bonus +10 pro Treffer in Folge, höchstens 30. Tempo zählt in diesem Spiel nicht.";
+function points(correct, ms, durMs, streakBefore, speedOn = true) {
+  if (!correct) return {base: 0, speed: 0, streak: 0, total: 0};
   const left = Math.max(0, durMs - ms);
-  return 500 + Math.round(500 * left / durMs) + Math.min(300, streakBefore * 100);
+  const speed = speedOn ? Math.min(50, Math.max(0, Math.round(5 * left / durMs) * 10)) : 0;
+  const streak = Math.min(30, streakBefore * 10);
+  return {base: 100, speed, streak, total: 100 + speed + streak};
 }
+const breakdown = p => p.total ? `${p.base} richtig${p.speed ? " + " + p.speed + " Tempo" : ""}${p.streak ? " + " + p.streak + " Serie" : ""}` : "";
 
 /* ---------- Daten ---------- */
 let COURSES = null;
@@ -222,7 +229,7 @@ function viewJoin({pin, nick}) {
     const me = (st.board || []).find(b => b.pid === pid);
     const head = `<div class="bar"><span class="chip">${esc(st.title || "")}</span><span class="chip">${esc(nick)} · ${fmt(me ? me.score : 0)} Punkte</span></div>`;
     if (st.phase === "lobby") {
-      $app.innerHTML = head + `<section class="card center"><h2>Du bist dabei.</h2><p class="muted">Gleich geht es los. Schau auf die geteilte Präsentation.</p><p class="small muted">${(st.players || []).length} im Spiel</p></section>`;
+      $app.innerHTML = head + `<section class="card center"><h2>Du bist dabei.</h2><p class="muted">Gleich geht es los. Schau auf die geteilte Präsentation.</p><p class="small muted">${(st.players || []).length} im Spiel</p>${st.rules ? `<p class="small"><strong>So gibt es Punkte:</strong> ${esc(st.rules)}</p>` : ""}</section>`;
     } else if (st.phase === "question") {
       const q = st.q; const answered = P.sentFor === st.qi;
       $app.innerHTML = head + `
@@ -260,7 +267,8 @@ function viewJoin({pin, nick}) {
       $app.innerHTML = head + `
         <div class="bar"><span class="chip">Frage ${st.qi + 1} / ${st.total}</span></div>
         <section class="fb ${mine == null ? "neutral" : ok ? "ok" : "no"}">
-          <div class="h">${mine == null ? "Keine Antwort abgegeben" : ok ? "Richtig! +" + fmt(r.points) : "Leider falsch"}</div>
+          <div class="h">${mine == null ? "Keine Antwort abgegeben" : ok ? "Richtig! +" + fmt(r.points) + " Punkte" : "Leider falsch"}</div>
+          ${ok && r.parts ? `<p class="small">${esc(r.parts)}</p>` : ""}
           <p><strong>Richtig ist ${LETTERS[q.order.indexOf(st.correct)]}:</strong> ${esc(q.o[st.correct])}</p>
           <p>${esc(st.x || "")}</p>
           ${st.s ? `<p class="src">Quelle: ${esc(st.s)}</p>` : ""}
@@ -306,6 +314,7 @@ async function viewHostSetup() {
       <div class="grid2">
         <label class="field">Anzahl Fragen<select id="h-count"><option value="6">6 (Morgen-Check, ca. 5 Min.)</option><option value="8" selected>8</option><option value="12">12</option><option value="20">20</option><option value="0">alle ausgewählten</option></select></label>
         <label class="field">Reihenfolge<select id="h-order"><option value="mix" selected>gemischt</option><option value="seq">wie im Kurs</option></select></label>
+        <label class="field">Tempo-Bonus<select id="h-speed"><option value="1" selected>an: schnelle Antworten bringen bis zu 50 Extrapunkte</option><option value="0">aus: nur richtig zählt (z. B. bei Fristberechnungen)</option></select></label>
       </div>
       <div class="row"><button class="btn primary big" id="h-create">Spiel eröffnen</button><button class="link" id="h-back">Zurück</button></div>
       <p class="err" id="h-err"></p>
@@ -338,6 +347,7 @@ async function viewHostSetup() {
     const G = {
       gameId: uid(), hostId: uid(), pin: String(Math.floor(100000 + Math.random() * 900000)),
       course: c.id, title, legal: c.legal || "", list: qs.map(q => q.id),
+      speed: document.getElementById("h-speed").value === "1",
       qi: -1, phase: "lobby", order: null, startedAt: 0, dur: 30,
       answers: {}, players: {}, results: null, updated: Date.now()
     };
@@ -381,7 +391,7 @@ async function hostRun(G) {
     .sort((a, b) => b.score - a.score || a.nick.localeCompare(b.nick));
   function stateMsg() {
     const s = {hostId: G.hostId, gameId: G.gameId, phase: G.phase, title: G.title, qi: G.qi, total: G.list.length,
-      players: Object.keys(G.players), board: board()};
+      players: Object.keys(G.players), board: board(), rules: G.speed === false ? RULES_NOSPEED : RULES};
     if (G.phase === "question" || G.phase === "reveal") {
       const qq = q();
       s.q = {q: qq.q, o: qq.o, order: G.order, dur: G.dur};
@@ -409,9 +419,9 @@ async function hostRun(G) {
       const a = G.answers[pid];
       if (!a) { p.streak = 0; continue; }
       const ok = a.choice === qq.a;
-      const pts = points(ok, a.ms, G.dur * 1000, p.streak);
-      if (ok) { p.score += pts; p.correct += 1; p.streak += 1; } else p.streak = 0;
-      res[pid] = {correct: ok, points: pts, choice: a.choice};
+      const pt = points(ok, a.ms, G.dur * 1000, p.streak, G.speed !== false);
+      if (ok) { p.score += pt.total; p.correct += 1; p.streak += 1; } else p.streak = 0;
+      res[pid] = {correct: ok, points: pt.total, parts: breakdown(pt), choice: a.choice};
     }
     G.results = res; G.phase = "reveal"; save(); render(); broadcast();
   }
@@ -438,6 +448,7 @@ async function hostRun(G) {
           <div class="pinbox"><div><div class="muted small">Spiel-PIN</div><div class="pin">${esc(G.pin)}</div></div>
           <div><div class="muted small">Mitspielen unter</div><div class="joinurl"><strong>${esc(joinUrl)}</strong></div></div></div>
           <p class="muted">${esc(G.title)} · ${G.list.length} Fragen</p>
+          <p class="small"><strong>So gibt es Punkte:</strong> ${esc(G.speed === false ? RULES_NOSPEED : RULES)}</p>
         </section>
         <section class="card"><h3>Mitspielende (<span id="h-n">0</span>)</h3><div class="players" id="h-players"></div></section>
         <div class="row"><button class="btn primary big" id="h-start">Start</button><button class="btn" id="h-copy">Link kopieren</button><button class="link" id="h-quit">Spiel beenden</button></div>`;
@@ -513,7 +524,7 @@ async function viewSoloCourse(courseId) {
   $app.innerHTML = `
     <section class="card">
       <h1>${esc(c.title)}: allein üben</h1>
-      <p class="muted">Antworte schnell, dann gibt es mehr Punkte. Nach jeder Frage siehst du die Begründung und die Fundstelle im Skript.</p>
+      <p class="muted">So gibt es Punkte: ${esc(RULES)} Nach jeder Frage siehst du die Begründung und die Fundstelle im Skript.</p>
       <div class="list">
         ${c.rounds.map(r => `<button class="pick" style="--c:${esc(r.color)}" data-r="${esc(r.id)}"><span class="k">${esc(r.label)}</span><span class="t">${esc(r.title)}</span><span class="m">${c.questions.filter(q => q.round === r.id).length} Fragen</span></button>`).join("")}
         <button class="pick" style="--c:var(--ink)" data-r="mix"><span class="k">Alle Kurstage</span><span class="t">Gemischte Runde</span><span class="m">15 Zufallsfragen</span></button>
@@ -556,7 +567,7 @@ function soloPlay(c, list, roundId) {
   function answer(orig) {
     if (S.locked) return; S.locked = true; cancelAnimationFrame(S.raf);
     const q = list[S.i]; const ms = performance.now() - S.t0; const ok = orig === q.a;
-    const pts = points(ok, ms, (q.t || 30) * 1000, S.streak);
+    const pt = points(ok, ms, (q.t || 30) * 1000, S.streak); const pts = pt.total;
     let wrong = store.get(wrongKey, []);
     if (ok) { S.score += pts; S.correct++; S.streak++; wrong = wrong.filter(id => id !== q.id); }
     else { S.streak = 0; if (!wrong.includes(q.id)) wrong.push(q.id); }
@@ -568,7 +579,8 @@ function soloPlay(c, list, roundId) {
     });
     document.getElementById("s-fb").innerHTML = `
       <section class="fb ${orig == null ? "neutral" : ok ? "ok" : "no"}">
-        <div class="h">${orig == null ? "Zeit abgelaufen" : ok ? "Richtig! +" + fmt(pts) : "Nicht ganz"}</div>
+        <div class="h">${orig == null ? "Zeit abgelaufen" : ok ? "Richtig! +" + fmt(pts) + " Punkte" : "Nicht ganz"}</div>
+        ${ok ? `<p class="small">${esc(breakdown(pt))}</p>` : ""}
         <p>${esc(q.x)}</p>${q.s ? `<p class="src">Quelle: ${esc(q.s)}</p>` : ""}
         <div class="row"><button class="btn primary" id="s-next">${S.i + 1 < list.length ? "Weiter" : "Ergebnis"}</button></div>
       </section>`;
