@@ -29,16 +29,30 @@ function setConn(state, text) {
 }
 /* Punkte: 100 für richtig, bis zu 50 Tempo-Bonus (in 10er-Schritten nach Restzeit),
    10 Serien-Bonus je vorheriger richtiger Antwort in Folge (höchstens 30). */
-const RULES = "Richtig: 100 Punkte · Tempo-Bonus bis 50 (je schneller, desto mehr) · Serien-Bonus +10 pro Treffer in Folge, höchstens 30.";
-const RULES_NOSPEED = "Richtig: 100 Punkte · Serien-Bonus +10 pro Treffer in Folge, höchstens 30. Tempo zählt in diesem Spiel nicht.";
-function points(correct, ms, durMs, streakBefore, speedOn = true) {
-  if (!correct) return {base: 0, speed: 0, streak: 0, total: 0};
+const HINT_COST = 50;
+const rulesText = speedOn => "Richtig: 100 Punkte" + (speedOn ? " · Tempo-Bonus bis 50 (je schneller, desto mehr)" : "") +
+  " · Serien-Bonus +10 pro Treffer in Folge, höchstens 30 · Hinweis aufdecken: −50 Punkte bei dieser Frage" + (speedOn ? "" : " · Tempo zählt in diesem Spiel nicht") + ".";
+const RULES = rulesText(true);
+function points(correct, ms, durMs, streakBefore, speedOn = true, hint = false) {
+  if (!correct) return {base: 0, speed: 0, streak: 0, hint: 0, total: 0};
   const left = Math.max(0, durMs - ms);
-  const speed = speedOn ? Math.min(50, Math.max(0, Math.round(5 * left / durMs) * 10)) : 0;
+  const speed = speedOn && durMs > 0 ? Math.min(50, Math.max(0, Math.round(5 * left / durMs) * 10)) : 0;
   const streak = Math.min(30, streakBefore * 10);
-  return {base: 100, speed, streak, total: 100 + speed + streak};
+  const minus = hint ? HINT_COST : 0;
+  return {base: 100, speed, streak, hint: minus, total: Math.max(0, 100 + speed + streak - minus)};
 }
-const breakdown = p => p.total ? `${p.base} richtig${p.speed ? " + " + p.speed + " Tempo" : ""}${p.streak ? " + " + p.streak + " Serie" : ""}` : "";
+const breakdown = p => p.base ? `${p.base} richtig${p.speed ? " + " + p.speed + " Tempo" : ""}${p.streak ? " + " + p.streak + " Serie" : ""}${p.hint ? " − " + p.hint + " Hinweis" : ""}` : "";
+/* Bedenkzeit: aus den Daten (t), sonst aus der Textlänge; Faktor je nach Modus */
+function baseSeconds(q) {
+  if (q.t) return q.t;
+  const words = (q.q + " " + q.o.join(" ")).split(/\s+/).length;
+  return Math.min(120, Math.max(45, Math.round((30 + words * 0.6) / 5) * 5));
+}
+const TIME_MODES = {normal: 1, long: 1.5, none: 0};
+const durFor = (q, mode) => mode === "none" ? 0 : Math.round(baseSeconds(q) * (TIME_MODES[mode] || 1) / 5) * 5;
+const hintBox = (q, shown) => q.h ? (shown
+  ? `<section class="fb neutral"><p><strong>Hinweis:</strong> ${esc(q.h)}</p></section>`
+  : `<div class="row"><button class="btn" id="hint-btn">Hinweis aufdecken (−${HINT_COST} Punkte)</button></div>`) : "";
 
 /* ---------- Daten ---------- */
 let COURSES = null;
@@ -203,10 +217,11 @@ function viewJoin({pin, nick}) {
     if (P.st && P.st.gameId !== st.gameId) { P.sentFor = null; P.myChoice = null; }
     P.st = st;
     if (st.phase === "question") {
-      P.deadline = Date.now() + (st.remaining || 0);
+      P.deadline = st.q.dur ? Date.now() + (st.remaining || 0) : Infinity;
+      if (changed) P.hint = false;
       // Antwort erneut senden, falls die Spielleitung sie noch nicht bestätigt hat
       if (P.sentFor === st.qi && P.myChoice != null && !(st.answered || []).includes(pid)) {
-        tx.send("answer", {pid, nick, qi: st.qi, choice: P.myChoice, gameId: st.gameId});
+        tx.send("answer", {pid, nick, qi: st.qi, choice: P.myChoice, hint: P.hint, gameId: st.gameId});
       }
     }
     if (changed) render(); else update();
@@ -233,9 +248,10 @@ function viewJoin({pin, nick}) {
     } else if (st.phase === "question") {
       const q = st.q; const answered = P.sentFor === st.qi;
       $app.innerHTML = head + `
-        <div class="bar"><span class="chip">Frage ${st.qi + 1} / ${st.total}</span><span class="chip" id="p-left"></span></div>
-        <div class="timer"><i id="p-bar"></i></div>
+        <div class="bar"><span class="chip">Frage ${st.qi + 1} / ${st.total}</span>${q.dur ? `<span class="chip" id="p-left"></span>` : `<span class="chip">ohne Zeitlimit</span>`}</div>
+        ${q.dur ? `<div class="timer"><i id="p-bar"></i></div>` : ""}
         <section class="card"><div class="qtext">${esc(q.q)}</div></section>
+        ${answered && !P.hint ? "" : hintBox(q, P.hint)}
         <div class="answers">${q.order.map((orig, pos) => `
           <button class="ans ${answered && P.myChoice !== orig ? "dim" : ""} ${answered && P.myChoice === orig ? "mine" : ""}" style="--cc:${COLORS[pos]}" data-o="${orig}" ${answered ? "disabled" : ""}>
             <span class="l">${LETTERS[pos]}</span><span>${esc(q.o[orig])}</span></button>`).join("")}</div>
@@ -243,13 +259,15 @@ function viewJoin({pin, nick}) {
       $app.querySelectorAll(".ans").forEach(b => b.onclick = () => {
         if (P.sentFor === st.qi || Date.now() > P.deadline + 300) return;
         P.sentFor = st.qi; P.myChoice = Number(b.dataset.o);
-        tx.send("answer", {pid, nick, qi: st.qi, choice: P.myChoice, gameId: st.gameId});
+        tx.send("answer", {pid, nick, qi: st.qi, choice: P.myChoice, hint: P.hint, gameId: st.gameId});
         render();
       });
+      const hb = document.getElementById("hint-btn");
+      if (hb) hb.onclick = () => { P.hint = true; render(); };
       const tick = () => {
         const left = Math.max(0, P.deadline - Date.now());
         const bar = document.getElementById("p-bar"), lab = document.getElementById("p-left");
-        if (!bar) return;
+        if (!bar || !q.dur) return;
         bar.style.width = (100 * left / (q.dur * 1000)) + "%";
         lab.textContent = Math.ceil(left / 1000) + " s";
         if (left <= 0 && P.sentFor !== st.qi) {
@@ -314,6 +332,7 @@ async function viewHostSetup() {
       <div class="grid2">
         <label class="field">Anzahl Fragen<select id="h-count"><option value="6">6 (Morgen-Check, ca. 5 Min.)</option><option value="8" selected>8</option><option value="12">12</option><option value="20">20</option><option value="0">alle ausgewählten</option></select></label>
         <label class="field">Reihenfolge<select id="h-order"><option value="mix" selected>gemischt</option><option value="seq">wie im Kurs</option></select></label>
+        <label class="field">Bedenkzeit<select id="h-time"><option value="normal" selected>normal: 45 bis 120 Sekunden je nach Textlänge</option><option value="long">großzügig: 50 % mehr Zeit</option><option value="none">ohne Zeitlimit: du löst selbst auf</option></select></label>
         <label class="field">Tempo-Bonus<select id="h-speed"><option value="1" selected>an: schnelle Antworten bringen bis zu 50 Extrapunkte</option><option value="0">aus: nur richtig zählt (z. B. bei Fristberechnungen)</option></select></label>
       </div>
       <div class="row"><button class="btn primary big" id="h-create">Spiel eröffnen</button><button class="link" id="h-back">Zurück</button></div>
@@ -348,6 +367,7 @@ async function viewHostSetup() {
       gameId: uid(), hostId: uid(), pin: String(Math.floor(100000 + Math.random() * 900000)),
       course: c.id, title, legal: c.legal || "", list: qs.map(q => q.id),
       speed: document.getElementById("h-speed").value === "1",
+      timeMode: document.getElementById("h-time").value,
       qi: -1, phase: "lobby", order: null, startedAt: 0, dur: 30,
       answers: {}, players: {}, results: null, updated: Date.now()
     };
@@ -379,8 +399,8 @@ async function hostRun(G) {
     addPlayer(a.pid, a.nick);
     if (G.phase !== "question" || a.qi !== G.qi || G.answers[a.pid]) return;
     const ms = Date.now() - G.startedAt;
-    if (ms > G.dur * 1000 + 1500) return;
-    G.answers[a.pid] = {choice: Number(a.choice), ms};
+    if (G.dur && ms > G.dur * 1000 + 1500) return;
+    G.answers[a.pid] = {choice: Number(a.choice), ms, hint: !!a.hint};
     save(); renderCounts(); broadcast();
     const active = [...online].filter(pid => G.players[pid]);
     if (active.length && active.every(pid => G.answers[pid])) setTimeout(reveal, 600);
@@ -391,12 +411,12 @@ async function hostRun(G) {
     .sort((a, b) => b.score - a.score || a.nick.localeCompare(b.nick));
   function stateMsg() {
     const s = {hostId: G.hostId, gameId: G.gameId, phase: G.phase, title: G.title, qi: G.qi, total: G.list.length,
-      players: Object.keys(G.players), board: board(), rules: G.speed === false ? RULES_NOSPEED : RULES};
+      players: Object.keys(G.players), board: board(), rules: rulesText(G.speed !== false && G.timeMode !== "none")};
     if (G.phase === "question" || G.phase === "reveal") {
       const qq = q();
-      s.q = {q: qq.q, o: qq.o, order: G.order, dur: G.dur};
+      s.q = {q: qq.q, o: qq.o, h: qq.h || "", order: G.order, dur: G.dur};
       s.answered = Object.keys(G.answers);
-      if (G.phase === "question") s.remaining = Math.max(0, G.startedAt + G.dur * 1000 - Date.now());
+      if (G.phase === "question" && G.dur) s.remaining = Math.max(0, G.startedAt + G.dur * 1000 - Date.now());
       if (G.phase === "reveal") { s.correct = qq.a; s.x = qq.x; s.s = qq.s; s.results = G.results; }
     }
     return s;
@@ -407,7 +427,7 @@ async function hostRun(G) {
   function next() {
     if (G.qi + 1 >= G.list.length) { G.phase = "end"; save(); render(); broadcast(); return; }
     G.qi += 1; G.phase = "question"; G.answers = {}; G.results = null;
-    const qq = q(); G.dur = qq.t || 30;
+    const qq = q(); G.dur = durFor(qq, G.timeMode || "normal");
     G.order = shuffle(qq.o.map((_, i) => i));
     G.startedAt = Date.now() + 400;
     save(); render(); broadcast();
@@ -419,7 +439,7 @@ async function hostRun(G) {
       const a = G.answers[pid];
       if (!a) { p.streak = 0; continue; }
       const ok = a.choice === qq.a;
-      const pt = points(ok, a.ms, G.dur * 1000, p.streak, G.speed !== false);
+      const pt = points(ok, a.ms, G.dur * 1000, p.streak, G.speed !== false, a.hint);
       if (ok) { p.score += pt.total; p.correct += 1; p.streak += 1; } else p.streak = 0;
       res[pid] = {correct: ok, points: pt.total, parts: breakdown(pt), choice: a.choice};
     }
@@ -436,7 +456,8 @@ async function hostRun(G) {
   }
   function renderCounts() {
     const el = document.getElementById("h-answered");
-    if (el) el.textContent = Object.keys(G.answers).length + " von " + Object.keys(G.players).length + " haben geantwortet";
+    const hints = Object.values(G.answers).filter(a => a.hint).length;
+    if (el) el.textContent = Object.keys(G.answers).length + " von " + Object.keys(G.players).length + " haben geantwortet" + (hints ? " · " + hints + " mit Hinweis" : "");
   }
   function render() {
     clearInterval(tickTimer);
@@ -448,7 +469,7 @@ async function hostRun(G) {
           <div class="pinbox"><div><div class="muted small">Spiel-PIN</div><div class="pin">${esc(G.pin)}</div></div>
           <div><div class="muted small">Mitspielen unter</div><div class="joinurl"><strong>${esc(joinUrl)}</strong></div></div></div>
           <p class="muted">${esc(G.title)} · ${G.list.length} Fragen</p>
-          <p class="small"><strong>So gibt es Punkte:</strong> ${esc(G.speed === false ? RULES_NOSPEED : RULES)}</p>
+          <p class="small"><strong>So gibt es Punkte:</strong> ${esc(rulesText(G.speed !== false && G.timeMode !== "none"))}</p>
         </section>
         <section class="card"><h3>Mitspielende (<span id="h-n">0</span>)</h3><div class="players" id="h-players"></div></section>
         <div class="row"><button class="btn primary big" id="h-start">Start</button><button class="btn" id="h-copy">Link kopieren</button><button class="link" id="h-quit">Spiel beenden</button></div>`;
@@ -459,13 +480,13 @@ async function hostRun(G) {
       const qq = q(); const rev = G.phase === "reveal";
       const counts = G.order.map(orig => Object.values(G.answers).filter(a => a.choice === orig).length);
       $app.innerHTML = top + `
-        <div class="bar"><span class="chip">Frage ${G.qi + 1} / ${G.list.length}</span><span class="chip" id="h-answered"></span>${rev ? "" : `<span class="chip" id="h-left"></span>`}</div>
-        ${rev ? "" : `<div class="timer"><i id="h-bar"></i></div>`}
+        <div class="bar"><span class="chip">Frage ${G.qi + 1} / ${G.list.length}</span><span class="chip" id="h-answered"></span>${rev ? "" : G.dur ? `<span class="chip" id="h-left"></span>` : `<span class="chip">ohne Zeitlimit</span>`}</div>
+        ${rev || !G.dur ? "" : `<div class="timer"><i id="h-bar"></i></div>`}
         <section class="card"><div class="qtext">${esc(qq.q)}</div></section>
         <div class="answers">${G.order.map((orig, pos) => `
           <div class="ans ${rev && orig !== qq.a ? "dim" : ""} ${rev && orig === qq.a ? "right" : ""}" style="--cc:${COLORS[pos]}">
             <span class="l">${LETTERS[pos]}</span><span>${esc(qq.o[orig])}</span>${rev ? `<span class="cnt">${counts[pos]}</span>` : ""}</div>`).join("")}</div>
-        ${rev ? `<section class="fb neutral"><p><strong>Warum:</strong> ${esc(qq.x)}</p>${qq.s ? `<p class="src">Quelle: ${esc(qq.s)}</p>` : ""}</section>` : ""}
+        ${rev ? `<section class="fb neutral">${qq.h ? `<p class="small muted"><strong>Hinweis war:</strong> ${esc(qq.h)}</p>` : ""}<p><strong>Warum:</strong> ${esc(qq.x)}</p>${qq.s ? `<p class="src">Quelle: ${esc(qq.s)}</p>` : ""}</section>` : ""}
         <div class="row">${rev ? `<button class="btn primary big" id="h-board">Zwischenstand</button><button class="btn" id="h-next2">${G.qi + 1 >= G.list.length ? "Ergebnis" : "Nächste Frage"}</button>`
           : `<button class="btn primary" id="h-reveal">Jetzt auflösen</button>`}<button class="link" id="h-quit">Spiel beenden</button></div>`;
       renderCounts();
@@ -481,7 +502,7 @@ async function hostRun(G) {
           if (lab) lab.textContent = Math.ceil(left / 1000) + " s";
           if (left <= 0) { clearInterval(tickTimer); setTimeout(reveal, 1200); }
         };
-        tick(); tickTimer = setInterval(tick, 250);
+        if (G.dur) { tick(); tickTimer = setInterval(tick, 250); }
       }
     } else if (G.phase === "board" || G.phase === "end") {
       const b = board();
@@ -547,15 +568,18 @@ function soloPlay(c, list, roundId) {
   const label = roundId === "mix" ? "Gemischt" : roundId === "wrong" ? "Meine Fehler" : (c.rounds.find(r => r.id === roundId) || {}).title;
   function show() {
     cancelAnimationFrame(S.raf);
-    const q = list[S.i]; S.order = shuffle(q.o.map((_, i) => i)); S.locked = false; S.t0 = performance.now();
-    const dur = (q.t || 30) * 1000;
+    const q = list[S.i]; S.order = shuffle(q.o.map((_, i) => i)); S.locked = false; S.t0 = performance.now(); S.hint = false;
+    const dur = durFor(q, "normal") * 1000;
     $app.innerHTML = `
       <div class="bar"><span class="chip">${esc(label)} · Frage ${S.i + 1} / ${list.length}</span><span class="chip">Serie ${S.streak}</span><span class="chip">${fmt(S.score)} Punkte</span></div>
       <div class="timer"><i id="s-bar"></i></div>
       <section class="card"><div class="qtext">${esc(q.q)}</div></section>
+      <div id="s-hint">${hintBox(q, false)}</div>
       <div class="answers">${S.order.map((orig, pos) => `<button class="ans" style="--cc:${COLORS[pos]}" data-o="${orig}"><span class="l">${LETTERS[pos]}</span><span>${esc(q.o[orig])}</span></button>`).join("")}</div>
       <div id="s-fb"></div>`;
     $app.querySelectorAll(".ans").forEach(b => b.onclick = () => answer(Number(b.dataset.o)));
+    const hb = document.getElementById("hint-btn");
+    if (hb) hb.onclick = () => { S.hint = true; document.getElementById("s-hint").innerHTML = hintBox(q, true); };
     const tick = () => {
       const left = Math.max(0, dur - (performance.now() - S.t0));
       const bar = document.getElementById("s-bar"); if (bar) bar.style.width = (100 * left / dur) + "%";
@@ -567,7 +591,8 @@ function soloPlay(c, list, roundId) {
   function answer(orig) {
     if (S.locked) return; S.locked = true; cancelAnimationFrame(S.raf);
     const q = list[S.i]; const ms = performance.now() - S.t0; const ok = orig === q.a;
-    const pt = points(ok, ms, (q.t || 30) * 1000, S.streak); const pts = pt.total;
+    const pt = points(ok, ms, durFor(q, "normal") * 1000, S.streak, true, S.hint); const pts = pt.total;
+    const hbtn = document.getElementById("hint-btn"); if (hbtn) hbtn.remove();
     let wrong = store.get(wrongKey, []);
     if (ok) { S.score += pts; S.correct++; S.streak++; wrong = wrong.filter(id => id !== q.id); }
     else { S.streak = 0; if (!wrong.includes(q.id)) wrong.push(q.id); }

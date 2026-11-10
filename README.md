@@ -13,8 +13,8 @@ Live-Quiz ohne Anmeldung (PIN + Spitzname) und Solo-Training für mehrere Kurse.
 1. Datei `data/l-and-d.json` nach dem Muster von `data/hr-ops.json` anlegen:
    - `id`, `title`, `legal` (Hinweistext, optional)
    - `rounds`: `[{ "id": "fs", "label": "Tag 1", "title": "Future Skills", "color": "#2F6FD6" }]`
-   - `questions`: `[{ "id": "fs-1", "round": "fs", "q": "Frage", "o": ["A","B","C","D"], "a": 0, "x": "Erklärung", "s": "Quelle", "t": 30 }]`
-     (`a` = Index der richtigen Antwort ab 0, `t` = Sekunden)
+   - `questions`: `[{ "id": "fs-1", "round": "fs", "q": "Frage", "o": ["A","B","C","D"], "a": 0, "h": "Hinweis", "x": "Erklärung", "s": "Quelle" }]`
+     (`a` = Index der richtigen Antwort ab 0, `h` = aufdeckbarer Hinweis, optional `t` = feste Sekundenzahl; sonst wird die Zeit aus der Textlänge berechnet)
 2. In `data/courses.json` ergänzen: `{ "id": "l-and-d", "title": "Strategisches L&D", "subtitle": "BTA Weiterbildung", "file": "data/l-and-d.json" }`
 
 ## Lokal testen ohne Internet
