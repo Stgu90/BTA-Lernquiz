@@ -226,6 +226,96 @@
    "s": "Skript Bewerbermanagement, Kapitel 6 · §§ 7, 8 Betriebsverfassungsgesetz"
   },
   {
+   "id": "bm-12",
+   "round": "bm",
+   "q": "In der Stellenanzeige ist „Erfahrung mit einer bestimmten Software“ als Kann-Kriterium genannt, also als erlernbar. Später will die Führungskraft alle Bewerbungen ohne diese Erfahrung aussortieren. Was gilt?",
+   "o": [
+    "Nicht ohne sachlichen Grund, der dokumentiert und für alle gleich angewendet wird.",
+    "Das geht nur, wenn die Bewerbenden vorher zustimmen.",
+    "Das ist ihre Entscheidung, Auswahlkriterien dürfen während des Verfahrens jederzeit geändert werden.",
+    "Das ist zulässig, solange die Anzeige noch online ist."
+   ],
+   "a": 0,
+   "h": "Was wurde vor der Auswahl als Maßstab festgelegt?",
+   "x": "Muss-Kriterien sind für die Aufgabe wirklich nötig und überprüfbar. Kann-Kriterien erleichtern die Arbeit, lassen sich aber entwickeln. Wer ein Kriterium als erlernbar eingestuft hat, darf es nicht nachträglich zum Ausschlussgrund machen – jedenfalls nicht ohne sachlichen Grund. Ändert sich der Bedarf wirklich, wird die Änderung begründet, dokumentiert und auf alle Bewerbungen gleich angewendet. Sie darf nicht dazu dienen, eine bevorzugte Person passend zu machen.",
+   "s": "Skript Bewerbermanagement, Kapitel 5"
+  },
+  {
+   "id": "bm-13",
+   "round": "bm",
+   "q": "Nach einem Vorstellungsgespräch steht in der Notiz: „Sie war uns als Frau zu dominant.“ Was ist daran das Problem?",
+   "o": [
+    "Nichts, solange die Absage an die Bewerberin selbst neutral und freundlich formuliert ist.",
+    "Nur, dass die Notiz zu kurz ist und nicht unterschrieben wurde.",
+    "Die Aussage knüpft an das Geschlecht an und kann eine Benachteiligung belegen.",
+    "Nichts, die Passung ins Team ist ein frei wählbares Kriterium."
+   ],
+   "a": 2,
+   "h": "Lies die Notiz Wort für Wort: Woran wird die Bewertung festgemacht?",
+   "x": "Soziale Fähigkeiten wie Kommunikation oder Konfliktverhalten dürfen ein Auswahlkriterium sein. Sie müssen aber an beobachtetes Verhalten anknüpfen und für alle gleich gelten. „Als Frau zu dominant“ verbindet die Bewertung mit dem Geschlecht. Eine solche Notiz kann vor Gericht ein Indiz für eine Benachteiligung nach dem Allgemeinen Gleichbehandlungsgesetz sein – auch wenn die Absage freundlich und neutral klingt. Die professionelle Frage lautet: Welches konkrete Verhalten wurde beobachtet, und warum ist es für die Rolle wichtig?",
+   "s": "Skript Bewerbermanagement, Kapitel 8 · §§ 1, 7 und 22 Allgemeines Gleichbehandlungsgesetz"
+  },
+  {
+   "id": "bm-14",
+   "round": "bm",
+   "q": "Intern ist für eine Stelle eine Gehaltsspanne von 45.000 bis 55.000 Euro vorgesehen. Ein Bewerber möchte nur 40.000 Euro. Was prüft HR zuerst?",
+   "o": [
+    "Er muss mindestens 45.000 Euro bekommen, so ist es geplant.",
+    "Am besten 40.000 Euro anbieten, das schont das Budget.",
+    "Nichts, der Wunsch des Bewerbers ist verbindlich.",
+    "Ob ein Tarifvertrag oder verbindliches Entgeltsystem gilt."
+   ],
+   "a": 3,
+   "h": "Kann man auf Gehalt verzichten, das einem nach einer Regel zusteht?",
+   "x": "Eine niedrige Gehaltsforderung ersetzt keine Prüfung. HR klärt zuerst, ob ein Tarifvertrag, eine Betriebsvereinbarung oder ein anderes verbindliches Entgeltsystem gilt. Dann richtet sich die Bezahlung nach dessen Regeln, etwa nach Tätigkeitsmerkmalen und Erfahrungsstufen. Eine interne Planungsspanne allein begründet dagegen noch keinen Anspruch. Außerdem gelten immer der Mindestlohn und das Verbot, Frauen und Männer für gleiche Arbeit unterschiedlich zu bezahlen.",
+   "s": "Skript Bewerbermanagement, Kapitel 9 · § 4 Tarifvertragsgesetz"
+  },
+  {
+   "id": "bm-15",
+   "round": "bm",
+   "q": "Ein Mann verdient für die gleiche Arbeit mehr als seine Kollegin. Die Begründung: „Er hat einfach besser verhandelt.“ Reicht das als Rechtfertigung?",
+   "o": [
+    "Ja, wenn die Kollegin ihr niedrigeres Gehalt beim Vertragsschluss selbst akzeptiert hat.",
+    "Nein, besseres Verhandeln allein rechtfertigt den Unterschied nicht.",
+    "Nein, alle im Unternehmen müssen exakt gleich viel verdienen.",
+    "Ja, Gehälter sind reine Verhandlungssache."
+   ],
+   "a": 1,
+   "h": "Das Bundesarbeitsgericht hat dazu 2023 eine wichtige Entscheidung getroffen.",
+   "x": "Frauen und Männer haben für gleiche oder gleichwertige Arbeit Anspruch auf gleiches Entgelt. Gibt es einen Unterschied, wird eine Benachteiligung wegen des Geschlechts vermutet. Das Bundesarbeitsgericht hat 2023 klargestellt: Das Argument „Er hat besser verhandelt“ widerlegt diese Vermutung allein nicht. Unterschiede brauchen objektive, geschlechtsneutrale Gründe, etwa nachweisbar mehr einschlägige Erfahrung. Unterschiedliche Gehälter sind also nicht verboten – sie müssen nur sachlich erklärbar sein.",
+   "s": "Skript Bewerbermanagement, Kapitel 9 · Entgelttransparenzgesetz · Bundesarbeitsgericht 16.02.2023 – 8 AZR 450/21"
+  },
+  {
+   "id": "bm-16",
+   "round": "bm",
+   "q": "Die ausgeschriebene Stelle wird gestrichen. Die Standard-Absage lautet: „Wir haben uns für eine andere Bewerbung entschieden.“ Darf HR sie verwenden?",
+   "o": [
+    "Ja, eine Absage muss in der Privatwirtschaft nie begründet werden.",
+    "Nein, eine Absage muss immer ausführlich begründet werden.",
+    "Nein, der Text muss zur tatsächlichen Lage passen.",
+    "Ja, das ist neutraler und schützt das Unternehmen am besten."
+   ],
+   "a": 2,
+   "h": "Kurz ist erlaubt – falsch nicht.",
+   "x": "In der Privatwirtschaft muss eine Absage grundsätzlich nicht ausführlich begründet werden. Was drinsteht, muss aber stimmen. Wurde niemand ausgewählt, weil die Stelle wegfällt, ist „wir haben uns für eine andere Bewerbung entschieden“ schlicht unwahr. Ein erfundener neutraler Grund ist keine professionelle Lösung. Intern muss die echte Entscheidung nachvollziehbar dokumentiert sein. Besondere Pflichten können zum Beispiel bei schwerbehinderten Bewerbenden oder im öffentlichen Dienst gelten.",
+   "s": "Skript Bewerbermanagement, Kapitel 11"
+  },
+  {
+   "id": "bm-17",
+   "round": "bm",
+   "q": "Eine Recruiterin will die privaten Profile einer Bewerberin in sozialen Netzwerken durchsehen. Die Profile sind öffentlich. Was gilt?",
+   "o": [
+    "Auch das ist Datenverarbeitung und muss für die Stelle erforderlich sein.",
+    "Das ist nur mit vorheriger schriftlicher Einwilligung der Bewerberin überhaupt erlaubt.",
+    "Alles, was öffentlich ist, darf frei verwendet werden.",
+    "Das ist verboten, Recherchen im Internet sind immer unzulässig."
+   ],
+   "a": 0,
+   "h": "Öffentlich auffindbar heißt nicht automatisch frei verwendbar.",
+   "x": "Auch wer öffentliche Informationen sammelt und auswertet, verarbeitet personenbezogene Daten. HR muss deshalb prüfen: Hat die Information einen Bezug zur Tätigkeit, ist sie für die Auswahl erforderlich, und gibt es eine Rechtsgrundlage? Private Urlaubsfotos oder politische Ansichten haben in der Regel keinen Bezug zur Stelle. Ein berufliches Netzwerkprofil kann anders zu bewerten sein. Werden Daten aus anderen Quellen erhoben, bestehen außerdem Informationspflichten gegenüber der Bewerberin.",
+   "s": "Skript Bewerbermanagement, Kapitel 12 · Artikel 5 und 14 Datenschutz-Grundverordnung · § 26 Bundesdatenschutzgesetz"
+  },
+  {
    "id": "sv-1",
    "round": "sv",
    "q": "Rechenbeispiel 2026: Eine Mitarbeiterin verdient 4.000 Euro brutto im Monat, sie ist über 23, kinderlos und arbeitet nicht in Sachsen. Wie viel kostet sie den Arbeitgeber mindestens pro Monat?",
@@ -391,6 +481,96 @@
    "s": "Handout Sozialversicherungsrecht, Kapitel 4 · Pflegeversicherung"
   },
   {
+   "id": "sv-12",
+   "round": "sv",
+   "q": "Ein neuer Mitarbeiter hat seine Krankenkasse nicht genannt. HR möchte ihn einfach bei der Betriebskrankenkasse anmelden, bei der die meisten Kollegen sind. Was gilt?",
+   "o": [
+    "Ohne gewählte Krankenkasse darf er nicht anfangen.",
+    "Er wählt selbst; meldet er sich nicht, gilt die zuletzt zuständige Kasse.",
+    "Das darf HR, bei der Anmeldung wählt grundsätzlich der Arbeitgeber die Krankenkasse aus.",
+    "Das darf HR, wenn der Betriebsrat dem zustimmt."
+   ],
+   "a": 1,
+   "h": "Wer hat bei der gesetzlichen Krankenversicherung das Wahlrecht?",
+   "x": "Bei gesetzlicher Versicherungspflicht wählt die beschäftigte Person ihre Krankenkasse selbst und teilt sie dem Arbeitgeber mit. Fehlt die Mitteilung spätestens zwei Wochen nach Beginn der Versicherungspflicht, meldet der Arbeitgeber grundsätzlich bei der Krankenkasse an, bei der die Person zuletzt versichert war. War sie vorher nie versichert, wählt der Arbeitgeber eine Kasse und informiert die Person. Eine „Hauskasse“ für alle ist deshalb nicht zulässig. Vorher prüft HR außerdem, ob überhaupt Versicherungspflicht besteht.",
+   "s": "Skript Sozialversicherung, Kapitel 13 · § 175 Sozialgesetzbuch Fünftes Buch"
+  },
+  {
+   "id": "sv-13",
+   "round": "sv",
+   "q": "Eine neue Mitarbeiterin hat noch keine Rentenversicherungsnummer. Die Führungskraft sagt: „Ohne Nummer darf sie nicht anfangen.“ Stimmt das?",
+   "o": [
+    "Ja, ohne Versicherungsnummer ist die Beschäftigung verboten.",
+    "Nein, eine Nummer ist nur für Beschäftigte über 25 nötig.",
+    "Ja, sie muss die Nummer vorher selbst beim Rentenamt beantragen.",
+    "Nein, die Nummer wird im Meldeverfahren vergeben."
+   ],
+   "a": 3,
+   "h": "Eine fehlende Nummer ist etwas anderes als eine fehlende Arbeitserlaubnis.",
+   "x": "Die Versicherungsnummer wird grundsätzlich elektronisch bei der Datenstelle der Rentenversicherung abgefragt. Gibt es noch keine, übermittelt der Arbeitgeber im Meldeverfahren die nötigen persönlichen Daten, und die Nummer wird vergeben. Die Aussage „Ohne Nummer darf niemand arbeiten“ ist deshalb zu pauschal. Davon zu trennen ist die Frage, ob jemand aufenthaltsrechtlich arbeiten darf. HR hält drei Prüffelder auseinander: Versicherungsnummer, Krankenversicherung und Beschäftigungsberechtigung.",
+   "s": "Skript Sozialversicherung, Kapitel 13 · § 147 Sozialgesetzbuch Sechstes Buch"
+  },
+  {
+   "id": "sv-14",
+   "round": "sv",
+   "q": "Eine Bürokraft beginnt am 1. des Monats. Bis wann muss der Arbeitgeber sie spätestens bei der Sozialversicherung anmelden?",
+   "o": [
+    "Mit der ersten Abrechnung, spätestens nach sechs Wochen.",
+    "Bis zum 15. Februar des Folgejahres.",
+    "Innerhalb von drei Arbeitstagen nach dem ersten Tag der Beschäftigung.",
+    "Bis zum Tag vor dem ersten Arbeitstag."
+   ],
+   "a": 0,
+   "h": "Bei normalen Bürojobs gibt es keine Meldung „vor dem Start“.",
+   "x": "Die Anmeldung bei Beschäftigungsbeginn erfolgt mit der ersten folgenden Gehaltsabrechnung, spätestens sechs Wochen nach Beginn. Die sechs Wochen sind eine äußerste Frist, keine Wartezeit. Der 15. Februar des Folgejahres gilt für die Jahresmeldung bei fortbestehender Beschäftigung. In bestimmten Branchen mit besonderem Risiko für Schwarzarbeit braucht es zusätzlich eine Sofortmeldung spätestens bei Arbeitsaufnahme. Wichtig: Eine versendete Meldung ist erst erledigt, wenn die Rückmeldung geprüft ist.",
+   "s": "Skript Sozialversicherung, Kapitel 15 · § 6 Datenerfassungs- und -übermittlungsverordnung"
+  },
+  {
+   "id": "sv-15",
+   "round": "sv",
+   "q": "In welchem Fall muss ein Arbeitgeber eine Sofortmeldung abgeben, also spätestens am ersten Arbeitstag?",
+   "o": [
+    "Nur bei Minijobs und kurzfristiger Beschäftigung.",
+    "Bei jeder Neueinstellung, egal in welcher Branche das Unternehmen tätig ist.",
+    "In bestimmten Branchen wie Bau, Gastronomie oder Gebäudereinigung.",
+    "Nur bei Beschäftigten mit ausländischer Staatsangehörigkeit."
+   ],
+   "a": 2,
+   "h": "Die Sofortmeldung dient der Kontrolle von Schwarzarbeit.",
+   "x": "Die Sofortmeldung gilt nur in Branchen, die das Gesetz als besonders anfällig für Schwarzarbeit einstuft, zum Beispiel Bau, Gastronomie, Gebäudereinigung sowie Wach- und Sicherheitsdienste. Seit 2026 sind auch das Friseur- und Kosmetikgewerbe hinzugekommen. Die Sofortmeldung geht an die Datenstelle der Rentenversicherung und ersetzt die normale Anmeldung nicht. Weil sich der Branchenkatalog ändern kann, prüft HR immer die aktuelle Fassung des Gesetzes.",
+   "s": "Skript Sozialversicherung, Kapitel 15 · § 28a Absatz 4 Sozialgesetzbuch Viertes Buch"
+  },
+  {
+   "id": "sv-16",
+   "round": "sv",
+   "q": "Der Aufenthaltstitel eines Mitarbeiters läuft morgen ab. Er zeigt HR nur eine Terminbestätigung der Ausländerbehörde. Was ist richtig?",
+   "o": [
+    "Das ist allein seine Sache, HR muss nichts prüfen.",
+    "Er muss sofort gekündigt werden, ein abgelaufener Titel beendet alles.",
+    "Die Terminbestätigung reicht aus, damit darf er bis zum Termin unbegrenzt weiterarbeiten.",
+    "HR braucht Nachweise über den rechtzeitigen Antrag und die erlaubte Arbeit."
+   ],
+   "a": 3,
+   "h": "Ein Termin ist noch kein Antrag – und ein Ablaufdatum nicht immer das Ende.",
+   "x": "Wird rechtzeitig eine Verlängerung beantragt, gilt der bisherige Titel oft bis zur Entscheidung fort. Das wird in einer sogenannten Fiktionsbescheinigung dokumentiert, deren Inhalt HR genau lesen muss. Eine reine Terminbestätigung belegt aber nicht automatisch, dass der Antrag rechtzeitig gestellt wurde. HR braucht deshalb geeignete Nachweise über Antrag, Wirkung und erlaubte Tätigkeit. Lässt sich die Berechtigung nicht belegen, wird vor der weiteren Beschäftigung geklärt, ob gearbeitet werden darf – eine Kündigung ist eine eigene, spätere Frage.",
+   "s": "Skript Sozialversicherung, Kapitel 14 · § 81 Absatz 4 Aufenthaltsgesetz"
+  },
+  {
+   "id": "sv-17",
+   "round": "sv",
+   "q": "Nach einem Arbeitsunfall ist ein Mitarbeiter länger arbeitsunfähig. Nach sechs Wochen Lohnfortzahlung bekommt er Geld, das über seine Krankenkasse überwiesen wird. Was ist das in der Regel?",
+   "o": [
+    "Eine freiwillige Leistung des Arbeitgebers.",
+    "Verletztengeld der Unfallversicherung, ausgezahlt über die Kasse.",
+    "Krankengeld der Krankenkasse in Höhe von 70 Prozent des Bruttolohns.",
+    "Eine Erwerbsminderungsrente der Rentenversicherung."
+   ],
+   "a": 1,
+   "h": "Wer überweist und wer zuständig ist, muss nicht dieselbe Stelle sein.",
+   "x": "Bei einem Arbeitsunfall oder einer anerkannten Berufskrankheit ist die gesetzliche Unfallversicherung zuständig, meist die Berufsgenossenschaft. Sie zahlt nach der Entgeltfortzahlung Verletztengeld, grundsätzlich 80 Prozent des Regelentgelts, höchstens das Nettoentgelt. Ausgezahlt wird es häufig über die Krankenkasse – deshalb kommt das Geld von dort, obwohl es keine Krankenkassenleistung ist. Krankengeld bei normaler Krankheit ist niedriger: grundsätzlich 70 Prozent, höchstens 90 Prozent des Nettoentgelts.",
+   "s": "Skript Sozialversicherung, Kapitel 12 · § 47 Sozialgesetzbuch Siebtes Buch · § 47 Sozialgesetzbuch Fünftes Buch"
+  },
+  {
    "id": "t1-1",
    "round": "t1",
    "q": "Die Geschäftsführerin (sie darf die Firma vertreten) und eine Bewerberin telefonieren. Sie einigen sich auf Startdatum, 30 Wochenstunden und 3.000 Euro brutto. Beide sagen: „Abgemacht.“ Gibt es damit schon einen gültigen Arbeitsvertrag?",
@@ -541,6 +721,96 @@
    "s": "Skript Rechtstag 1 · Wann § 99 gilt · § 99 Betriebsverfassungsgesetz"
   },
   {
+   "id": "t1-11",
+   "round": "t1",
+   "q": "Eine Teamleiterin sagt einem Bewerber am Telefon: „Sie haben den Job, Start am 1. März, 4.000 Euro.“ Sie ist nicht bevollmächtigt, Verträge für die Firma abzuschließen. Was gilt?",
+   "o": [
+    "Die Position allein reicht nicht, sie muss die Firma vertreten dürfen.",
+    "Die Zusage gilt erst, wenn der Betriebsrat sie bestätigt hat.",
+    "Mündliche Zusagen sind im Arbeitsrecht grundsätzlich unwirksam.",
+    "Der Vertrag steht, Führungskräfte dürfen in ihrem Bereich immer selbst einstellen."
+   ],
+   "a": 0,
+   "h": "Unterscheide: Wer führt ein Team – und wer darf die Firma rechtlich vertreten?",
+   "x": "Ein Arbeitsvertrag kommt nur zustande, wenn die Person, die zusagt, das Unternehmen dabei wirksam vertreten darf. Eine Führungsposition bedeutet nicht automatisch, dass man Verträge abschließen darf. Umgekehrt ist eine mündliche Einigung nicht von vornherein unwirksam – Arbeitsverträge brauchen grundsätzlich keine Schriftform. Gerade deshalb ist das Telefonat riskant: Es kann Erwartungen und im ungünstigen Fall auch rechtliche Bindungen auslösen. Merksatz: Vor jeder Zusage klären, wer verbindlich zusagen darf.",
+   "s": "Skript Tag 1 · Vertretungsmacht nach dem Bürgerlichen Gesetzbuch"
+  },
+  {
+   "id": "t1-12",
+   "round": "t1",
+   "q": "Im Vertrag steht „freie Mitarbeit“. Die Person hat aber feste Arbeitszeiten, bekommt Einzelanweisungen und arbeitet wie alle anderen im Team. Was entscheidet, ob sie eigentlich angestellt ist?",
+   "o": [
+    "Ob sie einen Gewerbeschein hat und Rechnungen schreibt.",
+    "Die Überschrift des Vertrags, denn darauf haben sich beide geeinigt.",
+    "Das Gesamtbild der tatsächlichen Zusammenarbeit.",
+    "Ob sie noch für weitere Auftraggeber tätig ist."
+   ],
+   "a": 2,
+   "h": "Schau nicht auf das Etikett, sondern darauf, wie gearbeitet wird.",
+   "x": "Ob jemand Arbeitnehmerin ist, hängt nicht vom Namen des Vertrags ab, sondern davon, wie die Zusammenarbeit tatsächlich gelebt wird. Wichtige Hinweise sind Weisungen zu Zeit, Ort und Inhalt der Arbeit und die Eingliederung in die Arbeitsorganisation. Gewerbeschein, Rechnungen oder weitere Auftraggeber sind Indizien, aber keine Garantie für Selbstständigkeit. Typischer Fehler: „Steht doch freie Mitarbeit im Vertrag.“ Das schützt nicht vor Nachforderungen von Sozialversicherungsbeiträgen. Merksatz: Gelebt schlägt geschrieben.",
+   "s": "Skript Tag 1 · § 611a Bürgerliches Gesetzbuch · § 7 Sozialgesetzbuch Viertes Buch"
+  },
+  {
+   "id": "t1-13",
+   "round": "t1",
+   "q": "Eine Aushilfe im Minijob fragt: „Bekomme ich eigentlich Urlaub, und werde ich bezahlt, wenn ich krank bin?“ Was stimmt?",
+   "o": [
+    "Nein, Minijobs sind von Urlaub und Lohnfortzahlung ausdrücklich ausgenommen.",
+    "Nur, wenn es ausdrücklich im Vertrag vereinbart ist.",
+    "Urlaub ja, aber keine Bezahlung bei Krankheit.",
+    "Ja, sie hat dieselben Grundansprüche wie andere Beschäftigte."
+   ],
+   "a": 3,
+   "h": "„Mini“ beschreibt die Sozialversicherung, nicht die Arbeitnehmerrechte.",
+   "x": "Ein Minijob ist ein ganz normales Arbeitsverhältnis. Der Begriff betrifft vor allem die Sozialversicherung und die Abgaben. Arbeitsrechtlich haben Minijobberinnen und Minijobber dieselben Grundansprüche wie andere Beschäftigte: gesetzlichen Mindesturlaub (anteilig nach Arbeitstagen), Entgeltfortzahlung bei Krankheit, Mindestlohn und Schutz vor schlechterer Behandlung wegen Teilzeit. Typischer Fehler in der Praxis: Urlaub und Krankheit werden bei Aushilfen einfach nicht erfasst – das führt zu Nachforderungen.",
+   "s": "Skript Tag 1 · § 4 Teilzeit- und Befristungsgesetz · Bundesurlaubsgesetz · Entgeltfortzahlungsgesetz"
+  },
+  {
+   "id": "t1-14",
+   "round": "t1",
+   "q": "Ein Vertrag endet „mit Rückkehr der Kollegin aus der Elternzeit“. Die Kollegin kommt überraschend schon in drei Tagen zurück. Wann endet der Vertrag der Vertretung frühestens?",
+   "o": [
+    "Sofort mit dem Tag, an dem die Kollegin zurückkommt.",
+    "Zwei Wochen nach der schriftlichen Mitteilung, dass der Zweck erreicht ist.",
+    "Nach Ablauf einer Kündigungsfrist von vier Wochen.",
+    "Am Ende des Monats, in dem die Kollegin tatsächlich an ihren Arbeitsplatz zurückkehrt."
+   ],
+   "a": 1,
+   "h": "Bei einer Befristung „bis zu einem Ereignis“ braucht die Vertretung eine Vorwarnung.",
+   "x": "Das ist eine Zweckbefristung: Der Vertrag endet nicht an einem Datum, sondern wenn ein Zweck erreicht ist. Weil die Vertretung den Zeitpunkt nicht selbst kennt, schützt sie das Gesetz: Der Vertrag endet frühestens zwei Wochen, nachdem der Arbeitgeber schriftlich mitgeteilt hat, wann der Zweck erreicht ist. Für HR heißt das: Sobald die Rückkehr feststeht, sofort schriftlich informieren und den Zugang dokumentieren. Bis dahin muss die Vertretung weiter beschäftigt und bezahlt werden.",
+   "s": "Skript Tag 1 · § 15 Absatz 2 Teilzeit- und Befristungsgesetz"
+  },
+  {
+   "id": "t1-15",
+   "round": "t1",
+   "q": "Ein Unternehmen hat einer neuen Mitarbeiterin die wesentlichen Arbeitsbedingungen nie schriftlich ausgehändigt. Was folgt daraus?",
+   "o": [
+    "Sie gilt automatisch als unbefristet in Vollzeit eingestellt.",
+    "Nichts, solange die Mitarbeiterin nicht danach fragt.",
+    "Der Vertrag gilt, aber es droht ein Bußgeld bis 2.000 Euro.",
+    "Der Arbeitsvertrag ist unwirksam, bis der Nachweis vorliegt."
+   ],
+   "a": 2,
+   "h": "Der Nachweis dokumentiert den Vertrag – er erschafft ihn nicht.",
+   "x": "Der Nachweis nach dem Nachweisgesetz ist eine Informationspflicht. Fehlt er, bleibt der Arbeitsvertrag trotzdem wirksam. Seit 2022 ist der Verstoß aber eine Ordnungswidrigkeit, die mit einem Bußgeld von bis zu 2.000 Euro geahndet werden kann. Außerdem erschwert ein fehlender Nachweis im Streitfall die Beweisführung für den Arbeitgeber. Merksatz: Kein Nachweis heißt nicht kein Vertrag – aber ein vermeidbares Risiko.",
+   "s": "Skript Tag 1 · § 4 Nachweisgesetz"
+  },
+  {
+   "id": "t1-16",
+   "round": "t1",
+   "q": "Ein Vertrag ist auf zwölf Monate befristet, als Grund steht nur „Projektarbeit“. Die Person erledigt aber die gleichen Daueraufgaben wie alle anderen im Team. Trägt dieser Sachgrund die Befristung?",
+   "o": [
+    "Eher nicht, die Arbeit muss tatsächlich nur vorübergehend anfallen.",
+    "Ja, das Wort „Projekt“ im Vertrag reicht als Sachgrund aus.",
+    "Nein, Projekte sind als Grund für Befristungen ganz verboten.",
+    "Ja, Befristungen bis zu zwei Jahren sind ohne weiteren Grund ohnehin immer erlaubt."
+   ],
+   "a": 0,
+   "h": "Ein Sachgrund muss zur Wirklichkeit passen, nicht nur im Vertrag stehen.",
+   "x": "Ein Sachgrund wie „vorübergehender Bedarf“ trägt eine Befristung nur, wenn bei Vertragsschluss absehbar war, dass die Arbeit wirklich nur für eine begrenzte Zeit anfällt. Macht die Person in Wahrheit Daueraufgaben, hilft das Etikett „Projekt“ nicht. Dann droht ein unbefristetes Arbeitsverhältnis. Ein gutes Beispiel für einen tragfähigen Sachgrund ist dagegen die Vertretung einer Kollegin in Elternzeit. Merksatz: Der Sachgrund muss stimmen, nicht nur klingen.",
+   "s": "Skript Tag 1 · § 14 Absatz 1 Teilzeit- und Befristungsgesetz"
+  },
+  {
    "id": "t2-1",
    "round": "t2",
    "q": "Eine Führungskraft will einem Mitarbeiter per Anweisung das Gehalt um fünf Prozent kürzen, weil die Zahlen schlecht sind. Geht das?",
@@ -689,6 +959,96 @@
    "h": "Auch ein freiwilliger Wechsel kann eine Versetzung im Sinne des Betriebsverfassungsgesetzes sein.",
    "x": "Der Wegfall der Führungsverantwortung ist eine wesentliche Änderung der Tätigkeit und meist auch eine geringerwertige Aufgabe – gleiches Gehalt ändert daran nichts. Weil Herr Kienzle einverstanden ist, reicht ein Änderungsvertrag. Das Einverständnis ersetzt aber nicht die Beteiligung des Betriebsrats bei einer Versetzung. Außerdem zu regeln: was mit der Führungszulage passiert, dass seine anerkannte Betriebszugehörigkeit unberührt bleibt, und ein aktualisierter Nachweis der Arbeitsbedingungen.",
    "s": "Skript Tag 2 · 4.4 Übung 2, Fall Kienzle · § 99 Betriebsverfassungsgesetz, § 3 Nachweisgesetz"
+  },
+  {
+   "id": "t2-11",
+   "round": "t2",
+   "q": "Im vorformulierten Arbeitsvertrag steht: „Ansprüche verfallen, wenn sie nicht innerhalb von sechs Wochen schriftlich geltend gemacht werden.“ Wie ist diese Klausel einzuordnen?",
+   "o": [
+    "Wirksam, solche Fristen dürfen im Arbeitsvertrag frei vereinbart werden.",
+    "Unwirksam, weil mindestens drei Monate eingeräumt werden müssen.",
+    "Wirksam, wenn die Beschäftigte den Vertrag unterschrieben hat.",
+    "Unwirksam, weil Verfallsfristen im Arbeitsrecht verboten sind."
+   ],
+   "a": 1,
+   "h": "Solche Fristen sind erlaubt – aber nicht beliebig kurz.",
+   "x": "Eine Klausel, nach der Ansprüche nach einer bestimmten Zeit verfallen, heißt Ausschlussfrist. In vorformulierten Verträgen ist sie grundsätzlich zulässig. Nach der Rechtsprechung des Bundesarbeitsgerichts muss sie aber mindestens drei Monate betragen, sonst benachteiligt sie die Beschäftigten unangemessen. Sechs Wochen sind zu kurz, die Klausel fällt dann ganz weg. Achtung: Den gesetzlichen Mindestlohn darf eine solche Klausel ohnehin nicht erfassen.",
+   "s": "Skript Tag 2 · § 307 Bürgerliches Gesetzbuch · Bundesarbeitsgericht 28.09.2005 – 5 AZR 52/05"
+  },
+  {
+   "id": "t2-12",
+   "round": "t2",
+   "q": "Im Vertrag steht: „Die monatliche Zulage von 200 Euro ist freiwillig und begründet keinen Anspruch.“ Sie wird seit Jahren jeden Monat gezahlt. Was gilt?",
+   "o": [
+    "Nach drei Jahren wird jede freiwillige Zahlung automatisch Pflicht.",
+    "Die Zulage ist freiwillig, solange sie nicht im Tarifvertrag steht.",
+    "Der Arbeitgeber kann die Zulage jederzeit ohne Grund streichen.",
+    "Der Vorbehalt ist unwirksam, laufendes Gehalt ist nicht freiwillig."
+   ],
+   "a": 3,
+   "h": "Ist die Zulage eine Einmalzahlung oder Teil des monatlichen Gehalts?",
+   "x": "Ein Freiwilligkeitsvorbehalt soll verhindern, dass ein Anspruch entsteht. Bei laufendem, monatlichem Entgelt funktioniert das nicht: Es ist die Gegenleistung für die Arbeit und kann nicht „freiwillig“ gestellt werden. Das Bundesarbeitsgericht hält solche Klauseln deshalb für unwirksam. Will ein Arbeitgeber sich eine Änderung vorbehalten, braucht er einen Widerrufsvorbehalt mit erkennbarem Grund und Grenzen. Merksatz: Freiwillig passt allenfalls zu Sonderzahlungen, nicht zum laufenden Gehalt.",
+   "s": "Skript Tag 2 · Bundesarbeitsgericht 10 AZR 671/09"
+  },
+  {
+   "id": "t2-13",
+   "round": "t2",
+   "q": "Ein Mitarbeiter erhält eine Änderungskündigung: Er soll an einen anderen Standort, sonst endet sein Arbeitsverhältnis. Er will den Job behalten, die Änderung aber gerichtlich prüfen lassen. Was ist der übliche Weg?",
+   "o": [
+    "Er nimmt das Angebot unter Vorbehalt an und klagt gegen die Änderung.",
+    "Er wartet ab, denn ohne Unterschrift gilt die Änderung nicht.",
+    "Er lehnt das Angebot ab und arbeitet einfach am alten Standort weiter.",
+    "Er kündigt selbst, um sich die Abfindung zu sichern."
+   ],
+   "a": 0,
+   "h": "Es gibt einen Weg zwischen „Ja“ und „Nein“.",
+   "x": "Eine Änderungskündigung ist eine Kündigung, verbunden mit dem Angebot, zu geänderten Bedingungen weiterzuarbeiten. Beschäftigte können annehmen, ablehnen oder unter Vorbehalt annehmen. Der Vorbehalt muss innerhalb der Kündigungsfrist erklärt werden, spätestens drei Wochen nach Zugang; ebenso läuft die Klagefrist von drei Wochen. Der Vorteil: Verliert er den Prozess, arbeitet er zu den neuen Bedingungen weiter, statt den Arbeitsplatz zu verlieren. Lehnt er dagegen ab und verliert, ist der Arbeitsplatz weg.",
+   "s": "Skript Tag 2 · § 2 und § 4 Kündigungsschutzgesetz"
+  },
+  {
+   "id": "t2-14",
+   "round": "t2",
+   "q": "Die Wochenarbeitszeit einer Mitarbeiterin ändert sich zum 1. März. HR hat das bereits im Personalsystem eingetragen. Bis wann muss sie die Änderung schriftlich mitgeteilt bekommen?",
+   "o": [
+    "Erst mit der nächsten Gehaltsabrechnung.",
+    "Innerhalb eines Monats nach der Änderung.",
+    "Spätestens an dem Tag, an dem sie gilt.",
+    "Gar nicht, der Eintrag im System genügt als Nachweis."
+   ],
+   "a": 2,
+   "h": "Ein Systemeintrag ist eine interne Notiz, keine Mitteilung an die Beschäftigte.",
+   "x": "Ändern sich wesentliche Arbeitsbedingungen, muss der Arbeitgeber die Änderung nach dem Nachweisgesetz spätestens an dem Tag mitteilen, an dem sie wirksam wird. Der Eintrag im Personalsystem dokumentiert die Änderung nur intern – die Beschäftigte hat davon nichts. Der Nachweis muss in der gesetzlich vorgesehenen Form erfolgen. Typischer Fehler: Die Änderung wird zwar abgerechnet, aber nie schriftlich bestätigt.",
+   "s": "Skript Tag 2 · § 3 Nachweisgesetz"
+  },
+  {
+   "id": "t2-15",
+   "round": "t2",
+   "q": "Eine Mitarbeiterin möchte für zwei Jahre auf 25 Wochenstunden reduzieren und danach wieder in Vollzeit arbeiten. Das Unternehmen hat 120 Beschäftigte. Welche gesetzliche Möglichkeit passt?",
+   "o": [
+    "Altersteilzeit, die einige Jahre vor dem Ruhestand beantragt werden kann.",
+    "Kurzarbeit, die über die Agentur für Arbeit läuft.",
+    "Eine unbefristete Teilzeit mit Rückkehrgarantie per Gesetz.",
+    "Brückenteilzeit für einen festen Zeitraum von einem bis fünf Jahren."
+   ],
+   "a": 3,
+   "h": "Sie will zurück auf Vollzeit – und zwar automatisch.",
+   "x": "Die Brückenteilzeit ist eine Teilzeit auf Zeit: Die Arbeitszeit wird für einen vorher festgelegten Zeitraum zwischen einem und fünf Jahren verringert, danach gilt automatisch wieder die alte Arbeitszeit. Voraussetzungen sind unter anderem ein Unternehmen mit in der Regel mehr als 45 Beschäftigten und ein Arbeitsverhältnis, das länger als sechs Monate besteht. Bei einer normalen Teilzeit gibt es dagegen kein automatisches Rückkehrrecht. Merksatz: Brückenteilzeit hat ein eingebautes Ende.",
+   "s": "Skript Tag 2 · § 9a Teilzeit- und Befristungsgesetz"
+  },
+  {
+   "id": "t2-16",
+   "round": "t2",
+   "q": "Ein Mitarbeiter bekommt eine Weiterbildung für 3.000 Euro. Die Klausel lautet: „Wer innerhalb von drei Jahren kündigt, zahlt den vollen Betrag zurück – egal wann.“ Wie ist das einzuordnen?",
+   "o": [
+    "Unproblematisch, wenn die Summe unter 5.000 Euro bleibt.",
+    "Riskant, die Rückzahlung muss angemessen sein und gestaffelt sinken.",
+    "Unwirksam, Rückzahlungen für Weiterbildungen sind ganz verboten.",
+    "Unproblematisch, wer eine bezahlte Weiterbildung annimmt, trägt dafür auch das Risiko."
+   ],
+   "a": 1,
+   "h": "Wer nach zweieinhalb Jahren geht, hat der Firma schon viel zurückgegeben.",
+   "x": "Rückzahlungsklauseln für Fortbildungen sind grundsätzlich möglich, wenn die Weiterbildung den Beschäftigten einen echten Vorteil bringt. Sie müssen aber angemessen sein: Die Bindungsdauer muss zum Wert der Weiterbildung passen, und der Rückzahlungsbetrag muss mit jedem Monat, den die Person bleibt, sinken. Außerdem darf nicht jede Beendigung eine Rückzahlung auslösen, etwa nicht eine Kündigung aus Gründen, die der Arbeitgeber zu verantworten hat. Ist die Klausel unangemessen, fällt sie ganz weg – dann muss gar nichts zurückgezahlt werden.",
+   "s": "Skript Tag 2 · § 307 Bürgerliches Gesetzbuch · Rechtsprechung des Bundesarbeitsgerichts"
   },
   {
    "id": "t3-1",
@@ -901,6 +1261,96 @@
    "s": "Ergänzung zu Skript Tag 3 · Bundesarbeitsgericht 01.04.2026, 6 AZR 152/22 und 6 AZR 157/22; 25.06.2026, 6 AZR 7/26 · § 17 Kündigungsschutzgesetz"
   },
   {
+   "id": "t3-13",
+   "round": "t3",
+   "q": "Bei welcher Art von Kündigungsgrund braucht der Arbeitgeber in der Regel vorher eine Abmahnung?",
+   "o": [
+    "Bei personenbedingten Gründen, etwa langer Krankheit.",
+    "Bei betriebsbedingten Gründen, etwa bei Stellenabbau.",
+    "Bei verhaltensbedingten Gründen.",
+    "Bei allen drei Gründen gleichermaßen."
+   ],
+   "a": 2,
+   "h": "Eine Abmahnung ist eine Warnung. Wer kann auf eine Warnung reagieren?",
+   "x": "Das Gesetz kennt drei Kündigungsgründe: in der Person (zum Beispiel lange Krankheit), im Verhalten (zum Beispiel wiederholtes Zuspätkommen) und betriebsbedingt (zum Beispiel Wegfall des Arbeitsplatzes). Eine Abmahnung warnt: „Ändere dein Verhalten, sonst droht die Kündigung.“ Das ergibt nur Sinn, wenn die Person ihr Verhalten steuern kann – also bei verhaltensbedingten Gründen. Bei Krankheit oder Stellenabbau hilft keine Warnung. Ausnahme: Bei sehr schweren Pflichtverletzungen kann die Abmahnung entbehrlich sein.",
+   "s": "Skript Tag 3 · § 1 Absatz 2 Kündigungsschutzgesetz"
+  },
+  {
+   "id": "t3-14",
+   "round": "t3",
+   "q": "Eine Stelle soll im Rahmen eines „Effizienzprogramms“ wegfallen. Reicht das als Begründung für eine betriebsbedingte Kündigung?",
+   "o": [
+    "Nein, nötig sind ein konkreter Wegfall, Prüfung freier Stellen und Sozialauswahl.",
+    "Ja, wenn die Geschäftsführung das Programm beschlossen und schriftlich unterschrieben hat.",
+    "Nein, betriebsbedingte Kündigungen sind nur bei Insolvenz möglich.",
+    "Ja, die Unternehmensentscheidung wird vom Gericht nicht geprüft."
+   ],
+   "a": 0,
+   "h": "Ein Programmname beschreibt noch keinen weggefallenen Arbeitsplatz.",
+   "x": "Bei einer betriebsbedingten Kündigung muss der Arbeitgeber eine konkrete Entscheidung darlegen, durch die der Arbeitsplatz wirklich wegfällt. Dann prüft er, ob es im gesamten Unternehmen eine freie Stelle gibt, auf der die Person weiterarbeiten könnte. Schließlich muss er unter vergleichbaren Beschäftigten eine Sozialauswahl treffen: Dauer der Betriebszugehörigkeit, Lebensalter, Unterhaltspflichten und Schwerbehinderung. Merksatz: Ein Etikett wie „Effizienz“ ersetzt keine dieser drei Prüfungen.",
+   "s": "Skript Tag 3 · § 1 Absatz 2 und 3 Kündigungsschutzgesetz"
+  },
+  {
+   "id": "t3-15",
+   "round": "t3",
+   "q": "Eine schwangere Mitarbeiterin soll gekündigt werden, weil ihre Abteilung geschlossen wird. Was gilt?",
+   "o": [
+    "Das ist erlaubt, wenn der Betriebsrat zustimmt.",
+    "Verboten, außer die zuständige Landesbehörde erklärt sie vorher für zulässig.",
+    "Das ist erlaubt, weil der Kündigungsgrund nichts mit der Schwangerschaft zu tun hat.",
+    "Verboten, aber nur in Betrieben mit mehr als zehn Beschäftigten."
+   ],
+   "a": 1,
+   "h": "Hier entscheidet eine Behörde – und zwar vor der Kündigung.",
+   "x": "Während der Schwangerschaft, bis vier Monate nach der Entbindung und in bestimmten weiteren Fällen gilt ein Kündigungsverbot. Ausnahmsweise kann die für Arbeitsschutz zuständige Landesbehörde eine Kündigung vorher für zulässig erklären, etwa bei einer Betriebsschließung. Ohne diese Erklärung ist die Kündigung unwirksam. Der Schutz gilt auch in Kleinbetrieben und schon in den ersten sechs Monaten. Merksatz: Bei Sonderkündigungsschutz erst die Behörde, dann die Kündigung.",
+   "s": "Skript Tag 3 · § 17 Mutterschutzgesetz"
+  },
+  {
+   "id": "t3-16",
+   "round": "t3",
+   "q": "Ein schwerbehinderter Mitarbeiter ist seit vier Monaten im Unternehmen. Braucht der Arbeitgeber für eine Kündigung die Zustimmung des Integrationsamts?",
+   "o": [
+    "Nur, wenn der Mitarbeiter es verlangt.",
+    "Ja, ab dem ersten Arbeitstag.",
+    "Nein, schwerbehinderte Menschen haben keinen Sonderschutz.",
+    "Nein, in den ersten sechs Monaten nicht."
+   ],
+   "a": 3,
+   "h": "Der besondere Schutz setzt eine bestimmte Mindestdauer voraus.",
+   "x": "Schwerbehinderte Menschen haben einen besonderen Kündigungsschutz: Der Arbeitgeber braucht vorher die Zustimmung des Integrationsamts (in einigen Bundesländern heute Inklusionsamt genannt). Dieser Schutz greift aber erst, wenn das Arbeitsverhältnis länger als sechs Monate besteht. Achtung: Auch in den ersten sechs Monaten bleiben andere Pflichten bestehen, etwa die Beteiligung der Schwerbehindertenvertretung und des Betriebsrats. Merksatz: Keine Zustimmung nötig heißt nicht, dass niemand beteiligt werden muss.",
+   "s": "Skript Tag 3 · § 168 und § 173 Sozialgesetzbuch Neuntes Buch"
+  },
+  {
+   "id": "t3-17",
+   "round": "t3",
+   "q": "Ein Auszubildender ist im zweiten Ausbildungsjahr. Der Betrieb will ihm ordentlich kündigen, weil seine Leistungen schwach sind. Geht das?",
+   "o": [
+    "Nein, nach der Probezeit geht nur noch eine fristlose Kündigung aus wichtigem Grund.",
+    "Nein, Auszubildenden kann überhaupt nie gekündigt werden.",
+    "Ja, mit der normalen Kündigungsfrist von vier Wochen.",
+    "Ja, wenn vorher mindestens zwei Abmahnungen wegen der schwachen Leistungen ausgesprochen wurden."
+   ],
+   "a": 0,
+   "h": "Für Auszubildende gilt ein eigenes Gesetz.",
+   "x": "Im Berufsausbildungsverhältnis ist eine ordentliche Kündigung durch den Ausbildungsbetrieb nach der Probezeit ausgeschlossen. Möglich ist nur eine fristlose Kündigung aus wichtigem Grund, schriftlich und mit Angabe der Gründe. Schwache Leistungen reichen dafür in der Regel nicht. Der Auszubildende selbst kann dagegen mit vier Wochen Frist kündigen, wenn er die Ausbildung aufgeben oder einen anderen Beruf lernen will. In der Probezeit können beide jederzeit ohne Frist kündigen.",
+   "s": "Skript Tag 3 · § 22 Berufsbildungsgesetz"
+  },
+  {
+   "id": "t3-18",
+   "round": "t3",
+   "q": "Ein Betriebsratsmitglied kommt häufig zu spät. Die Führungskraft will ihm ordentlich kündigen. Was gilt?",
+   "o": [
+    "Gar keine Kündigung ist möglich, solange das Amt besteht.",
+    "Das geht wie bei allen anderen Beschäftigten auch, nach einer vorherigen Abmahnung.",
+    "Ordentlich geht nicht; fristlos nur mit Zustimmung des Betriebsrats.",
+    "Das geht, wenn die Gewerkschaft vorher informiert wurde."
+   ],
+   "a": 2,
+   "h": "Betriebsratsmitglieder sollen ihr Amt ohne Angst vor Kündigung ausüben können.",
+   "x": "Mitglieder des Betriebsrats haben einen besonderen Kündigungsschutz. Eine ordentliche Kündigung ist während der Amtszeit und grundsätzlich ein Jahr danach ausgeschlossen (Ausnahme: Stilllegung des Betriebs). Eine fristlose Kündigung aus wichtigem Grund ist möglich, braucht aber die Zustimmung des Betriebsrats. Verweigert er sie, kann das Arbeitsgericht die Zustimmung ersetzen. Häufiges Zuspätkommen wird die hohe Hürde für eine fristlose Kündigung meist nicht erreichen.",
+   "s": "Skript Tag 3 · § 15 Kündigungsschutzgesetz · § 103 Betriebsverfassungsgesetz"
+  },
+  {
    "id": "t4-1",
    "round": "t4",
    "q": "Eine Mitarbeiterin arbeitet an einem Tag zehn Stunden. Verstößt das gegen das Arbeitszeitgesetz?",
@@ -1081,6 +1531,96 @@
    "s": "Skript Tag 4 · 1.6 und 1.7 Arbeitszeiterfassung · Bundesarbeitsgericht 1 ABR 22/21 · § 3 Absatz 2 Arbeitsschutzgesetz"
   },
   {
+   "id": "t4-13",
+   "round": "t4",
+   "q": "Ein Haustechniker muss nachts im Betrieb bleiben und bei Störungen sofort eingreifen. Meist schläft er in einem Ruheraum. Zählt diese Zeit als Arbeitszeit im Sinne des Arbeitszeitschutzes?",
+   "o": [
+    "Nur, wenn das so im Arbeitsvertrag vereinbart ist.",
+    "Nur die Minuten, in denen er tatsächlich eine Störung behebt.",
+    "Nein, wer schläft, arbeitet nicht.",
+    "Ja, weil er sich am vorgegebenen Ort bereithalten muss."
+   ],
+   "a": 3,
+   "h": "Entscheidend ist: Kann er über diese Zeit frei verfügen?",
+   "x": "Das ist Bereitschaftsdienst: Der Beschäftigte hält sich an einem vom Arbeitgeber bestimmten Ort auf und muss sofort eingreifen können. Der Europäische Gerichtshof hat entschieden, dass diese Zeit vollständig Arbeitszeit im Sinne des Arbeitszeitschutzes ist, auch wenn er schläft. Davon zu unterscheiden ist die Rufbereitschaft, bei der man sich zu Hause oder an einem selbst gewählten Ort aufhalten darf. Wichtig: Wie diese Zeit bezahlt wird, ist eine eigene Frage und kann anders geregelt sein.",
+   "s": "Skript Tag 4 · Europäischer Gerichtshof 09.09.2003 – C-151/02 · Arbeitszeitgesetz"
+  },
+  {
+   "id": "t4-14",
+   "round": "t4",
+   "q": "Eine Mitarbeiterin pendelt jeden Tag 50 Minuten zu ihrem festen Arbeitsplatz im Büro. Ist der Weg Arbeitszeit?",
+   "o": [
+    "Ja, ab 30 Minuten Fahrzeit pro Strecke zählt der Arbeitsweg mit.",
+    "Nein, der Weg zur festen Arbeitsstätte ist keine Arbeitszeit.",
+    "Ja, aber nur, wenn sie mit dem eigenen Auto fährt.",
+    "Ja, sobald sie unterwegs dienstliche Mails liest."
+   ],
+   "a": 1,
+   "h": "Wo beginnt die Arbeit bei einem festen Arbeitsort?",
+   "x": "Der normale Weg von zu Hause zur festen Arbeitsstätte und zurück ist keine Arbeitszeit. Die Arbeit beginnt am Arbeitsplatz. Anders kann es bei Dienstreisen oder bei Beschäftigten ohne festen Arbeitsort sein, etwa im Außendienst. Und wer unterwegs auf Anweisung arbeitet, arbeitet – das Lesen einzelner Mails aus eigenem Antrieb macht den Weg aber nicht automatisch zur Arbeitszeit. Merksatz: Der Arbeitsweg gehört zur Freizeit, die Dienstreise kann anders zu bewerten sein.",
+   "s": "Skript Tag 4 · Arbeitszeitgesetz · Rechtsprechung des Bundesarbeitsgerichts"
+  },
+  {
+   "id": "t4-15",
+   "round": "t4",
+   "q": "Ein Onlinehändler hat im Weihnachtsgeschäft sehr viel zu tun und möchte, dass das ganze Büro auch sonntags arbeitet. Ist das erlaubt?",
+   "o": [
+    "Ja, wenn die Beschäftigten freiwillig zustimmen und Zuschläge bekommen.",
+    "Ja, bei hohem Arbeitsaufkommen darf jeder Betrieb seine Beschäftigten sonntags arbeiten lassen.",
+    "Nein, es braucht eine gesetzliche Ausnahme oder eine behördliche Bewilligung.",
+    "Ja, im Dezember gelten für den Handel keine Sonntagsregeln."
+   ],
+   "a": 2,
+   "h": "Wer entscheidet über Sonntagsarbeit: das Unternehmen oder das Gesetz?",
+   "x": "An Sonn- und Feiertagen gilt grundsätzlich ein Beschäftigungsverbot. Das Arbeitszeitgesetz enthält eine Liste von Ausnahmen, etwa für Krankenhäuser, Gaststätten oder Verkehrsbetriebe – und auch dort nur für Arbeiten, die nicht werktags erledigt werden können. Ein hoher Arbeitsanfall allein ist keine Ausnahme. Möglich bleibt eine Bewilligung durch die Aufsichtsbehörde. Auch die freiwillige Zustimmung der Beschäftigten ändert nichts, weil der Sonntagsschutz nicht zur Disposition steht.",
+   "s": "Skript Tag 4 · §§ 9, 10 und 13 Arbeitszeitgesetz"
+  },
+  {
+   "id": "t4-16",
+   "round": "t4",
+   "q": "Im Bundesurlaubsgesetz stehen mindestens 24 Werktage Urlaub im Jahr. Wie viele Arbeitstage sind das bei einer Fünf-Tage-Woche?",
+   "o": [
+    "24 Arbeitstage",
+    "20 Arbeitstage",
+    "25 Arbeitstage",
+    "22 Arbeitstage"
+   ],
+   "a": 1,
+   "h": "Das Gesetz zählt auch den Samstag als Werktag.",
+   "x": "Das Bundesurlaubsgesetz rechnet mit Werktagen, also Montag bis Samstag – sechs Tage pro Woche. 24 Werktage entsprechen damit vier Wochen Urlaub. Wer an fünf Tagen pro Woche arbeitet, hat also mindestens 20 Arbeitstage Urlaub (24 ÷ 6 × 5). Viele Verträge gewähren mehr, zum Beispiel 30 Tage; der Mehrurlaub kann anders geregelt sein als der gesetzliche Mindesturlaub. Für die Umrechnung gilt: Urlaubstage ÷ 6 × tatsächliche Arbeitstage pro Woche.",
+   "s": "Skript Tag 4 · § 3 Bundesurlaubsgesetz"
+  },
+  {
+   "id": "t4-17",
+   "round": "t4",
+   "q": "Ein Kollege hat eine krankgeschriebene Mitarbeiterin beim Einkaufen im Supermarkt gesehen. Die Führungskraft will die Krankschreibung deshalb nicht mehr anerkennen. Was ist richtig?",
+   "o": [
+    "Die Führungskraft darf sie zu Hause aufsuchen und kontrollieren.",
+    "Einkaufen widerlegt die Krankschreibung nicht; bei Zweifeln hilft der Medizinische Dienst.",
+    "HR muss sofort fristlos kündigen, weil sie gelogen hat.",
+    "Einkaufen beweist, dass sie nicht krank ist, deshalb wird die Lohnfortzahlung sofort gestoppt."
+   ],
+   "a": 1,
+   "h": "Krank heißt nicht bettlägerig.",
+   "x": "Eine ärztliche Arbeitsunfähigkeitsbescheinigung hat einen hohen Beweiswert. Arbeitsunfähig bedeutet, die konkrete Arbeit nicht leisten zu können – nicht, das Haus nicht verlassen zu dürfen. Einkaufen kann sogar zur Genesung gehören. Hat der Arbeitgeber begründete Zweifel, kann er über die Krankenkasse eine Begutachtung durch den Medizinischen Dienst verlangen. Nur wenn konkrete Tatsachen den Beweiswert erschüttern, ändert sich die Lage. Typischer Fehler: Aus Beobachtungen vorschnell auf Betrug schließen.",
+   "s": "Skript Tag 4 · § 5 Entgeltfortzahlungsgesetz · § 275 Sozialgesetzbuch Fünftes Buch"
+  },
+  {
+   "id": "t4-18",
+   "round": "t4",
+   "q": "Ein Vater bleibt zu Hause, weil sein sechsjähriges Kind krank ist. Sein Vertrag schließt eine Bezahlung bei kurzer Verhinderung aus. Wer zahlt 2026 für diese Tage?",
+   "o": [
+    "Niemand, er muss für diese Tage seinen Urlaub nehmen oder Überstunden abbauen.",
+    "Die Agentur für Arbeit zahlt Ersatz für das Gehalt.",
+    "Der Arbeitgeber zahlt das Gehalt für alle Tage ohne zeitliche Grenze in voller Höhe weiter.",
+    "Die Krankenkasse zahlt Kinderkrankengeld, der Arbeitgeber stellt unbezahlt frei."
+   ],
+   "a": 3,
+   "h": "Freistellung und Bezahlung sind zwei verschiedene Fragen.",
+   "x": "Bei einem kranken Kind unter zwölf Jahren muss der Arbeitgeber freistellen. Ist eine bezahlte Freistellung im Vertrag ausgeschlossen, zahlt die Krankenkasse bei erfüllten Voraussetzungen Kinderkrankengeld: 2026 grundsätzlich bis zu 15 Arbeitstage je Kind und Elternteil, für Alleinerziehende 30 Tage. Nötig sind eine ärztliche Bescheinigung und dass keine andere Person im Haushalt das Kind betreuen kann. HR bucht dafür den richtigen Abwesenheitsschlüssel und übermittelt die Entgeltbescheinigung an die Krankenkasse. Urlaub muss niemand dafür nehmen.",
+   "s": "Skript Tag 4 · § 45 Sozialgesetzbuch Fünftes Buch"
+  },
+  {
    "id": "hs-1",
    "round": "hs",
    "q": "Jemand sagt im Fachgespräch: „Das Drei-Säulen-Modell für HR mit Business Partnern, Expertenteams und Service-Center hat Dave Ulrich so erfunden.“ Was ist daran präzise?",
@@ -1231,6 +1771,96 @@
    "s": "Skript HR-Service, Abschnitt 4.3 · Kennzahlen"
   },
   {
+   "id": "hs-11",
+   "round": "hs",
+   "q": "Eine Auszubildende schreibt wegen eines Vorgangs mit Frist morgen. Zehn Minuten später fragt der Geschäftsführer, wo er seine letzte Gehaltsabrechnung findet. Was hat Vorrang?",
+   "o": [
+    "Die Anfrage, die sich am schnellsten erledigen lässt.",
+    "Die Anfrage, die zuerst eingegangen ist, egal worum es geht.",
+    "Der Vorgang mit Frist, weil dort eine Konsequenz droht.",
+    "Der Geschäftsführer, die Hierarchie gibt die Reihenfolge vor."
+   ],
+   "a": 2,
+   "h": "Was passiert, wenn der jeweilige Vorgang bis morgen liegen bleibt?",
+   "x": "Im HR-Service entscheiden drei Fragen über die Priorität: Läuft eine Frist? Entsteht ein Schaden, wenn nichts passiert? Ist eine Person belastet oder schutzbedürftig? Hierarchie, Lautstärke und Bearbeitungsdauer sind dagegen keine sachlichen Kriterien. Das heißt nicht, den Geschäftsführer demonstrativ warten zu lassen – seine Frage lässt sich vielleicht in einer Minute beantworten. Aber die Position allein verändert nicht das Risiko eines Vorgangs. Wer nach Rang priorisiert, verpasst die Fristen der anderen.",
+   "s": "Skript HR-Service, Kapitel 1.6"
+  },
+  {
+   "id": "hs-12",
+   "round": "hs",
+   "q": "Eine Frist für die Antwort auf einen Teilzeitantrag endet am Freitag. Welchen Termin trägt HR sinnvoll als Wiedervorlage ein?",
+   "o": [
+    "Einige Tage vorher, damit noch Zeit zum Handeln bleibt.",
+    "Gar keinen, wichtige Fristen merkt man sich auch so.",
+    "Den Freitag selbst, dann hat man alles auf einen Blick.",
+    "Den Montag danach, um zu prüfen, ob alles geklappt hat."
+   ],
+   "a": 0,
+   "h": "Eine Wiedervorlage ist eine Erinnerung zum Handeln – nicht zum Feststellen.",
+   "x": "Fristende und Wiedervorlagetermin sind nicht dasselbe. Liegt die Wiedervorlage auf dem letzten Tag der Frist, bleibt keine Zeit mehr, um Unterlagen zu besorgen, Rückfragen zu stellen oder die Führungskraft zu erreichen. HR plant deshalb vom Fristende rückwärts und legt den Termin so, dass noch Handlungszeit bleibt. Neben fristbezogenen gibt es vorgangsbezogene Wiedervorlagen (man wartet auf eine Antwort) und schwellenbezogene (zum Beispiel mehr als sechs Wochen Arbeitsunfähigkeit im Jahr).",
+   "s": "Skript HR-Service, Kapitel 2.2"
+  },
+  {
+   "id": "hs-13",
+   "round": "hs",
+   "q": "Ein Mitarbeiter möchte seine Personalakte einsehen und dazu ein Mitglied des Betriebsrats mitbringen. Darf er das?",
+   "o": [
+    "Nein, die Personalakte gehört dem Arbeitgeber.",
+    "Ja, er darf einsehen und ein Betriebsratsmitglied hinzuziehen.",
+    "Nur mit Zustimmung seiner Führungskraft.",
+    "Er darf die Akte einsehen, aber nur allein und ohne jede Begleitung."
+   ],
+   "a": 1,
+   "h": "Das Betriebsverfassungsgesetz regelt das ausdrücklich.",
+   "x": "Beschäftigte haben das Recht, ihre Personalakte einzusehen – egal ob sie auf Papier oder elektronisch geführt wird. Sie dürfen dazu ein Betriebsratsmitglied hinzuziehen und können eigene Erklärungen zur Akte geben, etwa eine Gegendarstellung zu einer Abmahnung. Unabhängig davon besteht nach der Datenschutz-Grundverordnung ein Auskunftsrecht über alle gespeicherten Daten, auch außerhalb der Akte. Ein guter Schreibtest für jeden Vermerk: Könnte ich ihn erklären, wenn die betroffene Person ihn liest?",
+   "s": "Skript HR-Service, Kapitel 2.3 · § 83 Betriebsverfassungsgesetz"
+  },
+  {
+   "id": "hs-14",
+   "round": "hs",
+   "q": "Eine Mitarbeiterin verlangt Auskunft über alle Daten, die das Unternehmen über sie speichert. Innerhalb welcher Frist muss grundsätzlich geantwortet werden?",
+   "o": [
+    "Innerhalb von sechs Monaten.",
+    "Es gibt keine Frist, HR antwortet, wenn Zeit ist.",
+    "Innerhalb von 14 Tagen, ohne Verlängerungsmöglichkeit.",
+    "Innerhalb eines Monats, verlängerbar um zwei Monate."
+   ],
+   "a": 3,
+   "h": "Die Datenschutz-Grundverordnung gibt eine feste Frist vor – mit einer Verlängerung bei komplexen Fällen.",
+   "x": "Nach der Datenschutz-Grundverordnung hat jede Person ein Recht auf Auskunft, welche Daten über sie verarbeitet werden, zu welchem Zweck, an wen sie gehen und wie lange sie gespeichert werden – und auf eine Kopie. Das betrifft nicht nur die Personalakte, sondern auch Tickets, E-Mails, Notizen und HR-Systeme. Die Antwort muss grundsätzlich innerhalb eines Monats kommen, bei Komplexität verlängerbar um zwei Monate. Rechte Dritter, etwa deren Daten, dürfen dabei nicht verletzt werden. HR beantwortet das deshalb nicht allein, sondern mit der Datenschutzfunktion.",
+   "s": "Skript HR-Service, Kapitel 2.3 · Artikel 12 und 15 Datenschutz-Grundverordnung"
+  },
+  {
+   "id": "hs-15",
+   "round": "hs",
+   "q": "Ein Mitarbeiter sagt: „Ich erzähle dir etwas, aber versprich mir, dass es niemand erfährt.“ Wie reagiert HR professionell?",
+   "o": [
+    "Vorher ehrlich sagen, dass absolute Vertraulichkeit nicht garantiert ist.",
+    "Das Gespräch ablehnen, HR darf nichts Vertrauliches hören.",
+    "Zuhören und danach entscheiden, wem man es weitererzählt.",
+    "Versprechen, alles für sich zu behalten, damit er sich im Gespräch wirklich öffnet."
+   ],
+   "a": 0,
+   "h": "Was zerstört mehr Vertrauen: eine offene Ansage oder ein gebrochenes Versprechen?",
+   "x": "HR handelt auf Arbeitgeberseite und unterliegt keiner beruflichen Schweigepflicht wie etwa eine Ärztin. Erfährt HR zum Beispiel von Belästigung, kann der Arbeitgeber zum Handeln verpflichtet sein. Ein Versprechen, das man zehn Minuten später brechen muss, zerstört mehr Vertrauen als eine offene Ansage vorab. Professionell ist: die Grenze vorher klären, zusagen, das weitere Vorgehen vorher zu besprechen, und nur so viel weitergeben wie nötig. HR darf aber auch nicht beliebig weitererzählen – es gilt das Need-to-know-Prinzip.",
+   "s": "Skript HR-Service, Kapitel 3.2"
+  },
+  {
+   "id": "hs-16",
+   "round": "hs",
+   "q": "Eine Führungskraft ruft an: „Frau Müller ist schon wieder krank. Was hat sie eigentlich?“ Welche Information bekommt die Führungskraft?",
+   "o": [
+    "Alles, was HR weiß, weil sie die Vorgesetzte ist.",
+    "Gar keine, auch nicht, dass die Mitarbeiterin krank ist.",
+    "Beginn und voraussichtliche Dauer, aber keine Diagnose.",
+    "Die Diagnose, damit sie die Lage im Team einschätzen kann."
+   ],
+   "a": 2,
+   "h": "Was braucht die Führungskraft für ihre Aufgabe, die Personalplanung?",
+   "x": "Die Frage ist nicht, was HR weiß, sondern was die Führungskraft für ihre Aufgabe braucht. Für die Planung braucht sie Beginn und voraussichtliche Dauer der Arbeitsunfähigkeit – nicht die Diagnose. Die kennt HR in der Regel auch gar nicht: Die elektronische Arbeitsunfähigkeitsbescheinigung übermittelt dem Arbeitgeber Beginn und voraussichtliches Ende, aber keine Diagnose. Merksatz Need-to-know: Wer muss diese konkrete Information kennen, damit der nächste Schritt gelingt?",
+   "s": "Skript HR-Service, Kapitel 3.3 · § 109 Sozialgesetzbuch Viertes Buch"
+  },
+  {
    "id": "ki-1",
    "round": "ki",
    "q": "Jemand sagt: „Unser Personalverwaltungssystem ist unsere einzige verlässliche Datenquelle.“ Welche Rückfrage macht diese Aussage brauchbar?",
@@ -1379,6 +2009,96 @@
    "h": "Ein Urteil zu Kreditauskunfteien hat das auch für den Personalbereich wichtig gemacht.",
    "x": "Das Datenschutzrecht schützt davor, ausschließlich automatisiert über wichtige Dinge entschieden zu werden. Der Europäische Gerichtshof hat 2023 entschieden, dass schon ein automatisch berechneter Wert darunter fallen kann, wenn er für die Entscheidung maßgeblich ist. Es kommt also auf den tatsächlichen Einfluss an, nicht auf das Etikett „Empfehlung“. Betroffene können außerdem eine verständliche Erklärung des Verfahrens verlangen.",
    "s": "Skript HR-Systeme und KI, Abschnitt 10.1 · Artikel 22 Datenschutz-Grundverordnung · Europäischer Gerichtshof C-634/21 und C-203/22"
+  },
+  {
+   "id": "ki-11",
+   "round": "ki",
+   "q": "Ein neues HR-Tool kann Daten speichern, aus denen sich die Leistung einzelner Beschäftigter ablesen lässt. Der Hersteller sagt: „Überwachung ist aber nicht der Zweck.“ Hat der Betriebsrat ein Mitbestimmungsrecht?",
+   "o": [
+    "Nein, Software ist keine technische Einrichtung.",
+    "Nein, ohne Überwachungsabsicht hat er kein Recht.",
+    "Nur, wenn das Tool mit künstlicher Intelligenz arbeitet.",
+    "Ja, die objektive Eignung zur Überwachung reicht."
+   ],
+   "a": 3,
+   "h": "Kommt es auf die Absicht an – oder darauf, was das System kann?",
+   "x": "Der Betriebsrat bestimmt mit bei technischen Einrichtungen, die geeignet sind, Verhalten oder Leistung der Beschäftigten zu überwachen. Nach der Rechtsprechung des Bundesarbeitsgerichts genügt die objektive Eignung, eine Überwachungsabsicht ist nicht nötig. Software ist eine technische Einrichtung. Umgekehrt ist nicht jedes KI-Tool automatisch mitbestimmungspflichtig: Es kommt auf die konkreten Funktionen an, zum Beispiel darauf, was protokolliert wird und wer die Daten auswerten kann.",
+   "s": "Skript HR-Systeme und KI, Kapitel 10.3 · § 87 Absatz 1 Nummer 6 Betriebsverfassungsgesetz"
+  },
+  {
+   "id": "ki-12",
+   "round": "ki",
+   "q": "Das Mitarbeiterportal wurde vor einem Jahr für die Verwaltung eingeführt, der Betriebsrat war beteiligt. Jetzt soll es auf die Produktion ausgeweitet und um Zeiterfassung ergänzt werden. Was gilt?",
+   "o": [
+    "Nur die Beschäftigten der Produktion müssen zustimmen.",
+    "Erweiterung und neue Funktionen werden erneut geprüft.",
+    "Nichts Neues, der Betriebsrat war ja schon beteiligt.",
+    "Der Betriebsrat ist nur bei ganz neuen Systemen zu beteiligen."
+   ],
+   "a": 1,
+   "h": "Ist eine Erweiterung dasselbe wie das, was damals vereinbart wurde?",
+   "x": "Eine Beteiligung bezieht sich auf das System, wie es damals eingeführt wurde. Werden neue Beschäftigtengruppen einbezogen oder neue Funktionen wie Zeiterfassung ergänzt, entstehen neue Daten und neue Auswertungsmöglichkeiten. Deshalb wird die Erweiterung erneut darauf geprüft, welche Beteiligungs- und Mitbestimmungsrechte bestehen und ob die bestehende Betriebsvereinbarung sie abdeckt. Merksatz: Erweiterung ist nicht Einführung – aber auch nicht automatisch erledigt.",
+   "s": "Skript HR-Systeme und KI · § 87 Absatz 1 Nummer 6 und § 90 Betriebsverfassungsgesetz"
+  },
+  {
+   "id": "ki-13",
+   "round": "ki",
+   "q": "Beschäftigte stellen Fragen an einen HR-Chatbot. Er gilt nicht als Hochrisiko-System. Welche Pflicht aus der europäischen KI-Verordnung gilt trotzdem?",
+   "o": [
+    "Der Chatbot muss von einer Behörde zugelassen werden.",
+    "Jede einzelne Antwort des Chatbots muss vorher von HR freigegeben werden.",
+    "Nutzer müssen erkennen können, dass sie mit einer KI schreiben.",
+    "Keine, ohne Hochrisiko gelten keine Pflichten."
+   ],
+   "a": 2,
+   "h": "„Nicht Hochrisiko“ heißt nicht „keine Pflichten“.",
+   "x": "Die KI-Verordnung prüft nacheinander: Ist die Anwendung verboten? Ist sie hochriskant? Und gibt es Transparenzpflichten? Systeme, die direkt mit Menschen interagieren, müssen so gestaltet sein, dass die Nutzer erfahren, dass sie mit einer KI sprechen – sofern das nicht offensichtlich ist. Diese Pflicht gilt seit dem 2. August 2026, unabhängig vom Risiko. Wer mit dem HR-Chatbot schreibt, darf also nicht glauben, eine Person aus HR antworte. Daneben gelten Datenschutz und gegebenenfalls die Mitbestimmung, etwa wegen gespeicherter Chatverläufe.",
+   "s": "Skript HR-Systeme und KI, Kapitel 11 · Artikel 50 KI-Verordnung (EU) 2024/1689"
+  },
+  {
+   "id": "ki-14",
+   "round": "ki",
+   "q": "Eine KI-Antwort zu einer Rechtsfrage nennt Paragrafen und Urteile mit Aktenzeichen. Wie geht HR damit um?",
+   "o": [
+    "Fundstellen können falsch oder erfunden sein, HR prüft die Quelle.",
+    "Mit Paragrafen und Aktenzeichen ist die Antwort bereits verlässlich belegt.",
+    "Nur prüfen, wenn die Antwort ungewöhnlich klingt.",
+    "Ein besserer Prompt macht die Antwort automatisch richtig."
+   ],
+   "a": 0,
+   "h": "Klingt richtig und ist richtig sind zwei verschiedene Dinge.",
+   "x": "Sprachmodelle erzeugen plausibel klingende Texte. Dabei können sie Fundstellen nennen, die falsch, veraltet oder gar nicht existent sind. Ein guter Prompt verbessert Struktur und Relevanz einer Antwort, macht sie aber nicht richtig. Rechtsaussagen prüft HR deshalb immer an geeigneten Quellen: im Gesetzestext, in der Originalentscheidung oder bei offiziellen Stellen. Typischer Fehler: Eine gut formulierte Antwort mit vielen Paragrafen ungeprüft in eine Mail an eine Führungskraft übernehmen.",
+   "s": "Skript HR-Systeme und KI, Kapitel 13"
+  },
+  {
+   "id": "ki-15",
+   "round": "ki",
+   "q": "Beim Test einer neuen HR-Software werden mehr echte Beschäftigtendaten übertragen, als die Betriebsvereinbarung erlaubt. Was hat das Bundesarbeitsgericht 2025 in einem solchen Fall entschieden?",
+   "o": [
+    "Nur der Hersteller haftet, das Unternehmen trifft keine Pflicht.",
+    "Für die zusätzlichen Daten war die Übertragung nicht erforderlich.",
+    "Bei Tests gilt der Datenschutz nicht, es sind ja nur Probeläufe.",
+    "Alles ist erlaubt, solange die Software später tatsächlich eingeführt wird."
+   ],
+   "a": 1,
+   "h": "Auch ein Test ist Datenverarbeitung.",
+   "x": "Im Fall wurden für den Test einer konzernweiten HR-Software mehr echte Daten übermittelt, als die Betriebsvereinbarung vorsah. Das Bundesarbeitsgericht entschied: Für diese zusätzlichen Daten war die Übermittlung nicht erforderlich und deshalb unzulässig; dem Mitarbeiter wurde ein Schadensersatz zugesprochen. Für HR heißt das: Auch Tests brauchen eine Rechtsgrundlage. Wo möglich, wird mit Testdaten oder pseudonymisierten Daten gearbeitet, und der Umfang wird vorher festgelegt.",
+   "s": "Skript HR-Systeme und KI · Bundesarbeitsgericht 08.05.2025 – 8 AZR 209/21"
+  },
+  {
+   "id": "ki-16",
+   "round": "ki",
+   "q": "Im Personalsystem steht bei einer Mitarbeiterin die Notiz „wirkt oft unmotiviert“, ohne Datum und ohne Anlass. Was ist richtig?",
+   "o": [
+    "Die Notiz bleibt, solange sie nicht beleidigend ist.",
+    "Zugriff auf die Notiz einschränken, dann darf sie stehen bleiben.",
+    "Die Mitarbeiterin muss die Notiz unterschreiben.",
+    "Konkretisieren mit Datum und Sachverhalt oder löschen."
+   ],
+   "a": 3,
+   "h": "Was genau soll diese Notiz eigentlich dokumentieren?",
+   "x": "Die Notiz ist ein pauschales Persönlichkeitsurteil: Sie hat weder Datum noch beobachtbaren Sachverhalt noch erkennbaren Zweck. Ein strenges Berechtigungskonzept löst das Problem nicht, denn schon die Information selbst hat keine sachliche Grundlage. Tragfähig wäre allenfalls eine konkrete Dokumentation für einen legitimen Zweck, etwa: „Am 12.03. Abgabetermin für Bericht X ohne Rückmeldung verpasst.“ Merksatz: Tatsachen statt Bewertungen – konkretisieren oder verwerfen.",
+   "s": "Skript HR-Systeme und KI · Artikel 5 Datenschutz-Grundverordnung"
   },
   {
    "id": "bw-1",
@@ -1544,6 +2264,96 @@
    "h": "Es gibt ein einfaches und ein qualifiziertes Zeugnis.",
    "x": "Das Gesetz unterscheidet zwei Arten. Das einfache Zeugnis beschreibt nur, welche Tätigkeit die Person wie lange ausgeübt hat. Das qualifizierte Zeugnis bewertet zusätzlich Leistung und Verhalten – das muss die Person aber ausdrücklich verlangen. In der Praxis ist das qualifizierte Zeugnis der Normalfall, weil fast alle es wollen. Ein Zwischenzeugnis gibt es bei berechtigtem Interesse, etwa beim Wechsel der Führungskraft.",
    "s": "Skript Bescheinigungswesen, Abschnitt 9.2 · § 109 Absatz 1 Gewerbeordnung"
+  },
+  {
+   "id": "bw-12",
+   "round": "bw",
+   "q": "Im Zeugnis steht: „Sie erledigte ihre Aufgaben stets zu unserer vollen Zufriedenheit.“ Welche Note wird damit üblicherweise ausgedrückt?",
+   "o": [
+    "sehr gut",
+    "gut",
+    "befriedigend",
+    "ausreichend"
+   ],
+   "a": 1,
+   "h": "Achte auf das kleine Wort „stets“.",
+   "x": "Für die Gesamtbewertung hat sich die sogenannte Zufriedenheitsskala eingebürgert: „stets zu unserer vollsten Zufriedenheit“ steht für sehr gut, „stets zu unserer vollen Zufriedenheit“ für gut, „zu unserer vollen Zufriedenheit“ ohne „stets“ für befriedigend, „zu unserer Zufriedenheit“ für ausreichend. Ein einziges Wort trennt also gut von befriedigend. Die Skala ist keine amtliche Notentabelle, aber eine offen bekannte Konvention, die auch die Gerichte verwenden. Wichtig: Ein Zeugnis wird insgesamt gelesen, der übrige Text muss zur Note passen.",
+   "s": "Skript Bescheinigungswesen und Zeugnisse, Kapitel 11.2"
+  },
+  {
+   "id": "bw-13",
+   "round": "bw",
+   "q": "Eine Mitarbeiterin hat ein Zeugnis mit „befriedigend“. Sie verlangt ein „gut“. Wer muss im Streit vor Gericht darlegen, dass ihre Leistung besser war?",
+   "o": [
+    "Niemand, Zeugnisnoten sind gerichtlich nicht überprüfbar.",
+    "Der Arbeitgeber, er muss jede Note beweisen.",
+    "Die Mitarbeiterin selbst.",
+    "Das Gericht ermittelt die Note von sich aus."
+   ],
+   "a": 2,
+   "h": "Das Bundesarbeitsgericht nimmt die mittlere Note als Ausgangspunkt.",
+   "x": "Das Bundesarbeitsgericht geht von „befriedigend“ als mittlerer Note aus. Will die Beschäftigte eine bessere Note, muss sie die Tatsachen vortragen und gegebenenfalls beweisen, die eine überdurchschnittliche Leistung belegen. Will umgekehrt der Arbeitgeber schlechter als befriedigend bewerten, liegt die Last bei ihm. Daran ändert nichts, dass in der Praxis viele Zeugnisse „gut“ oder „sehr gut“ lauten. Für HR heißt das: Verlangt eine Führungskraft eine schlechte Note, fragt HR: Worauf stützt du das, und was ist dokumentiert?",
+   "s": "Skript Bescheinigungswesen und Zeugnisse, Kapitel 12 · Bundesarbeitsgericht 18.11.2014 – 9 AZR 584/13"
+  },
+  {
+   "id": "bw-14",
+   "round": "bw",
+   "q": "Ein Kollege sagt: „‚Gesellig‘ heißt im Zeugnis, dass jemand trinkt. Das ist ein offizieller Code.“ Was stimmt?",
+   "o": [
+    "Ja, es gibt eine amtliche Liste solcher Zeugniscodes.",
+    "Nein, Zeugnisse dürfen überhaupt keine persönlichen Eigenschaften beschreiben.",
+    "Ja, und HR sollte die Codes gezielt einsetzen.",
+    "Nein, es gibt keine verbindliche Liste; verdeckte Botschaften sind verboten."
+   ],
+   "a": 3,
+   "h": "Die Gewerbeordnung verbietet Formulierungen mit versteckter Bedeutung.",
+   "x": "Das Gesetz verlangt, dass ein Zeugnis klar und verständlich ist. Es darf keine Merkmale oder Formulierungen enthalten, die etwas anderes aussagen sollen, als dasteht. Eine verbindliche Übersetzungstabelle für angebliche Geheimcodes gibt es nicht; viele Deutungen aus dem Internet sind Legende. Trotzdem gilt: Ein Satz wie „Sie war gesellig“ hat meist keinen Bezug zur Tätigkeit und lädt zu Spekulation ein – also weglassen. Die bessere Prüffrage lautet: Was sagt der Satz wörtlich, und passt er zur gewollten Bewertung?",
+   "s": "Skript Bescheinigungswesen und Zeugnisse, Kapitel 11 · § 109 Absatz 2 Gewerbeordnung"
+  },
+  {
+   "id": "bw-15",
+   "round": "bw",
+   "q": "Ein Mitarbeiter war neben seiner normalen Arbeit sieben Jahre Mitglied im Betriebsrat, ohne freigestellt zu sein. Gehört das in sein Arbeitszeugnis?",
+   "o": [
+    "Nur als Hinweis, warum seine Leistung schlechter war.",
+    "Nur, wenn er es ausdrücklich wünscht.",
+    "Ja, aber mit einer Bewertung seiner Amtsführung.",
+    "Ja, das gehört immer zu einem vollständigen Zeugnis."
+   ],
+   "a": 1,
+   "h": "Hat die Betriebsratsarbeit etwas mit der geschuldeten Arbeitsleistung zu tun?",
+   "x": "Die Betriebsratstätigkeit ist ein Ehrenamt und hat mit der arbeitsvertraglichen Leistung nichts zu tun. Betriebsratsmitglieder dürfen wegen ihres Amtes weder benachteiligt noch begünstigt werden. Bei normaler Mitgliedschaft wird das Amt deshalb nur auf ausdrücklichen Wunsch erwähnt. Auch versteckte Hinweise sind unzulässig, etwa „setzte sich stets für die Interessen der Belegschaft ein“. Anders kann es bei einer langen, vollständigen Freistellung sein, weil das Zeugnis sonst ein falsches Bild der ausgeübten Tätigkeit zeichnen würde.",
+   "s": "Skript Bescheinigungswesen und Zeugnisse, Kapitel 13.1 · § 78 Betriebsverfassungsgesetz"
+  },
+  {
+   "id": "bw-16",
+   "round": "bw",
+   "q": "In der Entgeltbescheinigung an die Krankenkasse fehlt eine Einmalzahlung, die die Mitarbeiterin bekommen hat. Was ist die Folge?",
+   "o": [
+    "Der Arbeitgeber muss die Differenz zum Gehalt selbst zahlen.",
+    "Die Mitarbeiterin verliert dadurch ihren Anspruch auf Krankengeld ganz.",
+    "Das Krankengeld kann zu niedrig sein, HR korrigiert die Meldung.",
+    "Keine, die Krankenkasse rechnet Einmalzahlungen nie mit ein."
+   ],
+   "a": 2,
+   "h": "Aus den gemeldeten Entgeltdaten berechnet die Kasse die Leistung.",
+   "x": "Die Krankenkasse berechnet das Krankengeld aus den Entgeltdaten, die der Arbeitgeber elektronisch übermittelt. Fehlt eine Einmalzahlung, die zu berücksichtigen ist, fällt das Krankengeld zu niedrig aus – und die Mitarbeiterin merkt es oft erst Wochen später. HR korrigiert deshalb die Meldung so schnell wie möglich und informiert die betroffene Person. Merksatz: Eine Bescheinigung ist kein Formular, sondern ein HR-Prozess mit Folgen für einen Menschen.",
+   "s": "Skript Bescheinigungswesen und Zeugnisse, Kapitel 1 und 6 · § 47 Sozialgesetzbuch Fünftes Buch"
+  },
+  {
+   "id": "bw-17",
+   "round": "bw",
+   "q": "Ein Kollege sagt: „Personalakten bewahren wir einfach zehn Jahre auf, das ist die gesetzliche Frist.“ Stimmt das?",
+   "o": [
+    "Nein, es gibt keine Einheitsfrist, jede Unterlage hat ihre eigene.",
+    "Nein, alle Unterlagen müssen sofort beim Austritt gelöscht werden.",
+    "Ja, zehn Jahre gelten einheitlich für alle Personalunterlagen.",
+    "Ja, aber erst ab dem Austritt gerechnet."
+   ],
+   "a": 0,
+   "h": "Lohnkonto, Arbeitszeitnachweis und Bewerbung – gilt für alle dasselbe?",
+   "x": "Es gibt nicht die eine Aufbewahrungsfrist für die Personalakte. Die Dauer hängt von Art der Unterlage, Rechtsgrundlage, Zweck und möglichen Ansprüchen ab. Beispiele: Lohnkonten bis zum Ende des sechsten Kalenderjahres nach der letzten Eintragung, Arbeitszeitaufzeichnungen über acht Stunden mindestens zwei Jahre, Bewerbungsunterlagen ohne gesetzliche Pflicht meist nur rund sechs Monate. Danach ist zu löschen. Merksatz: Für jede Unterlage einzeln prüfen, warum sie noch gebraucht wird.",
+   "s": "Skript Bescheinigungswesen und Zeugnisse, Kapitel 16 · § 41 Einkommensteuergesetz · § 16 Arbeitszeitgesetz · Artikel 17 Datenschutz-Grundverordnung"
   }
  ]
 }
