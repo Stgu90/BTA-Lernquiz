@@ -130,7 +130,14 @@ function go(view, arg) {
 /* ---------- Start ---------- */
 async function viewStart(err) {
   const pinParam = (params.get("pin") || "").replace(/\D/g, "").slice(0, 6);
+  const saved = store.get(HOST_KEY, null);
+  const resumable = saved && saved.phase !== "end" && Date.now() - saved.updated < 12 * 3600 * 1000;
   $app.innerHTML = `
+    ${resumable ? `<section class="card" style="border-left:6px solid var(--red)">
+      <h2>Dein Spiel läuft noch</h2>
+      <p class="muted">PIN ${esc(saved.pin)} · ${esc(saved.title)} · ${saved.phase === "lobby" ? "noch nicht gestartet" : "Frage " + (saved.qi + 1) + " von " + saved.list.length} · ${Object.keys(saved.players).length} Mitspielende</p>
+      <div class="row"><button class="btn primary" id="b-resume">Als Spielleitung fortsetzen</button></div>
+    </section>` : ""}
     <section class="card">
       <h1>Mitspielen</h1>
       <p class="muted">Gib die Spiel-PIN aus der Präsentation und einen Spitznamen ein. Ein Konto brauchst du nicht.</p>
@@ -164,6 +171,7 @@ async function viewStart(err) {
     go("join", {pin, nick});
   };
   document.getElementById("b-solo").onclick = () => go("solo");
+  if (resumable) document.getElementById("b-resume").onclick = () => hostRun(saved);
   document.getElementById("b-host").onclick = () => go("host");
 }
 
@@ -284,7 +292,7 @@ const HOST_KEY = "btaq-host-game";
 async function viewHostSetup() {
   const courses = await loadCourses();
   const saved = store.get(HOST_KEY, null);
-  const canResume = saved && saved.phase !== "end" && Date.now() - saved.updated < 6 * 3600 * 1000;
+  const canResume = saved && saved.phase !== "end" && Date.now() - saved.updated < 12 * 3600 * 1000;
   $app.innerHTML = `
     ${canResume ? `<section class="card"><h2>Laufendes Spiel fortsetzen?</h2><p class="muted">PIN ${esc(saved.pin)} · ${esc(saved.title)} · Frage ${saved.qi + 1} von ${saved.list.length} · ${Object.keys(saved.players).length} Mitspielende</p><div class="row"><button class="btn primary" id="h-resume">Fortsetzen</button><button class="btn" id="h-discard">Verwerfen</button></div></section>` : ""}
     <section class="card">
