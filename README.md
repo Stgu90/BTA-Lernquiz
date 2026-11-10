@@ -9,8 +9,10 @@ Live-Quiz ohne Anmeldung (PIN + Spitzname) und Solo-Training für mehrere Kurse.
 - `data/courses.json` – Liste der Kurse
 - `data/<kurs>.json` – Runden und Fragen eines Kurses
 
-## Neuen Kurs anlegen (z. B. L&D)
-1. Datei `data/l-and-d.json` nach dem Muster von `data/hr-ops.json` anlegen:
+Aktuelle Kurse: `hr-ops` (HR Operations) und `ld` (Strategisches Learning & Development).
+
+## Neuen Kurs anlegen
+1. Datei `data/<kurs>.json` nach dem Muster von `data/hr-ops.json` anlegen:
    - `id`, `title`, `legal` (Hinweistext, optional)
    - `rounds`: `[{ "id": "fs", "label": "Tag 1", "title": "Future Skills", "color": "#2F6FD6" }]`
    - `questions`: `[{ "id": "fs-1", "round": "fs", "q": "Frage", "o": ["A","B","C","D"], "a": 0, "h": "Hinweis", "x": "Erklärung", "s": "Quelle" }]`

@@ -1,0 +1,1135 @@
+{
+ "id": "ld",
+ "title": "Strategisches Learning & Development",
+ "subtitle": "BTA Weiterbildung · Stephanie Günther",
+ "legal": "Inhalte nach den Kursunterlagen, Stand November 2026. Modelle sind Denkwerkzeuge mit Herkunft und Grenzen, keine Naturgesetze.",
+ "rounds": [
+  {
+   "id": "zt",
+   "label": "Do 12.11.",
+   "title": "Zukunftskompetenzen & Trends",
+   "color": "#E8380D"
+  },
+  {
+   "id": "ba",
+   "label": "Mo 16.11.",
+   "title": "Bedarfsanalyse: Grundlagen und Methoden",
+   "color": "#E9A23B"
+  },
+  {
+   "id": "km",
+   "label": "Di 17.11.",
+   "title": "Kompetenzmodelle und Lernziele",
+   "color": "#3FA7A0"
+  },
+  {
+   "id": "bk",
+   "label": "Do 19.11.",
+   "title": "Beratungskompetenz & Stakeholder",
+   "color": "#8A95E8"
+  },
+  {
+   "id": "pk",
+   "label": "Fr 20.11.",
+   "title": "Planung & Konzeption",
+   "color": "#D96FA8"
+  }
+ ],
+ "questions": [
+  {
+   "id": "zt-1",
+   "round": "zt",
+   "q": "Was zeichnet einen Megatrend nach dem Verständnis des Zukunftsinstituts aus?",
+   "o": [
+    "Er wirkt über Jahrzehnte, in vielen Lebensbereichen und weltweit.",
+    "Er sagt genau voraus, wie ein einzelnes Unternehmen betroffen sein wird.",
+    "Er betrifft nur Technologie, zum Beispiel künstliche Intelligenz.",
+    "Ein kurzfristiger Hype, der gerade in einer Branche besonders sichtbar ist."
+   ],
+   "a": 0,
+   "h": "Das Bild aus dem Kurs: „Lawinen in Zeitlupe“.",
+   "x": "Megatrends sind lang anhaltende, breite Veränderungsmuster: Sie dauern mehrere Jahrzehnte, wirken in allen Lebensbereichen und sind global. Das Bild „Lawinen in Zeitlupe“ beschreibt das gut: Die Entwicklung baut sich über Jahre auf und ist oft schon sichtbar. Was ein Megatrend nicht leistet: vorhersagen, wie genau ein bestimmtes Unternehmen betroffen sein wird. Das muss jede Organisation selbst prüfen. Für Learning & Development sind besonders Future of Work, Wissenskultur, Identitätsdynamik und Konnektivität relevant.",
+   "s": "Handout Zukunftskompetenzen & Trends, Kapitel 1 · Zukunftsinstitut, Megatrend-Map 2025"
+  },
+  {
+   "id": "zt-2",
+   "round": "zt",
+   "q": "Ein Megatrend wie die wachsende Vernetzung ist in aller Munde. Wie wirkt er nach der Kausalkette aus dem Kurs auf Kompetenzen?",
+   "o": [
+    "Er verändert direkt und automatisch die Kompetenzen aller Beschäftigten im Unternehmen, ganz gleich in welcher Rolle.",
+    "Er wirkt erst, wenn die Personalentwicklung ein passendes Training anbietet.",
+    "Er verändert zuerst Aufgaben, Rollen und Rahmenbedingungen – daraus folgen neue Anforderungen.",
+    "Er hat mit Kompetenzen nichts zu tun, sondern nur mit Märkten und Kunden."
+   ],
+   "a": 2,
+   "h": "Zwischen Trend und Kompetenz liegt noch ein Schritt.",
+   "x": "Ein Trend verändert nicht automatisch eine Kompetenz. Er verändert zuerst die Arbeit selbst: Aufgaben, Rollen und Rahmenbedingungen, zum Beispiel durch neue Technologien. Erst daraus entstehen neue Kompetenzanforderungen, etwa Lernagilität oder ein kritischer Umgang mit KI. Für die Praxis heißt das: Wer von einem Trend direkt auf ein Training springt, überspringt die Frage, was sich an der Arbeit in der eigenen Organisation wirklich ändert. Merksatz: Trend → Arbeit → Anforderung → Kompetenz.",
+   "s": "Handout Zukunftskompetenzen & Trends, Kapitel 1"
+  },
+  {
+   "id": "zt-3",
+   "round": "zt",
+   "q": "Wofür steht das U im Begriff VUCA?",
+   "o": [
+    "Urgency – Dringlichkeit",
+    "Unity – Einheit",
+    "Uncertainty – Ungewissheit",
+    "Usability – Bedienbarkeit"
+   ],
+   "a": 2,
+   "h": "Es geht um fehlende belastbare Informationen über die Zukunft.",
+   "x": "VUCA steht für Volatility (Veränderungen kommen schnell und schwankend), Uncertainty (Ungewissheit, es fehlen belastbare Informationen über die Zukunft), Complexity (viele Faktoren wirken gleichzeitig) und Ambiguity (Mehrdeutigkeit, dieselben Informationen lassen mehrere Deutungen zu). Die typische Managementantwort lautet: agiler planen, schneller lernen. Das ist sinnvoll, beantwortet aber nicht, wie Menschen psychologisch mit Dauerveränderung umgehen – hier setzt BANI an.",
+   "s": "Handout Zukunftskompetenzen & Trends, Kapitel 1"
+  },
+  {
+   "id": "zt-4",
+   "round": "zt",
+   "q": "BANI wurde 2020 von Jamais Cascio beschrieben. Worauf lenkt BANI im Vergleich zu VUCA stärker den Blick?",
+   "o": [
+    "Auf Strategie, Steuerung und Prozessabläufe im ganzen Unternehmen.",
+    "Auf das Erleben der Menschen und ihre Handlungsfähigkeit.",
+    "Auf Umsatzprognosen für die kommenden fünf Jahre.",
+    "Auf eine exakte Messung von Marktrisiken und Kennzahlen."
+   ],
+   "a": 1,
+   "h": "Das A in BANI steht für „anxious“, also ängstlich.",
+   "x": "BANI steht für brittle (brüchig: Systeme wirken stabil, versagen aber abrupt), anxious (ängstlich: anhaltende Unsicherheit wird erlebt), nonlinear (kleine Auslöser, große Folgen) und incomprehensible (unverständlich: mehr Daten bringen nicht automatisch mehr Verständnis). Didaktisch zugespitzt lenkt VUCA eher auf Steuerung und Prozesse, BANI eher auf Erleben, Verhalten und Handlungsfähigkeit. Das ist keine scharfe Trennung, sondern eine hilfreiche Gewichtung.",
+   "s": "Handout Zukunftskompetenzen & Trends, Kapitel 1 · Cascio (2020), Facing the Age of Chaos"
+  },
+  {
+   "id": "zt-5",
+   "round": "zt",
+   "q": "Jemand sagt: „Mit BANI können wir wissenschaftlich messen, wie krisenhaft unsere Organisation ist.“ Stimmt das?",
+   "o": [
+    "Nein, BANI gilt inzwischen als widerlegt und wird in der Praxis gar nicht mehr genutzt.",
+    "Ja, BANI ist ein geprüftes Diagnoseinstrument mit Skalen.",
+    "Nein, VUCA und BANI sind Deutungsrahmen, keine geprüften Diagnosemodelle.",
+    "Ja, aber nur in Kombination mit VUCA als zweitem Messwert."
+   ],
+   "a": 2,
+   "h": "Unterscheide zwischen einem Denkrahmen und einem Messinstrument.",
+   "x": "VUCA und BANI helfen, Veränderung zu deuten und darüber zu sprechen. Sie sind aber keine wissenschaftlich geprüften Diagnosemodelle mit Skalen oder Grenzwerten. Gut erforscht sind die Phänomene dahinter: Unsicherheit, Komplexität, Stress und begrenzte Vorhersagbarkeit. Typischer Fehler: Ein Akronym wird wie ein Befund behandelt. Ob in einer Organisation tatsächlich ein Problem besteht, klärt erst eine Bedarfsanalyse mit echten Daten.",
+   "s": "Handout Zukunftskompetenzen & Trends, Kapitel 1"
+  },
+  {
+   "id": "zt-6",
+   "round": "zt",
+   "q": "Nach einer Befragung heißt es: „Die Leute sind überlastet – wir brauchen ein Resilienztraining.“ Welche Rückfrage ist aus Sicht der Personalentwicklung am wichtigsten?",
+   "o": [
+    "Ob Arbeitslast, unklare Rollen oder Prozesse die eigentliche Ursache sind.",
+    "Wie viele Plätze im Resilienztraining sollen wir für das kommende Jahr buchen?",
+    "Ob das Training lieber online oder in Präsenz stattfinden soll.",
+    "Welche Trainerin das Thema Resilienz am besten vermitteln kann."
+   ],
+   "a": 0,
+   "h": "Kann man ein strukturelles Problem wegtrainieren?",
+   "x": "Resilienz bedeutet, gesund handlungsfähig zu bleiben – nicht, Belastungen möglichst lange auszuhalten. Wenn Arbeitslast, unklare Rollen, schlechte Führung oder dysfunktionale Prozesse das eigentliche Problem sind, hilft ein Training nur begrenzt; dann braucht es organisationale Veränderungen. Resilienz ergänzt gute Organisation, sie ersetzt sie nicht. Typischer Fehler: ein strukturelles Problem zu individualisieren („Die Leute müssen nur resilienter werden“). Merksatz: Nicht jedes Kompetenzproblem ist ein Lernproblem.",
+   "s": "Handout Zukunftskompetenzen & Trends, Kapitel 4"
+  },
+  {
+   "id": "zt-7",
+   "round": "zt",
+   "q": "Welche Beschreibung ist nach der Arbeitsdefinition des Kurses eine Kompetenz und nicht nur ein Skill?",
+   "o": [
+    "Eine bestimmte Struktur für Anweisungen an ein KI-Tool anwenden.",
+    "Unter wechselnden Anforderungen selbstständig priorisieren.",
+    "Eine Eisenhower-Matrix für die eigenen Aufgaben ausfüllen.",
+    "Ein Tabellenprogramm mit Formeln und Diagrammen bedienen."
+   ],
+   "a": 1,
+   "h": "Ein Skill ist ein Werkzeug. Eine Kompetenz zeigt sich im Einsatz in wechselnden Situationen.",
+   "x": "Im Kurs gilt eine pragmatische Arbeitsdefinition: Ein Skill ist eine eher spezifische, beobachtbare Fertigkeit, etwa eine Eisenhower-Matrix anwenden. Eine Kompetenz ist die Fähigkeit, Wissen, Fertigkeiten und Erfahrung in realen, auch neuen Situationen angemessen einzusetzen – etwa unter wechselnden Anforderungen selbstständig zu priorisieren. Ein Skill kann Bestandteil einer Kompetenz sein. Wichtig: International sind die Begriffe nicht einheitlich, die OECD verwendet sie teils austauschbar. Die Prüffrage für die Praxis: Was soll eine Person in welcher Situation konkret tun können?",
+   "s": "Handout Zukunftskompetenzen & Trends, Kapitel 2 · OECD, Survey of Adult Skills 2023"
+  },
+  {
+   "id": "zt-8",
+   "round": "zt",
+   "q": "Was liegt im Eisbergmodell von Spencer und Spencer (1993) unter der Wasserlinie?",
+   "o": [
+    "Fachwissen und Kenntnisse in bestimmten Softwareprogrammen.",
+    "Zertifikate, Abschlüsse und nachgewiesene Weiterbildungen.",
+    "Programmiersprachen, Methoden und Arbeitstechniken.",
+    "Selbstbild, Werte, Motive und Eigenschaften."
+   ],
+   "a": 3,
+   "h": "Unter der Wasserlinie liegt, was man nicht direkt sieht.",
+   "x": "Über der Wasserlinie liegen Skills und Fachwissen: gut beobachtbar und durch Übung und Training vergleichsweise gut entwickelbar. Unter der Wasserlinie liegen Selbstbild, Werte, Motive und Eigenschaften: weniger sichtbar, aber mit großem Einfluss auf das Verhalten. Wichtig: Kompetenz ist nicht dasselbe wie Persönlichkeit. Entscheidend ist das Zusammenspiel dieser Ressourcen im situationsangemessenen Handeln. Merksatz: Ein Zertifikat zeigt Wissen – Kompetenz zeigt sich im Handeln.",
+   "s": "Handout Zukunftskompetenzen & Trends, Kapitel 2 · Spencer & Spencer (1993), Competence at Work"
+  },
+  {
+   "id": "zt-9",
+   "round": "zt",
+   "q": "Der Future of Jobs Report 2025 des Weltwirtschaftsforums nennt den Wert 39 Prozent. Was bedeutet er?",
+   "o": [
+    "Arbeitgeber erwarten, dass sich bis 2030 im Schnitt 39 Prozent der heutigen Skills verändern.",
+    "39 Prozent der heutigen Beschäftigten werden bis zum Jahr 2030 ihren Arbeitsplatz verlieren.",
+    "39 Prozent einer festen Skill-Liste werden bis 2030 komplett wertlos.",
+    "39 Prozent aller Unternehmen nutzen bereits künstliche Intelligenz im Lernen."
+   ],
+   "a": 0,
+   "h": "Bezugsgröße sind die Skillsets von heute, nicht die Menschen.",
+   "x": "Die befragten Arbeitgeber erwarten für 2025 bis 2030 eine sogenannte Skill Instability von durchschnittlich 39 Prozent: Bestehende Skillsets verändern sich oder werden teilweise überflüssig. Es geht nicht um 39 Prozent der Beschäftigten und nicht um eine Liste, die komplett wertlos wird. Es ist eine zusammengefasste Erwartung von mehr als 1.000 Arbeitgebern, keine Prognose für die einzelne Person. Für die Praxis heißt das: Skillprofile regelmäßig prüfen – was konkret nötig ist, klärt die eigene Bedarfsanalyse.",
+   "s": "Handout Zukunftskompetenzen & Trends, Kapitel 4 · World Economic Forum, Future of Jobs Report 2025"
+  },
+  {
+   "id": "zt-10",
+   "round": "zt",
+   "q": "Im Future-Skills-Framework des Stifterverbands steht AI Literacy bei den digitalen, AI Engineering bei den technologischen Kompetenzen. Was folgt daraus für die Personalentwicklung?",
+   "o": [
+    "Technologische Kompetenzen sind wichtiger als alle anderen Kategorien.",
+    "Alle Beschäftigten müssen künftig lernen, KI-Systeme selbst zu programmieren und zu trainieren.",
+    "Viele brauchen einen kritischen Umgang mit KI, nur wenige müssen KI entwickeln.",
+    "Das Framework schreibt jedem Unternehmen vor, welche Kompetenzen fehlen."
+   ],
+   "a": 2,
+   "h": "Nutzen und Entwickeln sind zwei verschiedene Dinge.",
+   "x": "Der Stifterverband ordnet 30 Future Skills in fünf Kategorien: fundamentale, transformative, gemeinschaftsorientierte, digitale und technologische Kompetenzen. Digitale Kompetenzen meinen die kompetente Nutzung, etwa AI Literacy: KI-Ergebnisse kritisch prüfen, Grenzen kennen, Datenschutz beachten. Technologische Kompetenzen meinen das spezialisierte Entwickeln, etwa AI Engineering. Wichtig: Das Framework ist ein Radar, keine Rangliste. Ob eine Kompetenz in einem bestimmten Unternehmen fehlt, muss eine echte Bedarfsanalyse zeigen.",
+   "s": "Handout Zukunftskompetenzen & Trends, Kapitel 3 · Stifterverband, Future-Skills-Framework 2030"
+  },
+  {
+   "id": "zt-11",
+   "round": "zt",
+   "q": "Was meint Lernagilität im Kern?",
+   "o": [
+    "Einen wissenschaftlich eindeutig anerkannten Persönlichkeitstest für Talente.",
+    "Möglichst schnell möglichst viele Onlinekurse abzuschließen.",
+    "Agile Projektmethoden wie Scrum sicher anwenden zu können.",
+    "Aus Erfahrung lernen und es in neuen Situationen angepasst einsetzen."
+   ],
+   "a": 3,
+   "h": "Es geht weniger um Tempo als um Transfer.",
+   "x": "Lernagilität beschreibt, wie wirksam Menschen aus Erfahrung lernen und ihr Verhalten in neuen Situationen anpassen. Entscheidend ist der Transfer: Erfahrungen reflektieren, Erkenntnisse ableiten und angepasst einsetzen. Das Konzept geht auf Lombardo und Eichinger zurück. Wichtig: Die Forschung dazu ist uneinheitlich, Definitionen und Messinstrumente unterscheiden sich. Das Modell ist ein nützlicher Reflexionsrahmen, aber kein eindeutig anerkannter Persönlichkeitstest.",
+   "s": "Handout Zukunftskompetenzen & Trends, Kapitel 4 · Lombardo & Eichinger · De Meuse et al."
+  },
+  {
+   "id": "zt-12",
+   "round": "zt",
+   "q": "Ein Vorstand will alle Trainings durch Fünf-Minuten-Lerneinheiten ersetzen, weil Microlearning gerade Trend ist. Was ist die richtige Einordnung?",
+   "o": [
+    "Richtig so, kurze Formate sind nachweislich immer wirksamer als längere Trainings.",
+    "Kurz heißt nicht wirksam; Lernziel, Übung, Feedback und Transfer entscheiden.",
+    "Microlearning ist veraltet und sollte gar nicht mehr genutzt werden.",
+    "Microlearning eignet sich ausschließlich für Pflichtschulungen."
+   ],
+   "a": 1,
+   "h": "Die Prüffrage für jeden Trend aus dem Kurs: Welches Problem löst er besser?",
+   "x": "Microlearning kann kurze, bedarfsnahe Impulse liefern und passt gut in einen engen Arbeitsalltag. Kurz bedeutet aber nicht automatisch wirksam. Entscheidend sind Lernziel, Übung, Feedback und Transfer. Die Prüffrage für jeden Trend lautet: Welches Problem löst er besser als die bisherige Lösung – und woran würden wir das erkennen? Merksatz: Format folgt Bedarf, nicht Trend. Anbieterreports zeigen reale Praxisbewegungen, sind aber keine neutralen Wirksamkeitsnachweise.",
+   "s": "Handout Zukunftskompetenzen & Trends, Kapitel 5 · LinkedIn Workplace Learning Report 2025"
+  },
+  {
+   "id": "zt-13",
+   "round": "zt",
+   "q": "Das Unilever-Beispiel FLEX und das CARIAD-Prozesstraining werden im Kurs als Praxisbeispiele genutzt. Wie sollte man solche Unternehmensbeispiele einordnen?",
+   "o": [
+    "Als Werbung, die für die Personalentwicklung keinerlei Aussagekraft hat.",
+    "Als gesetzliche Vorgabe dafür, wie moderne Weiterbildung aussehen muss.",
+    "Als Illustration eines Designprinzips, das man verstehen und anpassen muss.",
+    "Als unabhängig geprüfte Wirkungsnachweise, die man direkt eins zu eins übernehmen kann."
+   ],
+   "a": 2,
+   "h": "„Best Practice“ heißt im Kurs: das Prinzip verstehen, nicht kopieren.",
+   "x": "Unternehmensdarstellungen sind gute Primärquellen dafür, wie ein Programm aufgebaut ist. Sie sind aber keine unabhängig geprüften Wirkungsnachweise. Unilever FLEX zeigt etwa, wie Skills und interne Projekte zusammengebracht werden; das CARIAD-Training kombiniert Einstiegstest, Module und Simulationen. Nützlich ist die Frage: Welches Designprinzip steckt dahinter, welches Problem löst es, und welche Bedingungen bräuchte es in einer anderen Organisation? Merksatz: Prinzip verstehen, nicht eins zu eins kopieren.",
+   "s": "Handout Zukunftskompetenzen & Trends, Kapitel 6"
+  },
+  {
+   "id": "ba-1",
+   "round": "ba",
+   "q": "Ein Vertriebsleiter ruft an: „Die Zusammenarbeit mit der Produktentwicklung funktioniert nicht. Wir brauchen ein Kommunikationstraining.“ Was ist der professionelle erste Schritt?",
+   "o": [
+    "Den Wunsch als Bestellung aufnehmen und zuerst klären, was danach anders sein soll.",
+    "Den Wunsch ablehnen, weil Kommunikationstrainings ohnehin selten wirken.",
+    "Sofort Termin, Dauer und Teilnehmerzahl abfragen und bei Anbietern ein Angebot einholen.",
+    "Ein passendes Kommunikationstraining aus dem Katalog vorschlagen."
+   ],
+   "a": 0,
+   "h": "Ein Trainingswunsch ist eine Bestellung – keine Diagnose.",
+   "x": "Im Satz des Vertriebsleiters steckt schon die Lösung, aber viele offene Fragen: Seit wann? Woran sichtbar? Wen betrifft es? Was kostet es? Was sagt die andere Seite? Liegt es überhaupt an den Menschen? Die professionelle Rolle ist hier die Beratungsrolle: „Was soll danach anders sein – und woran sehen wir das?“ Das Format steht dann am Ende fest, nicht am Anfang. Ablehnen wäre genauso falsch wie sofort buchen. Merksatz: Bestellung annehmen, aber nicht ausführen, bevor der Bedarf klar ist.",
+   "s": "Präsentation Bedarfsanalyse"
+  },
+  {
+   "id": "ba-2",
+   "round": "ba",
+   "q": "In welcher Reihenfolge werden die vier Bedarfsarten aus dem Kurs geprüft?",
+   "o": [
+    "Lernbedarf → Kompetenzbedarf → Performancebedarf → Geschäftsbedarf",
+    "Geschäftsbedarf → Performancebedarf → Kompetenzbedarf → Lernbedarf",
+    "Kompetenzbedarf → Lernbedarf → Geschäftsbedarf → Performancebedarf",
+    "Performancebedarf → Lernbedarf → Geschäftsbedarf → Kompetenzbedarf"
+   ],
+   "a": 1,
+   "h": "Man beginnt beim Unternehmensziel und endet beim Lernen.",
+   "x": "Man beginnt beim Geschäftsbedarf: Welches Unternehmensziel steht im Raum, etwa höhere Kundenzufriedenheit? Daraus folgt der Performancebedarf: Welche Leistung oder welches Verhalten muss sich ändern? Erst wenn die Ursachenanalyse zeigt, dass Wissen oder Fertigkeiten fehlen, liegt ein Kompetenzbedarf vor – und erst daraus ergibt sich der Lernbedarf. Wer bei Stufe 3 oder 4 einsteigt, plant Training auf Verdacht. Die Kaskade ist eine didaktische Zusammenführung aus Rummler und Brache, Rossett sowie Goldstein und Ford – ein Denkwerkzeug, kein geprüftes Stufenmodell.",
+   "s": "Präsentation Bedarfsanalyse"
+  },
+  {
+   "id": "ba-3",
+   "round": "ba",
+   "q": "Kundinnen warten länger auf Antworten, also wird sofort ein Kommunikationstraining geplant. Wie heißt dieser Denkfehler im Kurs?",
+   "o": [
+    "Triangulation",
+    "Reframing",
+    "Solution Jump",
+    "Spacing-Effekt"
+   ],
+   "a": 2,
+   "h": "Englisch für den Sprung zur Lösung.",
+   "x": "Ein Solution Jump ist der vorschnelle Sprung zu einer vermeintlichen Lösung, ohne die Ursache verstanden zu haben. Eine Lücke zwischen Ist und Soll zeigt nur, dass etwas abweicht – nicht warum. Vielleicht fehlen Mitarbeitende, Prozesse sind umständlich oder ein System ist langsam. Ein Kommunikationstraining würde dann am Problem vorbei gehen. Die anderen Begriffe kommen später im Kurs: Triangulation (mehrere Quellen kombinieren), Reframing (Umdeuten) und der Spacing-Effekt (verteiltes Lernen).",
+   "s": "Präsentation Bedarfsanalyse"
+  },
+  {
+   "id": "ba-4",
+   "round": "ba",
+   "q": "Mager und Pipe stellen die Leitfrage: „Ist es überhaupt ein Lernproblem?“ Was soll diese Frage klären?",
+   "o": [
+    "Ob Lernen überhaupt die passende Maßnahme sein kann.",
+    "Wie viele Personen in der Abteilung ein Training brauchen.",
+    "Ob die Teilnehmenden motiviert genug für ein Seminar sind.",
+    "Welches Trainingsformat für die Gruppe am günstigsten ist."
+   ],
+   "a": 0,
+   "h": "Die Frage entscheidet nicht über das Wie, sondern über das Ob.",
+   "x": "Robert Mager und Peter Pipe haben ein Entscheidungsmodell zur Diagnose von Leistungsproblemen entwickelt (1970, überarbeitet 1997). Die Kernfrage trennt Probleme, die durch fehlendes Können entstehen, von Problemen durch Umgebung oder Motivation. Könnte die Person es, wenn ihr Leben davon abhinge? Wenn ja, fehlt es nicht an Kompetenz – dann hilft kein Training, sondern eine Änderung der Bedingungen. Merksatz: Nicht jedes Leistungsproblem ist ein Lernproblem.",
+   "s": "Präsentation Bedarfsanalyse · Mager & Pipe (1970/1997), Analyzing Performance Problems"
+  },
+  {
+   "id": "ba-5",
+   "round": "ba",
+   "q": "Das OTP-Modell nach McGehee und Thayer prüft drei Ebenen: Organisation, Aufgabe und Person. Mit welcher Ebene beginnt man?",
+   "o": [
+    "Mit der Aufgabe, denn sie ist am leichtesten zu messen.",
+    "Mit der Person, denn dort zeigt sich das Problem.",
+    "Mit der Organisation.",
+    "Die Reihenfolge ist beliebig, alle drei sind gleichwertig."
+   ],
+   "a": 2,
+   "h": "Welche Ebene entscheidet darüber, ob Gelerntes überhaupt angewendet werden kann?",
+   "x": "OTP steht für Organisation, Task (Aufgabe) und Person. Das Modell geht auf McGehee und Thayer (1961) zurück und wurde unter anderem von Goldstein und Ford weiterentwickelt. Man beginnt bewusst bei der Organisation: Passt das Vorhaben zur Strategie, unterstützen Führung und Kultur das gewünschte Verhalten, gibt es Ressourcen? Dann folgt die Aufgabe, zuletzt die Person. Typischer Fehler: Die meisten starten bei der Person – dabei entscheidet die Organisationsebene über den Transfer.",
+   "s": "Präsentation Bedarfsanalyse · McGehee & Thayer (1961) · Goldstein & Ford (2002)"
+  },
+  {
+   "id": "ba-6",
+   "round": "ba",
+   "q": "Im Ursachenrad des Kurses gibt es acht Ursachenfelder für Leistungsprobleme. Welche zwei lassen sich typischerweise durch Lernen beeinflussen?",
+   "o": [
+    "Motivation und Kultur",
+    "Wissen und Fertigkeiten",
+    "Prozesse und Ressourcen",
+    "Führung und Feedback"
+   ],
+   "a": 1,
+   "h": "Was kann ein Training realistisch verändern?",
+   "x": "Die acht Felder sind: Wissen, Fertigkeiten, Motivation und Sinn, Rollen und Ziele, Prozesse und Schnittstellen, Ressourcen und Technik, Führung und Feedback sowie Kultur und Anreize. Nur Wissen und Fertigkeiten sind klassische Lernfelder. Das heißt nicht, dass Training selten sinnvoll ist – aber man empfiehlt es erst, wenn geprüft ist, dass wirklich Wissen oder Können fehlt. Die unangenehme Frage dazu: Was passiert einer Person, wenn sie das gewünschte Verhalten zeigt? Lautet die Antwort „mehr Arbeit, und niemand merkt es“, liegt die Ursache nicht im Training. Das Raster stammt aus Gilbert (1978) sowie Rummler und Brache (1995).",
+   "s": "Präsentation Bedarfsanalyse · Gilbert (1978), Human Competence"
+  },
+  {
+   "id": "ba-7",
+   "round": "ba",
+   "q": "Ein ganzes Team zeigt dasselbe unerwünschte Verhalten. Was ist nach den diagnostischen Faustregeln am wahrscheinlichsten?",
+   "o": [
+    "Die Teamleitung hat ihre Mitarbeitenden nicht ausreichend geschult.",
+    "Eine strukturelle Ursache, kein Problem einzelner Personen.",
+    "Das Team hat zufällig lauter Personen mit derselben Wissenslücke eingestellt.",
+    "Das Team ist insgesamt zu wenig motiviert und braucht ein Training."
+   ],
+   "a": 1,
+   "h": "Wenn alle es tun, liegt es selten an jedem Einzelnen.",
+   "x": "Drei Faustregeln helfen in jedem Analysegespräch. Erstens: Wenn es früher funktioniert hat, hat sich meist die Umgebung verändert, nicht das Können. Zweitens: Wenn es nur manche betrifft, ist der Unterschied zwischen den Gruppen die Spur. Drittens: Wenn alle es betrifft, ist es fast nie ein Personenproblem, sondern eine strukturelle Ursache – etwa ein Prozess, eine Kennzahl oder fehlende Zeit. Tipp für das Gespräch: Ein „Das ist kein Lernbedarf“ als Angebot formulieren, nicht als Urteil.",
+   "s": "Präsentation Bedarfsanalyse"
+  },
+  {
+   "id": "ba-8",
+   "round": "ba",
+   "q": "Eine Mitarbeiterin hat eine Aufgabe jahrelang gut erledigt. Seit drei Monaten klappt es nicht mehr. Wo sucht man zuerst nach der Ursache?",
+   "o": [
+    "Bei ihrem Wissen – sie sollte die fachlichen Grundlagen in einem Kurs noch einmal auffrischen.",
+    "In ihrer Persönlichkeit, denn Menschen verändern sich mit der Zeit.",
+    "In ihrer Umgebung: Was hat sich an Bedingungen, Prozessen oder Zielen geändert?",
+    "Bei der Personalabteilung, die zu wenig Weiterbildung angeboten hat."
+   ],
+   "a": 2,
+   "h": "Wer es gestern konnte, hat sein Können meist nicht verloren.",
+   "x": "Diagnostische Faustregel: Wenn eine Person es früher konnte und heute nicht mehr tut, hat sich nicht ihr Können verändert, sondern etwas in ihrer Umgebung. Typische Kandidaten sind neue Prozesse, neue Systeme, andere Ziele oder Kennzahlen, eine neue Führungskraft oder mehr Arbeit bei gleicher Zeit. Ein Auffrischungstraining würde hier wahrscheinlich nichts ändern. Merksatz: Bei „früher ging es“ zuerst nach der Veränderung suchen.",
+   "s": "Präsentation Bedarfsanalyse"
+  },
+  {
+   "id": "ba-9",
+   "round": "ba",
+   "q": "Welche Aussage ist eine Beobachtung und keine Interpretation?",
+   "o": [
+    "In 14 von 40 geprüften Antworten fehlte die Bestellnummer.",
+    "Im Kundenservice fehlt es grundsätzlich an echter Kundenorientierung.",
+    "Die Teamleitungen zeigen seit Monaten ein deutlich mangelndes Engagement.",
+    "Die Kommunikation zwischen den Abteilungen ist insgesamt unzureichend."
+   ],
+   "a": 0,
+   "h": "Achte auf Zahlen und beschreibbares Verhalten.",
+   "x": "Im Kurs gilt Sprachdisziplin: Beobachtung, Interpretation und Hypothese werden getrennt. Beobachtungen enthalten Zahlen, Zeiten und beschreibbares Verhalten. Wörter wie „mangelnd“, „fehlend“ oder „unzureichend“ zeigen fast immer eine Interpretation an – also schon eine Bewertung. Warum das wichtig ist: Wer mit Interpretationen startet, legt die Ursache fest, bevor sie geprüft ist. Selbstprüfung: Könnte eine zweite Person dasselbe zählen oder sehen?",
+   "s": "Präsentation Bedarfsanalyse"
+  },
+  {
+   "id": "ba-10",
+   "round": "ba",
+   "q": "Die 5-Why-Methode stammt aus dem Toyota-Produktionssystem. Was ist ihre wichtigste Schwäche bei Problemen in Organisationen?",
+   "o": [
+    "Sie funktioniert nur mit Zahlen und Kennwerten aus dem Controlling.",
+    "Jedes „weil“ ist nur eine Behauptung, die noch geprüft werden muss.",
+    "Sie braucht immer genau fünf Fragen, nie mehr und nie weniger.",
+    "Sie ist rechtlich nur mit Zustimmung des Betriebsrats erlaubt."
+   ],
+   "a": 1,
+   "h": "Eine plausible Kette ist noch kein Beweis.",
+   "x": "Taiichi Ohno beschrieb 5 Why für technische Fertigungsprobleme mit klaren Ursachenketten. Auf soziale Probleme übertragen hat die Methode drei Schwächen: Das Ergebnis hängt davon ab, wer im Raum sitzt. Sie zwingt in eine einzige lineare Kette, obwohl Leistungsprobleme meist mehrere Ursachen haben. Und sie prüft nichts – jedes „weil“ ist zunächst eine Behauptung. Deshalb endet die Kette im Kurs immer mit der Frage: Woran könnten wir das überprüfen? Warnsignal: Endet die Kette bei „zu wenig Schulung“, ist das oft schon eine Lösungsidee.",
+   "s": "Präsentation Bedarfsanalyse"
+  },
+  {
+   "id": "ba-11",
+   "round": "ba",
+   "q": "Wofür nutzt man das Ishikawa-Diagramm, auch Fischgräten-Diagramm genannt, im Unterschied zu 5 Why?",
+   "o": [
+    "Für die Tiefe: eine Ursache so lange hinterfragen, bis die Wurzel sichtbar wird.",
+    "Für die Evaluation: messen, ob ein Training gewirkt hat.",
+    "Für die Stakeholderanalyse: Einfluss und Interesse darstellen.",
+    "Für die Breite: mögliche Ursachen entlang von Kategorien sammeln."
+   ],
+   "a": 3,
+   "h": "Ein Werkzeug geht in die Breite, das andere in die Tiefe.",
+   "x": "Das Ursache-Wirkungs-Diagramm nach Kaoru Ishikawa stammt aus der japanischen Qualitätssicherung. Es dient der Breite: mögliche Ursachen entlang von Kategorien sammeln, bevor man sich festlegt. Das verhindert, nur dort zu suchen, wo man ohnehin hinschaut. 5 Why dient dagegen der Tiefe: bei einem Symptom mehrfach nachfragen. Das Ursachenrad aus dem Kurs ist im Grunde ein Ishikawa in rund. Sinnvoll ist die Kombination: erst Breite, dann gezielt Tiefe.",
+   "s": "Präsentation Bedarfsanalyse"
+  },
+  {
+   "id": "ba-12",
+   "round": "ba",
+   "q": "Für eine Bedarfsanalyse werden drei Führungskräfte aus demselben Bereich interviewt. Ist das Triangulation?",
+   "o": [
+    "Nein, das ist dreimal dieselbe Perspektive.",
+    "Ja, drei Quellen sind die Mindestzahl für Triangulation.",
+    "Nein, Triangulation funktioniert nur mit Zahlen aus Befragungen.",
+    "Ja, wenn die drei Interviews schriftlich protokolliert werden."
+   ],
+   "a": 0,
+   "h": "Triangulation lebt von Quellen, die sich widersprechen könnten.",
+   "x": "Triangulation heißt, verschiedene Datenquellen, Methoden oder Perspektiven zu kombinieren, um eine Hypothese zu prüfen. Drei Führungskräfte aus demselben Bereich liefern dreimal dieselbe Perspektive. Besser: Führungskraft, betroffene Mitarbeitende und Kennzahlen oder Beobachtung. Faustregel: Nehmen Sie Quellen, die sich widersprechen könnten. Widersprüche sind dabei kein Störfall, sondern Erkenntnis. Merksatz: Eine Quelle erzeugt eine Meinung, mehrere Quellen erzeugen eine Hypothese.",
+   "s": "Präsentation Bedarfsanalyse"
+  },
+  {
+   "id": "ba-13",
+   "round": "ba",
+   "q": "Warum ist eine große Onlinebefragung als Einstieg in eine Bedarfsanalyse oft ungeeignet?",
+   "o": [
+    "Weil Onlinebefragungen in Unternehmen grundsätzlich verboten sind.",
+    "Weil sie zu tiefe Einblicke in einzelne Fälle liefert.",
+    "Sie zeigt, wie viele – aber nicht warum; und es ist noch unklar, was man fragen soll.",
+    "Weil die Ergebnisse von Onlinebefragungen in der Regel viel zu positiv ausfallen und nichts zeigen."
+   ],
+   "a": 2,
+   "h": "Tiefe gegen Reichweite: Was liefert eine Befragung, was nicht?",
+   "x": "Erhebungsmethoden unterscheiden sich nach Tiefe und Reichweite. Breite Methoden wie Befragungen sagen zuverlässig, wie viele etwas betrifft – aber nie, warum. Am Anfang einer Analyse weiß man außerdem oft noch nicht, wonach man fragen sollte. Tiefe Methoden wie Interviews oder eine halbtägige Hospitation am Arbeitsplatz zeigen, warum etwas passiert. Die Regel aus dem Kurs: eine tiefe mit einer breiten Methode kombinieren. Zahlen zeigen, dass etwas ist; Gespräch und Beobachtung zeigen, warum.",
+   "s": "Präsentation Bedarfsanalyse"
+  },
+  {
+   "id": "ba-14",
+   "round": "ba",
+   "q": "Wie beginnt eine Bedarfshypothese nach dem Template aus dem Kurs?",
+   "o": [
+    "„Wir empfehlen ein Training zu …“",
+    "„Die Mitarbeitenden brauchen dringend …“",
+    "„Das Problem ist, dass …“",
+    "„Wir vermuten, dass …“"
+   ],
+   "a": 3,
+   "h": "Die Formulierung soll zeigen: Analyse, kein Urteil.",
+   "x": "Das Template beginnt mit „Wir vermuten, dass …“. So wird sofort klar: Das ist eine Hypothese, kein Urteil – und das Gegenüber kann widersprechen, ohne das Gesicht zu verlieren. Dann folgt: „Diese Hypothese basiert auf …“ (Quellen nennen – wer nur eine nennen kann, sieht die Schwäche sofort) und „Zur Prüfung benötigen wir …“. Der letzte Satz ist praktisch: Aufwand für eine Klärung wird leichter genehmigt als ein Training. Merksatz: Hypothesen statt Diagnosen.",
+   "s": "Präsentation Bedarfsanalyse"
+  },
+  {
+   "id": "km-1",
+   "round": "km",
+   "q": "David McClelland veröffentlichte 1973 „Testing for Competence Rather Than for Intelligence“. Was war sein Kernargument?",
+   "o": [
+    "Unternehmen sollten nur noch nach Schulnoten und Abschlüssen auswählen.",
+    "Man sollte das Verhalten erfolgreicher Personen untersuchen, statt Intelligenz zu testen.",
+    "Kompetenzen sind angeboren und lassen sich durch Training kaum verändern.",
+    "Intelligenztests sagen beruflichen Erfolg zuverlässiger voraus als alle anderen Verfahren im Personalbereich."
+   ],
+   "a": 1,
+   "h": "Der Titel verrät die Richtung: Kompetenz statt Intelligenz.",
+   "x": "McClellands Text gilt als Gründungstext der Kompetenzbewegung im Personalbereich. Er argumentierte: Intelligenz- und Eignungstests sagen Berufserfolg schlecht voraus, hängen stark mit Schulnoten zusammen und benachteiligen bestimmte Gruppen. Stattdessen solle man untersuchen, was erfolgreiche Personen tatsächlich tun. Seine Methode: das verhaltensbezogene Interview, bei dem Top- und Durchschnittsleistende von konkreten Situationen berichten. Vor ihm hatte Robert White 1959 Kompetenz als psychologisches Motiv beschrieben.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 2 · McClelland (1973), American Psychologist"
+  },
+  {
+   "id": "km-2",
+   "round": "km",
+   "q": "Barrett und Depinet veröffentlichten 1991 eine Gegendarstellung zu McClelland. Was zeigten sie?",
+   "o": [
+    "Dass Kompetenzmodelle in Unternehmen grundsätzlich wirkungslos und deshalb überflüssig sind.",
+    "Dass Verhaltensinterviews die einzig gültige Auswahlmethode sind.",
+    "Dass Intelligenztests durchaus Berufserfolg vorhersagen, gerade bei komplexen Aufgaben.",
+    "Dass McClelland seine Daten gefälscht hatte."
+   ],
+   "a": 2,
+   "h": "Die Kritik relativiert den Gründungsmythos – sie entwertet die Modelle nicht.",
+   "x": "18 Jahre nach McClelland zeigten Barrett und Depinet in derselben Fachzeitschrift: Tests kognitiver Fähigkeiten haben in vielen Studien eine solide Vorhersagekraft für Berufserfolg, besonders bei komplexeren Tätigkeiten. McClellands Behauptung, sie seien weitgehend bedeutungslos, hält späterer Forschung nicht in dieser Schärfe stand. Das macht Kompetenzmodelle nicht wertlos. Es zeigt: Sie sind ein nützliches, aber kein konkurrenzloses Werkzeug. Gute Lehre zeigt Modelle mit ihren Grenzen.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 2 · Barrett & Depinet (1991), American Psychologist"
+  },
+  {
+   "id": "km-3",
+   "round": "km",
+   "q": "Welche Frage passt zum Behavioral Event Interview, also dem verhaltensbezogenen Interview nach McClelland?",
+   "o": [
+    "„Erzählen Sie mir von einer Situation, in der Sie …“",
+    "„Was sind Ihre drei größten Stärken und Schwächen?“",
+    "„Wo sehen Sie sich beruflich in fünf Jahren?“",
+    "„Wie würden Sie reagieren, wenn ein Kunde sich beschwert?“"
+   ],
+   "a": 0,
+   "h": "Gefragt wird nach Vergangenem, nicht nach Wünschen.",
+   "x": "Das verhaltensbezogene Interview fragt nicht „Wie würden Sie …?“, sondern „Erzählen Sie mir von einer Situation, in der Sie …“. Die erste Frage lädt zu einer Wunschvorstellung ein, die zweite verlangt einen konkreten, überprüfbaren Bericht. McClelland befragte so Top- und Durchschnittsleistende zu Erfolgs- und Misserfolgssituationen und wertete die Antworten nach wiederkehrenden Verhaltensmustern aus. Merksatz: Vergangenes Verhalten ist aussagekräftiger als angekündigtes.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 2"
+  },
+  {
+   "id": "km-4",
+   "round": "km",
+   "q": "Was beschreibt ein Kompetenzmodell?",
+   "o": [
+    "Die Gehaltsstufen und Karrierewege im Unternehmen.",
+    "Das Verhalten, das in einer bestimmten Rolle erwartet wird.",
+    "Die Liste aller Trainings, die das Unternehmen anbietet.",
+    "Die Persönlichkeit der Beschäftigten, damit man sie besser einschätzen kann."
+   ],
+   "a": 1,
+   "h": "Es geht um die Rolle, nicht um den Charakter.",
+   "x": "Ein Kompetenzmodell macht Leistung beschreibbar und damit vergleichbar. Es beschreibt nicht die Person, sondern das Verhalten, das für eine Rolle erfolgreich macht. So entsteht eine gemeinsame Sprache für vier Nutzungsfelder: Auswahl, Entwicklung, Bewertung und Nachfolgeplanung. Ohne diese Sprache bewertet jede Führungskraft nach eigenem Gefühl. Typischer Fehler: Das Modell wird erstellt, aber nicht mit Auswahl-, Entwicklungs- und Beurteilungsprozessen verknüpft – dann bleibt es wirkungslos.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 1"
+  },
+  {
+   "id": "km-5",
+   "round": "km",
+   "q": "Delegation und Feedbackführung gelten nur für Personen mit Führungsverantwortung. Zu welcher Art von Kompetenzen gehören sie?",
+   "o": [
+    "Kernkompetenzen",
+    "Führungskompetenzen",
+    "Rollen- oder Funktionskompetenzen",
+    "Tarifliche Grundkompetenzen"
+   ],
+   "a": 1,
+   "h": "Für wen gelten diese Kompetenzen?",
+   "x": "Der Kurs unterscheidet drei Arten: Kernkompetenzen gelten für alle Beschäftigten, etwa Kommunikationsfähigkeit. Führungskompetenzen gelten nur für Führungsrollen, etwa Delegation. Rollen- oder Funktionskompetenzen gelten für eine bestimmte Tätigkeit, etwa Kundenservice mit KI-Unterstützung. In der Praxis werden alle drei oft zu einem Gesamtmodell kombiniert. Eine Führungskraft hat also gleichzeitig Kern-, Führungs- und Rollenkompetenzen.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 5"
+  },
+  {
+   "id": "km-6",
+   "round": "km",
+   "q": "Woher stammt die Idee der Verhaltensanker in Kompetenzmodellen?",
+   "o": [
+    "Aus den Behaviorally Anchored Rating Scales von Smith und Kendall (1963).",
+    "Aus dem SMART-Konzept von George Doran (1981).",
+    "Aus dem Dreyfus-Modell des Kompetenzerwerbs von 1980, das fünf Stufen beschreibt.",
+    "Aus der Bloom-Taxonomie von 1956."
+   ],
+   "a": 0,
+   "h": "Der englische Name enthält das Wort „anchored“.",
+   "x": "Smith und Kendall entwickelten 1963 die Behaviorally Anchored Rating Scales, also verhaltensverankerte Bewertungsskalen. Das Problem klassischer Skalen: Bei „sehr gut, gut, befriedigend“ bleibt offen, was „sehr gut“ eigentlich bedeutet. Die Lösung: Jede Stufe wird durch eine konkrete, beobachtbare Verhaltensbeschreibung verankert. Gute Anker sind beobachtbar, spezifisch, klar von der Nachbarstufe unterschieden und wertfrei formuliert. Merksatz: Ein Verhaltensanker beschreibt, was man sieht – nicht, was man von jemandem hält.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 6 · Smith & Kendall (1963), Journal of Applied Psychology"
+  },
+  {
+   "id": "km-7",
+   "round": "km",
+   "q": "Welcher Verhaltensanker ist nach den Kriterien aus dem Kurs gut formuliert?",
+   "o": [
+    "„Ist sehr kompetent, souverän und sicher im Umgang mit den Antworten des KI-Assistenten.“",
+    "„Hat eine durchweg positive und offene Einstellung zu künstlicher Intelligenz im Alltag.“",
+    "„Erkennt in 8 von 10 Fällen veraltete Produktangaben, korrigiert sie vor dem Versand.“",
+    "„Prüft die Antworten des KI-Assistenten meistens gründlich und mit viel Sorgfalt.“"
+   ],
+   "a": 2,
+   "h": "Könnte eine zweite Person das beobachten und zählen?",
+   "x": "Ein guter Anker ist beobachtbar (sichtbares Verhalten statt innerer Haltung), spezifisch (Zahl statt „meistens“), niveau-unterscheidend und wertfrei. „Kompetent“ und „souverän“ sind Urteile, „meistens“ ist unbestimmt, „positive Einstellung“ ist nicht beobachtbar. Der richtige Anker beschreibt, was die Person tut, wie oft und mit welchem Ergebnis. Merksatz: Beschreibung statt Urteil.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 6"
+  },
+  {
+   "id": "km-8",
+   "round": "km",
+   "q": "Ein Entwurf lautet: Stufe 1 „prüft manchmal“, Stufe 2 „prüft oft“, Stufe 3 „prüft immer“. Was ist das Problem?",
+   "o": [
+    "Die Formulierungen sind zu konkret und müssten allgemeiner sein.",
+    "Stufe 1 ist abwertend, weil sie Fehler unterstellt.",
+    "Es gibt zu wenige Stufen, denn wissenschaftlich vorgeschrieben sind immer genau fünf Stufen.",
+    "Die Stufen unterscheiden sich nur in der Häufigkeit, nicht im Verhalten."
+   ],
+   "a": 3,
+   "h": "Was tut die Person auf der höheren Stufe anders – nicht nur häufiger?",
+   "x": "Das ist der häufigste Fehler beim Formulieren von Ankern: Die Stufen unterscheiden sich nur durch Häufigkeitswörter. Ein guter Anker beschreibt, was die Person auf der höheren Stufe strukturell anders tut – etwa auch widersprüchliche Fälle prüfen oder für neue Fälle ein Vorgehen entwickeln. Prüffrage: Würde die Gruppe das gemeinte Niveau erkennen, wenn man den Anker ohne Stufennummer vorliest? Eine bestimmte Anzahl Stufen ist übrigens nicht vorgeschrieben.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 6"
+  },
+  {
+   "id": "km-9",
+   "round": "km",
+   "q": "Das Dreyfus-Modell (1980) beschreibt Stufen vom Neuling zur Expertise. Wie wird es in Kompetenzmodellen genutzt?",
+   "o": [
+    "Als Test, mit dem man das Niveau einer Person exakt misst.",
+    "Als Inspiration; vier Niveaus im Unternehmen sind eine praktische Vereinfachung.",
+    "Gar nicht, weil es nur für Schachspielen und die Steuerung von Flugzeugen entwickelt wurde.",
+    "Als verbindliche Vorgabe: Jedes Unternehmen muss genau fünf Niveaus verwenden."
+   ],
+   "a": 1,
+   "h": "Ein Entwicklungsmodell ist keine Vorschrift für die Stufenanzahl.",
+   "x": "Das Dreyfus-Modell beschreibt, wie sich Kompetenz durch Erfahrung entwickelt: Mit wachsender Erfahrung verlassen sich Menschen weniger auf starre Regeln und mehr auf intuitives Erkennen von Mustern. Ursprünglich ging es um Fähigkeiten wie Fliegen oder Schachspielen. Viele Unternehmen nutzen es als Inspiration und reduzieren auf vier Niveaus. Das ist eine praktische Vereinfachung, keine wissenschaftliche Ableitung. Andere Frameworks wie das IT-Rahmenwerk SFIA haben sieben Stufen. Wichtig ist, dass innerhalb einer Organisation einheitliche Regeln gelten.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 7 · Dreyfus & Dreyfus (1980)"
+  },
+  {
+   "id": "km-10",
+   "round": "km",
+   "q": "Im Fall erreichen 3 von 12 Beschäftigten das geforderte Niveau 2 noch nicht. Was ist das Ziel der Entwicklung?",
+   "o": [
+    "Das Soll-Niveau senken, damit alle es erreichen.",
+    "Die drei Personen in eine andere Abteilung versetzen.",
+    "Die Lücke der drei Personen zum nötigen Niveau schließen.",
+    "Alle zwölf Beschäftigten auf das höchste Niveau 4 bringen."
+   ],
+   "a": 2,
+   "h": "Das Soll richtet sich nach der Rolle, nicht nach dem Maximum.",
+   "x": "Ein Kompetenzprofil beantwortet zwei Fragen: Welche Kompetenzen braucht eine Rolle – und auf welchem Niveau? Erst der Vergleich von Soll und Ist zeigt eine Lücke. Ziel ist, diese Lücke zum nötigen Soll zu schließen, nicht alle zu maximieren. Im Fall genügt für die meisten Niveau 2. Und: Niveau 1 ist kein Werturteil über die Person, sondern bei einer neuen Kompetenz der normale Startpunkt. Merksatz: Niveaus zeigen Entwicklung, nicht Wertigkeit.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 7"
+  },
+  {
+   "id": "km-11",
+   "round": "km",
+   "q": "Welche Stufe ist nach der Überarbeitung der Bloom-Taxonomie durch Anderson und Krathwohl (2001) die anspruchsvollste?",
+   "o": [
+    "Bewerten",
+    "Erschaffen",
+    "Analysieren",
+    "Anwenden"
+   ],
+   "a": 1,
+   "h": "Bei der Überarbeitung haben zwei Stufen die Plätze getauscht.",
+   "x": "Benjamin Bloom und Kollegen veröffentlichten die Taxonomie kognitiver Lernziele 1956. Anderson und Krathwohl überarbeiteten sie 2001: Aus Substantiven wurden Verben (Erinnern, Verstehen, Anwenden, Analysieren, Bewerten, Erschaffen), und „Bewerten“ und „Erschaffen“ tauschten die Reihenfolge. Neues zu schaffen gilt seitdem als anspruchsvollste kognitive Leistung. Für die Praxis: Das Verb im Lernziel zeigt die Stufe – und muss zum tatsächlichen Bedarf passen.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 8 · Anderson & Krathwohl (2001)"
+  },
+  {
+   "id": "km-12",
+   "round": "km",
+   "q": "Lernziel-Entwurf: „Die Teilnehmenden verstehen, dass KI-Antworten fehlerhaft sein können.“ Was ist das Problem für den Fall im Kundenservice?",
+   "o": [
+    "Das Wort „Teilnehmende“ ist nicht geschlechtsneutral genug.",
+    "Es bleibt bei Verstehen; gebraucht wird Fehler erkennen und korrigieren.",
+    "Lernziele dürfen nie das Wort „verstehen“ enthalten.",
+    "Das Ziel ist viel zu anspruchsvoll für Beschäftigte ohne besonderes technisches Vorwissen."
+   ],
+   "a": 1,
+   "h": "Was sollen die Beschäftigten im Alltag konkret tun können?",
+   "x": "Das Ziel liegt auf der Bloom-Stufe Verstehen. Der Bedarf im Fall ist aber, Fehler in KI-Antworten zu finden und zu korrigieren, bevor sie an Kundinnen gehen – das sind die Stufen Analysieren und Anwenden. Ein passendes Lernziel wäre: „Die Teilnehmenden können in einer vorgelegten KI-Antwort mindestens eine von drei definierten Fehlerarten identifizieren und die Antwort korrigieren, bevor sie versendet wird.“ Merksatz: Der Schritt von der Kompetenz zum Lernziel ist eigene Arbeit, kein Automatismus.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 8"
+  },
+  {
+   "id": "km-13",
+   "round": "km",
+   "q": "George Doran veröffentlichte das Akronym SMART 1981. Wofür stand das A im Original?",
+   "o": [
+    "Achievable – erreichbar",
+    "Assignable – zuordenbar",
+    "Ambitious – ehrgeizig",
+    "Attractive – attraktiv"
+   ],
+   "a": 1,
+   "h": "Heute ist meist eine andere Version im Umlauf als im Original.",
+   "x": "Doran schrieb 1981 in der Zeitschrift Management Review über Unternehmensziele allgemein, nicht speziell über Lernziele. Im Original stand das A für Assignable, also zuordenbar: Wer ist verantwortlich? Heute ist meist Achievable (erreichbar) verbreitet – beide Versionen sind im Umlauf. Wichtig für den Kurs: SMART ist keine Formulierungsvorschrift, sondern eine Prüfliste, die man anwendet, nachdem ein Lernziel bereits formuliert ist.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 9 · Doran (1981), Management Review"
+  },
+  {
+   "id": "km-14",
+   "round": "km",
+   "q": "Wer betreibt die mehrsprachige Skill-Taxonomie ESCO mit rund 3.000 Berufen und knapp 14.000 Kompetenzen?",
+   "o": [
+    "Das US-Arbeitsministerium",
+    "Die Europäische Kommission",
+    "Das Weltwirtschaftsforum",
+    "Die Bundesagentur für Arbeit"
+   ],
+   "a": 1,
+   "h": "Das E in ESCO steht für European.",
+   "x": "ESCO ist die europäische Klassifikation für Fähigkeiten, Kompetenzen, Qualifikationen und Berufe und wird von der Europäischen Kommission betrieben. O*NET ist das US-Gegenstück des US-Arbeitsministeriums mit über 900 Berufen. Der Nutzen für die Praxis: Man muss ein Kompetenzmodell nicht bei null beginnen, sondern kann eine geprüfte Ausgangsbasis an die eigene Organisation anpassen.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 11"
+  },
+  {
+   "id": "km-15",
+   "round": "km",
+   "q": "Ein Anbieter verspricht: „Unser KI-gestützter Skill Graph ersetzt euer Kompetenzmodell vollständig.“ Was ist richtig?",
+   "o": [
+    "Stimmt, weil der Algorithmus objektiver und schneller urteilt als jede Führungskraft.",
+    "Solche Systeme sind in Deutschland grundsätzlich verboten.",
+    "Er hilft beim Aktualisieren, die fachliche Bewertung bleibt bei Menschen.",
+    "Stimmt, solange die Daten aus Stellenanzeigen stammen."
+   ],
+   "a": 2,
+   "h": "Ein System kann Daten verknüpfen – aber entscheiden, was eine Rolle wirklich braucht?",
+   "x": "Ein Skill Graph ist ein Netzwerk aus Fähigkeiten und ihren Beziehungen, das aus Datenquellen laufend aktualisiert wird. Chancen sind Aktualität und Skalierbarkeit. Grenzen sind intransparente Algorithmen, verzerrte Daten und fehlendes Wissen über die eigene Organisation. Skill Graphs definieren nicht automatisch, welche Kompetenzen eine Rolle wirklich braucht; das bleibt Aufgabe von Personalentwicklung und Führung. In Deutschland sind außerdem Datenschutz und je nach System die Mitbestimmung des Betriebsrats zu beachten.",
+   "s": "Handout Kompetenzmodelle und Lernziele, Kapitel 11"
+  },
+  {
+   "id": "bk-1",
+   "round": "bk",
+   "q": "Frau Berger schreibt: „Wir brauchen ein Kommunikationstraining für 14 Teamleitungen. Budget ist da.“ Welches Beratungsmodell nach Edgar Schein bietet sie damit an?",
+   "o": [
+    "Das Mediationsmodell",
+    "Das Arzt-Patient-Modell",
+    "Die Prozessberatung",
+    "Das Expertenmodell"
+   ],
+   "a": 3,
+   "h": "Sie hat bereits diagnostiziert – die Personalentwicklung soll nur liefern.",
+   "x": "Edgar Schein unterscheidet drei Grundhaltungen. Im Expertenmodell hat die Auftraggeberin das Problem selbst diagnostiziert und kauft Fachwissen oder eine Leistung ein. Im Arzt-Patient-Modell diagnostiziert die Beraterin von außen und verordnet eine Lösung. In der Prozessberatung hilft die Beraterin dem Gegenüber, das eigene Problem selbst zu verstehen und zu lösen. Frau Berger bietet das Expertenmodell an. Genau hier beginnt die eigentliche Arbeit: Keines der Modelle ist immer falsch, aber man sollte bewusst wählen.",
+   "s": "Präsentation Beratungskompetenz & Stakeholder · Schein (1969/1999), Process Consultation"
+  },
+  {
+   "id": "bk-2",
+   "round": "bk",
+   "q": "Was kennzeichnet die Prozessberatung nach Edgar Schein?",
+   "o": [
+    "Die Beraterin diagnostiziert von außen und verordnet eine Maßnahme.",
+    "Die Beraterin hilft dem Gegenüber, das eigene Problem selbst zu verstehen und zu lösen.",
+    "Die Beraterin liefert ihr fertiges Fachwissen und dazu eine fertige, sofort umsetzbare Lösung.",
+    "Die Beraterin entscheidet anstelle der Führungskraft über das Budget."
+   ],
+   "a": 1,
+   "h": "Wo liegt in der Regel das Wissen über die eigene Organisation?",
+   "x": "Bei der Prozessberatung bleibt die Verantwortung für das Problem beim Gegenüber. Die Beraterin hilft, es selbst zu verstehen und zu lösen. Für die Personalentwicklung als interner Beratungspartner ist das besonders passend: Das Wissen über die Organisation liegt meist bei Führungskräften und Teams. Aufgabe ist, dieses Wissen durch gute Fragen nutzbar zu machen. Einordnung: In einer akuten Krise kann auch das Expertenmodell richtig sein. Für langfristige Kompetenzentwicklung ist die Prozessberatung meist nachhaltiger.",
+   "s": "Playbook Beratungskompetenz, Kapitel 1 · Schein (1999), Process Consultation Revisited"
+  },
+  {
+   "id": "bk-3",
+   "round": "bk",
+   "q": "Wann ist reine Auftragserfüllung ohne ausführliche Klärung legitim?",
+   "o": [
+    "Nie, jeder Auftrag muss vollständig analysiert werden.",
+    "Immer dann, wenn die Auftraggeberin ein Budget mitbringt.",
+    "Bei Pflichtunterweisungen, kleinem Anlass und geringem Risiko.",
+    "Immer dann, wenn die Geschäftsführung den Auftrag persönlich erteilt hat."
+   ],
+   "a": 2,
+   "h": "Der Aufwand muss zur Entscheidung passen.",
+   "x": "Auftragserfüllung heißt: Die Bestellung wird ausgeführt, die Auftraggeberin hat das Problem definiert, und die Personalentwicklung verantwortet die saubere Durchführung. Das ist legitim bei Pflichtunterweisungen, kleinem Anlass und geringem Risiko. Beratung ist nötig, sobald Ursache, Ziel oder Erfolgskriterium unklar sind. Merksatz: Wer nur ausführt, verantwortet die Durchführung. Wer berät, verantwortet die Diagnose. Beides ist zulässig – man muss nur wissen, was man gerade tut.",
+   "s": "Präsentation Beratungskompetenz & Stakeholder"
+  },
+  {
+   "id": "bk-4",
+   "round": "bk",
+   "q": "Was ist der Kern von Performance Consulting nach Dana und James Robinson (1995)?",
+   "o": [
+    "Erst Geschäfts- und Leistungsbedarf klären, bevor eine Lernmaßnahme entsteht.",
+    "Möglichst viele Trainings in kurzer Zeit durchzuführen.",
+    "Trainings ausschließlich von externen Beratern durchführen zu lassen.",
+    "Die Leistung einzelner Beschäftigter mit Kennzahlen dauerhaft und lückenlos zu überwachen."
+   ],
+   "a": 0,
+   "h": "Der Untertitel des Buches lautet „Moving Beyond Training“.",
+   "x": "Performance Consulting beschreibt den Wandel von der reinen Trainingsdurchführung zur Beratungsrolle: Zuerst wird der tatsächliche Geschäfts- und Leistungsbedarf geklärt, erst dann entsteht eventuell eine Lernmaßnahme. Damit verbindet das Modell die Bedarfsanalyse mit der Beratungsrolle. Grenzen: Oft ist eine Entscheidung längst gefallen, eine vollständige Analyse kostet Zeit, und die Evidenz ist eher praxisbasiert als experimentell abgesichert.",
+   "s": "Präsentation Beratungskompetenz & Stakeholder · Robinson & Robinson (1995)"
+  },
+  {
+   "id": "bk-5",
+   "round": "bk",
+   "q": "Beer, Finnström und Schrader beschreiben 2016 den „great training robbery“. Was meinen sie damit?",
+   "o": [
+    "Beschäftigte nehmen an Trainings teil, nur um Arbeitszeit zu sparen.",
+    "Viel Geld fließt in Training, doch Verhalten ändert sich kaum, weil die Bedingungen bleiben.",
+    "Externe Anbieter verlangen für ihre Trainings deutlich überhöhte Preise, die niemand nachprüfen kann.",
+    "Unternehmen kopieren Trainingskonzepte von Wettbewerbern."
+   ],
+   "a": 1,
+   "h": "Was passiert, wenn Teilnehmende nach dem Seminar zurück in den Alltag kommen?",
+   "x": "Die Autoren beschreiben: Unternehmen investieren enorme Summen in Training, ohne dass sich Verhalten oder Ergebnisse nachhaltig ändern. Der Grund: Teilnehmende kehren in unveränderte Bedingungen zurück. Sie nennen wiederkehrende Barrieren, etwa widersprüchliche Prioritäten oder ein Führungsteam, das selbst nicht mitzieht. Das ist die stärkste Begründung für Beratung statt reiner Lieferung: Wer die Bedingungen nicht mitdenkt, verschwendet das Training.",
+   "s": "Präsentation Beratungskompetenz & Stakeholder · Beer, Finnström & Schrader (2016)"
+  },
+  {
+   "id": "bk-6",
+   "round": "bk",
+   "q": "Die Geschäftsführung hat großen Einfluss auf ein Projekt, interessiert sich aber kaum für Details. Was empfiehlt die Einfluss-Interesse-Matrix?",
+   "o": [
+    "Eng einbinden: wöchentliche Abstimmungstermine zu allen Einzelheiten.",
+    "Informiert halten: regelmäßig knappe Updates, weil sie stark betroffen ist.",
+    "Nur beobachten: Aufwand gering halten, weil sie kaum Interesse zeigt.",
+    "Zufriedenstellen: gezielt informieren, ohne zu überfrachten."
+   ],
+   "a": 3,
+   "h": "Hoher Einfluss, geringes Interesse.",
+   "x": "Die Matrix hat vier Felder: hoher Einfluss und hohes Interesse – eng einbinden; hoher Einfluss und geringes Interesse – zufriedenstellen, also informieren, ohne zu überfrachten; geringer Einfluss und hohes Interesse – informiert halten; geringer Einfluss und geringes Interesse – beobachten. Zitierhinweis aus dem Kurs: Die Matrix wird meist Mendelow (1981) zugeschrieben, die bekannte Form stammt aus der Weiterentwicklung durch Johnson und Scholes. Sie ist eine praktische Vereinfachung, kein geprüftes Diagnoseinstrument.",
+   "s": "Präsentation Beratungskompetenz & Stakeholder · Playbook Beratungskompetenz, Kapitel 2"
+  },
+  {
+   "id": "bk-7",
+   "round": "bk",
+   "q": "Frau Berger sagt: „Das muss in vier Wochen sichtbar sein.“ Ist das ein Interesse oder eine Erwartung?",
+   "o": [
+    "Eine Erwartung, weil es Tempo und Form beschreibt.",
+    "Beides gleichzeitig, eine Unterscheidung ist nicht sinnvoll.",
+    "Weder noch, es ist eine verbindliche Vorgabe der Geschäftsführung.",
+    "Ein Interesse, weil es beschreibt, was sie inhaltlich erreichen will."
+   ],
+   "a": 0,
+   "h": "Was will sie erreichen – und wie stellt sie es sich vor?",
+   "x": "Interessen beschreiben, was eine Person inhaltlich erreichen will, etwa: „Das Team soll selbstständiger arbeiten.“ Erwartungen beschreiben, wie, in welchem Tempo und in welcher Form sie es sich vorstellt, etwa: „Das muss in vier Wochen sichtbar sein.“ Beides muss geklärt werden. Wer nur das Interesse kennt, aber die Erwartung an Tempo übersieht, erlebt später Enttäuschung. Professionelles Erwartungsmanagement heißt: früh und ehrlich sagen, was möglich ist und was nicht.",
+   "s": "Playbook Beratungskompetenz, Kapitel 2"
+  },
+  {
+   "id": "bk-8",
+   "round": "bk",
+   "q": "Welche drei Ergebnisse sollte eine Auftragsklärung laut Kurs liefern?",
+   "o": [
+    "Trainerauswahl, Seminarraum und Verpflegung für alle Teilnehmenden.",
+    "Lernziele, Lernformat und fertiger Fragebogen zur Evaluation.",
+    "Problemverständnis, überprüfbares Erfolgskriterium, klare Rollen.",
+    "Termin, Teilnehmerzahl und genehmigtes Budget für das geplante Training."
+   ],
+   "a": 2,
+   "h": "Ohne eines davon kann später niemand sagen, ob es gewirkt hat.",
+   "x": "Erstens ein gemeinsames Problemverständnis, das über „wir brauchen ein Training“ hinausgeht. Zweitens ein überprüfbares Erfolgskriterium – sonst kann später niemand sagen, ob die Maßnahme gewirkt hat. Drittens Klarheit über die Rollen: Wer entscheidet, wer liefert, wer verantwortet die Bedingungen im Betrieb? Der unbequeme Teil: Wenn absehbar ist, dass zwei Tage Training das Problem nicht lösen, ist der beste Zeitpunkt, das zu sagen, jetzt. Merksatz: Die Auftragsklärung ist die Arbeit mit dem größten Hebel.",
+   "s": "Präsentation Beratungskompetenz & Stakeholder"
+  },
+  {
+   "id": "bk-9",
+   "round": "bk",
+   "q": "Welche drei Leitlinien formulierte die Mailänder Gruppe 1980 für systemische Gespräche?",
+   "o": [
+    "Analyse, Design, Entwicklung, Umsetzung und Evaluation",
+    "Hypothesenbildung, Zirkularität und Neutralität",
+    "Zuhören, Spiegeln und Zusammenfassen",
+    "Problem, Ursache und Lösung"
+   ],
+   "a": 1,
+   "h": "Eine davon hat Gianfranco Cecchin 1987 als „Neugier“ neu beschrieben.",
+   "x": "Die Mailänder Gruppe um Mara Selvini Palazzoli formulierte 1980 drei Leitlinien: Hypothesenbildung (eine Erklärung ist eine Arbeitshypothese, die verworfen werden darf), Zirkularität (Verhalten ist Teil einer Wechselwirkung, keine einseitige Ursache) und Neutralität (alle Perspektiven gleich ernst nehmen). Cecchin schlug 1987 vor, Neutralität als Haltung der Neugier zu verstehen. Für die Praxis: lieber „Was könnte hier noch eine Rolle spielen?“ fragen als vorschnell diagnostizieren.",
+   "s": "Playbook Beratungskompetenz, Kapitel 3 · Selvini Palazzoli et al. (1980), Family Process"
+  },
+  {
+   "id": "bk-10",
+   "round": "bk",
+   "q": "Welche Frage ist eine zirkuläre Frage?",
+   "o": [
+    "„Wie zufrieden sind Sie auf einer Skala von 0 bis 10 mit der Zusammenarbeit im Team?“",
+    "„Was, glauben Sie, würde Ihre Führungskraft sagen, was das Team braucht?“",
+    "„Haben alle Teamleitungen die Einladung zum Kick-off bekommen?“",
+    "„Gab es eine Situation, in der es ausnahmsweise gut funktioniert hat?“"
+   ],
+   "a": 1,
+   "h": "Gefragt wird nach der vermuteten Sicht einer anderen Person.",
+   "x": "Zirkuläre Fragen fragen nicht direkt nach der eigenen Meinung, sondern danach, wie jemand die Sicht oder das Verhalten einer anderen Person einschätzt. So werden Wechselwirkungen sichtbar. Sie sind hilfreich, wenn mehrere Beteiligte mit unterschiedlichen Sichtweisen im Spiel sind. Stolperfalle: zu verschachtelt formulieren. Die anderen Beispiele sind eine Skalierungsfrage, eine Ausnahmefrage und eine geschlossene Frage. Kurzformel: Nicht „Was denken Sie?“, sondern „Was, glauben Sie, denkt die andere Person?“",
+   "s": "Playbook Beratungskompetenz, Kapitel 4.2"
+  },
+  {
+   "id": "bk-11",
+   "round": "bk",
+   "q": "Eine Führungskraft schätzt ihre Zuversicht auf einer Skala mit 5 von 10 ein. Was ist jetzt der wichtigste Schritt?",
+   "o": [
+    "Die Zahl notieren und zur nächsten Frage übergehen.",
+    "Erklären, dass eine 5 auf dieser Skala eigentlich schon ein gutes Ergebnis ist.",
+    "Nachfragen, was passieren müsste, damit aus der 5 eine 6 wird.",
+    "Die Zahl mit den Werten anderer Führungskräfte vergleichen."
+   ],
+   "a": 2,
+   "h": "Die eigentliche Beratungsarbeit beginnt nach der Zahl.",
+   "x": "Skalierungsfragen machen ein diffuses Gefühl greifbar. Die Zahl selbst ist aber nur der Ausgangspunkt. Die eigentliche Arbeit passiert bei der Anschlussfrage: „Was bräuchte es für einen Punkt mehr?“ Typischer Fehler: nach der Zahl nicht weiterfragen. Die Skala ist ein Gesprächswerkzeug, kein Messinstrument mit wissenschaftlichem Anspruch. Herkunft: lösungsfokussierte Kurztherapie von Steve de Shazer und Insoo Kim Berg.",
+   "s": "Playbook Beratungskompetenz, Kapitel 4.3 · de Shazer (1988)"
+  },
+  {
+   "id": "bk-12",
+   "round": "bk",
+   "q": "„Das Team kommuniziert nie richtig.“ Welche Frageart hinterfragt diese Verallgemeinerung am direktesten?",
+   "o": [
+    "Eine Ausnahmefrage: „Wann hat es schon einmal besser funktioniert?“",
+    "Eine geschlossene Frage: „Stimmt das wirklich?“",
+    "Eine hypothetische Frage: „Was wäre, wenn in Ihrem Team einfach alles gut laufen würde?“",
+    "Eine zirkuläre Frage über den Betriebsrat."
+   ],
+   "a": 0,
+   "h": "„Nie“ ist ein Signal: Gab es wirklich keine einzige Ausnahme?",
+   "x": "Ausnahmefragen suchen Momente, in denen das Problem nicht oder schwächer aufgetreten ist. Diese Ausnahmen enthalten oft schon einen Teil der Lösung. Entscheidend ist die Anschlussfrage: „Was war an diesem Tag anders?“ Ohne sie bleibt die Ausnahme eine Randbemerkung. Grenze: Ist eine Situation tatsächlich neu, gibt es keine Ausnahme, und die Frage wirkt aufgesetzt. Ausnahmefragen stammen aus der lösungsfokussierten Kurztherapie von de Shazer und Berg.",
+   "s": "Playbook Beratungskompetenz, Kapitel 4.4"
+  },
+  {
+   "id": "bk-13",
+   "round": "bk",
+   "q": "„Angenommen, das Problem wäre über Nacht gelöst: Woran würden Sie es morgen als Erstes merken?“ Welche Frageart ist das?",
+   "o": [
+    "Eine Ressourcenfrage, weil sie nach vorhandenen Stärken und Unterstützung fragt",
+    "Eine Skalierungsfrage",
+    "Eine hypothetische Frage, die sogenannte Wunderfrage",
+    "Eine geschlossene Frage"
+   ],
+   "a": 2,
+   "h": "Die Frage lädt in eine noch nicht eingetretene Zukunft ein.",
+   "x": "Hypothetische Fragen laden ein, sich eine mögliche Situation vorzustellen – etwa eine bereits gelöste Zukunft. Das öffnet Denkräume, ohne dass sofort entschieden werden muss. Die Wunderfrage ist eine besondere Form aus der lösungsfokussierten Kurztherapie von de Shazer und Berg. Hilfreich, wenn ein Gespräch im Problem feststeckt. Weniger geeignet in akuten Krisen, wo konkrete Schritte gebraucht werden. Stolperfalle: zu abstrakt fragen („Was wäre, wenn alles gut wäre?“).",
+   "s": "Playbook Beratungskompetenz, Kapitel 4.6"
+  },
+  {
+   "id": "bk-14",
+   "round": "bk",
+   "q": "Was ist Reframing?",
+   "o": [
+    "Unangenehme Fakten so geschickt umformulieren, dass sie im Gespräch nicht mehr auffallen.",
+    "Das Gespräch auf ein anderes Thema lenken, wenn es schwierig wird.",
+    "Die Aussage des Gegenübers wörtlich wiederholen.",
+    "Dieselben Fakten in einen anderen, ebenso plausiblen Deutungsrahmen stellen."
+   ],
+   "a": 3,
+   "h": "Die Fakten bleiben gleich – nur der Rahmen ändert sich.",
+   "x": "Reframing heißt wörtlich „Umrahmen“. Beispiel aus dem Kurs: „Die Teamleitungen können nicht kommunizieren“ wird zu „Vier von vierzehn führen seit der Reorganisation zum ersten Mal – in einer Struktur mit ungeklärten Zuständigkeiten.“ Das öffnet neue Handlungsmöglichkeiten. Wichtig: Reframing ist kein Beschönigen und keine Manipulation. Widerspricht der neue Rahmen den Fakten, ist es Irreführung. Grundlage: Watzlawick, Weakland und Fisch (1974).",
+   "s": "Playbook Beratungskompetenz, Kapitel 5 · Watzlawick, Weakland & Fisch (1974), Change"
+  },
+  {
+   "id": "bk-15",
+   "round": "bk",
+   "q": "Die Auftraggeberin sagt: „Das hat letztes Mal auch nichts gebracht.“ Welche Reaktion hilft am ehesten weiter?",
+   "o": [
+    "„Das ist eine wichtige Information. Was lief damals anders als geplant?“",
+    "Das Vorgängerprojekt sachlich verteidigen und ausführlich die Gründe für das Ergebnis erklären.",
+    "Das Thema übergehen, um das Gespräch nicht zu belasten.",
+    "Vorschlagen, diesmal einen anderen externen Anbieter zu nehmen."
+   ],
+   "a": 0,
+   "h": "Widerspruch erzeugt Verteidigung, Anschluss erzeugt Bewegung.",
+   "x": "Widerstand ist keine Störung, sondern Information. Nach Block wird er selten offen, sondern meist als scheinbar sachlicher Einwand vorgetragen. Was hilft: nicht widersprechen oder verteidigen, sondern anschließen und das Gespräch verschieben. „Das hat nichts gebracht“ ist sogar eine sehr wertvolle Information für die Analyse. Merksatz aus dem Kurs: Widerspruch erzeugt Verteidigung; Anschluss erzeugt Bewegung.",
+   "s": "Präsentation Beratungskompetenz & Stakeholder · Block (1981/2011), Flawless Consulting"
+  },
+  {
+   "id": "bk-16",
+   "round": "bk",
+   "q": "Eine Empfehlung hat fünf Teile: Befund, Bewertung, Empfehlung, Alternativen, nächster Schritt. Was gehört in den Befund?",
+   "o": [
+    "Die persönliche Einschätzung, wie gut die Führungskräfte arbeiten.",
+    "Der konkrete Vorschlag für ein Training mit Termin und Kosten.",
+    "Beobachtungen und Daten mit Angabe der Quelle, ohne Bewertung.",
+    "Eine Liste aller Probleme, die im Unternehmen bekannt sind."
+   ],
+   "a": 2,
+   "h": "Der Befund beantwortet: Was wissen wir – und woher?",
+   "x": "Der Befund beschreibt, was beobachtet wurde, und woher man es weiß – ohne Interpretation. Statt „Die Führungskräfte kommunizieren schlecht“ heißt es: „In Interviews mit acht Teamleitungen und in der Befragung wurde beschrieben, dass Ziele unterschiedlich verstanden werden.“ Erst danach folgen Bewertung, Empfehlung, Alternativen und der nächste Schritt. Häufigster Fehler: Fehlt die Empfehlung, hat man einen Bericht geschrieben, aber nicht beraten.",
+   "s": "Präsentation Beratungskompetenz & Stakeholder"
+  },
+  {
+   "id": "pk-1",
+   "round": "pk",
+   "q": "Was unterscheidet eine Learning Journey von einer Einzelmaßnahme?",
+   "o": [
+    "Sie ist immer digital und läuft vollständig über eine zentrale Lernplattform.",
+    "Sie dauert grundsätzlich mindestens ein Jahr.",
+    "Sie besteht aus genau einem, aber besonders langen Workshop.",
+    "Sie verteilt Lernen über Zeit und baut den Transfer in den Alltag ein."
+   ],
+   "a": 3,
+   "h": "Was passiert nach dem letzten Seminartag?",
+   "x": "Eine Einzelmaßnahme ist ein Ereignis: Workshop, Kurs, Termin. Danach kehren alle in den unveränderten Alltag zurück, und Lernen bleibt oft punktuell. Eine Learning Journey ist ein bewusst gestalteter Weg mit mehreren Bausteinen über Zeit, in den der Praxistransfer eingebaut ist. Die eigentliche Designentscheidung liegt dann nicht mehr in der Wahl eines Formats, sondern in der Kombination und Abfolge. Im Fall Berger wird so aus einem zweitägigen Training eine mehrmonatige Führungskräfteentwicklung.",
+   "s": "Handout Planung & Konzeption, Kapitel „Von der Einzelmaßnahme zur Learning Journey“"
+  },
+  {
+   "id": "pk-2",
+   "round": "pk",
+   "q": "Woher stammen die Zahlen der bekannten Regel 70-20-10?",
+   "o": [
+    "Aus einem Experiment mit Kontrollgruppe an mehreren Universitäten in Europa.",
+    "Aus Selbstauskünften erfolgreicher Führungskräfte in den 1980er-Jahren.",
+    "Aus der Hirnforschung zur Leistung des Arbeitsgedächtnisses.",
+    "Aus einer Richtlinie der Europäischen Union zur Weiterbildung."
+   ],
+   "a": 1,
+   "h": "Die Daten stammen aus Befragungen des Center for Creative Leadership.",
+   "x": "Die Grundidee stammt aus Untersuchungen des Center for Creative Leadership Ende der 1980er-Jahre (McCall, Lombardo und Eichinger). Führungskräfte wurden rückblickend gefragt, wodurch sie am meisten gelernt haben. Daraus entstand die Verteilung 70 Prozent Erfahrung, 20 Prozent andere Menschen, 10 Prozent formales Training. Es sind Selbstberichte einer kleinen, nicht repräsentativen Stichprobe – kein experimentell nachgewiesenes Naturgesetz. Die exakten Zahlen waren nie als Vorschrift gemeint.",
+   "s": "Handout Planung & Konzeption, Kapitel 70-20-10 · McCall, Lombardo & Eichinger (1988/1996)"
+  },
+  {
+   "id": "pk-3",
+   "round": "pk",
+   "q": "Wie nutzt man 70-20-10 in der Konzeption sinnvoll?",
+   "o": [
+    "Als Vorgabe: genau 10 Prozent des Budgets dürfen in Trainings fließen.",
+    "Gar nicht, das Modell ist widerlegt und unbrauchbar.",
+    "Als Orientierung: Lernen entsteht auch durch Erfahrung und Austausch.",
+    "Als Nachweis, dass Seminare keine Wirkung haben."
+   ],
+   "a": 2,
+   "h": "Orientierung statt Rezept.",
+   "x": "Trotz der schwachen Datenbasis steckt eine wichtige Botschaft in 70-20-10: Lernen findet nicht nur im Seminarraum statt. Ein großer Teil der Kompetenzentwicklung entsteht durch praktische Erfahrung, Austausch mit anderen und Reflexion. Deshalb sollten Learning Journeys breiter gedacht werden als nur Workshop oder E-Learning. Typischer Fehler: die Prozente als Rechenregel für Budgets oder Stundenpläne zu nehmen. Im Fall Berger heißt das: Erfahrungslernen im Führungsalltag und kollegialer Austausch gehören dazu.",
+   "s": "Handout Planung & Konzeption, Kapitel 70-20-10"
+  },
+  {
+   "id": "pk-4",
+   "round": "pk",
+   "q": "Was bestimmt, welche Art von Entwicklungsprogramm vorliegt, zum Beispiel Führungskräfteentwicklung oder Talentprogramm?",
+   "o": [
+    "Strategischer Zweck, Zielgruppe, Zeithorizont und Einbettung.",
+    "Die eingesetzten Lernformate, also zum Beispiel Workshop, Coaching oder E-Learning.",
+    "Die Lernplattform, auf der das Programm läuft.",
+    "Die Anzahl der Teilnehmenden und die Kosten pro Kopf."
+   ],
+   "a": 0,
+   "h": "Programme sind Architekturen, keine Formate.",
+   "x": "Führungskräfteentwicklung, Talentprogramm, Fachkarriere oder Transformationsqualifizierung sind keine einzelnen Formate, sondern verschiedene Arten von Entwicklungsprogrammen. Den Typ bestimmen der strategische Zweck, die Zielgruppe, der Zeithorizont und die Einbettung in die Organisation. Ähnliche Formate können in verschiedenen Programmen vorkommen, erfüllen dort aber unterschiedliche Funktionen. Der Fall Berger gehört zur Führungskräfteentwicklung: neue und bestehende Führungskräfte nach der Reorganisation in ihrer Rolle stärken.",
+   "s": "Handout Planung & Konzeption, Kapitel „Entwicklungsprogramme sind Architekturen“"
+  },
+  {
+   "id": "pk-5",
+   "round": "pk",
+   "q": "Womit beginnt der Konzept-Canvas aus dem Kurs?",
+   "o": [
+    "Mit dem Format, das sich die Auftraggeberin wünscht.",
+    "Mit dem bestätigten Bedarf.",
+    "Mit dem verfügbaren Budget und dem Zeitrahmen.",
+    "Mit der Lernplattform, die im Unternehmen genutzt wird."
+   ],
+   "a": 1,
+   "h": "Was ist im Fall Berger aus „Kommunikationstraining“ geworden?",
+   "x": "Der Canvas beginnt bewusst nicht mit einem Format, sondern mit einem bestätigten Bedarf. Im Fall Berger lautet er nicht mehr „Die Führungskräfte brauchen ein Kommunikationstraining“, sondern „Die Führungskräfte brauchen nach der Reorganisation eine umfassendere Stärkung ihrer Führungsrolle“. Einordnung: Der Canvas ist kein standardisiertes Lehrbuchmodell, sondern eine Synthese – die Darstellungslogik stammt von Osterwalder und Pigneur, die Inhalte aus Constructive Alignment, Performance Consulting und Instructional Design.",
+   "s": "Handout Planung & Konzeption, Kapitel „Der Konzept-Canvas“ · Osterwalder & Pigneur (2010)"
+  },
+  {
+   "id": "pk-6",
+   "round": "pk",
+   "q": "Wofür stehen die fünf Phasen des Prozessmodells ADDIE?",
+   "o": [
+    "Analyse, Design, Entwicklung, Umsetzung, Evaluation",
+    "Auftrag, Durchführung, Diagnose, Information, Ergebnis",
+    "Analyse, Dokumentation, Didaktik, Inhalt, Evaluation",
+    "Abstimmung, Design, Delegation, Implementierung, Erfolg"
+   ],
+   "a": 0,
+   "h": "Englisch: Analysis, Design, Development, Implementation, Evaluation.",
+   "x": "ADDIE steht für Analysis, Design, Development, Implementation und Evaluation – auf Deutsch Analyse, Design, Entwicklung, Umsetzung und Evaluation. Das Modell entstand um 1975 an der Florida State University im militärischen Ausbildungskontext und hat keinen einzelnen Urheber. Es ist stark, wenn der Bedarf früh klar und stabil ist. Kritik als „starr“ ist nur berechtigt, wenn man es streng linear liest – iterativ gelesen funktioniert es gut.",
+   "s": "Handout Planung & Konzeption, Kapitel „Zwei Prozesswege“"
+  },
+  {
+   "id": "pk-7",
+   "round": "pk",
+   "q": "Der Bedarf ist noch unscharf, und man will sich mit Prototypen und schnellen Rückmeldungen herantasten. Welcher Prozessweg passt eher?",
+   "o": [
+    "SAM, das iterative Modell von Michael Allen.",
+    "ADDIE, weil es mit einer gründlichen Analyse beginnt.",
+    "Die Einfluss-Interesse-Matrix nach Mendelow.",
+    "70-20-10, weil es Erfahrungslernen betont."
+   ],
+   "a": 0,
+   "h": "Eines der Modelle arbeitet in schnellen Schleifen aus Entwurf, Prototyp und Review.",
+   "x": "SAM steht für Successive Approximation Model und wurde von Michael Allen beschrieben (Allen und Sites, 2012). Es arbeitet iterativ in schnellen Schleifen aus Entwerfen, Prototyp und Review – passend, wenn man sich an den Bedarf herantasten muss. Einordnung: SAM klingt moderner, hat aber selbst wenig eigene Wirksamkeitsbelege. Es ist eine plausible Prozessphilosophie, kein bewiesen überlegenes Modell. Merksatz: nicht Lager wählen, sondern den Weg zum Vorhaben passend auswählen.",
+   "s": "Handout Planung & Konzeption, Kapitel „Zwei Prozesswege“ · Allen & Sites (2012)"
+  },
+  {
+   "id": "pk-8",
+   "round": "pk",
+   "q": "Die Cognitive Load Theory unterscheidet drei Arten von Belastung beim Lernen. Welche kann die Personalentwicklung durch gutes Design am direktesten senken?",
+   "o": [
+    "Die eigentliche Lernarbeit, also das Verstehen und Verknüpfen.",
+    "Die Belastung durch komplexen Stoff, indem man schwierige Themen weglässt.",
+    "Die Belastung durch schlechte Aufbereitung, etwa überladene Folien.",
+    "Alle drei gleichermaßen, bis die Belastung bei null liegt."
+   ],
+   "a": 2,
+   "h": "Eine Belastung will man schützen, eine kann man nur staffeln, eine kann man senken.",
+   "x": "Unser Arbeitsgedächtnis kann nur begrenzt viel Neues gleichzeitig verarbeiten (Sweller, 1988). Die erste Belastung kommt vom Stoff selbst – nicht wegzuzaubern, aber staffelbar. Die zweite kommt von schlechter Aufbereitung, etwa überladenen Folien oder Ablenkung – die lässt sich durch Design senken. Die dritte ist die eigentliche Lernarbeit – die will man schützen und fördern. Merksatz: Die häufigste Ursache für wirkungsloses Training ist nicht schlechter Inhalt, sondern zu viel davon auf einmal.",
+   "s": "Handout Planung & Konzeption, Kapitel „Vier evidenzbasierte Prinzipien“ · Sweller (1988), Cognitive Science"
+  },
+  {
+   "id": "pk-9",
+   "round": "pk",
+   "q": "Was zeigten Roediger und Karpicke 2006 zum Abrufen von Wissen?",
+   "o": [
+    "Abschlusstests am Ende eines Kurses verschlechtern vor allem die Motivation der Lernenden deutlich.",
+    "Wer Texte mehrfach liest, behält langfristig am meisten.",
+    "Abrufen und Wiederlesen wirken langfristig genau gleich.",
+    "Wer sich aktiv erinnert, behält nach einer Woche mehr als wer nur wiederholt liest."
+   ],
+   "a": 3,
+   "h": "Abrufen statt Wiederlesen.",
+   "x": "In der Studie behielten Lernende nach einer Woche rund 61 Prozent, wenn sie sich aktiv erinnert hatten, gegenüber rund 40 Prozent bei wiederholtem Lesen. Für eine Learning Journey heißt das: Abrufaufgaben einbauen, statt nur Inhalte konsumieren zu lassen – zum Beispiel ein Quiz, freies Zusammenfassen oder Fallaufgaben. Auch dieses Quiz nutzt den Effekt. Typischer Fehler: am Ende eines Moduls nur noch einmal die Folien zeigen.",
+   "s": "Handout Planung & Konzeption, Kapitel „Vier evidenzbasierte Prinzipien“ · Roediger & Karpicke (2006), Psychological Science"
+  },
+  {
+   "id": "pk-10",
+   "round": "pk",
+   "q": "Was besagt der Spacing-Effekt?",
+   "o": [
+    "Räumlicher Abstand zwischen Teilnehmenden verbessert die Konzentration.",
+    "Über die Zeit verteiltes Lernen hält länger als geballtes Lernen.",
+    "Lernen wirkt am besten, wenn möglichst viel an einem Tag gebündelt wird.",
+    "Zwischen Lerneinheiten sollte mindestens ein Monat Pause liegen."
+   ],
+   "a": 1,
+   "h": "Verteilt schlägt geballt.",
+   "x": "Über die Zeit verteiltes Lernen hält länger als in einen Block gepresstes. Die Metaanalyse von Cepeda und Kollegen (2006) ist eine wichtige Grundlage dafür. Das ist zugleich die eigentliche Evidenz hinter der Idee der Learning Journey: Mehrere Bausteine mit Abstand wirken nachhaltiger als ein langer Seminarblock. Einordnung: Dieser Befund ist deutlich besser belegt als 70-20-10 oder die Prozessmodelle ADDIE und SAM.",
+   "s": "Handout Planung & Konzeption, Kapitel „Vier evidenzbasierte Prinzipien“ · Cepeda et al. (2006), Psychological Bulletin"
+  },
+  {
+   "id": "pk-11",
+   "round": "pk",
+   "q": "Ausgearbeitete Lösungsbeispiele helfen Neulingen sehr. Was passiert, wenn man sie bei erfahrenen Lernenden einsetzt?",
+   "o": [
+    "Erfahrene können sie nicht nutzen, weil die Beispiele für sie viel zu einfach aufgebaut sind.",
+    "Sie ersetzen bei Erfahrenen jedes weitere Üben.",
+    "Ihr Nutzen kann sich umkehren – das heißt Expertise-Reversal-Effekt.",
+    "Sie helfen Erfahrenen genauso stark wie Neulingen."
+   ],
+   "a": 2,
+   "h": "Gutes Design hängt immer vom Vorwissen der Zielgruppe ab.",
+   "x": "Ausgearbeitete Lösungsbeispiele entlasten Neulinge, die noch keine mentalen Muster für eine Aufgabe haben (Sweller und Cooper, 1985). Bei Fortgeschrittenen kann sich dieser Nutzen umkehren: Für sie sind die Erklärungen überflüssig und belasten eher. Das nennt man Expertise-Reversal-Effekt (Kalyuga und Kollegen, 2003). Für die Konzeption heißt das: Design ist immer relativ zum Vorwissen. Ein Einstiegstest, mit dem Erfahrene Grundlagen überspringen, ist eine Antwort darauf.",
+   "s": "Handout Planung & Konzeption, Kapitel „Vier evidenzbasierte Prinzipien“ · Kalyuga et al. (2003)"
+  },
+  {
+   "id": "pk-12",
+   "round": "pk",
+   "q": "Was ist laut Kurs der stärkste einzelne Hebel dafür, dass Gelerntes im Arbeitsalltag ankommt?",
+   "o": [
+    "Dass die Führungskraft nach der Maßnahme aktiv nachfragt.",
+    "Ein Teilnahmezertifikat mit dem Logo des Unternehmens.",
+    "Möglichst viele Inhalte in möglichst kurzer Zeit.",
+    "Eine besonders hohe Zufriedenheit der Teilnehmenden am Ende des Seminars."
+   ],
+   "a": 0,
+   "h": "Ein großer Teil des Transfers liegt außerhalb der Personalentwicklung.",
+   "x": "Transfer wird geplant, nicht gehofft – vorher, während und nachher. Der stärkste einzelne Hebel ist, dass die Führungskraft nach der Maßnahme aktiv nachfragt. Die Übersichtsarbeit von Baldwin und Ford (1988) nennt Transferklima und Unterstützung durch Vorgesetzte als Schlüsselfaktoren. Deshalb ist Transfergestaltung immer auch Stakeholderarbeit. Typischer Fehler: Transfer erst am Ende als Zusatz ergänzen, statt ihn vor der ersten Lerneinheit mitzuplanen.",
+   "s": "Handout Planung & Konzeption, Kapitel „Wirkung sichern: Transfer“ · Baldwin & Ford (1988), Personnel Psychology"
+  },
+  {
+   "id": "pk-13",
+   "round": "pk",
+   "q": "Wann werden die Erfolgskriterien einer Learning Journey festgelegt?",
+   "o": [
+    "Erst wenn die Geschäftsführung danach fragt.",
+    "Am Anfang, schon bei der Konzeption.",
+    "Nach dem Abschluss, wenn die Zufriedenheitswerte vorliegen.",
+    "Gar nicht, Wirkung lässt sich bei Lernen nicht feststellen."
+   ],
+   "a": 1,
+   "h": "Woran würden wir in einem halben Jahr erkennen, dass es sich gelohnt hat?",
+   "x": "Erfolgskriterien werden nicht am Ende gesucht, sondern am Anfang definiert. Sonst passiert ein typischer Fehler: Man schaut nach Abschluss auf Teilnahmezahlen oder Zufriedenheit und erklärt das Programm im Nachhinein für erfolgreich. Das sagt aber nicht, ob sich im Alltag etwas verändert hat. Im Fall Berger lautet ein prüfbares Ziel etwa: Die Teamleitungen geben regelmäßig klares Feedback und schaffen mehr Rollenklarheit. Die Evaluationsmodelle selbst werden an einem späteren Kurstag vertieft.",
+   "s": "Handout Planung & Konzeption, Kapitel „Wirkung sichern: Evaluation“"
+  },
+  {
+   "id": "pk-14",
+   "round": "pk",
+   "q": "Welche Aufgabe erfüllt ein Lernmanagementsystem typischerweise?",
+   "o": [
+    "Es ersetzt die Lernkonzeption, weil es Inhalte automatisch auswählt.",
+    "Es zeigt kurze Hilfen direkt in der Software, mit der man gerade arbeitet.",
+    "Es empfiehlt frei Inhalte nach persönlichem Interesse, ganz ohne einen festen Lernpfad vorzugeben.",
+    "Es organisiert und verwaltet Lernen, etwa Anmeldungen, Lernstände und Zertifikate."
+   ],
+   "a": 3,
+   "h": "Die Leitfrage dieses Systems: Wer muss was absolvieren?",
+   "x": "Ein Lernmanagementsystem organisiert und verwaltet: Einschreibung, Lernstände, Zertifikate – typisch für Pflichtschulungen und strukturierte Programme. Eine Learning Experience Platform setzt dagegen auf selbstgesteuertes Entdecken und Empfehlungen. Learning in the Flow of Work bietet kurze Hilfen direkt im Arbeitsprozess (Bersin, 2018). Wichtig ist die Reihenfolge: Zuerst entsteht das Lernkonzept, danach wählt man die passende technische Umgebung – nicht umgekehrt.",
+   "s": "Handout Planung & Konzeption, Kapitel „Wo das Konzept technisch lebt“ · Bersin (2018)"
+  },
+  {
+   "id": "pk-15",
+   "round": "pk",
+   "q": "Was interessiert Auftraggebende an der Präsentation eines Lernkonzepts in erster Linie?",
+   "o": [
+    "Der erwartete Nutzen und die Begründung, warum die Lösung passt.",
+    "Eine vollständige Liste aller eingesetzten Methoden, Formate und Materialien.",
+    "Die neuesten Lerntrends, die im Konzept vorkommen.",
+    "Möglichst viele ausgefüllte Felder aus dem Konzept-Canvas."
+   ],
+   "a": 0,
+   "h": "Ein guter Pitch verkauft keine Formate.",
+   "x": "Ein überzeugender Pitch folgt einer Beratungslogik: Problem, Zielbild, Lösungskonzept, didaktische Begründung, Nutzen und Wirkung, nächste Schritte. Auftraggebende interessieren sich vor allem für den Nutzen und die Begründung – nicht für einzelne Methoden. Im Kurs heißt es deshalb auch: nicht alle acht Canvas-Felder zeigen, sondern Ziel, Journey und die wichtigsten Designentscheidungen. Merksatz: Ein Pitch verkauft keine Lernformate, sondern eine begründete Lösung für einen festgestellten Bedarf.",
+   "s": "Handout Planung & Konzeption, Kapitel „Konzept fertigstellen und pitchen“"
+  }
+ ]
+}

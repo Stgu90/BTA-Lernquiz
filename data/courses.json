@@ -4,5 +4,11 @@
   "title": "HR Operations",
   "subtitle": "BTA Weiterbildung",
   "file": "data/hr-ops.json"
+ },
+ {
+  "id": "ld",
+  "title": "Strategisches Learning & Development",
+  "subtitle": "BTA Weiterbildung",
+  "file": "data/ld.json"
  }
 ]
