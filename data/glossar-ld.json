@@ -11,7 +11,7 @@
    "k": "abk",
    "t": "ADDIE",
    "d": "Analysis, Design, Development, Implementation, Evaluation",
-   "p": "Lineares Prozessmodell zur Entwicklung von Lernangeboten (Florida State University, um 1975)",
+   "p": "Klassisches Phasenmodell zur Entwicklung von Lernangeboten (Florida State University, um 1975)",
    "r": [
     "pk"
    ]
@@ -118,7 +118,7 @@
   {
    "k": "abk",
    "t": "SMART",
-   "d": "Spezifisch, Messbar, Assignable/Achievable, Relevant, Terminiert",
+   "d": "Specific, Measurable, Assignable, Realistic, Time-related (Original nach Doran; im Deutschen meist: spezifisch, messbar, attraktiv, realistisch, terminiert)",
    "p": "Prüfliste für bereits formulierte Ziele (George Doran, 1981)",
    "r": [
     "km"
@@ -236,7 +236,7 @@
   {
    "k": "beg",
    "t": "Beobachtung",
-   "d": "Beschreibbarer Sachverhalt mit Zahlen, Zeiten oder Verhalten, etwa „40 % nutzen das Tool wöchentlich“.",
+   "d": "Beschreibbarer Sachverhalt mit Zahlen, Zeiten oder Verhalten, etwa „In 14 von 40 geprüften Antworten fehlte die Bestellnummer“.",
    "p": "Wörter wie „mangelnd“ oder „unzureichend“ zeigen meist schon eine Interpretation an.",
    "r": [
     "ba"
@@ -391,7 +391,7 @@
   {
    "k": "beg",
    "t": "Kompetenzniveau",
-   "d": "Stufe, auf der eine Kompetenz gezeigt wird, etwa Grundlagen, Sicher, Fortgeschritten, Gestaltend.",
+   "d": "Stufe, auf der eine Kompetenz gezeigt wird, viele Unternehmen arbeiten mit vier Stufen vom Einstieg bis zur Expertise.",
    "p": "Niveaus zeigen Entwicklung, nicht Wertigkeit; Ziel ist das Soll der Rolle, nicht das Maximum.",
    "r": [
     "km"
