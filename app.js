@@ -339,6 +339,7 @@ async function viewHostSetup() {
         <label class="field">Anzahl Fragen<select id="h-count"><option value="6">6 (Morgen-Check, ca. 5 Min.)</option><option value="8" selected>8</option><option value="12">12</option><option value="20">20</option><option value="0">alle ausgewählten</option></select></label>
         <label class="field">Reihenfolge<select id="h-order"><option value="mix" selected>gemischt</option><option value="seq">wie im Kurs</option></select></label>
         <label class="field">Bedenkzeit<select id="h-time"><option value="normal" selected>normal: 45 bis 120 Sekunden je nach Textlänge</option><option value="long">großzügig: 50 % mehr Zeit</option><option value="none">ohne Zeitlimit: du löst selbst auf</option></select></label>
+        <label class="field">Ton bei Zeitablauf<select id="h-sound"><option value="1" selected>an: Ticken in den letzten 5 Sekunden, Gong am Ende</option><option value="0">aus</option></select></label>
         <label class="field">Tempo-Bonus<select id="h-speed"><option value="1" selected>an: schnelle Antworten bringen bis zu 50 Extrapunkte</option><option value="0">aus: nur richtig zählt (z. B. bei Fristberechnungen)</option></select></label>
       </div>
       <div class="row"><button class="btn primary big" id="h-create">Spiel eröffnen</button><button class="link" id="h-back">Zurück</button></div>
@@ -374,12 +375,35 @@ async function viewHostSetup() {
       course: c.id, title, legal: c.legal || "", list: qs.map(q => q.id),
       speed: document.getElementById("h-speed").value === "1",
       timeMode: document.getElementById("h-time").value,
+      sound: document.getElementById("h-sound").value === "1",
       qi: -1, phase: "lobby", order: null, startedAt: 0, dur: 30,
       answers: {}, players: {}, results: null, updated: Date.now()
     };
     hostRun(G);
   };
 }
+
+
+// ---- Ton (nur Host-Ansicht): Web Audio, keine Audiodateien ----
+const SND = (() => {
+  let ctx = null;
+  const ac = () => { if (!ctx) { const C = window.AudioContext || window.webkitAudioContext; if (C) ctx = new C(); } if (ctx && ctx.state === "suspended") ctx.resume(); return ctx; };
+  document.addEventListener("pointerdown", () => { try { ac(); } catch {} }, {passive: true});
+  const tone = (f, t0, d, v = 0.18, type = "sine") => {
+    const c = ac(); if (!c) return;
+    const o = c.createOscillator(), g = c.createGain();
+    o.type = type; o.frequency.value = f;
+    g.gain.setValueAtTime(0.0001, c.currentTime + t0);
+    g.gain.exponentialRampToValueAtTime(v, c.currentTime + t0 + 0.015);
+    g.gain.exponentialRampToValueAtTime(0.0001, c.currentTime + t0 + d);
+    o.connect(g).connect(c.destination); o.start(c.currentTime + t0); o.stop(c.currentTime + t0 + d + 0.05);
+  };
+  return {
+    tick(last) { try { tone(last ? 1320 : 880, 0, 0.09, 0.12, "square"); } catch {} },
+    gong() { try { [[784, 0], [659, 0.22], [523, 0.44]].forEach(([f, t]) => { tone(f, t, 0.9, 0.22, "triangle"); tone(f * 2, t, 0.5, 0.05); }); } catch {} },
+    test() { this.gong(); }
+  };
+})();
 
 async function hostRun(G) {
   const course = await loadCourse(G.course);
@@ -486,7 +510,7 @@ async function hostRun(G) {
       const qq = q(); const rev = G.phase === "reveal";
       const counts = G.order.map(orig => Object.values(G.answers).filter(a => a.choice === orig).length);
       $app.innerHTML = top + `
-        <div class="bar"><span class="chip">Frage ${G.qi + 1} / ${G.list.length}</span><span class="chip" id="h-answered"></span>${rev ? "" : G.dur ? `<span class="chip" id="h-left"></span>` : `<span class="chip">ohne Zeitlimit</span>`}</div>
+        <div class="bar"><span class="chip">Frage ${G.qi + 1} / ${G.list.length}</span><span class="chip" id="h-answered"></span>${rev ? "" : G.dur ? `<span class="chip" id="h-left"></span>` : `<span class="chip">ohne Zeitlimit</span>`}${rev || !G.dur ? "" : `<button class="chip" id="h-snd" title="Ton an/aus" style="cursor:pointer;border:0">${G.sound !== false ? "🔊 Ton an" : "🔇 Ton aus"}</button>`}</div>
         ${rev || !G.dur ? "" : `<div class="timer"><i id="h-bar"></i></div>`}
         <section class="card"><div class="qtext">${esc(qq.q)}</div></section>
         <div class="answers">${G.order.map((orig, pos) => `
@@ -501,8 +525,17 @@ async function hostRun(G) {
         document.getElementById("h-next2").onclick = next;
       } else {
         document.getElementById("h-reveal").onclick = reveal;
+        const sb = document.getElementById("h-snd");
+        if (sb) sb.onclick = () => { G.sound = G.sound === false; save(); sb.textContent = G.sound ? "🔊 Ton an" : "🔇 Ton aus"; if (G.sound) SND.tick(false); };
+        let lastSec = null;
         const tick = () => {
           const left = Math.max(0, G.startedAt + G.dur * 1000 - Date.now());
+          const sec = Math.ceil(left / 1000);
+          if (G.sound !== false && sec !== lastSec && lastSec !== null) {
+            if (sec >= 1 && sec <= 5) SND.tick(sec === 1);
+            if (sec === 0) SND.gong();
+          }
+          lastSec = sec;
           const bar = document.getElementById("h-bar"), lab = document.getElementById("h-left");
           if (bar) bar.style.width = Math.min(100, 100 * left / (G.dur * 1000)) + "%";
           if (lab) lab.textContent = Math.ceil(left / 1000) + " s";
