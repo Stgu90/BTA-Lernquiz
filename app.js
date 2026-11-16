@@ -706,7 +706,7 @@ function soloPlay(c, list, roundId) {
     const q = list[S.i]; S.order = shuffle(q.o.map((_, i) => i)); S.locked = false; S.t0 = performance.now(); S.hint = false;
     const dur = durFor(q, "normal") * 1000;
     $app.innerHTML = `
-      <div class="bar"><span class="chip">${esc(label)} · Frage ${S.i + 1} / ${list.length}</span><span class="chip">Serie ${S.streak}</span><span class="chip">${fmt(S.score)} Punkte</span></div>
+      <div class="bar"><span class="chip">${esc(label)} · Frage ${S.i + 1} / ${list.length}</span><span class="chip">Serie ${S.streak}</span><span class="chip">${fmt(S.score)} Punkte</span><button class="chip" id="s-snd" title="Ton an/aus" style="cursor:pointer;border:0">${store.get("btaq-sound", true) ? "🔊 Ton an" : "🔇 Ton aus"}</button></div>
       <div class="timer"><i id="s-bar"></i></div>
       <section class="card"><div class="qtext">${esc(q.q)}</div></section>
       <div id="s-hint">${hintBox(q, false)}</div>
@@ -715,9 +715,18 @@ function soloPlay(c, list, roundId) {
     $app.querySelectorAll(".ans").forEach(b => b.onclick = () => answer(Number(b.dataset.o)));
     const hb = document.getElementById("hint-btn");
     if (hb) hb.onclick = () => { S.hint = true; document.getElementById("s-hint").innerHTML = hintBox(q, true); };
+    const sb = document.getElementById("s-snd");
+    if (sb) sb.onclick = () => { const on = !store.get("btaq-sound", true); store.set("btaq-sound", on); sb.textContent = on ? "🔊 Ton an" : "🔇 Ton aus"; if (on) SND.tick(false); };
+    let lastSec = null;
     const tick = () => {
       const left = Math.max(0, dur - (performance.now() - S.t0));
       const bar = document.getElementById("s-bar"); if (bar) bar.style.width = (100 * left / dur) + "%";
+      const sec = Math.ceil(left / 1000);
+      if (store.get("btaq-sound", true) && lastSec !== null && sec !== lastSec) {
+        if (sec >= 1 && sec <= 5) SND.tick(sec === 1);
+        if (sec === 0) SND.gong();
+      }
+      lastSec = sec;
       if (left <= 0) return answer(null);
       S.raf = requestAnimationFrame(tick);
     };
