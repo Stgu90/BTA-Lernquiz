@@ -6,56 +6,56 @@
  "rounds": [
   {
    "id": "bm",
-   "label": "Bewerbermanagement",
-   "title": "Vom Personalbedarf zur Übergabe",
+   "label": "Mi 11.11.",
+   "title": "Koordination Bewerbermanagement",
    "color": "#D96FA8"
   },
   {
    "id": "sv",
-   "label": "SV-Recht",
-   "title": "Sozialversicherung und Arbeitsrecht",
+   "label": "Mi 18.11.",
+   "title": "Sozialversicherung & arbeitsrechtliche Grundlagen",
    "color": "#6FBF73"
   },
   {
    "id": "t1",
-   "label": "Rechtstag 1",
-   "title": "Beginn von Arbeitsverhältnissen",
+   "label": "Mo 23.11.",
+   "title": "Arbeitsrecht: Beginn von Arbeitsverhältnissen",
    "color": "#E8380D"
   },
   {
    "id": "t2",
-   "label": "Rechtstag 2",
-   "title": "Vertragsinhalte und Änderungen",
+   "label": "Di 24.11.",
+   "title": "Arbeitsrecht: Vertragsinhalte & Änderungen",
    "color": "#E9A23B"
   },
   {
    "id": "t3",
-   "label": "Rechtstag 3",
-   "title": "Beendigung",
+   "label": "Mi 25.11.",
+   "title": "Arbeitsrecht: Beendigung",
    "color": "#3FA7A0"
   },
   {
    "id": "t4",
-   "label": "Rechtstag 4",
-   "title": "Arbeitszeit, Urlaub, Abwesenheiten",
+   "label": "Do 26.11.",
+   "title": "Arbeitszeit, Urlaub & Abwesenheiten",
    "color": "#8A95E8"
   },
   {
    "id": "hs",
-   "label": "HR-Service",
-   "title": "Betreuung, Triage, Wiedervorlage",
+   "label": "Mo 30.11.",
+   "title": "HR-Service & Mitarbeitendenbetreuung",
    "color": "#5AB4E5"
   },
   {
    "id": "ki",
-   "label": "HR-Systeme & KI",
-   "title": "Daten, Korrekturen, KI-Verordnung",
+   "label": "Di 01.12.",
+   "title": "HR-Systeme, HR-Software & KI",
    "color": "#C9B458"
   },
   {
    "id": "bw",
-   "label": "Bescheinigungswesen",
-   "title": "Externe Stellen, Pfändung, Zeugnis",
+   "label": "Mi 02.12.",
+   "title": "Bescheinigungswesen & externe Stellen",
    "color": "#B38AE0"
   }
  ],
