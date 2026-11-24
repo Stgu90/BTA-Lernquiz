@@ -396,6 +396,15 @@
   },
   {
    "k": "beg",
+   "t": "Formulararbeitsvertrag (Formularvertrag)",
+   "d": "Vom Arbeitgeber vorformulierter Arbeitsvertrag, der für viele gleich verwendet wird – etwa die Vorlage aus dem HR-System, in die nur Name, Start und Gehalt eingetragen werden.",
+   "p": "Seine Klauseln gelten als AGB und unterliegen der AGB-Kontrolle (§§ 305 ff. BGB); ausgenommen sind nur wirklich ausgehandelte Klauseln.",
+   "r": [
+    "t2"
+   ]
+  },
+  {
+   "k": "beg",
    "t": "Änderungskündigung",
    "d": "Kündigung, verbunden mit dem Angebot, zu geänderten Bedingungen weiterzuarbeiten (§ 2 KSchG).",
    "p": "Die Person kann annehmen, ablehnen oder unter Vorbehalt annehmen und klagen; Vorbehalt spätestens drei Wochen nach Zugang.",
