@@ -29,6 +29,12 @@
    "color": "#E9A23B"
   },
   {
+   "id": "t3c",
+   "label": "Mi 25.11. · 08:30",
+   "title": "Morgen-Check vor der Beendigung",
+   "color": "#2B8C86"
+  },
+  {
    "id": "t3",
    "label": "Mi 25.11.",
    "title": "Arbeitsrecht: Beendigung",
@@ -1051,6 +1057,66 @@
    "s": "Skript Tag 2 · § 307 Bürgerliches Gesetzbuch · Rechtsprechung des Bundesarbeitsgerichts"
   },
   {
+   "id": "t3c-1",
+   "round": "t3c",
+   "q": "Eine Mitarbeiterin ist seit fünf Monaten beschäftigt. Vereinbart waren drei Monate Probezeit. Jetzt kündigt der Arbeitgeber. Was gilt?",
+   "o": [
+    "Zwei Wochen Frist, weil sie noch neu ist.",
+    "Normale Kündigungsfrist, aber noch kein Kündigungsgrund nach dem Kündigungsschutzgesetz nötig.",
+    "Der Arbeitgeber braucht einen Kündigungsgrund, weil die Probezeit vorbei ist.",
+    "Eine Kündigung ist erst nach sechs Monaten möglich."
+   ],
+   "a": 1,
+   "h": "Zwei Uhren: Wie schnell – und ob ein Grund nötig ist.",
+   "x": "Die Probezeit regelt, wie schnell gekündigt werden kann: zwei Wochen, aber nur während der vereinbarten Probezeit. Die ist hier vorbei, also gilt die normale Frist von vier Wochen zum 15. oder Monatsende. Ob ein Grund nötig ist, entscheidet die Wartezeit des Kündigungsschutzgesetzes: Das Arbeitsverhältnis muss länger als sechs Monate bestehen. Das ist noch nicht der Fall. Merksatz: Probezeit = wie schnell, Wartezeit = ob mit Grund.",
+   "s": "§ 622 Abs. 3 Bürgerliches Gesetzbuch · § 1 Abs. 1 Kündigungsschutzgesetz"
+  },
+  {
+   "id": "t3c-2",
+   "round": "t3c",
+   "q": "Im Arbeitsvertrag steht „Teamleiter Plattform-Engineering“. Er soll künftig ohne Führungsaufgabe als Senior Engineer arbeiten. Reicht eine Anweisung des Arbeitgebers?",
+   "o": [
+    "Ja, der Arbeitgeber bestimmt die Tätigkeit immer selbst.",
+    "Ja, wenn das Gehalt gleich bleibt.",
+    "Nein, die Tätigkeit steht im Vertrag – nötig ist eine Vertragsänderung.",
+    "Nein, eine Änderung ist erst nach einer Abmahnung möglich."
+   ],
+   "a": 2,
+   "h": "Was im Vertrag festgelegt ist, kann eine Weisung nicht ändern.",
+   "x": "Das Weisungsrecht füllt aus, was der Vertrag offenlässt. Ist die Tätigkeit konkret vereinbart, lässt sie sich nur mit Einverständnis über einen Änderungsvertrag ändern – oder ohne Einverständnis über eine Änderungskündigung. Ein gleich bleibendes Gehalt ändert daran nichts.",
+   "s": "§ 106 Gewerbeordnung · Skript Vertragsinhalte und Änderungen, Kapitel 2 und 3"
+  },
+  {
+   "id": "t3c-3",
+   "round": "t3c",
+   "q": "Ein neuer Änderungsvertrag erwähnt eine frühere Vereinbarung nicht, in der die Anrechnung von Beschäftigungszeit geregelt ist. Was gilt?",
+   "o": [
+    "Die frühere Vereinbarung gilt weiter, solange sie nicht ausdrücklich aufgehoben wird.",
+    "Die frühere Vereinbarung ist automatisch weggefallen.",
+    "Sie gilt nur noch, wenn der Betriebsrat zustimmt.",
+    "Sie gilt nur, wenn sie im Personalsystem eingetragen ist."
+   ],
+   "a": 0,
+   "h": "Was nicht aufgehoben wird, bleibt bestehen.",
+   "x": "Eine Vereinbarung fällt nicht weg, nur weil ein späterer Vertrag sie nicht erneut erwähnt. Sie gilt weiter, bis sie ausdrücklich aufgehoben oder ersetzt wird. Trotzdem schreibt HR einen klarstellenden Satz hinein („bleibt unverändert bestehen“) – der verhindert Streit darüber, was gemeint war. Vorsicht bei Klauseln wie „ersetzt alle früheren Vereinbarungen“.",
+   "s": "Skript Vertragsinhalte und Änderungen, Abschnitt 3.2"
+  },
+  {
+   "id": "t3c-4",
+   "round": "t3c",
+   "q": "Ein Mitarbeiter ist mit dem Wechsel in ein anderes Team und in eine niedrigere Entgeltgruppe einverstanden. Das Unternehmen hat einen Betriebsrat und mehr als 20 Wahlberechtigte. Was gilt für den Betriebsrat?",
+   "o": [
+    "Nichts, das Einverständnis des Mitarbeiters genügt.",
+    "Es reicht, ihn nachträglich zu informieren.",
+    "Er muss vorher unterrichtet und um Zustimmung gebeten werden.",
+    "Er muss nur bei einer Kündigung beteiligt werden."
+   ],
+   "a": 2,
+   "h": "Zustimmung der Person und Mitbestimmung sind zwei getrennte Prüfungen.",
+   "x": "Versetzung und Umgruppierung sind personelle Einzelmaßnahmen. Der Betriebsrat muss vorher unterrichtet und um seine Zustimmung gebeten werden; bloßes Anzeigen reicht nicht. Das Einverständnis der beschäftigten Person ersetzt diese Mitbestimmung nicht. Anders bei einer Kündigung: Dort wird der Betriebsrat angehört, eine Zustimmung ist nicht erforderlich.",
+   "s": "§§ 95 Abs. 3, 99, 102 Betriebsverfassungsgesetz"
+  },
+  {
    "id": "t3-1",
    "round": "t3",
    "q": "Eine Führungskraft möchte eine Kündigung per E-Mail verschicken – mit qualifizierter elektronischer Signatur, also der sichersten digitalen Unterschrift. Ist die Kündigung damit wirksam?",
@@ -1098,7 +1164,7 @@
   {
    "id": "t3-4",
    "round": "t3",
-   "q": "Andreas Kienzle arbeitet seit 2021 bei NOVARIS. In der Übernahmevereinbarung steht, dass seine Zeit beim Vorgänger seit 2002 für die Kündigungsfristen angerechnet wird. Welche Frist gilt, wenn der Arbeitgeber im Oktober 2026 kündigt?",
+   "q": "Andreas Kienzle arbeitet seit 2021 bei NOVARIS. In der Übernahmevereinbarung steht, dass seine Betriebszugehörigkeit seit 2002 in vollem Umfang angerechnet wird, insbesondere für Kündigungsfristen. Welche Frist gilt, wenn der Arbeitgeber im November 2026 kündigt?",
    "o": [
     "Zwei Monate zum Monatsende",
     "Vier Wochen zum 15. oder zum Monatsende",
@@ -1107,7 +1173,7 @@
    ],
    "a": 2,
    "h": "Zähle die angerechneten Jahre mit – nicht nur die Zeit bei NOVARIS.",
-   "x": "Mit der vereinbarten Anrechnung kommt Herr Kienzle auf über 20 Jahre. Für Arbeitgeberkündigungen gilt dann die längste gesetzliche Frist: sieben Monate zum Ende eines Kalendermonats. Würde die Kündigung am 30. Oktober 2026 zugehen, endete das Arbeitsverhältnis am 31. Mai 2027. Ohne die Anrechnungsklausel wären es nur fünf Jahre und damit zwei Monate. Eine lange Frist bedeutet aber nicht, dass er unkündbar ist.",
+   "x": "Mit der vereinbarten Anrechnung kommt Herr Kienzle auf über 20 Jahre. Für Arbeitgeberkündigungen gilt dann die längste gesetzliche Frist: sieben Monate zum Ende eines Kalendermonats. Würde die Kündigung am 30. November 2026 zugehen, endete das Arbeitsverhältnis am 30. Juni 2027. Ohne die Anrechnungsklausel wären es nur fünf Jahre und damit zwei Monate. Eine lange Frist bedeutet aber nicht, dass er unkündbar ist.",
    "s": "Skript Tag 3 · 2.2 Frist für Andreas Kienzle · § 622 Absatz 2 Bürgerliches Gesetzbuch"
   },
   {
