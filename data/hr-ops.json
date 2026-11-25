@@ -41,6 +41,12 @@
    "color": "#3FA7A0"
   },
   {
+   "id": "t4c",
+   "label": "Do 26.11. · 08:30",
+   "title": "Morgen-Check: Beendigung",
+   "color": "#2B8C86"
+  },
+  {
    "id": "t4",
    "label": "Do 26.11.",
    "title": "Arbeitszeit, Urlaub & Abwesenheiten",
@@ -1415,6 +1421,66 @@
    "h": "Betriebsratsmitglieder sollen ihr Amt ohne Angst vor Kündigung ausüben können.",
    "x": "Mitglieder des Betriebsrats haben einen besonderen Kündigungsschutz. Eine ordentliche Kündigung ist während der Amtszeit und grundsätzlich ein Jahr danach ausgeschlossen (Ausnahme: Stilllegung des Betriebs). Eine fristlose Kündigung aus wichtigem Grund ist möglich, braucht aber die Zustimmung des Betriebsrats. Verweigert er sie, kann das Arbeitsgericht die Zustimmung ersetzen. Häufiges Zuspätkommen wird die hohe Hürde für eine fristlose Kündigung meist nicht erreichen.",
    "s": "Skript Tag 3 · § 15 Kündigungsschutzgesetz · § 103 Betriebsverfassungsgesetz"
+  },
+  {
+   "id": "t4c-1",
+   "round": "t4c",
+   "q": "Eine Teamleiterin schickt einem Mitarbeiter die Kündigung als PDF per E-Mail, unterschrieben mit eingescannter Unterschrift. Was gilt?",
+   "o": [
+    "Die Kündigung ist wirksam, weil sie unterschrieben ist.",
+    "Die Kündigung ist unwirksam, weil sie auf Papier mit Originalunterschrift erklärt werden muss.",
+    "Die Kündigung ist wirksam, wenn der Mitarbeiter den Empfang bestätigt.",
+    "Die Kündigung ist nur mit qualifizierter elektronischer Signatur unwirksam."
+   ],
+   "a": 1,
+   "h": "Bei der Beendigung hat der Gesetzgeber bewusst an Papier festgehalten.",
+   "x": "Eine Kündigung braucht die Schriftform: Papier mit Originalunterschrift einer berechtigten Person. Die elektronische Form ist ausdrücklich ausgeschlossen. Eine Kündigung per E-Mail, Fax, Scan oder Messenger ist deshalb nichtig. Weil die Kündigung nicht schriftlich ist, beginnt auch die dreiwöchige Klagefrist nicht.",
+   "s": "§ 623 Bürgerliches Gesetzbuch · § 4 Kündigungsschutzgesetz"
+  },
+  {
+   "id": "t4c-2",
+   "round": "t4c",
+   "q": "Andreas Kienzle ist seit 2021 bei NOVARIS. Eine Übernahmevereinbarung rechnet seine Zeit seit 2002 für Kündigungsfristen an. Eine Arbeitgeberkündigung ginge ihm am 30.11.2026 zu. Zu welchem Termin endet das Arbeitsverhältnis?",
+   "o": [
+    "31.01.2027",
+    "31.05.2027",
+    "30.06.2027",
+    "31.12.2026"
+   ],
+   "a": 2,
+   "h": "24 Jahre – welche Stufe der Staffel? Und der Zugangstag zählt nicht mit.",
+   "x": "Durch die Anrechnung zählen 24 Jahre. Ab 20 Jahren beträgt die Frist für den Arbeitgeber sieben Monate zum Monatsende. Die Frist beginnt am 1. Dezember und endet am 30. Juni 2027 – das ist zugleich ein Monatsende. Ohne die Übernahmevereinbarung wären es nur zwei Monate gewesen, also der 31. Januar 2027.",
+   "s": "§ 622 Abs. 2 Nr. 7 Bürgerliches Gesetzbuch · §§ 187, 188 Bürgerliches Gesetzbuch"
+  },
+  {
+   "id": "t4c-3",
+   "round": "t4c",
+   "q": "Ein schwerbehinderter Mitarbeiter ist seit vier Monaten im Unternehmen. Der Arbeitgeber will kündigen. Was muss HR trotzdem tun?",
+   "o": [
+    "Die Zustimmung des Integrationsamts einholen.",
+    "Eine Sozialauswahl durchführen.",
+    "Die Schwerbehindertenvertretung beteiligen und den Betriebsrat anhören.",
+    "Nichts – in den ersten sechs Monaten gilt kein besonderer Schutz."
+   ],
+   "a": 2,
+   "h": "Zwei Dinge fallen in den ersten sechs Monaten weg, die Beteiligung nicht.",
+   "x": "In den ersten sechs Monaten gilt das Kündigungsschutzgesetz noch nicht, deshalb gibt es keine Sozialauswahl. Auch die Zustimmung des Integrationsamts ist erst nach sechs Monaten nötig. Die Schwerbehindertenvertretung muss aber vor jeder Kündigung beteiligt werden, sonst ist sie unwirksam – auch in der Wartezeit. Der Betriebsrat ist wie bei jeder Kündigung anzuhören. Außerdem meldet der Arbeitgeber die Kündigung innerhalb von vier Tagen dem Integrationsamt.",
+   "s": "§ 178 Abs. 2 SGB IX · § 173 Abs. 1 Nr. 1 und Abs. 4 SGB IX · § 102 Betriebsverfassungsgesetz · BAG 29.01.2026 – 2 AZR 128/25"
+  },
+  {
+   "id": "t4c-4",
+   "round": "t4c",
+   "q": "Im Gespräch über einen Aufhebungsvertrag fragt ein Mitarbeiter: „Bekomme ich dann sofort Arbeitslosengeld?“ Was antwortet HR?",
+   "o": [
+    "„Ja, bei einem Aufhebungsvertrag gibt es keine Sperrzeit.“",
+    "„Nein, mit Aufhebungsvertrag gibt es nie Arbeitslosengeld.“",
+    "„Das entscheidet die Agentur für Arbeit. Bitte lassen Sie sich dort vorher beraten.“",
+    "„Wenn Sie heute unterschreiben, kümmern wir uns darum.“"
+   ],
+   "a": 2,
+   "h": "Wer entscheidet über das Arbeitslosengeld – und was darf HR zusagen?",
+   "x": "Wer an einem Aufhebungsvertrag mitwirkt, riskiert eine Sperrzeit. Wird außerdem die Kündigungsfrist unterschritten und eine Abfindung gezahlt, kann der Anspruch ruhen. Ob und wie lange, entscheidet allein die Agentur für Arbeit. HR macht deshalb keine Zusage, sondern empfiehlt eine Beratung vor der Unterschrift.",
+   "s": "§ 159 SGB III (Sperrzeit) · § 158 SGB III (Ruhen)"
   },
   {
    "id": "t4-1",
