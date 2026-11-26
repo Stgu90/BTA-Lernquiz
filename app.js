@@ -264,7 +264,7 @@ function viewJoin({pin, nick}) {
       $app.innerHTML = head + `<section class="card center"><h2>Du bist dabei.</h2><p class="muted">Gleich geht es los. Schau auf die geteilte Präsentation.</p><p class="small muted">${(st.players || []).length} im Spiel</p>${st.rules ? `<p class="small"><strong>So gibt es Punkte:</strong> ${esc(st.rules)}</p>` : ""}
         <p class="small">Bis die Zeit abläuft, kannst du deine Antwort noch ändern.</p>
         <div class="row"><button class="btn" id="p-test">🔊 Ton testen</button></div><p class="small muted">Kein Ton? Lautstärke prüfen; am iPhone den Stummschalter ausschalten.</p></section>`;
-      document.getElementById("p-test").onclick = () => SND.test();
+      soundTestUI("p-test");
     } else if (st.phase === "question") {
       const q = st.q; const answered = P.sentFor === st.qi; const open = () => Date.now() <= P.deadline + 300;
       $app.innerHTML = head + `
@@ -424,32 +424,78 @@ async function viewHostSetup() {
 }
 
 
-// ---- Ton (Spielleitung und Mitspielende): Web Audio, keine Audiodateien ----
+// ---- Ton (Spielleitung und Mitspielende) ----
+// Klänge werden einmal als WAV im Browser erzeugt und über <audio> abgespielt.
+// Das ist robuster als reines Web Audio (z. B. iPhone mit Stummschalter, manche Bluetooth-Setups).
 const SND = (() => {
-  let ctx = null;
-  const ac = () => { if (!ctx) { const C = window.AudioContext || window.webkitAudioContext; if (C) ctx = new C(); } if (ctx && ctx.state !== "running") ctx.resume().catch(() => {}); return ctx; };
-  // Browser geben Ton erst nach einer Nutzeraktion frei: bei jedem Klick/Tippen/Tastendruck entsperren
-  const unlock = () => { try { const c = ac(); if (!c) return; const b = c.createBuffer(1, 1, 22050), s = c.createBufferSource(); s.buffer = b; s.connect(c.destination); s.start(0); } catch {} };
-  ["pointerdown", "touchend", "keydown"].forEach(ev => document.addEventListener(ev, unlock, {passive: true}));
-  const tone = (f, t0, d, v = 0.18, type = "sine") => {
-    const c = ac(); if (!c) return;
-    const o = c.createOscillator(), g = c.createGain();
-    o.type = type; o.frequency.value = f;
-    g.gain.setValueAtTime(0.0001, c.currentTime + t0);
-    g.gain.exponentialRampToValueAtTime(v, c.currentTime + t0 + 0.015);
-    g.gain.exponentialRampToValueAtTime(0.0001, c.currentTime + t0 + d);
-    o.connect(g).connect(c.destination); o.start(c.currentTime + t0); o.stop(c.currentTime + t0 + d + 0.05);
+  const RATE = 22050;
+  const synth = (notes, len) => {
+    const n = Math.floor(RATE * len), buf = new Float32Array(n);
+    for (const [f, t0, d, v, type] of notes) {
+      const s0 = Math.floor(t0 * RATE), s1 = Math.min(n, Math.floor((t0 + d) * RATE));
+      for (let i = s0; i < s1; i++) {
+        const t = (i - s0) / RATE, ph = 2 * Math.PI * f * t;
+        let w = type === "square" ? Math.sign(Math.sin(ph)) * 0.6 : type === "tri" ? 2 / Math.PI * Math.asin(Math.sin(ph)) : Math.sin(ph);
+        const env = Math.min(1, t / 0.008) * Math.exp(-t / (d / 3.5));
+        buf[i] += w * v * env;
+      }
+    }
+    const bytes = new DataView(new ArrayBuffer(44 + n * 2));
+    const str = (o, x) => [...x].forEach((c, i) => bytes.setUint8(o + i, c.charCodeAt(0)));
+    str(0, "RIFF"); bytes.setUint32(4, 36 + n * 2, true); str(8, "WAVEfmt "); bytes.setUint32(16, 16, true);
+    bytes.setUint16(20, 1, true); bytes.setUint16(22, 1, true); bytes.setUint32(24, RATE, true); bytes.setUint32(28, RATE * 2, true);
+    bytes.setUint16(32, 2, true); bytes.setUint16(34, 16, true); str(36, "data"); bytes.setUint32(40, n * 2, true);
+    for (let i = 0; i < n; i++) bytes.setInt16(44 + i * 2, Math.max(-1, Math.min(1, buf[i])) * 32000, true);
+    return URL.createObjectURL(new Blob([bytes], {type: "audio/wav"}));
   };
+  let S = null;
+  const sounds = () => S || (S = {
+    tick: synth([[880, 0, 0.12, 0.55, "square"]], 0.2),
+    last: synth([[1320, 0, 0.14, 0.6, "square"]], 0.22),
+    p0: synth([[440, 0, 0.18, 0.35, "tri"], [220, 0, 0.25, 0.35, "sine"]], 0.3),
+    p1: synth([[330, 0, 0.18, 0.35, "tri"], [165, 0, 0.25, 0.35, "sine"]], 0.3),
+    gong: synth([[784, 0, 0.9, 0.45, "tri"], [659, 0.22, 0.9, 0.45, "tri"], [523, 0.44, 1.1, 0.5, "tri"], [1568, 0, 0.5, 0.12, "sine"]], 1.7),
+    silent: synth([[1, 0, 0.05, 0, "sine"]], 0.05)
+  });
+  let ok = null; // null = unbekannt, true = Abspielen klappt, false = vom Browser blockiert
+  const EL = {}; let primed = false;
+  const el = k => EL[k] || (EL[k] = Object.assign(new Audio(sounds()[k]), {preload: "auto"}));
+  const play = (k, cb) => {
+    try {
+      const a = el(k); a.muted = false; a.volume = 1; try { a.currentTime = 0; } catch {}
+      const pr = a.play();
+      if (pr && pr.then) pr.then(() => { ok = true; cb && cb(true); }).catch(() => { ok = false; cb && cb(false); });
+      else { ok = true; cb && cb(true); }
+    } catch { ok = false; cb && cb(false); }
+  };
+  // Browser (v. a. iPhone) geben jedes Audio-Element erst nach einer Nutzeraktion frei:
+  // beim ersten Klick/Tippen alle Klänge einmal stumm anspielen
+  const unlock = () => {
+    if (primed) return; primed = true;
+    Object.keys(sounds()).forEach(k => { const a = el(k); a.muted = true; const pr = a.play();
+      if (pr && pr.then) pr.then(() => { a.pause(); a.currentTime = 0; a.muted = false; ok = true; }).catch(() => { a.muted = false; primed = false; });
+      else { a.pause(); a.muted = false; } });
+  };
+  ["pointerdown", "touchend", "keydown"].forEach(ev => document.addEventListener(ev, unlock, {passive: true}));
   return {
-    tick(last) { try { tone(last ? 1320 : 880, 0, 0.12, 0.25, "square"); } catch {} },
-    pulse(i) { try { tone(i % 2 ? 330 : 440, 0, 0.18, 0.12, "triangle"); tone(i % 2 ? 165 : 220, 0, 0.25, 0.10, "sine"); } catch {} },
+    tick(last) { play(last ? "last" : "tick"); },
+    pulse(i) { play(i % 2 ? "p1" : "p0"); },
+    gong() { play("gong"); },
     // pro Sekunde aufrufen: leiser Takt während der Frage, Ticken in den letzten 5 Sekunden, Gong am Ende
     second(sec) { if (sec === 0) this.gong(); else if (sec <= 5) this.tick(sec === 1); else this.pulse(sec); },
-    blocked() { return !ctx || ctx.state !== "running"; },
-    gong() { try { [[784, 0], [659, 0.22], [523, 0.44]].forEach(([f, t]) => { tone(f, t, 0.9, 0.35, "triangle"); tone(f * 2, t, 0.5, 0.08); }); } catch {} },
-    test() { this.gong(); }
+    test(cb) { play("gong", cb); },
+    blocked() { return ok === false; }
   };
 })();
+const soundTestUI = btnId => {
+  const b = document.getElementById(btnId); if (!b) return;
+  b.onclick = () => SND.test(ok => {
+    let m = b.parentElement.querySelector(".snd-msg");
+    if (!m) { m = document.createElement("p"); m.className = "small snd-msg"; b.parentElement.after(m); }
+    m.textContent = ok ? "Der Browser spielt den Gong ab. Hörst du nichts: Lautstärke, Ausgabegerät (Kopfhörer/Headset) und Stummschaltung des Tabs prüfen."
+                       : "Der Browser hat den Ton blockiert. Bitte einmal in die Seite klicken und erneut testen; ggf. in den Website-Einstellungen Ton erlauben.";
+  });
+};
 
 async function hostRun(G) {
   const course = await loadCourse(G.course);
@@ -558,7 +604,7 @@ async function hostRun(G) {
         <div class="row"><button class="btn primary big" id="h-start">Start</button><button class="btn" id="h-copy">Link kopieren</button><button class="btn" id="h-test">🔊 Ton testen</button><button class="link" id="h-quit">Spiel beenden</button></div>`;
       renderPlayers();
       document.getElementById("h-start").onclick = next;
-      document.getElementById("h-test").onclick = () => SND.test();
+      soundTestUI("h-test");
       document.getElementById("h-copy").onclick = async e => { try { await navigator.clipboard.writeText(joinUrl); e.target.textContent = "Kopiert"; } catch { e.target.textContent = "Bitte manuell kopieren"; } };
     } else if (G.phase === "question" || G.phase === "reveal") {
       const qq = q(); const rev = G.phase === "reveal";
