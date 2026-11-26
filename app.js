@@ -379,7 +379,7 @@ async function viewHostSetup() {
         <label class="field">Anzahl Fragen<select id="h-count"><option value="6">6 (Morgen-Check, ca. 5 Min.)</option><option value="8" selected>8</option><option value="12">12</option><option value="20">20</option><option value="0">alle ausgewählten</option></select></label>
         <label class="field">Reihenfolge<select id="h-order"><option value="mix" selected>gemischt</option><option value="seq">wie im Kurs</option></select></label>
         <label class="field">Bedenkzeit<select id="h-time"><option value="normal" selected>normal: 45 bis 120 Sekunden je nach Textlänge</option><option value="long">großzügig: 50 % mehr Zeit</option><option value="none">ohne Zeitlimit: du löst selbst auf</option></select></label>
-        <label class="field">Ton bei Zeitablauf<select id="h-sound"><option value="1" selected>an: leiser Takt, Ticken in den letzten 5 Sekunden, Gong am Ende</option><option value="0">aus</option></select></label>
+        <label class="field">Ton bei Zeitablauf<select id="h-sound"><option value="1" selected>an: Tick-Tack, die letzten 5 Sekunden heller, Gong am Ende</option><option value="0">aus</option></select></label>
         <label class="field">Tempo-Bonus<select id="h-speed"><option value="1" selected>an: schnelle Antworten bringen bis zu 50 Extrapunkte</option><option value="0">aus: nur richtig zählt (z. B. bei Fristberechnungen)</option></select></label>
       </div>
       <div class="row"><button class="btn primary big" id="h-create">Spiel eröffnen</button><button class="link" id="h-back">Zurück</button></div>
@@ -429,34 +429,45 @@ async function viewHostSetup() {
 // Das ist robuster als reines Web Audio (z. B. iPhone mit Stummschalter, manche Bluetooth-Setups).
 const SND = (() => {
   const RATE = 22050;
-  const synth = (notes, len) => {
+  // notes: [Frequenz, Start, Dauer, Lautstärke, Form, Abklingzeit]; Form: sine | tri | square | noise
+  const wavBytes = (notes, len) => {
     const n = Math.floor(RATE * len), buf = new Float32Array(n);
-    for (const [f, t0, d, v, type] of notes) {
+    let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 1073741823.5 - 1;
+    for (const [f, t0, d, v, type, dec] of notes) {
       const s0 = Math.floor(t0 * RATE), s1 = Math.min(n, Math.floor((t0 + d) * RATE));
       for (let i = s0; i < s1; i++) {
         const t = (i - s0) / RATE, ph = 2 * Math.PI * f * t;
-        let w = type === "square" ? Math.sign(Math.sin(ph)) * 0.6 : type === "tri" ? 2 / Math.PI * Math.asin(Math.sin(ph)) : Math.sin(ph);
-        const env = Math.min(1, t / 0.008) * Math.exp(-t / (d / 3.5));
+        const w = type === "noise" ? rnd() : type === "square" ? Math.sign(Math.sin(ph)) * 0.6 : type === "tri" ? 2 / Math.PI * Math.asin(Math.sin(ph)) : Math.sin(ph);
+        const env = Math.min(1, t / 0.004) * Math.exp(-t / (dec || d / 3.5)) * Math.min(1, (s1 - i) / (0.01 * RATE));
         buf[i] += w * v * env;
       }
     }
+    let peak = 0; for (let i = 0; i < n; i++) peak = Math.max(peak, Math.abs(buf[i]));
+    const g = peak > 0.95 ? 0.95 / peak : 1;
     const bytes = new DataView(new ArrayBuffer(44 + n * 2));
     const str = (o, x) => [...x].forEach((c, i) => bytes.setUint8(o + i, c.charCodeAt(0)));
     str(0, "RIFF"); bytes.setUint32(4, 36 + n * 2, true); str(8, "WAVEfmt "); bytes.setUint32(16, 16, true);
     bytes.setUint16(20, 1, true); bytes.setUint16(22, 1, true); bytes.setUint32(24, RATE, true); bytes.setUint32(28, RATE * 2, true);
     bytes.setUint16(32, 2, true); bytes.setUint16(34, 16, true); str(36, "data"); bytes.setUint32(40, n * 2, true);
-    for (let i = 0; i < n; i++) bytes.setInt16(44 + i * 2, Math.max(-1, Math.min(1, buf[i])) * 32000, true);
-    return URL.createObjectURL(new Blob([bytes], {type: "audio/wav"}));
+    for (let i = 0; i < n; i++) bytes.setInt16(44 + i * 2, Math.max(-1, Math.min(1, buf[i] * g)) * 32000, true);
+    return bytes;
   };
+  // Holzblock-Uhr: „tick“ und „tack“ im Wechsel
+  const wood = (f, v) => [[f, 0, 0.09, v, "sine", 0.018], [f * 2.76, 0, 0.05, v * 0.35, "sine", 0.008], [3000, 0, 0.015, v * 0.25, "noise", 0.004]];
+  // Gong: tiefer Grundton mit unharmonischen Obertönen, langes Ausklingen, weicher Schlag
+  const gong = [[98, 0, 4.2, 0.55, "sine", 1.6], [98 * 1.47, 0, 3.6, 0.32, "sine", 1.2], [98 * 2.09, 0, 3.0, 0.26, "sine", 0.9],
+    [98 * 2.56, 0, 2.4, 0.18, "sine", 0.7], [98 * 3.39, 0, 1.8, 0.12, "sine", 0.5], [98 * 4.17, 0, 1.2, 0.08, "sine", 0.35],
+    [196, 0, 3.0, 0.15, "sine", 1.0], [400, 0, 0.06, 0.18, "noise", 0.02]];
+  const DEFS = {
+    tick: [wood(1250, 0.9), 0.15], tack: [wood(950, 0.9), 0.15],
+    // letzte 5 Sekunden: heller, mit kurzem Glöckchen
+    last: [[...wood(1600, 1), [1760, 0, 0.25, 0.35, "sine", 0.08]], 0.3],
+    gong: [gong, 4.3],
+    silent: [[[1, 0, 0.05, 0, "sine"]], 0.05]
+  };
+  const synth = k => URL.createObjectURL(new Blob([wavBytes(...DEFS[k])], {type: "audio/wav"}));
   let S = null;
-  const sounds = () => S || (S = {
-    tick: synth([[880, 0, 0.12, 0.55, "square"]], 0.2),
-    last: synth([[1320, 0, 0.14, 0.6, "square"]], 0.22),
-    p0: synth([[440, 0, 0.18, 0.35, "tri"], [220, 0, 0.25, 0.35, "sine"]], 0.3),
-    p1: synth([[330, 0, 0.18, 0.35, "tri"], [165, 0, 0.25, 0.35, "sine"]], 0.3),
-    gong: synth([[784, 0, 0.9, 0.45, "tri"], [659, 0.22, 0.9, 0.45, "tri"], [523, 0.44, 1.1, 0.5, "tri"], [1568, 0, 0.5, 0.12, "sine"]], 1.7),
-    silent: synth([[1, 0, 0.05, 0, "sine"]], 0.05)
-  });
+  const sounds = () => S || (S = Object.fromEntries(Object.keys(DEFS).map(k => [k, synth(k)])));
   let ok = null; // null = unbekannt, true = Abspielen klappt, false = vom Browser blockiert
   const EL = {}; let primed = false;
   const el = k => EL[k] || (EL[k] = Object.assign(new Audio(sounds()[k]), {preload: "auto"}));
@@ -478,11 +489,11 @@ const SND = (() => {
   };
   ["pointerdown", "touchend", "keydown"].forEach(ev => document.addEventListener(ev, unlock, {passive: true}));
   return {
-    tick(last) { play(last ? "last" : "tick"); },
-    pulse(i) { play(i % 2 ? "p1" : "p0"); },
+    tick(last) { play("last"); },
+    pulse(i) { play(i % 2 ? "tack" : "tick"); },
     gong() { play("gong"); },
-    // pro Sekunde aufrufen: leiser Takt während der Frage, Ticken in den letzten 5 Sekunden, Gong am Ende
-    second(sec) { if (sec === 0) this.gong(); else if (sec <= 5) this.tick(sec === 1); else this.pulse(sec); },
+    // pro Sekunde aufrufen: Tick-Tack der Uhr, in den letzten 5 Sekunden heller, Gong am Ende
+    second(sec) { if (sec === 0) this.gong(); else if (sec <= 5) this.tick(true); else this.pulse(sec); },
     test(cb) { play("gong", cb); },
     blocked() { return ok === false; }
   };
