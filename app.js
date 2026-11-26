@@ -247,7 +247,7 @@ function viewJoin({pin, nick}) {
   hello();
   const helloTimer = setInterval(() => { if (!P.st || Date.now() - P.lastSeen > 6000) hello(); }, 3000);
 
-  function render() {
+  function render() { SND.stop();
     cancelAnimationFrame(P.raf);
     const st = P.st;
     if (!st) {
@@ -354,11 +354,11 @@ function viewJoin({pin, nick}) {
   const sndClick = e => {
     const b = e.target.closest && e.target.closest("#p-snd"); if (!b) return;
     const on = !store.get("btaq-sound", true); store.set("btaq-sound", on);
-    b.textContent = on ? "🔊 Ton an" : "🔇 Ton aus"; if (on) SND.tick(false);
+    b.textContent = on ? "🔊 Ton an" : "🔇 Ton aus"; if (on) SND.tick(false); else SND.stop();
   };
   $app.addEventListener("click", sndClick);
   render();
-  cleanup = () => { clearInterval(helloTimer); cancelAnimationFrame(P.raf); tx.close(); $app.removeEventListener("click", sndClick); };
+  cleanup = () => { clearInterval(helloTimer); cancelAnimationFrame(P.raf); tx.close(); $app.removeEventListener("click", sndClick); SND.stop(); };
 }
 
 /* ======================================================================
@@ -379,7 +379,7 @@ async function viewHostSetup() {
         <label class="field">Anzahl Fragen<select id="h-count"><option value="6">6 (Morgen-Check, ca. 5 Min.)</option><option value="8" selected>8</option><option value="12">12</option><option value="20">20</option><option value="0">alle ausgewählten</option></select></label>
         <label class="field">Reihenfolge<select id="h-order"><option value="mix" selected>gemischt</option><option value="seq">wie im Kurs</option></select></label>
         <label class="field">Bedenkzeit<select id="h-time"><option value="normal" selected>normal: 45 bis 120 Sekunden je nach Textlänge</option><option value="long">großzügig: 50 % mehr Zeit</option><option value="none">ohne Zeitlimit: du löst selbst auf</option></select></label>
-        <label class="field">Ton bei Zeitablauf<select id="h-sound"><option value="1" selected>an: Tick-Tack, die letzten 5 Sekunden heller, Gong am Ende</option><option value="0">aus</option></select></label>
+        <label class="field">Ton bei Zeitablauf<select id="h-sound"><option value="1" selected>an: entspannte Musik, die letzten 5 Sekunden Ticken, Gong am Ende</option><option value="0">aus</option></select></label>
         <label class="field">Tempo-Bonus<select id="h-speed"><option value="1" selected>an: schnelle Antworten bringen bis zu 50 Extrapunkte</option><option value="0">aus: nur richtig zählt (z. B. bei Fristberechnungen)</option></select></label>
       </div>
       <div class="row"><button class="btn primary big" id="h-create">Spiel eröffnen</button><button class="link" id="h-back">Zurück</button></div>
@@ -430,16 +430,16 @@ async function viewHostSetup() {
 const SND = (() => {
   const RATE = 22050;
   // notes: [Frequenz, Start, Dauer, Lautstärke, Form, Abklingzeit]; Form: sine | tri | square | noise
-  const wavBytes = (notes, len) => {
+  const wavBytes = (notes, len, wrap) => {
     const n = Math.floor(RATE * len), buf = new Float32Array(n);
     let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 1073741823.5 - 1;
     for (const [f, t0, d, v, type, dec] of notes) {
-      const s0 = Math.floor(t0 * RATE), s1 = Math.min(n, Math.floor((t0 + d) * RATE));
+      const s0 = Math.floor(t0 * RATE), s1 = wrap ? Math.floor((t0 + d) * RATE) : Math.min(n, Math.floor((t0 + d) * RATE));
       for (let i = s0; i < s1; i++) {
         const t = (i - s0) / RATE, ph = 2 * Math.PI * f * t;
         const w = type === "noise" ? rnd() : type === "square" ? Math.sign(Math.sin(ph)) * 0.6 : type === "tri" ? 2 / Math.PI * Math.asin(Math.sin(ph)) : Math.sin(ph);
         const env = Math.min(1, t / 0.004) * Math.exp(-t / (dec || d / 3.5)) * Math.min(1, (s1 - i) / (0.01 * RATE));
-        buf[i] += w * v * env;
+        buf[wrap ? i % n : i] += w * v * env;
       }
     }
     let peak = 0; for (let i = 0; i < n; i++) peak = Math.max(peak, Math.abs(buf[i]));
@@ -458,7 +458,27 @@ const SND = (() => {
   const gong = [[98, 0, 4.2, 0.55, "sine", 1.6], [98 * 1.47, 0, 3.6, 0.32, "sine", 1.2], [98 * 2.09, 0, 3.0, 0.26, "sine", 0.9],
     [98 * 2.56, 0, 2.4, 0.18, "sine", 0.7], [98 * 3.39, 0, 1.8, 0.12, "sine", 0.5], [98 * 4.17, 0, 1.2, 0.08, "sine", 0.35],
     [196, 0, 3.0, 0.15, "sine", 1.0], [400, 0, 0.06, 0.18, "noise", 0.02]];
+  // Entspannter Lo-Fi-Loop für die Bedenkzeit: 75 BPM, Fmaj7 – Em7 – Dm7 – Cmaj7, nahtlos wiederholbar
+  const lofi = (() => {
+    const B = 0.8, N = []; // Schlag = 0,8 s, Takt = 3,2 s, Loop = 12,8 s
+    const keys = (f, t, v, dec) => { N.push([f, t, dec * 3, v, "sine", dec], [f * 2, t, dec, v * 0.18, "sine", dec / 3], [f * 7.1, t, 0.12, v * 0.03, "sine", 0.03]); };
+    const chords = [[174.61, 220, 261.63, 329.63, 87.31], [164.81, 196, 246.94, 293.66, 82.41], [146.83, 174.61, 220, 261.63, 73.42], [130.81, 164.81, 196, 246.94, 65.41]];
+    chords.forEach((c, bar) => {
+      const t = bar * 4 * B;
+      c.slice(0, 4).forEach((f, i) => keys(f, t + i * 0.025, 0.11, 0.9));
+      c.slice(1, 4).forEach((f, i) => keys(f, t + 2.5 * B + i * 0.02, 0.06, 0.5));
+      N.push([c[4], t, 2.2, 0.32, "sine", 0.9], [c[4], t + 2 * B, 1.2, 0.2, "sine", 0.5]);
+      for (let k = 0; k < 4; k++) {
+        if (k % 2 === 0) N.push([58, t + k * B, 0.25, 0.32, "sine", 0.07]);
+        else N.push([1800, t + k * B, 0.15, 0.05, "noise", 0.04]);
+        N.push([7000, t + k * B, 0.05, 0.025, "noise", 0.012], [7000, t + (k + 0.62) * B, 0.04, 0.016, "noise", 0.01]);
+      }
+    });
+    [[523.25, 1], [440, 2.5], [392, 5], [329.63, 6.5], [392, 9], [440, 11.2]].forEach(([f, t]) => keys(f, t, 0.05, 0.6));
+    return N;
+  })();
   const DEFS = {
+    music: [lofi, 12.8, true],
     tick: [wood(1250, 0.9), 0.15], tack: [wood(950, 0.9), 0.15],
     // letzte 5 Sekunden: heller, mit kurzem Glöckchen
     last: [[...wood(1600, 1), [1760, 0, 0.25, 0.35, "sine", 0.08]], 0.3],
@@ -466,6 +486,7 @@ const SND = (() => {
     silent: [[[1, 0, 0.05, 0, "sine"]], 0.05]
   };
   const synth = k => URL.createObjectURL(new Blob([wavBytes(...DEFS[k])], {type: "audio/wav"}));
+  let musicOn = false;
   let S = null;
   const sounds = () => S || (S = Object.fromEntries(Object.keys(DEFS).map(k => [k, synth(k)])));
   let ok = null; // null = unbekannt, true = Abspielen klappt, false = vom Browser blockiert
@@ -490,10 +511,15 @@ const SND = (() => {
   ["pointerdown", "touchend", "keydown"].forEach(ev => document.addEventListener(ev, unlock, {passive: true}));
   return {
     tick(last) { play("last"); },
+    music() {
+      if (musicOn) return; musicOn = true;
+      try { const a = el("music"); a.loop = true; a.muted = false; a.volume = 0.8; const pr = a.play(); if (pr && pr.catch) pr.catch(() => { musicOn = false; }); } catch { musicOn = false; }
+    },
+    stop() { musicOn = false; try { const a = EL.music; if (a) { a.pause(); a.currentTime = 0; } } catch {} },
     pulse(i) { play(i % 2 ? "tack" : "tick"); },
     gong() { play("gong"); },
-    // pro Sekunde aufrufen: Tick-Tack der Uhr, in den letzten 5 Sekunden heller, Gong am Ende
-    second(sec) { if (sec === 0) this.gong(); else if (sec <= 5) this.tick(true); else this.pulse(sec); },
+    // pro Sekunde aufrufen: entspannte Musik während der Bedenkzeit, letzte 5 Sekunden Ticken, Gong am Ende
+    second(sec) { if (sec === 0) { this.stop(); this.gong(); } else if (sec <= 5) { this.stop(); this.tick(true); } else this.music(); },
     test(cb) { play("gong", cb); },
     blocked() { return ok === false; }
   };
@@ -599,7 +625,7 @@ async function hostRun(G) {
     const hints = Object.values(G.answers).filter(a => a.hint).length;
     if (el) el.textContent = Object.keys(G.answers).length + " von " + Object.keys(G.players).length + " haben geantwortet" + (hints ? " · " + hints + " mit Hinweis" : "");
   }
-  function render() {
+  function render() { SND.stop();
     clearInterval(tickTimer);
     const joinUrl = location.origin + location.pathname + "?pin=" + G.pin + (LOCAL ? "&local=1" : "");
     const top = `<div class="bar"><span class="chip">${esc(G.title)}</span><span class="chip">PIN ${esc(G.pin)}</span></div>`;
@@ -637,7 +663,7 @@ async function hostRun(G) {
       } else {
         document.getElementById("h-reveal").onclick = reveal;
         const sb = document.getElementById("h-snd");
-        if (sb) sb.onclick = () => { G.sound = G.sound === false; save(); sb.textContent = G.sound ? "🔊 Ton an" : "🔇 Ton aus"; if (G.sound) SND.tick(false); };
+        if (sb) sb.onclick = () => { G.sound = G.sound === false; save(); sb.textContent = G.sound ? "🔊 Ton an" : "🔇 Ton aus"; if (G.sound) SND.tick(false); else SND.stop(); };
         let lastSec = null;
         const tick = () => {
           const left = Math.max(0, G.startedAt + G.dur * 1000 - Date.now());
@@ -669,7 +695,7 @@ async function hostRun(G) {
     };
   }
   save(); render(); broadcast();
-  cleanup = () => { clearInterval(tickTimer); clearInterval(hbTimer); tx.close(); };
+  cleanup = () => { clearInterval(tickTimer); clearInterval(hbTimer); tx.close(); SND.stop(); };
 }
 
 /* ======================================================================
@@ -824,7 +850,7 @@ function soloPlay(c, list, roundId) {
     const hb = document.getElementById("hint-btn");
     if (hb) hb.onclick = () => { S.hint = true; document.getElementById("s-hint").innerHTML = hintBox(q, true); };
     const sb = document.getElementById("s-snd");
-    if (sb) sb.onclick = () => { const on = !store.get("btaq-sound", true); store.set("btaq-sound", on); sb.textContent = on ? "🔊 Ton an" : "🔇 Ton aus"; if (on) SND.tick(false); };
+    if (sb) sb.onclick = () => { const on = !store.get("btaq-sound", true); store.set("btaq-sound", on); sb.textContent = on ? "🔊 Ton an" : "🔇 Ton aus"; if (on) SND.tick(false); else SND.stop(); };
     let lastSec = null;
     const tick = () => {
       const left = Math.max(0, dur - (performance.now() - S.t0));
@@ -838,7 +864,7 @@ function soloPlay(c, list, roundId) {
     tick();
   }
   function answer(orig) {
-    if (S.locked) return; S.locked = true; cancelAnimationFrame(S.raf);
+    if (S.locked) return; S.locked = true; cancelAnimationFrame(S.raf); SND.stop();
     const q = list[S.i]; const ms = performance.now() - S.t0; const ok = orig === q.a;
     const pt = points(ok, ms, durFor(q, "normal") * 1000, S.streak, true, S.hint); const pts = pt.total;
     const hbtn = document.getElementById("hint-btn"); if (hbtn) hbtn.remove();
@@ -872,7 +898,7 @@ function soloPlay(c, list, roundId) {
     document.getElementById("s-menu").onclick = () => viewSoloCourse(c.id);
   }
   show();
-  cleanup = () => cancelAnimationFrame(S.raf);
+  cleanup = () => { cancelAnimationFrame(S.raf); SND.stop(); };
 }
 
 /* ---------- Start ---------- */
