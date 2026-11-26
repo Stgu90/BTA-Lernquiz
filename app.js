@@ -211,7 +211,11 @@ function viewJoin({pin, nick}) {
   let pid = null;
   try { pid = sessionStorage.getItem(pidKey); } catch {}
   if (!pid) { pid = uid(); try { sessionStorage.setItem(pidKey, pid); } catch {} }
-  const P = {pin, nick, pid, hostId: null, st: null, sentFor: null, myChoice: null, deadline: 0, raf: 0, lastSeen: 0};
+  const P = {pin, nick, pid, hostId: null, st: null, sentFor: null, myChoice: null, seq: 0, deadline: 0, raf: 0, lastSeen: 0, hist: {}, histGame: null};
+  const histKey = gid => "btaq-hist-" + pin + "-" + gid;
+  const loadHist = gid => { if (P.histGame === gid) return; P.histGame = gid; try { P.hist = JSON.parse(sessionStorage.getItem(histKey(gid)) || "{}"); } catch { P.hist = {}; } };
+  const saveHist = () => { try { sessionStorage.setItem(histKey(P.histGame), JSON.stringify(P.hist)); } catch {} };
+  const sendAnswer = st => tx.send("answer", {pid, nick, qi: st.qi, choice: P.myChoice, hint: P.hint, gameId: st.gameId, n: P.seq});
   setConn("", "Verbinde …");
   const tx = transport(pin, pid, s => setConn(s, s === "ok" ? "Verbunden" : "Verbindung gestört"));
   tx.track({pid, nick, role: "player"});
@@ -221,14 +225,21 @@ function viewJoin({pin, nick}) {
     P.hostId = st.hostId; P.lastSeen = Date.now();
     const changed = !P.st || P.st.phase !== st.phase || P.st.qi !== st.qi || P.st.gameId !== st.gameId;
     if (P.st && P.st.gameId !== st.gameId) { P.sentFor = null; P.myChoice = null; }
+    loadHist(st.gameId);
+    if (!P.st || P.st.qi !== st.qi || P.st.gameId !== st.gameId) { if (P.sentFor !== st.qi) P.myChoice = null; }
     P.st = st;
+    if (st.phase === "reveal" && st.q) {
+      const r = (st.results || {})[pid];
+      const mine = r ? r.choice : (P.sentFor === st.qi ? P.myChoice : null);
+      P.hist[st.qi] = {q: st.q.q, o: st.q.o, a: st.correct, mine, ok: r ? r.correct : false, pts: r ? r.points : 0, x: st.x || "", s: st.s || ""};
+      saveHist();
+    }
     if (st.phase === "question") {
       P.deadline = st.q.dur ? Date.now() + (st.remaining || 0) : Infinity;
       if (changed) P.hint = false;
       // Antwort erneut senden, falls die Spielleitung sie noch nicht bestätigt hat
-      if (P.sentFor === st.qi && P.myChoice != null && !(st.answered || []).includes(pid)) {
-        tx.send("answer", {pid, nick, qi: st.qi, choice: P.myChoice, hint: P.hint, gameId: st.gameId});
-      }
+      const ack = (st.acks || {})[pid];
+      if (P.sentFor === st.qi && P.myChoice != null && !(ack >= P.seq)) sendAnswer(st);
     }
     if (changed) render(); else update();
   });
@@ -248,36 +259,48 @@ function viewJoin({pin, nick}) {
       return;
     }
     const me = (st.board || []).find(b => b.pid === pid);
-    const head = `<div class="bar"><span class="chip">${esc(st.title || "")}</span><span class="chip">${esc(nick)} · ${fmt(me ? me.score : 0)} Punkte</span></div>`;
+    const head = `<div class="bar"><span class="chip">${esc(st.title || "")}</span><span class="chip">${esc(nick)} · ${fmt(me ? me.score : 0)} Punkte</span><button class="chip" id="p-snd" title="Ton an/aus" style="cursor:pointer;border:0">${store.get("btaq-sound", true) ? "🔊 Ton an" : "🔇 Ton aus"}</button></div>`;
     if (st.phase === "lobby") {
-      $app.innerHTML = head + `<section class="card center"><h2>Du bist dabei.</h2><p class="muted">Gleich geht es los. Schau auf die geteilte Präsentation.</p><p class="small muted">${(st.players || []).length} im Spiel</p>${st.rules ? `<p class="small"><strong>So gibt es Punkte:</strong> ${esc(st.rules)}</p>` : ""}</section>`;
+      $app.innerHTML = head + `<section class="card center"><h2>Du bist dabei.</h2><p class="muted">Gleich geht es los. Schau auf die geteilte Präsentation.</p><p class="small muted">${(st.players || []).length} im Spiel</p>${st.rules ? `<p class="small"><strong>So gibt es Punkte:</strong> ${esc(st.rules)}</p>` : ""}
+        <p class="small">Bis die Zeit abläuft, kannst du deine Antwort noch ändern.</p>
+        <div class="row"><button class="btn" id="p-test">🔊 Ton testen</button></div><p class="small muted">Kein Ton? Lautstärke prüfen; am iPhone den Stummschalter ausschalten.</p></section>`;
+      document.getElementById("p-test").onclick = () => SND.test();
     } else if (st.phase === "question") {
-      const q = st.q; const answered = P.sentFor === st.qi;
+      const q = st.q; const answered = P.sentFor === st.qi; const open = () => Date.now() <= P.deadline + 300;
       $app.innerHTML = head + `
         <div class="bar"><span class="chip">Frage ${st.qi + 1} / ${st.total}</span>${q.dur ? `<span class="chip" id="p-left"></span>` : `<span class="chip">ohne Zeitlimit</span>`}</div>
         ${q.dur ? `<div class="timer"><i id="p-bar"></i></div>` : ""}
         <section class="card"><div class="qtext">${esc(q.q)}</div></section>
         ${answered && !P.hint ? "" : hintBox(q, P.hint)}
         <div class="answers">${q.order.map((orig, pos) => `
-          <button class="ans ${answered && P.myChoice !== orig ? "dim" : ""} ${answered && P.myChoice === orig ? "mine" : ""}" style="--cc:${COLORS[pos]}" data-o="${orig}" ${answered ? "disabled" : ""}>
+          <button class="ans ${answered && P.myChoice === orig ? "mine" : ""}" style="--cc:${COLORS[pos]}" data-o="${orig}">
             <span class="l">${LETTERS[pos]}</span><span>${esc(q.o[orig])}</span></button>`).join("")}</div>
-        <p class="muted center" id="p-note">${answered ? "Antwort abgegeben. Warte auf die Auflösung." : ""}</p>`;
+        <p class="muted center" id="p-note">${answered ? (q.dur ? "Antwort gespeichert. Bis die Zeit abläuft, kannst du noch umentscheiden." : "Antwort gespeichert. Bis zur Auflösung kannst du noch umentscheiden.") : ""}</p>`;
       $app.querySelectorAll(".ans").forEach(b => b.onclick = () => {
-        if (P.sentFor === st.qi || Date.now() > P.deadline + 300) return;
-        P.sentFor = st.qi; P.myChoice = Number(b.dataset.o);
-        tx.send("answer", {pid, nick, qi: st.qi, choice: P.myChoice, hint: P.hint, gameId: st.gameId});
-        render();
+        if (!open()) return;
+        const c = Number(b.dataset.o);
+        if (P.sentFor === st.qi && P.myChoice === c) return;
+        P.sentFor = st.qi; P.myChoice = c; P.seq += 1;
+        sendAnswer(st);
+        // nur Markierung umsetzen, Timer läuft weiter
+        $app.querySelectorAll(".ans").forEach(x => x.classList.toggle("mine", Number(x.dataset.o) === c));
+        const hbx = document.getElementById("hint-btn"); if (hbx) hbx.parentElement.remove();
+        document.getElementById("p-note").textContent = q.dur ? "Antwort gespeichert. Bis die Zeit abläuft, kannst du noch umentscheiden." : "Antwort gespeichert. Bis zur Auflösung kannst du noch umentscheiden.";
       });
       const hb = document.getElementById("hint-btn");
       if (hb) hb.onclick = () => { P.hint = true; render(); };
+      let lastSec = null;
       const tick = () => {
         const left = Math.max(0, P.deadline - Date.now());
         const bar = document.getElementById("p-bar"), lab = document.getElementById("p-left");
         if (!bar || !q.dur) return;
         bar.style.width = (100 * left / (q.dur * 1000)) + "%";
-        lab.textContent = Math.ceil(left / 1000) + " s";
-        if (left <= 0 && P.sentFor !== st.qi) {
-          document.getElementById("p-note").textContent = "Zeit abgelaufen.";
+        const sec = Math.ceil(left / 1000);
+        lab.textContent = sec + " s";
+        if (store.get("btaq-sound", true) && lastSec !== null && sec !== lastSec) SND.second(sec);
+        lastSec = sec;
+        if (left <= 0) {
+          document.getElementById("p-note").textContent = P.sentFor === st.qi ? "Zeit abgelaufen. Deine Antwort zählt, warte auf die Auflösung." : "Zeit abgelaufen.";
           $app.querySelectorAll(".ans").forEach(b => b.disabled = true);
           return;
         }
@@ -306,10 +329,21 @@ function viewJoin({pin, nick}) {
           ${rank ? `<div class="big-num">Platz ${rank}</div><p class="muted">${fmt(me.score)} Punkte · ${me.correct} richtig</p>` : `<p class="muted">Noch keine Punkte.</p>`}
         </section>
         <ol class="board">${(st.board || []).slice(0, 10).map(b => `<li class="${b.pid === pid ? "me" : ""}"><span>${esc(b.nick)}</span><span>${fmt(b.score)}</span></li>`).join("")}</ol>
-        ${st.phase === "end" ? `<div class="row"><button class="btn" id="p-home">Zur Startseite</button><button class="btn" id="p-solo">Allein weiterüben</button></div>` : ""}`;
+        ${st.phase === "end" ? reviewHtml() + `<div class="row"><button class="btn" id="p-home">Zur Startseite</button><button class="btn" id="p-solo">Allein weiterüben</button></div>` : ""}`;
       const h = document.getElementById("p-home"); if (h) h.onclick = () => go("start");
       const so = document.getElementById("p-solo"); if (so) so.onclick = () => go("solo");
     }
+  }
+  function reviewHtml() {
+    const items = Object.keys(P.hist).map(Number).sort((a, b) => a - b).map(i => [i, P.hist[i]]);
+    if (!items.length) return "";
+    const nOk = items.filter(([, h]) => h.ok).length;
+    return `<section class="card"><h2>Deine Auswertung</h2><p class="muted">${nOk} von ${items.length} richtig. Tippe auf eine Frage für die Erklärung.</p>
+      ${items.map(([i, h]) => `<details class="rv ${h.mine == null ? "neutral" : h.ok ? "ok" : "no"}">
+        <summary><span class="rv-i">${h.mine == null ? "–" : h.ok ? "✓" : "✗"}</span> <strong>Frage ${i + 1}:</strong> ${esc(h.q)}</summary>
+        ${h.mine == null ? `<p><em>Keine Antwort abgegeben.</em></p>` : h.ok ? "" : `<p><strong>Deine Antwort:</strong> ${esc(h.o[h.mine])}</p>`}
+        <p><strong>Richtig:</strong> ${esc(h.o[h.a])}</p>
+        <p class="small">${esc(h.x)}</p>${h.s ? `<p class="src">Quelle: ${esc(h.s)}</p>` : ""}</details>`).join("")}</section>`;
   }
   function update() {
     const st = P.st;
@@ -317,8 +351,14 @@ function viewJoin({pin, nick}) {
       const el = $app.querySelector(".card .small"); if (el) el.textContent = (st.players || []).length + " im Spiel";
     }
   }
+  const sndClick = e => {
+    const b = e.target.closest && e.target.closest("#p-snd"); if (!b) return;
+    const on = !store.get("btaq-sound", true); store.set("btaq-sound", on);
+    b.textContent = on ? "🔊 Ton an" : "🔇 Ton aus"; if (on) SND.tick(false);
+  };
+  $app.addEventListener("click", sndClick);
   render();
-  cleanup = () => { clearInterval(helloTimer); cancelAnimationFrame(P.raf); tx.close(); };
+  cleanup = () => { clearInterval(helloTimer); cancelAnimationFrame(P.raf); tx.close(); $app.removeEventListener("click", sndClick); };
 }
 
 /* ======================================================================
@@ -339,7 +379,7 @@ async function viewHostSetup() {
         <label class="field">Anzahl Fragen<select id="h-count"><option value="6">6 (Morgen-Check, ca. 5 Min.)</option><option value="8" selected>8</option><option value="12">12</option><option value="20">20</option><option value="0">alle ausgewählten</option></select></label>
         <label class="field">Reihenfolge<select id="h-order"><option value="mix" selected>gemischt</option><option value="seq">wie im Kurs</option></select></label>
         <label class="field">Bedenkzeit<select id="h-time"><option value="normal" selected>normal: 45 bis 120 Sekunden je nach Textlänge</option><option value="long">großzügig: 50 % mehr Zeit</option><option value="none">ohne Zeitlimit: du löst selbst auf</option></select></label>
-        <label class="field">Ton bei Zeitablauf<select id="h-sound"><option value="1" selected>an: Ticken in den letzten 5 Sekunden, Gong am Ende</option><option value="0">aus</option></select></label>
+        <label class="field">Ton bei Zeitablauf<select id="h-sound"><option value="1" selected>an: leiser Takt, Ticken in den letzten 5 Sekunden, Gong am Ende</option><option value="0">aus</option></select></label>
         <label class="field">Tempo-Bonus<select id="h-speed"><option value="1" selected>an: schnelle Antworten bringen bis zu 50 Extrapunkte</option><option value="0">aus: nur richtig zählt (z. B. bei Fristberechnungen)</option></select></label>
       </div>
       <div class="row"><button class="btn primary big" id="h-create">Spiel eröffnen</button><button class="link" id="h-back">Zurück</button></div>
@@ -384,11 +424,13 @@ async function viewHostSetup() {
 }
 
 
-// ---- Ton (nur Host-Ansicht): Web Audio, keine Audiodateien ----
+// ---- Ton (Spielleitung und Mitspielende): Web Audio, keine Audiodateien ----
 const SND = (() => {
   let ctx = null;
-  const ac = () => { if (!ctx) { const C = window.AudioContext || window.webkitAudioContext; if (C) ctx = new C(); } if (ctx && ctx.state === "suspended") ctx.resume(); return ctx; };
-  document.addEventListener("pointerdown", () => { try { ac(); } catch {} }, {passive: true});
+  const ac = () => { if (!ctx) { const C = window.AudioContext || window.webkitAudioContext; if (C) ctx = new C(); } if (ctx && ctx.state !== "running") ctx.resume().catch(() => {}); return ctx; };
+  // Browser geben Ton erst nach einer Nutzeraktion frei: bei jedem Klick/Tippen/Tastendruck entsperren
+  const unlock = () => { try { const c = ac(); if (!c) return; const b = c.createBuffer(1, 1, 22050), s = c.createBufferSource(); s.buffer = b; s.connect(c.destination); s.start(0); } catch {} };
+  ["pointerdown", "touchend", "keydown"].forEach(ev => document.addEventListener(ev, unlock, {passive: true}));
   const tone = (f, t0, d, v = 0.18, type = "sine") => {
     const c = ac(); if (!c) return;
     const o = c.createOscillator(), g = c.createGain();
@@ -399,8 +441,12 @@ const SND = (() => {
     o.connect(g).connect(c.destination); o.start(c.currentTime + t0); o.stop(c.currentTime + t0 + d + 0.05);
   };
   return {
-    tick(last) { try { tone(last ? 1320 : 880, 0, 0.09, 0.12, "square"); } catch {} },
-    gong() { try { [[784, 0], [659, 0.22], [523, 0.44]].forEach(([f, t]) => { tone(f, t, 0.9, 0.22, "triangle"); tone(f * 2, t, 0.5, 0.05); }); } catch {} },
+    tick(last) { try { tone(last ? 1320 : 880, 0, 0.12, 0.25, "square"); } catch {} },
+    pulse(i) { try { tone(i % 2 ? 330 : 440, 0, 0.18, 0.12, "triangle"); tone(i % 2 ? 165 : 220, 0, 0.25, 0.10, "sine"); } catch {} },
+    // pro Sekunde aufrufen: leiser Takt während der Frage, Ticken in den letzten 5 Sekunden, Gong am Ende
+    second(sec) { if (sec === 0) this.gong(); else if (sec <= 5) this.tick(sec === 1); else this.pulse(sec); },
+    blocked() { return !ctx || ctx.state !== "running"; },
+    gong() { try { [[784, 0], [659, 0.22], [523, 0.44]].forEach(([f, t]) => { tone(f, t, 0.9, 0.35, "triangle"); tone(f * 2, t, 0.5, 0.08); }); } catch {} },
     test() { this.gong(); }
   };
 })();
@@ -427,13 +473,19 @@ async function hostRun(G) {
   tx.on("answer", a => {
     if (!a || a.gameId !== G.gameId) return;
     addPlayer(a.pid, a.nick);
-    if (G.phase !== "question" || a.qi !== G.qi || G.answers[a.pid]) return;
+    if (G.phase !== "question" || a.qi !== G.qi) return;
+    const prev = G.answers[a.pid], n = Number(a.n) || 0;
+    if (prev && n <= (prev.n || 0)) return;
     const ms = Date.now() - G.startedAt;
     if (G.dur && ms > G.dur * 1000 + 1500) return;
-    G.answers[a.pid] = {choice: Number(a.choice), ms, hint: !!a.hint};
+    // Antwortwechsel erlaubt, solange die Frage läuft; es zählt die letzte Antwort mit ihrem Zeitpunkt
+    G.answers[a.pid] = {choice: Number(a.choice), ms, hint: !!a.hint || !!(prev && prev.hint), n};
     save(); renderCounts(); broadcast();
     const active = [...online].filter(pid => G.players[pid]);
-    if (active.length && active.every(pid => G.answers[pid])) setTimeout(reveal, 600);
+    if (active.length && active.every(pid => G.answers[pid])) {
+      clearTimeout(G._auto); const qi = G.qi;
+      G._auto = setTimeout(() => { if (G.qi === qi) reveal(); }, 2500);
+    }
   });
 
   const q = () => course.byId[G.list[G.qi]];
@@ -446,6 +498,7 @@ async function hostRun(G) {
       const qq = q();
       s.q = {q: qq.q, o: qq.o, h: qq.h || "", order: G.order, dur: G.dur};
       s.answered = Object.keys(G.answers);
+      s.acks = Object.fromEntries(Object.entries(G.answers).map(([pid, a]) => [pid, a.n || 0]));
       if (G.phase === "question" && G.dur) s.remaining = Math.max(0, G.startedAt + G.dur * 1000 - Date.now());
       if (G.phase === "reveal") { s.correct = qq.a; s.x = qq.x; s.s = qq.s; s.results = G.results; }
     }
@@ -502,9 +555,10 @@ async function hostRun(G) {
           <p class="small"><strong>So gibt es Punkte:</strong> ${esc(rulesText(G.speed !== false && G.timeMode !== "none"))}</p>
         </section>
         <section class="card"><h3>Mitspielende (<span id="h-n">0</span>)</h3><div class="players" id="h-players"></div></section>
-        <div class="row"><button class="btn primary big" id="h-start">Start</button><button class="btn" id="h-copy">Link kopieren</button><button class="link" id="h-quit">Spiel beenden</button></div>`;
+        <div class="row"><button class="btn primary big" id="h-start">Start</button><button class="btn" id="h-copy">Link kopieren</button><button class="btn" id="h-test">🔊 Ton testen</button><button class="link" id="h-quit">Spiel beenden</button></div>`;
       renderPlayers();
       document.getElementById("h-start").onclick = next;
+      document.getElementById("h-test").onclick = () => SND.test();
       document.getElementById("h-copy").onclick = async e => { try { await navigator.clipboard.writeText(joinUrl); e.target.textContent = "Kopiert"; } catch { e.target.textContent = "Bitte manuell kopieren"; } };
     } else if (G.phase === "question" || G.phase === "reveal") {
       const qq = q(); const rev = G.phase === "reveal";
@@ -531,10 +585,7 @@ async function hostRun(G) {
         const tick = () => {
           const left = Math.max(0, G.startedAt + G.dur * 1000 - Date.now());
           const sec = Math.ceil(left / 1000);
-          if (G.sound !== false && sec !== lastSec && lastSec !== null) {
-            if (sec >= 1 && sec <= 5) SND.tick(sec === 1);
-            if (sec === 0) SND.gong();
-          }
+          if (G.sound !== false && sec !== lastSec && lastSec !== null) SND.second(sec);
           lastSec = sec;
           const bar = document.getElementById("h-bar"), lab = document.getElementById("h-left");
           if (bar) bar.style.width = Math.min(100, 100 * left / (G.dur * 1000)) + "%";
@@ -722,10 +773,7 @@ function soloPlay(c, list, roundId) {
       const left = Math.max(0, dur - (performance.now() - S.t0));
       const bar = document.getElementById("s-bar"); if (bar) bar.style.width = (100 * left / dur) + "%";
       const sec = Math.ceil(left / 1000);
-      if (store.get("btaq-sound", true) && lastSec !== null && sec !== lastSec) {
-        if (sec >= 1 && sec <= 5) SND.tick(sec === 1);
-        if (sec === 0) SND.gong();
-      }
+      if (store.get("btaq-sound", true) && lastSec !== null && sec !== lastSec) SND.second(sec);
       lastSec = sec;
       if (left <= 0) return answer(null);
       S.raf = requestAnimationFrame(tick);

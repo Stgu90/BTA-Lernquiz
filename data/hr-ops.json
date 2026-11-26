@@ -1150,7 +1150,7 @@
    "a": 2,
    "h": "Ruth ist zwischen fünf und acht Jahren dabei. Die Frist läuft dann immer bis zu einem Monatsende.",
    "x": "Bei Kündigungen durch den Arbeitgeber verlängert sich die Frist mit der Dauer der Beschäftigung. Bei mehr als fünf, aber weniger als acht Jahren sind es zwei Monate zum Ende eines Kalendermonats. Rechenweg: Die Frist beginnt am Tag nach dem Zugang (13. Oktober) und läuft bis 12. Dezember. Weil sie zu einem Monatsende enden muss, ist der nächstmögliche Termin der 31. Dezember 2026.",
-   "s": "Skript Tag 3 · 2.3 Übung 1 · §§ 187, 188, 622 Bürgerliches Gesetzbuch"
+   "s": "Skript Tag 3 · 2.1 Spickzettel Kündigungsfristen und 2.3 Vier Fristen · §§ 187, 188, 622 Bürgerliches Gesetzbuch"
   },
   {
    "id": "t3-3",
@@ -1165,7 +1165,7 @@
    "a": 2,
    "h": "Achtung: Die längeren Fristen je nach Beschäftigungsdauer gelten nur, wenn der Arbeitgeber kündigt.",
    "x": "Kündigt die beschäftigte Person selbst, gilt nur die Grundfrist: vier Wochen zum 15. oder zum Ende eines Kalendermonats. Rechenweg: vier Wochen ab dem 20. Oktober enden am 17. November. Der 15. November ist dann schon vorbei, also ist der nächste mögliche Termin der 30. November 2026. Die verlängerten Fristen nach Betriebszugehörigkeit binden nur den Arbeitgeber, es sei denn, der Vertrag regelt es anders.",
-   "s": "Skript Tag 3 · 2.3 Übung 1 · § 622 Absatz 1 Bürgerliches Gesetzbuch"
+   "s": "Skript Tag 3 · 2.1 Spickzettel Kündigungsfristen und 2.3 Vier Fristen · § 622 Absatz 1 Bürgerliches Gesetzbuch"
   },
   {
    "id": "t3-4",
@@ -1225,7 +1225,7 @@
    "a": 1,
    "h": "Teilzeitkräfte werden je nach Stundenzahl gewichtet: bis 20 Stunden, bis 30 Stunden, darüber.",
    "x": "Für die Betriebsgröße zählt das Kündigungsschutzgesetz Teilzeitkräfte anteilig: bis 20 Wochenstunden mit 0,5, bis 30 Stunden mit 0,75, darüber voll. Hier: 8 + 4 × 0,5 = 10. Das ist nicht „mehr als zehn“, also gilt der allgemeine Kündigungsschutz nicht. Auch im Kleinbetrieb gelten aber Schriftform, Kündigungsfrist, besonderer Schutz etwa bei Schwangerschaft, die Anhörung eines vorhandenen Betriebsrats und die dreiwöchige Klagefrist.",
-   "s": "Skript Tag 3 · 1.3 Betriebsgröße · § 23 Absatz 1 Kündigungsschutzgesetz"
+   "s": "Skript Tag 3 · 1.3 Vertiefung: Wer zählt bei der Betriebsgröße mit? · § 23 Absatz 1 Kündigungsschutzgesetz"
   },
   {
    "id": "t3-8",
@@ -1255,7 +1255,7 @@
    "a": 1,
    "h": "Das Widerrufsrecht für Verbraucher passt nicht auf Gespräche im eigenen Betrieb.",
    "x": "Für Aufhebungsverträge gibt es kein Widerrufsrecht. Der Vertrag lässt sich nur angreifen, wenn der Mitarbeiter getäuscht oder bedroht wurde (Anfechtung) oder wenn der Arbeitgeber gegen das Gebot fairen Verhandelns verstoßen hat, etwa indem er eine Schwäche gezielt ausgenutzt hat. Eine fehlende Bedenkzeit allein macht es nach dem Bundesarbeitsgericht noch nicht unfair. Gute Praxis bleibt trotzdem: Entwurf erklären, Beratung ermöglichen, Bedenkzeit geben.",
-   "s": "Skript Tag 3 · 4.1 Aufhebungsvertrag · Bundesarbeitsgericht 6 AZR 75/18, 6 AZR 333/21"
+   "s": "Skript Tag 3 · 4.1 Aufhebungsvertrag, Faires Verhandeln · Bundesarbeitsgericht 6 AZR 75/18, 6 AZR 333/21"
   },
   {
    "id": "t3-10",
@@ -1300,7 +1300,7 @@
    "a": 1,
    "h": "Im entschiedenen Fall ging es um einen ausgedruckten Sendungsstatus.",
    "x": "Im Fall konnte der Arbeitgeber nur einen Sendungsstatus vorlegen. Das reichte dem Gericht nicht als Beweis, dass die Einladung zum Eingliederungsgespräch tatsächlich angekommen war – und die spätere krankheitsbedingte Kündigung scheiterte deshalb. Verboten ist das Einwurf-Einschreiben nicht. Wichtige Schreiben stellt HR aber besser so zu, dass es sich belegen lässt: persönliche Übergabe gegen Unterschrift oder ein Bote, der den Inhalt kennt und den Einwurf sofort protokolliert.",
-   "s": "Skript Tag 3 · 3.4 und 3.5 Zustellwege · Bundesarbeitsgericht 2 AZR 184/25"
+   "s": "Skript Tag 3 · 3.4 Zugang und 3.5 Zustellwege · Bundesarbeitsgericht 2 AZR 184/25"
   },
   {
    "id": "t3-u1",
@@ -1314,8 +1314,8 @@
    ],
    "a": 1,
    "h": "Der Schutz soll Eltern die Sorge vor jeder einzelnen Elternzeit nehmen.",
-   "x": "Ab der Anmeldung der Elternzeit, frühestens acht Wochen vor ihrem Beginn (bei Kindern unter drei Jahren), darf der Arbeitgeber grundsätzlich nicht kündigen. Das Bundesarbeitsgericht hat im Juni 2026 entschieden, dass dieser vorgelagerte Schutz vor jedem Abschnitt neu einsetzt, auch wenn alle Abschnitte in einem Schreiben angemeldet wurden. Eine Kündigung ist dann nur mit vorheriger Zustimmung der zuständigen Behörde möglich. Die Entscheidung ist neuer als das Skript.",
-   "s": "Ergänzung zu Skript Tag 3 · Bundesarbeitsgericht 18.06.2026, 2 AZR 213/25 · § 18 Bundeselterngeld- und Elternzeitgesetz"
+   "x": "Ab der Anmeldung der Elternzeit, frühestens acht Wochen vor ihrem Beginn (bei Kindern unter drei Jahren), darf der Arbeitgeber grundsätzlich nicht kündigen. Das Bundesarbeitsgericht hat im Juni 2026 entschieden, dass dieser vorgelagerte Schutz vor jedem Abschnitt neu einsetzt, auch wenn alle Abschnitte in einem Schreiben angemeldet wurden. Eine Kündigung ist dann nur mit vorheriger Zustimmung der zuständigen Behörde möglich.",
+   "s": "Skript Tag 3 · 2.4 Besonderer Kündigungsschutz · Bundesarbeitsgericht 18.06.2026, 2 AZR 213/25 · § 18 Bundeselterngeld- und Elternzeitgesetz"
   },
   {
    "id": "t3-u2",
@@ -1330,7 +1330,7 @@
    "a": 3,
    "h": "Das Bundesarbeitsgericht hat 2026 seine Linie zu den Folgen fehlender Anzeigen bestätigt.",
    "x": "Bei größeren Entlassungswellen muss der Arbeitgeber erst den Betriebsrat beteiligen (Konsultation), dann die Entlassungen der Agentur für Arbeit anzeigen und erst danach kündigen. Fehlt die Anzeige ganz, sind die Kündigungen nach den Urteilen vom April 2026 unwirksam. Nicht jeder kleine Fehler in einer erstatteten Anzeige ist dagegen schädlich, etwa eine geringfügig zu hoch angegebene Zahl. Merksatz: erst beraten, dann anzeigen, dann kündigen.",
-   "s": "Ergänzung zu Skript Tag 3 · Bundesarbeitsgericht 01.04.2026, 6 AZR 152/22 und 6 AZR 157/22; 25.06.2026, 6 AZR 7/26 · § 17 Kündigungsschutzgesetz"
+   "s": "Skript Tag 3 · 3.2 Mehrere Beendigungen · Bundesarbeitsgericht 01.04.2026, 6 AZR 152/22 und 6 AZR 157/22; 25.06.2026, 6 AZR 7/26 · § 17 Kündigungsschutzgesetz"
   },
   {
    "id": "t3-13",
@@ -1345,7 +1345,7 @@
    "a": 2,
    "h": "Eine Abmahnung ist eine Warnung. Wer kann auf eine Warnung reagieren?",
    "x": "Das Gesetz kennt drei Kündigungsgründe: in der Person (zum Beispiel lange Krankheit), im Verhalten (zum Beispiel wiederholtes Zuspätkommen) und betriebsbedingt (zum Beispiel Wegfall des Arbeitsplatzes). Eine Abmahnung warnt: „Ändere dein Verhalten, sonst droht die Kündigung.“ Das ergibt nur Sinn, wenn die Person ihr Verhalten steuern kann – also bei verhaltensbedingten Gründen. Bei Krankheit oder Stellenabbau hilft keine Warnung. Ausnahme: Bei sehr schweren Pflichtverletzungen kann die Abmahnung entbehrlich sein.",
-   "s": "Skript Tag 3 · § 1 Absatz 2 Kündigungsschutzgesetz"
+   "s": "Skript Tag 3 · 1.4 Drei Kündigungsgründe und 1.6 Abmahnung · § 1 Absatz 2 Kündigungsschutzgesetz"
   },
   {
    "id": "t3-14",
@@ -1360,7 +1360,7 @@
    "a": 0,
    "h": "Ein Programmname beschreibt noch keinen weggefallenen Arbeitsplatz.",
    "x": "Bei einer betriebsbedingten Kündigung muss der Arbeitgeber eine konkrete Entscheidung darlegen, durch die der Arbeitsplatz wirklich wegfällt. Dann prüft er, ob es im gesamten Unternehmen eine freie Stelle gibt, auf der die Person weiterarbeiten könnte. Schließlich muss er unter vergleichbaren Beschäftigten eine Sozialauswahl treffen: Dauer der Betriebszugehörigkeit, Lebensalter, Unterhaltspflichten und Schwerbehinderung. Merksatz: Ein Etikett wie „Effizienz“ ersetzt keine dieser drei Prüfungen.",
-   "s": "Skript Tag 3 · § 1 Absatz 2 und 3 Kündigungsschutzgesetz"
+   "s": "Skript Tag 3 · 1.4 Betriebsbedingte Kündigung · § 1 Absatz 2 und 3 Kündigungsschutzgesetz"
   },
   {
    "id": "t3-15",
@@ -1375,7 +1375,7 @@
    "a": 1,
    "h": "Hier entscheidet eine Behörde – und zwar vor der Kündigung.",
    "x": "Während der Schwangerschaft, bis vier Monate nach der Entbindung und in bestimmten weiteren Fällen gilt ein Kündigungsverbot. Ausnahmsweise kann die für Arbeitsschutz zuständige Landesbehörde eine Kündigung vorher für zulässig erklären, etwa bei einer Betriebsschließung. Ohne diese Erklärung ist die Kündigung unwirksam. Der Schutz gilt auch in Kleinbetrieben und schon in den ersten sechs Monaten. Merksatz: Bei Sonderkündigungsschutz erst die Behörde, dann die Kündigung.",
-   "s": "Skript Tag 3 · § 17 Mutterschutzgesetz"
+   "s": "Skript Tag 3 · 2.4 Besonderer Kündigungsschutz · § 17 Mutterschutzgesetz"
   },
   {
    "id": "t3-16",
@@ -1390,7 +1390,7 @@
    "a": 3,
    "h": "Der besondere Schutz setzt eine bestimmte Mindestdauer voraus.",
    "x": "Schwerbehinderte Menschen haben einen besonderen Kündigungsschutz: Der Arbeitgeber braucht vorher die Zustimmung des Integrationsamts (in einigen Bundesländern heute Inklusionsamt genannt). Dieser Schutz greift aber erst, wenn das Arbeitsverhältnis länger als sechs Monate besteht. Achtung: Auch in den ersten sechs Monaten bleiben andere Pflichten bestehen, etwa die Beteiligung der Schwerbehindertenvertretung und des Betriebsrats. Merksatz: Keine Zustimmung nötig heißt nicht, dass niemand beteiligt werden muss.",
-   "s": "Skript Tag 3 · § 168 und § 173 Sozialgesetzbuch Neuntes Buch"
+   "s": "Skript Tag 3 · 2.4 Besonderer Kündigungsschutz (Schwerbehinderung) · § 168 und § 173 Sozialgesetzbuch Neuntes Buch"
   },
   {
    "id": "t3-17",
@@ -1405,7 +1405,7 @@
    "a": 0,
    "h": "Für Auszubildende gilt ein eigenes Gesetz.",
    "x": "Im Berufsausbildungsverhältnis ist eine ordentliche Kündigung durch den Ausbildungsbetrieb nach der Probezeit ausgeschlossen. Möglich ist nur eine fristlose Kündigung aus wichtigem Grund, schriftlich und mit Angabe der Gründe. Schwache Leistungen reichen dafür in der Regel nicht. Der Auszubildende selbst kann dagegen mit vier Wochen Frist kündigen, wenn er die Ausbildung aufgeben oder einen anderen Beruf lernen will. In der Probezeit können beide jederzeit ohne Frist kündigen.",
-   "s": "Skript Tag 3 · § 22 Berufsbildungsgesetz"
+   "s": "Skript Tag 3 · 2.4 Besonderer Kündigungsschutz · § 22 Berufsbildungsgesetz"
   },
   {
    "id": "t3-18",
@@ -1420,7 +1420,7 @@
    "a": 2,
    "h": "Betriebsratsmitglieder sollen ihr Amt ohne Angst vor Kündigung ausüben können.",
    "x": "Mitglieder des Betriebsrats haben einen besonderen Kündigungsschutz. Eine ordentliche Kündigung ist während der Amtszeit und grundsätzlich ein Jahr danach ausgeschlossen (Ausnahme: Stilllegung des Betriebs). Eine fristlose Kündigung aus wichtigem Grund ist möglich, braucht aber die Zustimmung des Betriebsrats. Verweigert er sie, kann das Arbeitsgericht die Zustimmung ersetzen. Häufiges Zuspätkommen wird die hohe Hürde für eine fristlose Kündigung meist nicht erreichen.",
-   "s": "Skript Tag 3 · § 15 Kündigungsschutzgesetz · § 103 Betriebsverfassungsgesetz"
+   "s": "Skript Tag 3 · 2.4 Besonderer Kündigungsschutz und 3.1 § 103 BetrVG · § 15 Kündigungsschutzgesetz · § 103 Betriebsverfassungsgesetz"
   },
   {
    "id": "t4c-1",
@@ -1435,7 +1435,7 @@
    "a": 1,
    "h": "Bei der Beendigung hat der Gesetzgeber bewusst an Papier festgehalten.",
    "x": "Eine Kündigung braucht die Schriftform: Papier mit Originalunterschrift einer berechtigten Person. Die elektronische Form ist ausdrücklich ausgeschlossen. Eine Kündigung per E-Mail, Fax, Scan oder Messenger ist deshalb nichtig. Weil die Kündigung nicht schriftlich ist, beginnt auch die dreiwöchige Klagefrist nicht.",
-   "s": "§ 623 Bürgerliches Gesetzbuch · § 4 Kündigungsschutzgesetz"
+   "s": "Skript Tag 3 · 3.3 Schriftform und 3.6 Klagefrist · § 623 Bürgerliches Gesetzbuch · § 4 Kündigungsschutzgesetz"
   },
   {
    "id": "t4c-2",
@@ -1450,7 +1450,7 @@
    "a": 2,
    "h": "24 Jahre – welche Stufe der Staffel? Und der Zugangstag zählt nicht mit.",
    "x": "Durch die Anrechnung zählen 24 Jahre. Ab 20 Jahren beträgt die Frist für den Arbeitgeber sieben Monate zum Monatsende. Die Frist beginnt am 1. Dezember und endet am 30. Juni 2027 – das ist zugleich ein Monatsende. Ohne die Übernahmevereinbarung wären es nur zwei Monate gewesen, also der 31. Januar 2027.",
-   "s": "§ 622 Abs. 2 Nr. 7 Bürgerliches Gesetzbuch · §§ 187, 188 Bürgerliches Gesetzbuch"
+   "s": "Skript Tag 3 · 2.2 Frist für Andreas Kienzle · § 622 Abs. 2 Nr. 7 Bürgerliches Gesetzbuch · §§ 187, 188 Bürgerliches Gesetzbuch"
   },
   {
    "id": "t4c-3",
@@ -1465,7 +1465,7 @@
    "a": 2,
    "h": "Zwei Dinge fallen in den ersten sechs Monaten weg, die Beteiligung nicht.",
    "x": "In den ersten sechs Monaten gilt das Kündigungsschutzgesetz noch nicht, deshalb gibt es keine Sozialauswahl. Auch die Zustimmung des Integrationsamts ist erst nach sechs Monaten nötig. Die Schwerbehindertenvertretung muss aber vor jeder Kündigung beteiligt werden, sonst ist sie unwirksam – auch in der Wartezeit. Der Betriebsrat ist wie bei jeder Kündigung anzuhören. Außerdem meldet der Arbeitgeber die Kündigung innerhalb von vier Tagen dem Integrationsamt.",
-   "s": "§ 178 Abs. 2 SGB IX · § 173 Abs. 1 Nr. 1 und Abs. 4 SGB IX · § 102 Betriebsverfassungsgesetz · BAG 29.01.2026 – 2 AZR 128/25"
+   "s": "Skript Tag 3 · 2.4 Schwerbehinderung: drei Verfahren · § 178 Abs. 2 SGB IX · § 173 Abs. 1 Nr. 1 und Abs. 4 SGB IX · § 102 Betriebsverfassungsgesetz · BAG 29.01.2026 – 2 AZR 128/25"
   },
   {
    "id": "t4c-4",
@@ -1480,7 +1480,7 @@
    "a": 2,
    "h": "Wer entscheidet über das Arbeitslosengeld – und was darf HR zusagen?",
    "x": "Wer an einem Aufhebungsvertrag mitwirkt, riskiert eine Sperrzeit. Wird außerdem die Kündigungsfrist unterschritten und eine Abfindung gezahlt, kann der Anspruch ruhen. Ob und wie lange, entscheidet allein die Agentur für Arbeit. HR macht deshalb keine Zusage, sondern empfiehlt eine Beratung vor der Unterschrift.",
-   "s": "§ 159 SGB III (Sperrzeit) · § 158 SGB III (Ruhen)"
+   "s": "Skript Tag 3 · 4.2 Sozialrechtliche Folgen · § 159 SGB III (Sperrzeit) · § 158 SGB III (Ruhen)"
   },
   {
    "id": "t4-1",

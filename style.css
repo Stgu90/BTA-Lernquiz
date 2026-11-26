@@ -98,3 +98,13 @@ h2.sub{font-size:15px;text-transform:uppercase;letter-spacing:.05em;color:var(--
 .gtag{font-size:12px;font-weight:700;padding:2px 8px;border-radius:99px;border:1px solid var(--c);color:var(--ink-2);background:#fff}
 .gcard{margin-top:14px;min-height:220px}
 .gfront{font-size:28px;font-weight:800}
+/* gewählte, noch änderbare Antwort (Live-Quiz) */
+.ans.mine:not([disabled]){outline:5px solid var(--ink);outline-offset:2px}
+/* Auswertung am Spielende */
+details.rv{border-radius:10px;padding:10px 12px;margin:8px 0;border:1px solid var(--line);background:#fff}
+details.rv.ok{background:#E3F4EA;border-color:#B7E0C8}
+details.rv.no{background:#FBE5DE;border-color:#F2C2B3}
+details.rv summary{cursor:pointer;line-height:1.4}
+details.rv p{margin:8px 0 0}
+.rv-i{display:inline-block;width:1.4em;font-weight:800}
+details.rv.ok .rv-i{color:var(--ok)} details.rv.no .rv-i{color:var(--bad)}
