@@ -53,6 +53,12 @@
    "color": "#8A95E8"
   },
   {
+   "id": "t5c",
+   "label": "Mo 30.11. · 08:30",
+   "title": "Morgen-Check: Arbeitszeit, Urlaub & Abwesenheiten",
+   "color": "#2B8C86"
+  },
+  {
    "id": "hs",
    "label": "Mo 30.11.",
    "title": "HR-Service & Mitarbeitendenbetreuung",
@@ -2486,6 +2492,81 @@
    "h": "Lohnkonto, Arbeitszeitnachweis und Bewerbung – gilt für alle dasselbe?",
    "x": "Es gibt nicht die eine Aufbewahrungsfrist für die Personalakte. Die Dauer hängt von Art der Unterlage, Rechtsgrundlage, Zweck und möglichen Ansprüchen ab. Beispiele: Lohnkonten bis zum Ende des sechsten Kalenderjahres nach der letzten Eintragung, Arbeitszeitaufzeichnungen über acht Stunden mindestens zwei Jahre, Bewerbungsunterlagen ohne gesetzliche Pflicht meist nur rund sechs Monate. Danach ist zu löschen. Merksatz: Für jede Unterlage einzeln prüfen, warum sie noch gebraucht wird.",
    "s": "Skript Bescheinigungswesen und Zeugnisse, Kapitel 16 · § 41 Einkommensteuergesetz · § 16 Arbeitszeitgesetz · Artikel 17 Datenschutz-Grundverordnung"
+  },
+  {
+   "id": "t5c-1",
+   "round": "t5c",
+   "q": "Lena hat bis 20:00 Uhr gearbeitet und beantwortet von 23:00 bis 23:10 Uhr noch dienstliche Mails. Wann darf sie am nächsten Morgen frühestens wieder anfangen?",
+   "o": [
+    "Um 07:00 Uhr – elf Stunden nach 20:00 Uhr.",
+    "Um 10:10 Uhr – die Ruhezeit beginnt nach den Mails neu.",
+    "Um 08:00 Uhr – zehn Minuten Mails zählen nicht.",
+    "Jederzeit, wenn sie einverstanden ist."
+   ],
+   "a": 1,
+   "h": "Die Ruhezeit muss ununterbrochen sein.",
+   "x": "Die zehn Minuten Mails sind Arbeit. Damit endet die laufende Ruhezeit, und nach 23:10 Uhr beginnen elf Stunden neu. Ohne Ausnahmegrundlage ist der früheste Beginn 10:10 Uhr. Auf die Schutzregel kann Lena nicht verzichten.",
+   "s": "Skript Kapitel 4 · 1.5 Ruhezeit · § 5 Arbeitszeitgesetz"
+  },
+  {
+   "id": "t5c-2",
+   "round": "t5c",
+   "q": "Vollzeitkräfte bekommen 30 Urlaubstage. Eine Teilzeitkraft arbeitet 30 Stunden an fünf Tagen pro Woche. Wie viele Urlaubstage stehen ihr zu?",
+   "o": [
+    "22,5 Tage – anteilig nach Stunden.",
+    "20 Tage – der gesetzliche Mindesturlaub.",
+    "30 Tage – sie arbeitet an genauso vielen Tagen.",
+    "24 Tage – vier Fünftel."
+   ],
+   "a": 2,
+   "h": "Urlaub befreit von Arbeitstagen, nicht von Stunden.",
+   "x": "Maßgeblich ist die Zahl der Arbeitstage. Wer an fünf Tagen arbeitet, braucht für eine Woche Erholung fünf Urlaubstage – egal wie lang der Tag ist. Weniger Tage nur wegen der Stunden wären eine Benachteiligung wegen Teilzeit.",
+   "s": "Skript Kapitel 4 · 3.1 Mindesturlaub und Mehrurlaub · § 4 Teilzeit- und Befristungsgesetz"
+  },
+  {
+   "id": "t5c-3",
+   "round": "t5c",
+   "q": "Ein Mitarbeiter ist ab Donnerstag krank und am Montag noch nicht wieder gesund. Der Arbeitgeber hat nichts Besonderes verlangt. Bis wann muss die Arbeitsunfähigkeit ärztlich festgestellt sein?",
+   "o": [
+    "Am Donnerstag, dem ersten Krankheitstag.",
+    "Am Samstag, dem dritten Tag.",
+    "Spätestens am Montag, dem nächsten Arbeitstag.",
+    "Erst nach einer Woche."
+   ],
+   "a": 2,
+   "h": "Zählt erst die Kalendertage, dann schaut auf den nächsten Arbeitstag.",
+   "x": "Donnerstag, Freitag und Samstag sind die drei Kalendertage ohne Bescheinigung. Dauert die Arbeitsunfähigkeit länger, ist die ärztliche Feststellung am darauffolgenden Arbeitstag nötig – das ist der Montag. Die Krankmeldung selbst muss er trotzdem sofort am Donnerstag machen.",
+   "s": "Skript Kapitel 4 · 4.1 Anzeige und Nachweis · § 5 Entgeltfortzahlungsgesetz"
+  },
+  {
+   "id": "t5c-4",
+   "round": "t5c",
+   "q": "Eine Mitarbeiterin war vier Wochen krank, dann drei Wochen gesund und ist jetzt wegen derselben Krankheit wieder arbeitsunfähig. Wie lange zahlt der Arbeitgeber noch das Entgelt weiter?",
+   "o": [
+    "Wieder volle sechs Wochen.",
+    "Noch zwei Wochen.",
+    "Gar nicht mehr.",
+    "Noch vier Wochen."
+   ],
+   "a": 1,
+   "h": "Bei derselben Krankheit werden die Zeiten zusammengezählt.",
+   "x": "Bei einer Fortsetzungserkrankung gibt es grundsätzlich keine neuen sechs Wochen. Vier Wochen sind verbraucht, also bleiben zwei. Neue sechs Wochen gäbe es erst nach sechs Monaten ohne Arbeitsunfähigkeit wegen dieser Krankheit oder zwölf Monate nach Beginn der ersten.",
+   "s": "Skript Kapitel 4 · 4.7 Fortsetzungserkrankung · § 3 Entgeltfortzahlungsgesetz"
+  },
+  {
+   "id": "t5c-5",
+   "round": "t5c",
+   "q": "Andreas Kienzle hat 18 offene Urlaubstage aus 2026. Wegen eines falsch gepflegten Status hat er keinen Hinweis auf den Verfall bekommen. Was passiert am 31.12.2026?",
+   "o": [
+    "Die 18 Tage verfallen.",
+    "Nur der Mehrurlaub verfällt automatisch.",
+    "Die Tage verfallen nicht, weil der Hinweis fehlt.",
+    "Die Tage werden automatisch ausgezahlt."
+   ],
+   "a": 2,
+   "h": "Urlaub verfällt nur, wenn der Arbeitgeber vorher konkret hingewiesen hat.",
+   "x": "Ohne rechtzeitigen, konkreten Hinweis des Arbeitgebers verfällt der Urlaub nicht. HR sollte den Hinweis sofort nachholen. Wird das Arbeitsverhältnis beendet und kann der Urlaub nicht mehr genommen werden, ist er abzugelten.",
+   "s": "Skript Kapitel 4 · 3.3 Mitwirkung des Arbeitgebers und Kapitel 6 Fall Kienzle · § 7 Bundesurlaubsgesetz"
   }
  ]
 }
